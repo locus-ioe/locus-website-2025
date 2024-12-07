@@ -1,0 +1,77 @@
+
+  
+  .events-container {
+    text-align: center;
+    /* padding: 20px; */
+  }
+  
+  .title {
+    color: #00ffcc;
+    font-size: 80px;
+    margin-top: 100px;
+    margin-bottom: 52px;
+  }
+  
+  .events-grid {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    flex-wrap: wrap;
+    margin-bottom: 52px;
+  }
+  
+  .event-card {
+    /* background: #1a1a1a; */
+    /* border: 1px solid #333; */
+    border-radius: 10px;
+    /* padding: 15px; */
+    max-width: 381.45px;
+    text-align: left;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .event-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .event-title {
+    color: #ff66c4;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .event-date,
+  .event-time,
+  .event-registration {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .event-prizes {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .event-prizes li {
+    margin: 5px 0;
+  }
+  
+  .show-more {
+    /* padding: 0.5rem 1.5rem; */
+    font-size: 1rem;
+    color: white;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .show-more:hover {
+    background-color: #008c9e;  }
+
+
+  
+  

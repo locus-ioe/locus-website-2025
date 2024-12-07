@@ -5,6 +5,7 @@ import AboutLocus from '../components/AboutLocus'
 import DirectorsAmbassadors from '../components/DirectorsAmbassadors'
 import LocusHighlights from '../components/LocusHighlights'
 import EventsHighlight from '../components/EventsHighlight'
+import Events from '../components/Events'
 const Home = () => {
   return (
 
@@ -16,6 +17,7 @@ const Home = () => {
       <DirectorsAmbassadors />
       <LocusHighlights />
       <EventsHighlight />
+      <Events />
     </div>
   )
 }

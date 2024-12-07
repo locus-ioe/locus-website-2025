@@ -1,12 +1,12 @@
 .locus-container {
     text-align: center;
     padding: 2rem;
-    background-color: #000; /* Black background */
+    
     color: white;
   }
   
   .locus-title {
-    font-size: 2rem;
+    font-size: 80px;
     font-weight: bold;
     margin-bottom: 1rem;
   }
@@ -18,15 +18,17 @@
   .locus-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 fixed columns */
-    gap: 1rem;
+    gap: 37px;
     justify-items: center;
-    margin: 2rem 0;
+    margin: 52px 0px;
   }
   
   .locus-item {
-    border-radius: 10px;
+    border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 371.01px;
+    max-height: 353.48px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
   }
   
   .locus-image {
@@ -36,7 +38,7 @@
   }
   
   .locus-button {
-    padding: 0.5rem 1.5rem;
+    /* padding: 0.5rem 1.5rem; */
     font-size: 1rem;
     color: white;
     background-color: #00bcd4;

@@ -3,12 +3,12 @@ import "./LocusHighlights.css";
 
 const LocusHighlights = () => {
   const images = [
-    { src: "src/assets/Rectangle 14.svg", alt: "Highlight 1" },
-    { src: "src/assets/Rectangle 14.svg", alt: "Highlight 2" },
-    { src: "src/assets/Rectangle 14.svg", alt: "Highlight 3" },
-    { src: "src/assets/Rectangle 14.svg", alt: "Highlight 4" },
-    { src: "src/assets/Rectangle 14.svg", alt: "Highlight 5" },
-    { src: "src/assets/Rectangle 14.svg", alt: "Highlight 6" },
+    { src: "src/assets/tech-jobs-in-India.webp", alt: "Highlight 1" },
+    { src: "src/assets/tech-jobs-in-India.webp", alt: "Highlight 2" },
+    { src: "src/assets/tech-jobs-in-India.webp", alt: "Highlight 3" },
+    { src: "src/assets/tech-jobs-in-India.webp", alt: "Highlight 4" },
+    { src: "src/assets/tech-jobs-in-India.webp", alt: "Highlight 5" },
+    { src: "src/assets/tech-jobs-in-India.webp", alt: "Highlight 6" },
   ];
 
   return (

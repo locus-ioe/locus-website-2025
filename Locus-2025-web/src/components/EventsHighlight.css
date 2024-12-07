@@ -1,12 +1,16 @@
 .events-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 2rem;
-    background-color: #000; /* Black background */
+    /* padding: 2rem; */
+    
     color: white;
   }
   
   .events-title {
-    font-size: 2rem;
+    font-size: 80px;
     font-weight: bold;
     margin-bottom: 1.5rem;
   }
@@ -18,10 +22,13 @@
   .events-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
-    gap: 1rem;
-    background-color: #00bcd4; /* Turquoise background */
-    padding: 1rem;
-    border-radius: 10px;
+    /* gap: 1rem; */
+    width: 1211px;
+    height: 134px;
+    background-color: #16948E; /* Turquoise background */
+    /* padding: 1rem; */
+    border-radius: 12px;
+    
   }
   
   .event-stat-item {
@@ -30,12 +37,13 @@
   }
   
   .stat-value {
-    font-size: 1.5rem;
+    font-size: 32px;
     font-weight: bold;
+    margin: 20px;
   }
   
   .stat-label {
-    font-size: 1rem;
-    margin-top: 0.5rem;
+    font-size: 20px;
+    /* margin-top: 0.5rem; */
   }
   

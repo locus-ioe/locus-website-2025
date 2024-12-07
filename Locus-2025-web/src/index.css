@@ -58,6 +58,12 @@ button:focus-visible {
   :root {
     color: #ffffff;
     background-color: #000000;
+    background-image: url('src/assets/background.svg'); /* Adjust path as needed */
+    background-size: auto; /* Keeps original image size */
+    background-position: top left; /* Align image to the top-left corner */
+    background-repeat: repeat; /* Repeat both vertically and horizontally */
+    min-height: 100vh; /* Ensure it covers the initial viewport */
+    width: 100%; /* Full width */
   }
   a:hover {
     color: #747bff;

@@ -18,8 +18,8 @@ const AboutLocus = () => {
         <video
           id="about-video"
           className="about-video"
-          src="/path/to/about-video.mp4" // Replace with the actual video path
-          poster="/path/to/video-poster.jpg" // Optional: Replace with a poster image for the video
+          src="src/assets/Locus Exhibition 2021 Promo Video - Pulchowk Campus.mp4" // Replace with the actual video path
+          poster="src/assets/Screenshot from 2024-12-07 18-49-39.png" // Optional: Replace with a poster image for the video
         ></video>
         <button
           id="play-button"

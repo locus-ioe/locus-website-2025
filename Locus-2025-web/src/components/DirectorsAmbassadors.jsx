@@ -10,14 +10,15 @@ const DirectorsAmbassadors = () => {
         className="network-logo"
       />
       <div className="text-content">
-        <h1>
-          Locus <span className="highlight">2025</span> <br />
-          directors and
-        </h1>
-        <h2>
-          Ambassadors are <br />
-          <span className="highlight-secondary">all over country</span>
-        </h2>
+        <div className="text-locus highlight">
+          Locus
+        </div>
+        <div className="text-96">2025</div>
+        <div className="text-96"><span className="highlight">directors</span> <span className="text-64">and</span></div>
+        <div className="text-ambassadors line">
+          Ambassadors <span className="text-64">are</span>
+        </div>
+        <span className=" text-64 line"><span className="highlight">all over </span>country</span>
       </div>
     </div>
   );

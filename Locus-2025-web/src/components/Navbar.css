@@ -1,3 +1,9 @@
+.nav-center{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .navbar {
     display: flex;
     justify-content:space-between;
@@ -5,17 +11,19 @@
     padding: 10px 20px;
     background-color: #53535361;
     border-radius: 50px;
-    
-
+    width: 1200px;
+    height: 80px;
   }
   
   .navbar-logo {
     display: flex;
     align-items: center;
+   
   }
   
   .logo {
-    width: 400px; 
+    width: 268px;
+    /* height: 57px;  */
     margin-right: 10px;
   }
   
@@ -39,7 +47,7 @@
   .navbar-links a {
     text-decoration: none;
     color: #00f2ea;
-    font-size: 16px;
+    font-size: 20px;
     transition: color 0.3s ease;
   }
   

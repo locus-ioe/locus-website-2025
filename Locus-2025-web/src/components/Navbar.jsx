@@ -4,7 +4,7 @@ import logo from '../assets/logo.svg'
 const Navbar = () => {
   return (
     <>
-    {/* <div> */}
+    <div className='nav-center'>
     <nav className="navbar">
       <div className="navbar-logo">
         <img src={logo} alt="Locus 2025 Logo" className="logo" />
@@ -31,7 +31,7 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
-    {/* </div> */}
+    </div>
     </>
   )
 }

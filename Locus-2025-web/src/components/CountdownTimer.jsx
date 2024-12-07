@@ -59,7 +59,7 @@ const CountdownTimer = () => {
           alt="Locus 2025 Logo"
           className="event-logo"
         />
-        <h1 className="event-title">Locus 2025</h1>
+        <h1 className="event-title"><div>Locus</div> <div className="text-2025">2025</div></h1>
         <h3 className="event-subtitle">21st National Technological Festival</h3>
       </div>
     </div>

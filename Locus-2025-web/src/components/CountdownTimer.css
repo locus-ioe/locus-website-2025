@@ -7,21 +7,24 @@
     /* background-color: #121212;  */
     padding: 20px;
     border-radius: 10px;
-    max-width: 500px;
+    /* max-width: 500px; */
     margin: 0 auto;
+    font-family: Merriweather Sans;
   }
   
   .countdown-title {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 29px;
+    font-family: Merriweather Sans;
+    color: #F2F2F2;
   }
   
   .timer-display {
     display: flex;
     justify-content: center;
     gap: 20px;
-    font-size: 24px;
+    font-size: 98px;
+    font-family: Share Tech;
     font-weight: bold;
   }
   
@@ -35,8 +38,9 @@
   .timer-label {
     display: block;
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 18px;
     color: #cccccc;
+    font-family: Merriweather Sans;
   }
   
   .event-details {
@@ -44,17 +48,31 @@
   }
   
   .event-logo {
-    width: 100px;
+    width: 308px;
     height: auto;
   }
   
   .event-title {
-    font-size: 36px;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    font-size: 96px;
     color: #ffffff;
+  }
+
+  .text-2025{
+    color: #48BFBA;
   }
   
   .event-subtitle {
-    font-size: 18px;
-    color: #cccccc;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    font-size: 55px;
+    color: #ffffff;
+    /* width: max-content; */
   }
+
+
+
   

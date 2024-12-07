@@ -10,13 +10,12 @@ const Home = () => {
 
     <div className='home'>
       <Navbar/>
+      {/* <div>hello</div> */}
       <CountdownTimer />
       <AboutLocus />
       <DirectorsAmbassadors />
       <LocusHighlights />
       <EventsHighlight />
-      
-      {/* <div>hello world</div> */}
     </div>
   )
 }

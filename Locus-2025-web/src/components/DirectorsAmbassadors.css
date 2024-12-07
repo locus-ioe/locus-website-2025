@@ -1,0 +1,43 @@
+/* DirectorsAmbassadors.css */
+
+.directors-container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Text color */
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .network-logo {
+    width: 250px; /* Adjust size as needed */
+    margin-bottom: 20px;
+  }
+  
+  .text-content {
+    font-family: "Arial", sans-serif;
+  }
+  
+  .text-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  
+  .text-content h2 {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 1.4;
+  }
+  
+  .highlight {
+    color: #00c7b7; /* Cyan for emphasis */
+  }
+  
+  .highlight-secondary {
+    color: #00c7b7; /* Cyan for secondary emphasis */
+    font-weight: bold;
+  }
+  

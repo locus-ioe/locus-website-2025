@@ -1,0 +1,52 @@
+.locus-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #000; /* Black background */
+    color: white;
+  }
+  
+  .locus-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .locus-title span {
+    color: #00bcd4; /* Locus in turquoise */
+  }
+  
+  .locus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 fixed columns */
+    gap: 1rem;
+    justify-items: center;
+    margin: 2rem 0;
+  }
+  
+  .locus-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .locus-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .locus-button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .locus-button:hover {
+    background-color: #008c9e;
+  }
+  

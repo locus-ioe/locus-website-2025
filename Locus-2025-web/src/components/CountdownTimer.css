@@ -1,0 +1,60 @@
+/* CountdownTimer.css */
+
+.countdown-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    /* background-color: #121212;  */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .countdown-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .timer-display {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .timer-component {
+    background-color: #48BFBA;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .timer-label {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #cccccc;
+  }
+  
+  .event-details {
+    margin-top: 40px;
+  }
+  
+  .event-logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .event-title {
+    font-size: 36px;
+    color: #ffffff;
+  }
+  
+  .event-subtitle {
+    font-size: 18px;
+    color: #cccccc;
+  }
+  

@@ -6,6 +6,7 @@ import DirectorsAmbassadors from '../components/DirectorsAmbassadors'
 import LocusHighlights from '../components/LocusHighlights'
 import EventsHighlight from '../components/EventsHighlight'
 import Events from '../components/Events'
+import Footer from '../components/Footer'
 const Home = () => {
   return (
 
@@ -18,6 +19,7 @@ const Home = () => {
       <LocusHighlights />
       <EventsHighlight />
       <Events />
+      <Footer />
     </div>
   )
 }

@@ -1,7 +1,7 @@
 /* Footer.css */
 
 .footer-container {
-    margin: 0;
+    margin-top: 30px;
     /* width: 100%;  */
    
     background: linear-gradient(to bottom, #0c0c0c, #003333);
@@ -57,23 +57,61 @@
   .footer-center,
   .footer-contact {
     flex: 1;
+    display: flex;
+    justify-content: center;
+
     min-width: 200px;
     margin: 20px;
+    font-size: 36px;
+  }
+  .font-18{
+    font-size: 18px;
+  }
+
+  .first-column{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    margin: 0;
+  }
+  .second-column{
+    display: flex;
+    /* align-items: flex-start; */
+    flex-direction: column;
+  }
+  .third-column{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .third-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
   
   .footer-back {
-    background-color: #00ffcc;
-    color: #000;
+    background-color: #48BFBA;
+    color: #000000;
     padding: 5px 10px;
     border: none;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 41px;
+    font-family: allura;
+    font-size: 24px;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    width: 190px;
+    height: 53px;
+    font-weight:normal
   }
   
   .footer-logo {
-    width: 80px;
+    width: 365px;
+    height: 276px;
     margin: 10px auto;
   }
   
@@ -89,9 +127,9 @@
   }
   
   .footer-made-with {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 14px;
-    color: #777;
+    color: #ffffff;
   }
   
   .footer-contact h4 {
@@ -100,7 +138,7 @@
   }
   
   .social-icons {
-    margin-top: 10px;
+    margin-top: 0px;
   }
   
   .icon {
@@ -116,7 +154,22 @@
   
   .footer-copyright {
     font-size: 14px;
-    margin-top: 30px;
-    color: #666;
+    margin-top: 0px;
+    color: #A0E4E2;
+  }
+  
+  p{
+    margin: 0px;
+  }
+
+  .highlight{
+    color: #A0E4E2;
+  }
+
+  .custom-line {
+    border: none;
+    border-top: 1.7px solid #48BFBA;
+    width: 100%; /* Adjust the width as needed */
+    margin: 10px 0; /* Add some spacing above and below the line */
   }
   

@@ -2,9 +2,9 @@
 
 .footer-container {
     margin-top: 30px;
-    /* width: 100%;  */
+    width: 100%; 
    
-    background: linear-gradient(to bottom, #0c0c0c, #003333);
+    background: linear-gradient(to bottom, #073548, #003333);
     color: #fff;
     text-align: center;
     /* padding: 40px 20px; */
@@ -16,6 +16,7 @@
   }
   .footer-hero {
     margin-bottom: 50px;
+
   }
   
   .footer-title {

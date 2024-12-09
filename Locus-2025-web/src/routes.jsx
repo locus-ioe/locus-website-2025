@@ -1,46 +1,35 @@
 import { lazy, Suspense } from 'react';
+import Layout from './Layout'; // Ensure Layout is correctly imported
 
-// Lazy load page components
+// Lazy load pages
 const Home = lazy(() => import('./pages/Home'));
-// const About = lazy(() => import('@/pages/About'));
-// const Archive = lazy(() => import('@/pages/Archive'));
-// const YearArchive = lazy(() => import('@/pages/YearArchive'));
-// const Resources = lazy(() => import('@/pages/Resources'));
+const Sponsor = lazy(() => import('./pages/Sponsor'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Wrap lazy-loaded components with Suspense
-const withSuspense = (Component) => {
-  return (
-    // we can make a loading spinner to keep fallback here
-    <Suspense >
-      <Component />
-    </Suspense>
-  );
-};
+const withSuspense = (Component) => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <Component />
+  </Suspense>
+);
 
 export const routes = [
   {
     path: '/',
+    element: <Layout />, // Wrapper for all routes
     children: [
       {
         index: true,
-        element: withSuspense(Home),
+        element: withSuspense(Home), // Home page
       },
-      // {
-      //   path: 'about',
-      //   element: withSuspense(About),
-      // },
-      // {
-      //   path: 'archive',
-      //   children: [
-      //     {
-      //       index: true,
-      //       element: withSuspense(Archive),
-      //     },
-    ]
+      {
+        path: 'sponsors', // Relative path for the Sponsor page
+        element: withSuspense(Sponsor), // Sponsor page
+      },
+    ],
   },
   {
     path: '*',
-    element: withSuspense(NotFound),
-  }
+    element: withSuspense(NotFound), // 404 fallback
+  },
 ];

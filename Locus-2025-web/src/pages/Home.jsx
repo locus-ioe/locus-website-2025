@@ -11,7 +11,7 @@ const Home = () => {
   return (
 
     <div className='home'>
-      <Navbar/>
+      {/* <Navbar/> */}
       {/* <div>hello</div> */}
       <CountdownTimer />
       <AboutLocus />
@@ -19,7 +19,7 @@ const Home = () => {
       <LocusHighlights />
       <EventsHighlight />
       <Events />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

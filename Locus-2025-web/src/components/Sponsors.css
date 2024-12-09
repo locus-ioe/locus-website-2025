@@ -1,0 +1,58 @@
+.sponsors-section {
+    text-align: center;
+    /* background-color: #000;  */
+    color: #fff; /* White text */
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .title span {
+    color: #00ffcc; /* Light green for "2025" */
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .sponsor-card {
+    /* background: #fff;  */
+    /* color: #000;  */
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+  }
+  
+  .sponsor-logo {
+    width: 100%; /* Adjust logo size */
+    /* margin-bottom: 10px; */
+  }
+  
+  .sponsor-name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .sponsor-tagline {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* .line{
+    width: 500px;
+  } */

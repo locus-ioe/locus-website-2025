@@ -44,6 +44,9 @@
   }
   
   .event-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 40px;
   }
   
@@ -54,13 +57,18 @@
   
   .event-title {
     display: flex;
-    margin: 0;
+    margin: 0px;
     justify-content: center;
+    
+  }
+
+  .Locus{
     font-size: 96px;
     color: #ffffff;
   }
 
   .text-2025{
+    font-size: 96px;
     color: #48BFBA;
   }
   

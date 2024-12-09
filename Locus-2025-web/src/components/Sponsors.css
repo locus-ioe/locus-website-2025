@@ -6,6 +6,10 @@
   }
   
   .title {
+    display: inline-block;
+    text-align: center; /* Center the text (optional) */
+    margin: 0; /* Remove default margin if needed */
+
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 10px;
@@ -13,6 +17,15 @@
   
   .title span {
     color: #00ffcc; /* Light green for "2025" */
+  }
+
+  .line{
+    border: none; /* Remove default border */
+    height: 1px; /* Thickness of the line */
+    background-color: #E3E3E3; /* Color of the line */
+    width: 100%; /* Match the width of the title container */
+    margin: 5px 0 0; /* Add space between the title and the line */
+  
   }
   
   .subtitle {
@@ -30,7 +43,7 @@
   .sponsor-card {
     /* background: #fff;  */
     /* color: #000;  */
-    width: 200px;
+    max-width: 500px;
     padding: 15px;
     border-radius: 8px;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -53,6 +66,4 @@
     color: #666;
   }
   
-  /* .line{
-    width: 500px;
-  } */
+  

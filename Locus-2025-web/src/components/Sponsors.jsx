@@ -12,8 +12,8 @@ const Sponsors = () => {
     <div className="sponsors-section">
         <div> <h1 className="title">
         Locus <span>2025</span> Sponsors
-       
-      </h1> <hr className="line"/></div>
+        <hr className="line"/>
+      </h1> </div>
      
       <h2 className="subtitle">Title Sponsor</h2>
       <div className="sponsors-grid">

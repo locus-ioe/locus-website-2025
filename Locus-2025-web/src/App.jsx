@@ -1,15 +1,20 @@
-import { useState } from 'react'
+import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { routes } from './routes';
 import './App.css'
-import Home from './pages/Home'
+
+const router = createBrowserRouter(routes, {
+    future: {
+        v7_partialHydration: true,
+    },
+});
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-     <Home />
+      <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

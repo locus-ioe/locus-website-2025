@@ -5,6 +5,7 @@ import Layout from './Layout'; // Ensure Layout is correctly imported
 const Home = lazy(() => import('./pages/Home'));
 const Sponsor = lazy(() => import('./pages/Sponsor'));
 const Contact = lazy(() => import('./pages/Contact'))
+const Events = lazy(() => import('./pages/Event'))
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Wrap lazy-loaded components with Suspense
@@ -30,6 +31,10 @@ export const routes = [
       {
         path: 'contact-us', // Relative path for the Sponsor page
         element: withSuspense(Contact), // Sponsor page
+      },
+      {
+        path: 'events', // Relative path for the Sponsor page
+        element: withSuspense(Events), // Sponsor page
       },
     ],
   },

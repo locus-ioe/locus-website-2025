@@ -20,7 +20,7 @@ const Navbar = () => {
           <a href="#about-us">About Us</a>
         </li>
         <li>
-          <a href="#events">Events</a>
+          <a href="/events">Events</a>
         </li>
         <li>
           <a href="#past-locus">Past Locus</a>

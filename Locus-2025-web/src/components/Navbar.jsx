@@ -30,7 +30,7 @@ const Navbar = () => {
           <a href="/sponsors">Sponsors</a>
         </li>
         <li>
-          <a href="#contact-us">Contact Us</a>
+          <a href="/contact-us">Contact Us</a>
         </li>
       </ul>
     </nav>

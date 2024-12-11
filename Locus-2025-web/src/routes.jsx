@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
-import Layout from "./layout/"; // Ensure Layout is correctly imported
+import Layout from "./layout"; // Ensure Layout is correctly imported
 import AboutUs from "./pages/AboutUs";
+import PastLocusPage from "./pages/PastLocusPage";
 
 // Lazy load pages
 const Home = lazy(() => import("./pages/Home"));
@@ -43,7 +44,7 @@ export const routes = [
       },
       {
         path: "past-locus",
-        element: withSuspense(PastLocus),
+        element: withSuspense(PastLocusPage),
       },
     ],
   },

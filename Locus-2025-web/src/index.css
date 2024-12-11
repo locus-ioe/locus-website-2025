@@ -91,9 +91,6 @@ button:focus-visible {
 }
 
 @media (max-width: 768px) {
-  body {
-    padding: 1rem; 
-  }
   h1 {
     font-size: 1.8em; 
   }
@@ -106,7 +103,6 @@ button:focus-visible {
 @media (max-width: 480px) {
   body {
     flex-direction: column;
-    padding: 1rem;
   }
   h1 {
     font-size: 1.6em;

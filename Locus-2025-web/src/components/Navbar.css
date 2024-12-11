@@ -1,82 +1,57 @@
-.nav-center {
+.nav-center{
   display: flex;
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #53535361;
-  border-radius: 50px;
-  width: 1200px;
-  height: 80px;
-}
-
-.navbar-logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  width: 268px;
-  /* height: 57px;  */
-  margin-right: 10px;
-}
-
-.navbar-title {
-  color: #00f2ea;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.navbar-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-links li {
-  margin: 0 10px;
-}
-
-.navbar-links a {
-  text-decoration: none;
-  color: #00f2ea;
-  font-size: 20px;
-  transition: color 0.3s ease;
-}
-
-
-
-.navbar-links {
-  display: flex;
-  gap: 20px; /* Add space between links */
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-link {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #333;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-.nav-link:hover {
-  background-color: #007bff; 
-  color: #e9ecef; 
-}
-
-.nav-link.active {
-  background-color: #007bff; 
-  color: #fff; 
-  font-weight: 600; 
-  border-radius: 8px; 
-}
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #53535361;
+    border-radius: 50px;
+    width: 1200px;
+    height: 80px;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .logo {
+    width: 268px;
+    /* height: 57px;  */
+    margin-right: 10px;
+  }
+  
+  .navbar-title {
+    color: #00f2ea; 
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0 10px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #00f2ea;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #ffffff;
+  }
+  

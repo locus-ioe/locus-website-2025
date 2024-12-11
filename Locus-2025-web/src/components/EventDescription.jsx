@@ -1,6 +1,7 @@
 import React from 'react'
 import eventimg from '../assets/LAST_DAY_try2.png'
 
+import { FaArrowRight } from "react-icons/fa6";
 
 const event =
 {
@@ -17,6 +18,7 @@ const EventDescription = () => {
       <div className="events-list flex flex-col gap-4 ">
         <h2> <span className='highlight'>Events</span> List</h2>
         <hr />
+
 
         <div className=' mr-20 ml-20 gap-12 flex flex-col p-8 border-2 rounded-xl border-[#00ffcc] bg-[#00ffcc]/5 shadow-lg shadow-white/10'>
 
@@ -55,10 +57,12 @@ const EventDescription = () => {
 
         <div className='flex justify-between mr-20 ml-20'>
           <div></div>
-          <button className='border-white'>
-            Events
+          <button className='border-white flex items-center gap-2'>
+            Events<FaArrowRight />
           </button>
         </div>
+
+
 
         <div className='flex flex-col items-center'>
           <h2> <span className='highlight'>Event</span> Sponsors</h2>

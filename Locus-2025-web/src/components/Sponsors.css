@@ -1,69 +1,90 @@
 .sponsors-section {
-    text-align: center;
-    /* background-color: #000;  */
-    color: #fff; /* White text */
-    padding: 20px;
-  }
-  
-  .title {
-    display: inline-block;
-    text-align: center; /* Center the text (optional) */
-    margin: 0; /* Remove default margin if needed */
+  text-align: center;
+  color: #fff; /* White text */
+  padding: 20px;
+}
 
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .title span {
-    color: #00ffcc; /* Light green for "2025" */
-  }
+.title {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-  .line{
-    border: none; /* Remove default border */
-    height: 1px; /* Thickness of the line */
-    background-color: #E3E3E3; /* Color of the line */
-    width: 100%; /* Match the width of the title container */
-    margin: 5px 0 0; /* Add space between the title and the line */
-  
-  }
-  
-  .subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  
+.title span {
+  color: #00ffcc; /* Light green for "2025" */
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color: #e3e3e3;
+  width: 100%;
+  margin: 5px 0 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default 3 columns */
+  gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.sponsor-card {
+  max-width: 500px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.sponsor-logo {
+  width: 100%;
+}
+
+.sponsor-name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.sponsor-tagline {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Media Query for Medium Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
   .sponsors-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
     gap: 20px;
-    justify-items: center;
   }
-  
+
   .sponsor-card {
-    /* background: #fff;  */
-    /* color: #000;  */
-    max-width: 500px;
-    padding: 15px;
-    border-radius: 8px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    text-align: center;
+    max-width: 400px; /* Slightly smaller card size */
   }
-  
-  .sponsor-logo {
-    width: 100%; /* Adjust logo size */
-    /* margin-bottom: 10px; */
+}
+
+/* Media Query for Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .sponsors-grid {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+    gap: 15px;
   }
-  
-  .sponsor-name {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    font-weight: bold;
+
+  .sponsor-card {
+    max-width: 300px; /* Smaller card size for mobile */
+    padding: 10px;
   }
-  
+
   .sponsor-tagline {
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 0.85rem; /* Smaller font size for tagline */
   }
-  
-  
+}

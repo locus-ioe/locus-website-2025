@@ -10,7 +10,7 @@ const ContactForm = () => {
       </h1>
       <hr className="line"/>
       <form className="contact-form">
-        <h2 className="form-heading">Lets Get Connected Dear!</h2>
+        <h2 className="form-heading">Lets Get Connected !</h2>
 
         <div className="form-group">
           <label className="form-label">Name</label>

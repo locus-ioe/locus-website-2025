@@ -1,60 +1,59 @@
-.main-div{
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
+
 .events-list {
-    text-align: center;
-    color: #ffffff;
-    /* padding: 20px; */
-    max-width: 1226px;
-  }
-  
-  .events-list h2 {
-    font-size: 80px;
-    margin-bottom: 20px;
-  }
-  
-  .highlight{
-    color: #00ffcc; /* Highlighted color for the title */
-  }
-  
-  .events-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(381px, 1fr));
-    gap: 40px;
-    margin-top: 50px;
-  }
-  
-  .event-card {
-    background-color: #1c1c3c; /* Card background color */
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .event-card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .event-details {
-    padding: 15px;
-  }
-  
-  .event-card h3 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-  }
-  
-  .event-card p {
-    font-size: 1rem;
-    color: #bbbbbb; /* Slightly lighter text color for the date */
-  }
-  
-  .event-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  }
-  
+  text-align: center;
+  color: #ffffff;
+  max-width: 1200px;
+}
+
+.events-list h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #00ffcc; /* Highlighted color for the title */
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns */
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.event-card {
+  background-color: #1c1c3c; /* Card background color */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+}
+
+.event-details {
+  padding: 15px;
+}
+
+.event-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.event-card p {
+  font-size: 1rem;
+  color: #bbbbbb; /* Slightly lighter text color for the date */
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}

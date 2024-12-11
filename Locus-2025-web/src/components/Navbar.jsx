@@ -18,7 +18,7 @@ const Navbar = () => {
           </div>
           <ul className="navbar-links">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/locus-website-2025">Home</Link>
             </li>
             <li>
               <Link to="/locus-website-2025/about-us">About Us</Link>

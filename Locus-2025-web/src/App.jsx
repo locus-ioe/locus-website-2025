@@ -1,8 +1,6 @@
 import React from "react";
 import {
   createBrowserRouter,
-  createRoutesFromElements,
-  Route,
   RouterProvider,
 } from "react-router-dom";
 import { routes } from "./routes";
@@ -16,9 +14,7 @@ function App() {
   });
 
   return (
-    <>
-      <RouterProvider router={router} />
-    </>
+    <RouterProvider router={router} />
   );
 }
 

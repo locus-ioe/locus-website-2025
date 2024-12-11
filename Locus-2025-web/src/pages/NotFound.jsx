@@ -8,7 +8,7 @@ const NotFound = () => {
       <p className="text-gray-600 mb-8">
         Oops! The page you are looking for does not exist.
         <br />
-        The page is under development !
+        The page is under development !!!
       </p>
       <Link
         to="/locus-website-2025"

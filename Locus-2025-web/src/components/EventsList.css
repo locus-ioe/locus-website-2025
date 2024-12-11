@@ -28,19 +28,26 @@
 }
 
 .event-card {
+  display: flex;
+  flex-direction: column; /* Ensures content is stacked vertically */
+  justify-content: space-between; /* Distributes content evenly */
+  align-items: center; /* Centers the content inside the card */
   background-color: #1c1c3c; /* Card background color */
   border-radius: 10px;
   overflow: hidden;
+  height: 400px; /* Fixed height for all cards */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-card img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Ensures the image takes up the full width */
+  height: 100%; /* Makes the image fill the card height */
+  object-fit: cover; /* Ensures the image scales properly and does not stretch */
 }
 
 .event-details {
   padding: 15px;
+  text-align: center;
 }
 
 .event-card h3 {
@@ -56,4 +63,16 @@
 .event-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .events-grid {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
 }

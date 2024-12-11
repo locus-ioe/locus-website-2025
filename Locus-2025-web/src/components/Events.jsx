@@ -1,6 +1,9 @@
 import React from 'react';
 import './Events.css'
 import event1 from '../assets/LAST_DAY_try2.png'
+import sf from '../assets/events/sf2025.jpg'
+import hf from '../assets/events/hf2025.jpg'
+import et from '../assets/events/electrotech.jpg'
 
 const events = [
   {
@@ -9,7 +12,7 @@ const events = [
     time: "10AM - 12PM",
     registrationFee: "₹20",
     prizes: ["1st Prize: 1K", "2nd Prize: 500"],
-    image: event1,
+    image: sf,
   },
   {
     title: "SPEED FREAK",
@@ -17,7 +20,7 @@ const events = [
     time: "NA",
     registrationFee: "₹10",
     prizes: ["1st Prize: 1K", "2nd Prize: 500"],
-    image: event1,
+    image: hf,
   },
   {
     title: "CYBER VERSE",
@@ -25,7 +28,7 @@ const events = [
     time: "11AM - 1PM",
     registrationFee: "FREE",
     prizes: ["1st Prize: 1K"],
-    image: event1,
+    image: et,
   },
 ];
 

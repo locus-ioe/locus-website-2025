@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 const Layout = () => (
   <>
     <Navbar />
-    <main>
+    <main >
       <Outlet /> {/* Renders the child routes */}
     </main>
     <Footer />

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Nunito Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -15,6 +15,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Added responsive font size */
+  font-size: 16px;
 }
 
 a {
@@ -30,12 +33,14 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  justify-content: center; 
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden; 
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: clamp(2em, 5vw, 3.2em); 
   line-height: 1.1;
 }
 
@@ -48,10 +53,11 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, transform 0.2s; 
 }
 button:hover {
   border-color: #646cff;
+  transform: scale(1.05); 
 }
 button:focus,
 button:focus-visible {
@@ -60,19 +66,45 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #ffffff;
-    background-color: #000000;
-    background-image: url('src/assets/background.svg'); /* Adjust path as needed */
-    background-size: auto; /* Keeps original image size */
-    background-position: top left; /* Align image to the top-left corner */
-    background-repeat: repeat; /* Repeat both vertically and horizontally */
-    min-height: 100vh; /* Ensure it covers the initial viewport */
-    width: 100%; /* Full width */
+    color: #000000; 
+    background-color: #ffffff; 
+    background-image: url('src/assets/background.svg'); 
+    background-size: cover; 
+    background-position: top left;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
   }
   a:hover {
     color: #747bff;
   }
   button {
     background-color: #f9f9f9;
+    color: #000000; 
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for tablets and smaller screens */
+  h1 {
+    font-size: 2em; 
+  }
+  button {
+    padding: 0.5em 1em; 
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust styles for mobile screens */
+  body {
+    flex-direction: column; 
+    padding: 1rem; 
+  }
+  h1 {
+    font-size: 1.8em; 
+    text-align: center; 
+  }
+  button {
+    width: 100%; 
   }
 }

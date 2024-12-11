@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import Layout from "./Layout"; // Ensure Layout is correctly imported
+import Layout from "./layout/"; // Ensure Layout is correctly imported
 import AboutUs from "./pages/AboutUs";
 
 // Lazy load pages

@@ -1,105 +1,155 @@
 .contact-form-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: #fff;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-title {
+  font-size: 5vw; 
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.contact-title span {
+  color: #00ffcc; 
+}
+
+.line {
+  width: 90%; 
+  max-width: 960px;
+  margin-bottom: 50px;
+}
+
+.contact-form {
+  border: 2px solid rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  background: transparent;
+  width: 100%; 
+  margin: 0 100px; 
+  padding: 28px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  position: relative;
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.form-heading {
+  font-size: 3.5vw;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+  flex: 1;
+}
+
+.form-group-row {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid rgba(58, 43, 43, 0.8); 
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem; 
+  outline: none;
+}
+
+.form-input.small {
+  flex: 1;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.submit-button {
+  display: inline-block;
+  padding: 10px 35px; 
+  background: #000;
+  opacity: 0.8;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+  background: #e00909;
+  color: #000;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .contact-title {
-    
-
-    font-size: 80px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #fff;
-  }
-  
-  .contact-title span {
-    color: #00ffcc; /* Aqua color for "Us" */
+    font-size: 3rem; 
   }
 
-  .line{
-    width: 960px;
-    margin-bottom: 50px;
-  }
-  
-  .contact-form {
-    border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border */
-    border-radius: 10px;
-    width: 1148px;
-    margin: 0 auto;
-    padding: 28px 130px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
-    position: relative;
-  }
-  
   .form-heading {
-    font-size: 45px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #fff;
+    font-size: 2rem;
   }
-  
-  .form-group {
-    margin-bottom: 15px;
-    text-align: left;
-    flex: 1;
-  }
-  
+
   .form-group-row {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-    margin-bottom: 15px;
+    flex-direction: column; 
   }
-  
-  .form-label {
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 5px;
-    display: block;
-  }
-  
-  .form-input {
-    width: 100%;
-    padding: 10px 15px;
-    border: 2px solid rgba(58, 43, 43, 0.8); /* Red border */
-    border-radius: 10px;
-    background: transparent;
-    color: #fff;
-    font-size: 0.95rem;
-    outline: none;
-  }
-  
-  .form-input.small {
-    flex: 1;
-  }
-  
-  .form-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  
+
   .submit-button {
-    display: inline-block;
-    /* width: 50%; */
-    padding: 0px 35px;
-    background: #000;
-    opacity:0.5;
-    color: #fff;
-    font-size: 46px;
-    font-weight: bold;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
+    font-size: 1.5rem; 
+    padding: 10px 20px;
   }
-  
-  .submit-button:hover {
-    background: #e00909;
-    color: #000;
+
+  .line {
+    width: 80%; 
   }
-  
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .form-heading {
+    font-size: 1.5rem;
+  }
+
+  .form-label {
+    font-size: 1rem; 
+  }
+
+  .form-input {
+    font-size: 0.85rem;
+  }
+
+  .submit-button {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+
+  .line {
+    width: 70%; 
+  }
+}

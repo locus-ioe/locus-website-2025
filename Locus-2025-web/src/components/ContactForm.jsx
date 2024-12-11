@@ -1,4 +1,3 @@
-import React from "react";
 import "./ContactForm.css";
 
 const ContactForm = () => {
@@ -13,28 +12,28 @@ const ContactForm = () => {
         <h2 className="form-heading">Lets Get Connected Dear!</h2>
 
         <div className="form-group">
-          <label className="form-label">Name</label>
+          <label className="form-label">NAME</label>
           <input type="text" className="form-input" required />
         </div>
 
         <div className="form-group-row">
           <div className="form-group">
-            <label className="form-label">Semester</label>
+            <label className="form-label">SEMESTER</label>
             <input type="text" className="form-input small" required />
           </div>
           <div className="form-group">
-            <label className="form-label">Department</label>
+            <label className="form-label">DEPARTMENT</label>
             <input type="text" className="form-input small" required />
           </div>
         </div>
 
         <div className="form-group">
-          <label className="form-label">College Name</label>
+          <label className="form-label">COLLEGE NAME</label>
           <input type="text" className="form-input" required />
         </div>
 
         <div className="form-group">
-          <label className="form-label">Phone Number</label>
+          <label className="form-label">PHONE NUMBER</label>
           <input type="tel" className="form-input" required />
         </div>
 

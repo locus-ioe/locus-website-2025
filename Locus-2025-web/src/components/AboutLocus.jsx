@@ -1,4 +1,3 @@
-import React from "react";
 import "./AboutLocus.css"; // Import the CSS for this component
 
 const AboutLocus = () => {

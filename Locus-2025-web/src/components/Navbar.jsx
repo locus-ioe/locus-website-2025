@@ -18,23 +18,22 @@ const Navbar = () => {
           </div>
           <ul className='navbar-links'>
             <li>
-              <a href='/'>Home</a>
+              <Link to='/'>Home</Link>
             </li>
             <li>
-              <a href='/about-us'>About Us</a>
+              <Link to='/about-us'>About</Link>
             </li>
             <li>
-              <a href='/events'>Events</a>
+              <Link to='/events'>Events</Link>
             </li>
             <li>
-              <a href='#past-locus'>Past Locus</a>
+              <Link to='/past-locus'>Past Locus</Link>
             </li>
             <li>
-              {/* <Link to="/contact-us">Sponsors</Link> */}
-              <a href='/sponsors'>Sponsors</a>
+              <Link to='/sponsors'>Sponsors</Link>
             </li>
             <li>
-              <a href='/contact-us'>Contact Us</a>
+              <Link to='/contact-us'>Contact Us</Link>
             </li>
           </ul>
         </nav>

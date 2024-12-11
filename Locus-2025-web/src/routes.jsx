@@ -41,6 +41,10 @@ export const routes = [
         path: "about-us",
         element: withSuspense(AboutUs),
       },
+      {
+        path: "past-locus",
+        element: withSuspense(PastLocus),
+      },
     ],
   },
   {

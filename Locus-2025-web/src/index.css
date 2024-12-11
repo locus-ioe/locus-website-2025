@@ -10,13 +10,19 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  background-image: url('src/assets/background.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  max-width: fit-content;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Added responsive font size */
   font-size: 16px;
 }
 
@@ -33,14 +39,14 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  justify-content: center; 
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 h1 {
-  font-size: clamp(2em, 5vw, 3.2em); 
+  font-size: clamp(2em, 5vw, 3.2em);
   line-height: 1.1;
 }
 
@@ -53,11 +59,11 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s, transform 0.2s; 
+  transition: border-color 0.25s, transform 0.2s;
 }
 button:hover {
   border-color: #646cff;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 button:focus,
 button:focus-visible {
@@ -66,45 +72,37 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #000000; 
-    background-color: #ffffff; 
-    background-image: url('src/assets/background.svg'); 
-    background-size: cover; 
-    background-position: top left;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    width: 100%;
+    color: #000000;
+    background-color: #ffffff;
   }
   a:hover {
     color: #747bff;
   }
   button {
     background-color: #f9f9f9;
-    color: #000000; 
+    color: #000000;
   }
 }
 
 @media (max-width: 768px) {
-  /* Adjust styles for tablets and smaller screens */
   h1 {
-    font-size: 2em; 
+    font-size: 2em;
   }
   button {
-    padding: 0.5em 1em; 
+    padding: 0.5em 1em;
   }
 }
 
 @media (max-width: 480px) {
-  /* Adjust styles for mobile screens */
   body {
-    flex-direction: column; 
-    padding: 1rem; 
+    flex-direction: column;
+    padding: 1rem;
   }
   h1 {
-    font-size: 1.8em; 
-    text-align: center; 
+    font-size: 1.8em;
+    text-align: center;
   }
   button {
-    width: 100%; 
+    width: 100%;
   }
 }

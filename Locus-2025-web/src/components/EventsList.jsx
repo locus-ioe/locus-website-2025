@@ -19,7 +19,8 @@ const EventsList = () => {
       <hr/>
       <div className="events-grid">
         {events.map((event, index) => (
-          <div className="event-card" key={index}>
+          <div className="event-card" key={index}
+          >
             <img src={event.imgSrc} alt={`${event.title} poster`} />
             {/* <div className="event-details">
               <h3>{event.title}</h3>

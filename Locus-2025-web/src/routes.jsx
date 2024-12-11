@@ -8,6 +8,7 @@ const Contact = lazy(() => import('./pages/Contact'))
 const Events = lazy(() => import('./pages/Event'))
 const NotFound = lazy(() => import('./pages/NotFound'));
 
+
 // Wrap lazy-loaded components with Suspense
 const withSuspense = (Component) => (
   <Suspense fallback={<div>Loading...</div>}>

@@ -6,35 +6,34 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className='nav-center'>
-        <nav className='navbar'>
-          <div className='navbar-logo'>
+      <div className="nav-center">
+        <nav className="navbar">
+          <div className="navbar-logo">
             <img
               src={logo}
-              alt='Locus 2025 Logo'
-              className='logo'
+              alt="Locus 2025 Logo"
+              className="logo"
             />
             {/* <span className="navbar-title">LOCUS 2025</span> */}
           </div>
-          <ul className='navbar-links'>
+          <ul className="navbar-links">
             <li>
-              <a href='/'>Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href='/about-us'>About Us</a>
+              <Link to="/locus-website-2025/about-us">About Us</Link>
             </li>
             <li>
-              <a href='/events'>Events</a>
+              <Link to="/locus-website-2025/events">Events</Link>
             </li>
             <li>
-              <a href='#past-locus'>Past Locus</a>
+              <Link to="/locus-website-2025/past-locus">Past Locus</Link>
             </li>
             <li>
-              {/* <Link to="/contact-us">Sponsors</Link> */}
-              <a href='/sponsors'>Sponsors</a>
+              <Link to="/locus-website-2025/sponsors">Sponsors</Link>
             </li>
             <li>
-              <a href='/contact-us'>Contact Us</a>
+              <Link to="/locus-website-2025/contact-us">Contact Us</Link>
             </li>
           </ul>
         </nav>

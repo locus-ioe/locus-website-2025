@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import Layout from "./layout/"; // Ensure Layout is correctly imported
+import Layout from "./Layout"; // Ensure Layout is correctly imported
 import AboutUs from "./pages/AboutUs";
 
 // Lazy load pages
@@ -18,7 +18,8 @@ const withSuspense = (Component) => (
 
 export const routes = [
   {
-    path: "/",
+    path: "/locus-website-2025",
+    // path: "/",
     element: <Layout />, // Wrapper for all routes
     children: [
       {

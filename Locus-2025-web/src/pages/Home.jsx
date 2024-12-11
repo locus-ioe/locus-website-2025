@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 const Home = () => {
   return (
 
-    <div className='home'>
+    <div style={{maxWidth:"1230px"}}>
       {/* <Navbar/> */}
       {/* <div>hello</div> */}
       <CountdownTimer />

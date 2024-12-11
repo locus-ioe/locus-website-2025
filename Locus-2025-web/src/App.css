@@ -1,4 +1,8 @@
 #root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   /* max-width: 2080px; */
   margin: 0 auto;
   /* padding: 2rem; */

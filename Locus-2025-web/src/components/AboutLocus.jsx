@@ -1,5 +1,7 @@
 import React from "react";
 import "./AboutLocus.css"; // Import the CSS for this component
+import locusvideo from '../assets/Locus Exhibition 2021 Promo Video - Pulchowk Campus.mp4'
+import locusvideoimg from '../assets/Screenshot from 2024-12-07 18-49-39.png'
 
 const AboutLocus = () => {
   const handlePlayVideo = () => {
@@ -18,15 +20,15 @@ const AboutLocus = () => {
         <video
           id="about-video"
           className="about-video"
-          src="src/assets/Locus Exhibition 2021 Promo Video - Pulchowk Campus.mp4" // Replace with the actual video path
-          poster="src/assets/Screenshot from 2024-12-07 18-49-39.png" // Optional: Replace with a poster image for the video
+          src={locusvideo} // Replace with the actual video path
+          poster={locusvideoimg}
         ></video>
         <button
           id="play-button"
           className="play-button"
           onClick={handlePlayVideo}
         >
-          ▶
+          ▶    
         </button>
       </div>
       <div className="about-text">

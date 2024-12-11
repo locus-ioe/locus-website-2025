@@ -1,14 +1,15 @@
 import React from "react";
 import "./LocusHighlights.css";
+import highimg from '../assets/tech-jobs-in-India.webp'
 
 const LocusHighlights = () => {
   const images = [
-    { src: "src/assets/tech-jobs-in-India.webp", alt: "Highlight 1" },
-    { src: "src/assets/tech-jobs-in-India.webp", alt: "Highlight 2" },
-    { src: "src/assets/tech-jobs-in-India.webp", alt: "Highlight 3" },
-    { src: "src/assets/tech-jobs-in-India.webp", alt: "Highlight 4" },
-    { src: "src/assets/tech-jobs-in-India.webp", alt: "Highlight 5" },
-    { src: "src/assets/tech-jobs-in-India.webp", alt: "Highlight 6" },
+    { src: highimg, alt: "Highlight 1" },
+    { src: highimg, alt: "Highlight 2" },
+    { src: highimg, alt: "Highlight 3" },
+    { src: highimg, alt: "Highlight 4" },
+    { src: highimg, alt: "Highlight 5" },
+    { src: highimg, alt: "Highlight 6" },
   ];
 
   return (

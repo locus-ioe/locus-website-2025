@@ -1,13 +1,13 @@
 import React from 'react';
 import './EventsList.css';
-
+import eventimg from '../assets/LAST_DAY_try2.png'
 const events = [
-  { title: "VELOCITY", date: "April 4", imgSrc: "src/assets/LAST_DAY_try2.png" },
-  { title: "SPEED FREAK", date: "April 5", imgSrc: "src/assets/LAST_DAY_try2.png" },
-  { title: "CYBER VERSE", date: "April 6", imgSrc: "src/assets/LAST_DAY_try2.png" },
-  { title: "CYBER VERSE", date: "April 6", imgSrc: "src/assets/LAST_DAY_try2.png" },
-  { title: "CYBER VERSE", date: "April 6", imgSrc: "src/assets/LAST_DAY_try2.png" },
-  { title: "CYBER VERSE", date: "April 6", imgSrc: "src/assets/LAST_DAY_try2.png" },
+  { title: "VELOCITY", date: "April 4", imgSrc: eventimg },
+  { title: "SPEED FREAK", date: "April 5", imgSrc: eventimg },
+  { title: "CYBER VERSE", date: "April 6", imgSrc: eventimg },
+  { title: "CYBER VERSE", date: "April 6", imgSrc: eventimg },
+  { title: "CYBER VERSE", date: "April 6", imgSrc: eventimg },
+  { title: "CYBER VERSE", date: "April 6", imgSrc: eventimg },
   // Repeat for all events...
 ];
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./CountdownTimer.css"; // Import the CSS file
-
+import OWNED2 from '../assets/OWNED2 1.svg'
 const CountdownTimer = () => {
   const calculateTimeLeft = () => {
     const targetDate = new Date("2024-12-13T00:00:00"); // Replace with the actual date and time
@@ -55,7 +55,7 @@ const CountdownTimer = () => {
       </div>
       <div className="event-details">
         <img
-          src="src/assets/OWNED2 1.svg" // Replace with the actual logo path
+          src={OWNED2} 
           alt="Locus 2025 Logo"
           className="event-logo"
         />

@@ -1,10 +1,12 @@
 import React from 'react';
 import './Footer.css'; // Include CSS file
+import mountain from '../assets/pngwing 4.svg'
+import footerlogo from '../assets/OWNED2 1.png'
 
 function Footer() {
   return (
     <footer className="footer-container">
-        <div className='image-mountain'><img src="src/assets/pngwing 4.svg" alt="" /></div>
+        <div className='image-mountain'><img src={mountain} alt="" /></div>
       <div className="footer-hero">
         <h2 className="footer-title">Join The Locus Community</h2>
         <p className="footer-description">
@@ -25,7 +27,7 @@ function Footer() {
         </div>
         <div className="footer-center">
         {/* <div > */}
-          <img src="src/assets/OWNED2 1.png" alt="Locus 2025 Logo" className="footer-logo" />
+          <img src={footerlogo} alt="Locus 2025 Logo" className="footer-logo" />
           {/* <h3 className="center-title">LOCUS 2025</h3>
           <p className="center-description">21st National Technological Festival</p> */}
           {/* </div> */}

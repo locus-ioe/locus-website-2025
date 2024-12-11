@@ -1,9 +1,10 @@
 import React from "react";
 import "./Sponsors.css";
+import sponsorimg from '../assets/UI/techaxis-logo 1.png'
 
 const Sponsors = () => {
   const sponsors = Array(9).fill({
-    logo: "src/assets/UI/techaxis-logo 1.png",
+    logo: sponsorimg,
     // name: "TechAxis",
     // tagline: "Learn First To Lead The Rest",
   });

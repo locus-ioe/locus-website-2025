@@ -1,11 +1,12 @@
 import React from "react";
 import "./DirectorsAmbassadors.css";
+import networkimg from '../assets/4.svg'
 
 const DirectorsAmbassadors = () => {
   return (
     <div className="directors-container">
       <img
-        src="src/assets/4.svg" // Replace with the actual image path
+        src={networkimg} // Replace with the actual image path
         alt="Network Logo"
         className="network-logo"
       />

@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  plugins: [react()], //hbdchb
+  plugins: [react()], 
+  base: '/locus-website-2025/',
 })
 

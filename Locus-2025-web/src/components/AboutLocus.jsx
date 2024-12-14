@@ -1,13 +1,22 @@
+<<<<<<< HEAD
+=======
+import React, { useRef } from "react";
+>>>>>>> main
 import "./AboutLocus.css"; // Import the CSS for this component
+import locusvideo from "../assets/Locus Exhibition 2021 Promo Video - Pulchowk Campus.mp4";
+import locusvideoimg from "../assets/Screenshot from 2024-12-07 18-49-39.png";
 
 const AboutLocus = () => {
+  const videoRef = useRef(null);
+  const buttonRef = useRef(null);
+
   const handlePlayVideo = () => {
-    const video = document.getElementById("about-video");
-    if (video) {
-      video.play();
-      video.setAttribute("controls", "controls"); // Add controls once the video is playing
-      const playButton = document.getElementById("play-button");
-      if (playButton) playButton.style.display = "none"; // Hide the play button
+    if (videoRef.current) {
+      videoRef.current.play();
+      videoRef.current.setAttribute("controls", "controls"); // Add controls once the video is playing
+    }
+    if (buttonRef.current) {
+      buttonRef.current.style.display = "none"; // Hide the play button
     }
   };
 
@@ -15,17 +24,17 @@ const AboutLocus = () => {
     <div className="about-section">
       <div className="about-video-container">
         <video
-          id="about-video"
+          ref={videoRef}
           className="about-video"
-          src="src/assets/Locus Exhibition 2021 Promo Video - Pulchowk Campus.mp4" // Replace with the actual video path
-          poster="src/assets/Screenshot from 2024-12-07 18-49-39.png" // Optional: Replace with a poster image for the video
+          src={locusvideo}
+          poster={locusvideoimg}
         ></video>
         <button
-          id="play-button"
+          ref={buttonRef}
           className="play-button"
           onClick={handlePlayVideo}
         >
-          ▶
+          ▶{/* Play symbol */}
         </button>
       </div>
       <div className="about-text">

@@ -1,18 +1,44 @@
+<<<<<<< HEAD
 import './Footer.css'; // Include CSS file
 import { Instagram, Facebook, Phone } from 'lucide-react'; // Import Lucide icons
+=======
+import React from "react";
+import "./Footer.css"; // Include CSS file
+import mountain from "../assets/pngwing 4.svg";
+import footerlogo from "../assets/OWNED2 1.png";
+>>>>>>> main
 
 function Footer() {
+  const handleJoinDiscord = () => {
+    window.open("https://discord.gg/qWwVPgJJdM", "_blank");
+  };
   return (
     <footer className="footer-container">
       <div className="image-mountain">
+<<<<<<< HEAD
         <img src="src/assets/pngwing 4.svg" alt="" />
+=======
+        <img src={mountain} alt="" />
+>>>>>>> main
       </div>
       <div className="footer-hero">
         <h2 className="footer-title">Join The Locus Community</h2>
         <p className="footer-description">
+<<<<<<< HEAD
           Becoming a Locus Community Member is Your Exclusive Ticket to Becoming the Face and Voice of Our Vibrant Academic Community. It&apos;s Not Just a Role, It&apos;s an Opportunity to Share the Dynamic Spirit of Our Campus with the World!
+=======
+          Becoming a Locus Community Member is Your Exclusive Ticket to Becoming
+          the Face and Voice of Our Vibrant Academic Community. It's Not Just a
+          Role, It's an Opportunity to Share the Dynamic Spirit of Our Campus
+          with the World!
+>>>>>>> main
         </p>
-        <button className="footer-button">Join Us on Discord</button>
+        <button
+          onClick={handleJoinDiscord}
+          className="footer-button px-6 py-3 bg-purple-600 text-white font-medium rounded-md hover:bg-purple-700 transition duration-200"
+        >
+          Join Us on Discord
+        </button>
       </div>
       <div className="custom-line"></div>
 
@@ -26,11 +52,19 @@ function Footer() {
           </div>
         </div>
         <div className="footer-center">
+<<<<<<< HEAD
           <img
             src="src/assets/OWNED2 1.png"
             alt="Locus 2025 Logo"
             className="footer-logo"
           />
+=======
+          {/* <div > */}
+          <img src={footerlogo} alt="Locus 2025 Logo" className="footer-logo" />
+          {/* <h3 className="center-title">LOCUS 2025</h3>
+          <p className="center-description">21st National Technological Festival</p> */}
+          {/* </div> */}
+>>>>>>> main
         </div>
         <div className="footer-contact">
           <div className="third-column">
@@ -42,6 +76,7 @@ function Footer() {
               <p className="highlight">Follow Us</p>
               <div className="social-icons">
                 <a href="#" className="icon">
+<<<<<<< HEAD
                   <Instagram size={24} color="#ffffff" />
                 </a>
                 <a href="#" className="icon">
@@ -49,6 +84,15 @@ function Footer() {
                 </a>
                 <a href="#" className="icon">
                   <Phone size={24} color="#ffffff" />
+=======
+                  📸
+                </a>
+                <a href="#" className="icon">
+                  📘
+                </a>
+                <a href="#" className="icon">
+                  📱
+>>>>>>> main
                 </a>
               </div>
             </div>

@@ -2,19 +2,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   width: 100%;
   padding: 1rem; /* Ensure some space on smaller screens */
+=======
+  padding: 20px;
+>>>>>>> main
 }
 
 .events-list {
   text-align: center;
   color: #ffffff;
+<<<<<<< HEAD
   max-width: 1226px;
   padding: 0 20px; /* Horizontal padding */
 }
 
 .events-list h2 {
   font-size: clamp(2rem, 8vw, 4rem); /* Use clamp to make font responsive */
+=======
+  max-width: 1200px;
+}
+
+.events-list h2 {
+  font-size: 3rem;
+>>>>>>> main
   margin-bottom: 20px;
 }
 
@@ -24,6 +36,7 @@
 
 .events-grid {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: repeat(3, 1fr); /* Default 3 columns */
   gap: 40px;
   margin-top: 50px;
@@ -34,16 +47,42 @@
   background-color: #1c1c3c; /* Card background color */
   border-radius: 10px;
   overflow: hidden;
+=======
+  grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns */
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column; /* Ensures content is stacked vertically */
+  justify-content: space-between; /* Distributes content evenly */
+  align-items: center; /* Centers the content inside the card */
+  background-color: #1c1c3c; /* Card background color */
+  border-radius: 10px;
+  overflow: hidden;
+  height: 400px; /* Fixed height for all cards */
+>>>>>>> main
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-card img {
+<<<<<<< HEAD
   width: 100%;
   height: auto;
+=======
+  width: 100%; /* Ensures the image takes up the full width */
+  height: 100%; /* Makes the image fill the card height */
+  object-fit: cover; /* Ensures the image scales properly and does not stretch */
+>>>>>>> main
 }
 
 .event-details {
   padding: 15px;
+<<<<<<< HEAD
+=======
+  text-align: center;
+>>>>>>> main
 }
 
 .event-card h3 {
@@ -61,6 +100,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+<<<<<<< HEAD
 /* Media Query for Medium Screens (max-width: 1024px) */
 @media (max-width: 1024px) {
   .events-grid {
@@ -95,4 +135,16 @@
   .event-card p {
       font-size: 0.85rem; /* Further reduce text size for mobile */
   }
+=======
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .events-grid {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+>>>>>>> main
 }

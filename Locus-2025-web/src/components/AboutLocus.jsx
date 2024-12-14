@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import React, { useRef } from "react";
->>>>>>> main
 import "./AboutLocus.css"; // Import the CSS for this component
 import locusvideo from "../assets/Locus Exhibition 2021 Promo Video - Pulchowk Campus.mp4";
 import locusvideoimg from "../assets/Screenshot from 2024-12-07 18-49-39.png";

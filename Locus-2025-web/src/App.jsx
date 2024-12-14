@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { routes } from './routes';
-import './App.css'
-
-const router = createBrowserRouter(routes, {
-    future: {
-        v7_partialHydration: true,
-    },
-});
-=======
 import React from "react";
 import {
   createBrowserRouter,
@@ -16,7 +5,6 @@ import {
 } from "react-router-dom";
 import { routes } from "./routes";
 import "./App.css";
->>>>>>> main
 
 function App() {
   const router = createBrowserRouter(routes, {

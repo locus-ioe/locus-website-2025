@@ -106,7 +106,7 @@ const Navbar = () => {
               <Link
                 to={item.path}
                 className={`text-lg font-semibold hover:text-[#00f2ea] ${
-                  isScrolled ? "text-white" : "text-[#00f2ea]"
+               "text-[#00f2ea]"
                 }`}
               >
                 {item.title}

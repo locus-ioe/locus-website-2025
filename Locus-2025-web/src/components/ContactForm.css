@@ -12,7 +12,7 @@
   .contact-title {
     
 
-    font-size: 80px;
+    font-size: 5vw;
     font-weight: bold;
     margin-bottom: 30px;
     color: #fff;
@@ -23,22 +23,24 @@
   }
 
   .line{
-    width: 960px;
+    width: 50vw;
     margin-bottom: 50px;
   }
   
   .contact-form {
     border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border */
     border-radius: 10px;
-    width: 1148px;
+    /* width: 1148px; */
+    width: 80vw;
     margin: 0 auto;
-    padding: 28px 130px;
+    /* padding: 28px 130px; */
+    padding: 28px 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
     position: relative;
   }
   
   .form-heading {
-    font-size: 45px;
+    font-size: 3vw;
     font-weight: bold;
     margin-bottom: 20px;
     color: #fff;
@@ -58,7 +60,7 @@
   }
   
   .form-label {
-    font-size: 20px;
+    font-size: 3vw;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 5px;
     display: block;
@@ -90,7 +92,7 @@
     background: #000;
     opacity:0.5;
     color: #fff;
-    font-size: 46px;
+    font-size: 4vw;
     font-weight: bold;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
@@ -103,3 +105,38 @@
     color: #000;
   }
   
+  @media (min-width: 1441px) {
+    /* / Styles for large monitors  */
+}
+  /* Extra Small Devices (Phones)  */
+@media (max-width: 576px) {
+  .contact-title {
+    /* font-size: 50px; */
+    margin-bottom: 5px;
+  }
+  .line{
+    margin-bottom: 20px;
+  }
+  .form-heading {
+    /* font-size: 25px; */
+    margin-bottom: 5px;
+   
+  }
+}
+
+/* / Small Devices (Tablets) / */
+@media (min-width: 577px) and (max-width: 768px) {
+    /* / Styles for tablets / */
+}
+
+/* / Medium Devices (Small Laptops) / */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* / Styles for small laptops / */
+}
+
+/* / Large Devices (Desktops) / */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* / Styles for desktops / */
+}
+
+

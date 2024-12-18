@@ -20,9 +20,9 @@ const EventDescription = () => {
         <hr />
 
 
-        <div className=' mr-20 ml-20 gap-12 flex flex-col p-8 border-2 rounded-xl border-[#00ffcc] bg-[#00ffcc]/5 shadow-lg shadow-white/10'>
+        <div className='mr-8 ml-8 lg:mr-20 lg:ml-20 gap-12 flex flex-col p-8 border-2 rounded-xl border-[#00ffcc] bg-[#00ffcc]/5 shadow-lg shadow-white/10'>
 
-          <div className=' flex flex-row gap-8 '>
+          <div className=' flex flex-col lg:flex-row gap-8 '>
             <div className='flex-[0.25] event-poster flex flex-col items-center gap-4'>
               <img src={event.imgSrc} className='w-60 h-60 border-2 rounded-lg' />
 
@@ -49,13 +49,13 @@ const EventDescription = () => {
             </div>
           </div>
           <div className='flex justify-around'>
-            <span className='font-bold'>+91 9876543210</span>
-            <span className='font-bold'>www.velocity.com</span>
+            <span className='font-bold text-[8px] md:text-[16px] sm:text-[12px]'>+91 9876543210</span>
+            <span className='font-bold text-[8px] md:text-[16px] sm:text-[12px]'>www.velocity.com</span>
 
           </div>
         </div>
 
-        <div className='flex justify-between mr-20 ml-20'>
+        <div className='flex justify-between mr-8 ml-8 lg:mr-20 lg:ml-20'>
           <div></div>
           <button className='border-white flex items-center gap-2'>
             Events<FaArrowRight />
@@ -64,8 +64,8 @@ const EventDescription = () => {
 
 
 
-        <div className='flex flex-col items-center'>
-          <h2> <span className='highlight'>Event</span> Sponsors</h2>
+        <div className='flex flex-col items-center mr-8 ml-8 lg:mr-20 lg:ml-20'>
+          <h2 > <span className='highlight'>Event</span> Sponsors</h2>
           <img src={eventimg} className='w-28' />
         </div>
 

@@ -20,22 +20,6 @@ const EventsList = () => {
   return (
     <div className='main-div'>
       <div className="events-list">
-<<<<<<< HEAD
-      <h2> <span className='highlight'>Events</span> List</h2>
-      <hr/>
-      <div className="events-grid">
-        {events.map((event, index) => (
-          <div className="event-card" key={index}
-          >
-            <img src={event.imgSrc} alt={`${event.title} poster`} />
-            {/* <div className="event-details">
-              <h3>{event.title}</h3>
-              <p>{event.date}</p>
-            </div> */}
-          </div>
-        ))}
-      </div>
-=======
         <h2><span className='highlight'>Events</span> List</h2>
         <hr />
         <div className="events-grid">
@@ -49,7 +33,6 @@ const EventsList = () => {
             </div>
           ))}
         </div>
->>>>>>> f4909d2bc49aab91026f836bd4dfc3c71cc76ec0
       </div>
     </div>
   );

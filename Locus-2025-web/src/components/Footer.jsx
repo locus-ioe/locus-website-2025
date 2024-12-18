@@ -27,7 +27,7 @@ function Footer() {
           Join Us on Discord
         </button>
       </div>
-      <div class="custom-line"></div>
+      <div className="custom-line"></div>
 
       <div className="footer-info">
         <div className="footer-location">
@@ -68,7 +68,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div class="custom-line"></div>
+      <div className="custom-line"></div>
 
       <div className="footer-made-with">Made with ❤️ by LOST</div>
       <div className="footer-copyright">

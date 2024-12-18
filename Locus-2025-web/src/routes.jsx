@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import Layout from "./Layout.jsx"; 
 import AboutUs from "./pages/AboutUs.jsx";
 import PastLocusPage from "./pages/PastLocusPage.jsx";
+import EventDescription from "./components/EventDescription.jsx";
 
 // Lazy load pages
 const Home = lazy(() => import("./pages/Home"));
@@ -9,6 +10,7 @@ const Sponsor = lazy(() => import("./pages/Sponsor"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Events = lazy(() => import("./pages/Event"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+
 
 
 // Wrap lazy-loaded components with Suspense
@@ -43,6 +45,10 @@ export const routes = [
       {
         path: "about-us",
         element: withSuspense(AboutUs),
+      },
+      {
+        path: "event/:id",
+        element: withSuspense(EventDescription),
       },
       // {
       //   path: "past-locus",

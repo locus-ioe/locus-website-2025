@@ -6,14 +6,15 @@ import hf from '../assets/events/hf2025.jpg'
 import et from '../assets/events/electrotech.jpg'
 import lostcomittee from '../assets/events/lostcommittee.jpg'
 import research from '../assets/events/research.jpg'
+import { Link } from 'react-router-dom';
 
 const events = [
-  { title: "VELOCITY", date: "April 4", imgSrc: lostcomittee },
-  { title: "SPEED FREAK", date: "April 5", imgSrc: research },
-  { title: "CYBER VERSE", date: "April 6", imgSrc: et },
-  { title: "CYBER VERSE", date: "April 6", imgSrc: sf },
-  { title: "CYBER VERSE", date: "April 6", imgSrc: zerone },
-  { title: "CYBER VERSE", date: "April 6", imgSrc: hf },
+  { id: 1, title: "VELOCITY", date: "April 4", imgSrc: lostcomittee },
+  { id: 1, title: "SPEED FREAK", date: "April 5", imgSrc: research },
+  { id: 1, title: "CYBER VERSE", date: "April 6", imgSrc: et },
+  { id: 1, title: "CYBER VERSE", date: "April 6", imgSrc: sf },
+  { id: 1, title: "CYBER VERSE", date: "April 6", imgSrc: zerone },
+  { id: 6, title: "CYBER VERSE", date: "April 6", imgSrc: hf },
 ];
 
 const EventsList = () => {
@@ -24,13 +25,16 @@ const EventsList = () => {
         <hr />
         <div className="events-grid">
           {events.map((event, index) => (
+            <Link to={`/locus-website-2025/event/${event.id}`}>
             <div className="event-card" key={index}>
+              
               <img src={event.imgSrc} alt={`${event.title} poster`} />
+             
               {/* <div className="event-details">
                 <h3>{event.title}</h3>
                 <p>{event.date}</p>
               </div> */}
-            </div>
+            </div> </Link>
           ))}
         </div>
       </div>

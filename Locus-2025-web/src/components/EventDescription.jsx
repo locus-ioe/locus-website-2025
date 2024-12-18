@@ -1,17 +1,48 @@
 import React from 'react'
 import eventimg from '../assets/LAST_DAY_try2.png'
+import { useParams } from 'react-router-dom';
 
 
-const event =
-{
-  title: "VELOCITY", date: "April 4, 2024", imgSrc: eventimg, price: "30/-", winner: 1500, runnerup: 1000,
+// const events =
+// {
+//   title: "VELOCITY", date: "April 4, 2024", imgSrc: eventimg, price: "30/-", winner: 1500, runnerup: 1000,
+//   time: "9:00 AM - 5:00 PM",
+//   mode:"Offline", type:"Individual",
+//   description: "Velocity is a national level tvents like pap includes workshops and guest lectures by eminent personalities from the industry. The symposium is a great opportunity for students to learn and explore the latest trends in the field of mechanical engineering.",
+//   rules: "1. Participants "
+// };
+const events = [
+  {
+    id: 1,
+    title: "VELOCITY", date: "April 4, 2024", imgSrc: eventimg, price: "30/-", winner: 1500, runnerup: 1000,
   time: "9:00 AM - 5:00 PM",
   mode:"Offline", type:"Individual",
   description: "Velocity is a national level tvents like pap includes workshops and guest lectures by eminent personalities from the industry. The symposium is a great opportunity for students to learn and explore the latest trends in the field of mechanical engineering.",
   rules: "1. Participants "
-};
-
+  },
+  {
+    id: 2,
+    title: "VELOCITY",
+    date: "April 4, 2024",
+    imgSrc: eventimg,
+    price: "30/-",
+    winner: 1500,
+    runnerup: 1000,
+    time: "9:00 AM - 5:00 PM",
+    mode: "Offline",
+    type: "Individual",
+    description: "Velocity is a national level tvents...",
+    rules: "1. Participants ..."
+  },
+  // Add the rest of your events here...
+];
 const EventDescription = () => {
+   const { id } = useParams();
+  const event = events.find((event) => event.id === parseInt(id));
+
+  if (!event) {
+    return <div>Event not found</div>;
+  }
   return (
     <div className='main-div '>
       <div className="events-list flex flex-col gap-4 ">

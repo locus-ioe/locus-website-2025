@@ -88,12 +88,12 @@ const Sponsors = () => {
             </h2>
           </div>
 
-          {/* Sponsors List (One in Each Row) */}
-          <div className="space-y-8">
+          {/* Responsive Sponsors Grid */}
+          <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
             {groupedSponsors[tier].map((sponsor, idx) => (
               <div
                 key={idx}
-                className="bg-gray-800 rounded-lg p-6 w-full max-w-4xl mx-auto shadow-lg hover:shadow-2xl transition-transform hover:scale-105 duration-300 flex flex-col sm:flex-row items-center"
+                className="bg-gray-800 rounded-lg p-6 w-full shadow-lg hover:shadow-2xl transition-transform hover:scale-105 duration-300 flex flex-col sm:flex-row items-center"
               >
                 <a
                   href={sponsor.link}

@@ -11,19 +11,26 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Events = lazy(() => import("./pages/Event"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
+// Wrap lazy-loaded components with Suspense and a loading spinner
+const LoadingSpinner = () => {
+  return (
+    <div className="flex justify-center items-center h-screen">
+      <div className="border-8 border-t-8 border-gray-200 border-t-blue-500 rounded-full w-32 h-32 animate-spin"></div>
+    </div>
+  );
+};
 
 
-// Wrap lazy-loaded components with Suspense
-const withSuspense = (Component) => (
-  <Suspense fallback={<div>Loading...</div>}>
-    <Component />
-  </Suspense>
-);
-
+const withSuspense = (Component) => {
+  return (
+    <Suspense fallback={<LoadingSpinner />}>
+      <Component />
+    </Suspense>
+  );
+};
 export const routes = [
   {
     path: "/",
-    // path: "/",
     element: <Layout />, // Wrapper for all routes
     children: [
       {

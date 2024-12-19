@@ -59,7 +59,7 @@ export default function Events() {
           </div>
         ))}
       </div>
-      <Link href="/events" className="inline-block px-6 py-2 text-white bg-[#00bcd4] rounded hover:bg-[#008c9e] transition-colors duration-300">
+      <Link to="/events" className="inline-block px-6 py-2 text-white bg-[#00bcd4] rounded hover:bg-[#008c9e] transition-colors duration-300">
         Show More
       </Link>
     </div>

@@ -1,6 +1,14 @@
+import React from 'react';
+
 export default function Contact() {
+  const submitHandler = (event) => {
+    event.preventDefault();
+    // Add your form submission logic here
+  };
+
   return (
-    <div className="w-full max-w-2xl mx-auto p-6 ">
+    <div className="w-full max-w-2xl mx-auto p-6">
+      <div className="border-white border-2 px-16 py-8 rounded-md shadow-md bg-black/10 backdrop-blur-sm">
       <div className="text-center mb-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-2">
           <span className="text-teal-400">Contact</span>{" "}
@@ -8,7 +16,7 @@ export default function Contact() {
         </h1>
       </div>
 
-      <form className="space-y-6">
+      <form className="space-y-6" onSubmit={submitHandler}>
         <div className="space-y-2">
           <label htmlFor="name" className="block text-white text-sm font-medium">
             NAME
@@ -17,7 +25,7 @@ export default function Contact() {
             type="text"
             id="name"
             name="name"
-            className="w-full px-3 py-2 bg-transparent border border-teal-400/20 focus:border-teal-400 text-white rounded-md outline-none shadow-[0_0_10px_rgba(79,209,197,0.1)] focus:shadow-[0_0_15px_rgba(79,209,197,0.2)]"
+            className="w-full px-3 py-2 bg-transparent border border-primary focus:border-teal-400 text-white rounded-md outline-none shadow-[0_0_10px_rgba(79,209,197,0.1)] focus:shadow-[0_0_15px_rgba(79,209,197,0.2)]"
           />
         </div>
 
@@ -30,7 +38,7 @@ export default function Contact() {
               type="text"
               id="semester"
               name="semester"
-              className="w-full px-3 py-2 bg-transparent border border-teal-400/20 focus:border-teal-400 text-white rounded-md outline-none shadow-[0_0_10px_rgba(79,209,197,0.1)] focus:shadow-[0_0_15px_rgba(79,209,197,0.2)]"
+              className="w-full px-3 py-2 bg-transparent border  border-primary focus:border-teal-400 text-white rounded-md outline-none shadow-[0_0_10px_rgba(79,209,197,0.1)] focus:shadow-[0_0_15px_rgba(79,209,197,0.2)]"
             />
           </div>
           <div className="space-y-2">
@@ -41,7 +49,7 @@ export default function Contact() {
               type="text"
               id="department"
               name="department"
-              className="w-full px-3 py-2 bg-transparent border border-teal-400/20 focus:border-teal-400 text-white rounded-md outline-none shadow-[0_0_10px_rgba(79,209,197,0.1)] focus:shadow-[0_0_15px_rgba(79,209,197,0.2)]"
+              className="w-full px-3 py-2 bg-transparent border  border-primary focus:border-teal-400 text-white rounded-md outline-none shadow-[0_0_10px_rgba(79,209,197,0.1)] focus:shadow-[0_0_15px_rgba(79,209,197,0.2)]"
             />
           </div>
         </div>
@@ -54,7 +62,7 @@ export default function Contact() {
             type="text"
             id="college"
             name="college"
-            className="w-full px-3 py-2 bg-transparent border border-teal-400/20 focus:border-teal-400 text-white rounded-md outline-none shadow-[0_0_10px_rgba(79,209,197,0.1)] focus:shadow-[0_0_15px_rgba(79,209,197,0.2)]"
+            className="w-full px-3 py-2 bg-transparent border  border-primary focus:border-teal-400 text-white rounded-md outline-none shadow-[0_0_10px_rgba(79,209,197,0.1)] focus:shadow-[0_0_15px_rgba(79,209,197,0.2)]"
           />
         </div>
 
@@ -66,7 +74,7 @@ export default function Contact() {
             type="tel"
             id="phone"
             name="phone"
-            className="w-full px-3 py-2 bg-transparent border border-teal-400/20 focus:border-teal-400 text-white rounded-md outline-none shadow-[0_0_10px_rgba(79,209,197,0.1)] focus:shadow-[0_0_15px_rgba(79,209,197,0.2)]"
+            className="w-full px-3 py-2 bg-transparent border  border-primary focus:border-teal-400 text-white rounded-md outline-none shadow-[0_0_10px_rgba(79,209,197,0.1)] focus:shadow-[0_0_15px_rgba(79,209,197,0.2)]"
           />
         </div>
 
@@ -77,6 +85,7 @@ export default function Contact() {
           Submit
         </button>
       </form>
+      </div>
     </div>
   )
 }

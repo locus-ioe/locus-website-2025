@@ -1,11 +1,11 @@
 import React from 'react';
 import './EventsList.css';
-import zerone from '/events/zerone.jpg';
-import sf from '/events/sf2025.jpg'
-import hf from '/events/hf2025.jpg'
-import et from '/events/electrotech.jpg'
-import lostcomittee from '/events/lostcommittee.jpg'
-import research from '/events/research.jpg'
+import zerone from '/assets/events/zerone.jpg';
+import sf from '/assets/events/sf2025.jpg'
+import hf from '/assets/events/hf2025.jpg'
+import et from '/assets/events/electrotech.jpg'
+import lostcomittee from '/assets/events/lostcommittee.jpg'
+import research from '/assets/events/research.jpg'
 
 const events = [
   { title: "VELOCITY", date: "April 4", imgSrc: lostcomittee },

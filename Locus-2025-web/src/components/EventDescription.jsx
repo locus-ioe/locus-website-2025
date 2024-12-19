@@ -1,110 +1,126 @@
-import React from 'react'
-import eventimg from '../assets/LAST_DAY_try2.png'
-import { useParams } from 'react-router-dom';
-
+import React from 'react';
+import { useParams, Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa6";
+import { events } from '../data/eventDetails';
 
-// const events =
-// {
-//   title: "VELOCITY", date: "April 4, 2024", imgSrc: eventimg, price: "30/-", winner: 1500, runnerup: 1000,
-//   time: "9:00 AM - 5:00 PM",
-//   mode:"Offline", type:"Individual",
-//   description: "Velocity is a national level tvents like pap includes workshops and guest lectures by eminent personalities from the industry. The symposium is a great opportunity for students to learn and explore the latest trends in the field of mechanical engineering.",
-//   rules: "1. Participants "
-// };
-const events = [
-  {
-    id: 1,
-    title: "VELOCITY", date: "April 4, 2024", imgSrc: eventimg, price: "30/-", winner: 1500, runnerup: 1000,
-  time: "9:00 AM - 5:00 PM",
-  mode:"Offline", type:"Individual",
-  description: "Velocity is a national level tvents like pap includes workshops and guest lectures by eminent personalities from the industry. The symposium is a great opportunity for students to learn and explore the latest trends in the field of mechanical engineering.",
-  rules: "1. Participants "
-  },
-  {
-    id: 2,
-    title: "VELOCITY",
-    date: "April 4, 2024",
-    imgSrc: eventimg,
-    price: "30/-",
-    winner: 1500,
-    runnerup: 1000,
-    time: "9:00 AM - 5:00 PM",
-    mode: "Offline",
-    type: "Individual",
-    description: "Velocity is a national level tvents...",
-    rules: "1. Participants ..."
-  },
-  // Add the rest of your events here...
-];
 const EventDescription = () => {
-   const { id } = useParams();
+  const { id } = useParams();
   const event = events.find((event) => event.id === parseInt(id));
-
+  
   if (!event) {
-    return <div>Event not found</div>;
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[50vh] gap-4">
+        <h2 className="text-2xl text-white font-bold">Event not found</h2>
+        <Link 
+          to="/events" 
+          className="text-[#00ffcc] hover:text-white flex items-center gap-2 transition-colors"
+        >
+          Return to Events <FaArrowRight />
+        </Link>
+      </div>
+    );
   }
-  return (
-    <div className='main-div '>
-      <div className="events-list flex flex-col gap-4 ">
-        <h2> <span className='highlight'>Events</span> List</h2>
-        <hr />
 
+  const isWorkshop = event.type === "Workshop Series";
+  const hasPrizes = event.winner && event.runnerup;
 
-        <div className='mr-8 ml-8 lg:mr-20 lg:ml-20 gap-12 flex flex-col p-8 border-2 rounded-xl border-[#00ffcc] bg-[#00ffcc]/5 shadow-lg shadow-white/10'>
-
-          <div className=' flex flex-col lg:flex-row gap-8 '>
-            <div className='flex-[0.25] event-poster flex flex-col items-center gap-4'>
-              <img src={event.imgSrc} className='w-60 h-60 border-2 rounded-lg' />
-
-              <button className='text-[24px] border-2 w-full py-2 bg-[#00ffcc]/10 hover:bg-black/50 rounded-lg border-[#00ffcc] font-bold '> REGISTER <span>{event.price}</span></button>
-
-            </div>
-            <div className='flex-[0.75] flex flex-col gap-2'>
-              <h1 className='text-[24px] font-bold text-justify'>{event.title}</h1>
-              <div className='bg-black/30 border-2 p-4 rounded-lg border-[#00ffcc] font-bold flex flex-row justify-around'>
-                <span >{event.winner} </span>
-                <span >| </span>
-                <span> {event.runnerup} </span>
-              </div>
-              <span className='bg-black/30 border-2 p-4 rounded-lg border-[#00ffcc] text-justify'>{event.date} | {event.time}</span>
-              <div className='flex justify-between'>
-
-              <span className='bg-black/30 border-2 p-4 rounded-lg border-[#00ffcc] text-justify'>{event.mode}</span>
-              <span className='bg-black/30 border-2 p-4 rounded-lg border-[#00ffcc] text-justify'>{event.type}</span>
-
-              </div>
-              <h3 className='text-justify'>{event.description}</h3>
-              <h3 className='text-justify font-bold text-lg'>Rules and Regulations:</h3>
-              <h3 className='text-justify'>{event.rules}</h3>
-            </div>
-          </div>
-          <div className='flex justify-around'>
-            <span className='font-bold text-[8px] md:text-[16px] sm:text-[12px]'>+91 9876543210</span>
-            <span className='font-bold text-[8px] md:text-[16px] sm:text-[12px]'>www.velocity.com</span>
-
-          </div>
+  const EventHeader = () => (
+    <div className="flex flex-col gap-4">
+      <h1 className="text-2xl md:text-3xl font-bold">{event.title}</h1>
+      <div className="flex flex-wrap gap-4">
+        <span className="bg-black/30 border-2 px-4 py-2 rounded-lg border-[#00ffcc]">
+          {event.date} | {event.time}
+        </span>
+        <div className="flex gap-4">
+          <span className="bg-black/30 border-2 px-4 py-2 rounded-lg border-[#00ffcc]">
+            {event.mode}
+          </span>
+          <span className="bg-black/30 border-2 px-4 py-2 rounded-lg border-[#00ffcc]">
+            {event.type}
+          </span>
         </div>
-
-        <div className='flex justify-between mr-8 ml-8 lg:mr-20 lg:ml-20'>
-          <div></div>
-          <button className='border-white flex items-center gap-2'>
-            Events<FaArrowRight />
-          </button>
-        </div>
-
-
-
-        <div className='flex flex-col items-center mr-8 ml-8 lg:mr-20 lg:ml-20'>
-          <h2 > <span className='highlight'>Event</span> Sponsors</h2>
-          <img src={eventimg} className='w-28' />
-        </div>
-
-
       </div>
     </div>
+  );
 
-  )
-}
+  const PrizePool = () => (
+    hasPrizes && (
+      <div className="bg-black/30 border-2 p-4 rounded-lg border-[#00ffcc] font-bold">
+        <div className="flex flex-wrap justify-around gap-4">
+          <span>Winner: ₹{event.winner}</span>
+          <span className="hidden md:inline">|</span>
+          <span>Runner-up: ₹{event.runnerup}</span>
+        </div>
+      </div>
+    )
+  );
 
-export default EventDescription
+  return (
+    <div className="max-w-7xl mx-auto px-4 py-8">
+      <div className="flex flex-col gap-8">
+        <h2 className="text-2xl font-bold">
+          <span className="text-[#00ffcc]">Events</span> List
+        </h2>
+        <hr className="border-[#00ffcc]/30" />
+
+        <div className="border-2 rounded-xl border-[#00ffcc] bg-[#00ffcc]/5 shadow-lg shadow-white/10 p-6 md:p-8">
+          <div className="flex flex-col lg:flex-row gap-8">
+            {/* Event Image and Registration */}
+            <div className="lg:w-1/4 flex flex-col items-center gap-4">
+              <img
+                src={event.imgSrc}
+                className="w-60 h-60 border-2 rounded-lg object-cover"
+                alt={event.title}
+              />
+              <button className="w-full py-2 px-4 text-lg md:text-xl border-2 bg-[#00ffcc]/10 hover:bg-black/50 rounded-lg border-[#00ffcc] font-bold transition-colors">
+                REGISTER {event.price !== "Free" && <span>{event.price}</span>}
+              </button>
+            </div>
+
+            {/* Event Details */}
+            <div className="lg:w-3/4 flex flex-col gap-6">
+              <EventHeader />
+              <PrizePool />
+              
+              <div className="space-y-4">
+                <p className="whitespace-pre-line">{event.description}</p>
+                <h3 className="font-bold text-lg mt-6">
+                  {isWorkshop ? 'Workshop Guidelines:' : 'Rules and Regulations:'}
+                </h3>
+                <p className="whitespace-pre-line">{event.rules}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-around mt-8 text-sm md:text-base font-bold">
+            <span>+91 9876543210</span>
+            <span>www.locus.com</span>
+          </div>
+        </div>
+
+        {/* Navigation and Sponsors */}
+        <div className="flex justify-end">
+          <Link 
+            to="/events" 
+            className="flex items-center gap-2 text-[#00ffcc] hover:text-white transition-colors"
+          >
+            Back to Events <FaArrowRight />
+          </Link>
+        </div>
+
+        <div className="flex flex-col items-center gap-4">
+          <h2 className="text-2xl font-bold">
+            <span className="text-[#00ffcc]">Event</span> Sponsors
+          </h2>
+          <img 
+            src={event.imgSrc} 
+            className="w-28 mt-4" 
+            alt="Event sponsor" 
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default EventDescription;

@@ -1,11 +1,11 @@
 import React from 'react';
 import './EventsList.css';
-import zerone from '../assets/events/zerone.jpg';
-import sf from '../assets/events/sf2025.jpg'
-import hf from '../assets/events/hf2025.jpg'
-import et from '../assets/events/electrotech.jpg'
-import lostcomittee from '../assets/events/lostcommittee.jpg'
-import research from '../assets/events/research.jpg'
+import zerone from '/assets/events/zerone.jpg';
+import sf from '/assets/events/sf2025.jpg'
+import hf from '/assets/events/hf2025.jpg'
+import et from '/assets/events/electrotech.jpg'
+import lostcomittee from '/assets/events/lostcommittee.jpg'
+import research from '/assets/events/research.jpg'
 import { Link } from 'react-router-dom';
 
 const events = [

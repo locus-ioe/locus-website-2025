@@ -2,9 +2,9 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 // Assuming these images are in the public folder
-const sf = '/events/sf2025.jpg';
-const hf = '/events/hf2025.jpg';
-const et = '/events/electrotech.jpg';
+const sf = '/assets/events/sf2025.jpg';
+const hf = '/assets/events/hf2025.jpg';
+const et = '/assets/events/electrotech.jpg';
 
 const events = [
   {
@@ -47,7 +47,7 @@ export default function Events() {
               height={214} 
               className="w-full rounded-lg"
             />
-            <h2 className="text-[#ff66c4] text-2xl my-2">{event.title}</h2>
+            {/* <h2 className="text-primary text-2xl my-2">{event.title}</h2>
             <p className="text-base my-1">{event.date}</p>
             <p className="text-base my-1">{event.time}</p>
             <p className="text-base my-1">Registration Fee: {event.registrationFee}</p>
@@ -55,7 +55,7 @@ export default function Events() {
               {event.prizes.map((prize, i) => (
                 <li key={i} className="my-1">{prize}</li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         ))}
       </div>

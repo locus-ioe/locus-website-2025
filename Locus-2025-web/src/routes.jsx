@@ -57,10 +57,10 @@ export const routes = [
         path: "event/:id",
         element: withSuspense(EventDescription),
       },
-      // {
-      //   path: "past-locus",
-      //   element: withSuspense(PastLocusPage),
-      // },
+      {
+        path: "past-locus",
+        element: withSuspense(PastLocusPage),
+      },
     ],
   },
   {

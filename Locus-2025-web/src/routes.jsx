@@ -22,7 +22,7 @@ const withSuspense = (Component) => (
 
 export const routes = [
   {
-    path: "/locus-website-2025",
+    path: "/",
     // path: "/",
     element: <Layout />, // Wrapper for all routes
     children: [

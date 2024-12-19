@@ -18,12 +18,12 @@ const Navbar = () => {
   const hamburgerRef = useRef(null); // Reference for the hamburger button
 
   const navItems = [
-    { title: "Home", path: "/locus-website-2025" },
-    { title: "About Us", path: "/locus-website-2025/about-us" },
-    { title: "Events", path: "/locus-website-2025/events" },
-    { title: "Past Locus", path: "/locus-website-2025/past-locus" },
-    { title: "Sponsors", path: "/locus-website-2025/sponsors" },
-    { title: "Contact Us", path: "/locus-website-2025/contact-us" },
+    { title: "Home", path: "/" },
+    { title: "About Us", path: "/about-us" },
+    { title: "Events", path: "/events" },
+    { title: "Past Locus", path: "/past-locus" },
+    { title: "Sponsors", path: "/sponsors" },
+    { title: "Contact Us", path: "/contact-us" },
   ];
 
   const handleToggleMenu = () => {

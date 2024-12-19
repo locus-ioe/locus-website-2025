@@ -25,7 +25,7 @@ const EventsList = () => {
         <hr />
         <div className="events-grid">
           {events.map((event, index) => (
-            <Link to={`/locus-website-2025/event/${event.id}`}>
+            <Link to={`/event/${event.id}`}>
             <div className="event-card" key={index}>
               
               <img src={event.imgSrc} alt={`${event.title} poster`} />

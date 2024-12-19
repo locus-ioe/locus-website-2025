@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()], 
-  base: '/locus-website-2025/',
+  base: '/',
 })
 

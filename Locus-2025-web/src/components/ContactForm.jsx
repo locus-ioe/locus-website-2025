@@ -3,11 +3,12 @@ import "./ContactForm.css";
 const ContactForm = () => {
   return (
     <div className="contact-form-section">
-      <h1 className="contact-title">
+      <div className="title-main"><h1 className="contact-title">
          <span>Contact</span> Us
          
       </h1>
-      <hr className="line"/>
+      <hr className="line"/></div>
+      
       <form className="contact-form">
         <h2 className="form-heading">Lets Get Connected !</h2>
 

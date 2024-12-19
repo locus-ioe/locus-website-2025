@@ -3,7 +3,7 @@ import "./CountdownTimer.css"; // Import the CSS file
 import OWNED2 from '../assets/OWNED2 1.svg'
 const CountdownTimer = () => {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2024-12-13T00:00:00"); // Replace with the actual date and time
+    const targetDate = new Date("2024-12-30T00:00:00"); // Replace with the actual date and time
     const now = new Date();
     const difference = targetDate - now;
 

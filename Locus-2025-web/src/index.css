@@ -2,122 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: 'Nunito Sans' sans-serif; 
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  background-image: url('src/assets/background.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  width: 100%; 
-  max-width: 100vw; 
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  font-size: 16px;
+html{
+  background-color: black;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: none;
-  transition: color 0.3s; 
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-h1 {
-  font-size: clamp(2em, 4vw, 3em); 
-  line-height: 1.2; 
-  text-align: center; 
-  margin: 1rem 0;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1rem; 
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  color: #ffffff; 
-  cursor: pointer;
-  transition: border-color 0.25s, transform 0.2s, background-color 0.3s;
-}
-button:hover {
-  border-color: #646cff;
-  transform: scale(1.05);
-  background-color: #2a2a2a; 
-}
-button:focus,
-button:focus-visible {
-  outline: 3px auto #646cff; 
-}
-
-@media (prefers-color-scheme: light) {
+@layer base {
   :root {
+    --background: 180 8% 95%;
+    --foreground: 180 8% 5%;
 
-    color: #ffffff;
-    background-color: #000000;
-    /* background-image: url('public/background.svg'); 
-    background-size: auto; 
-    background-position: top left;
-    background-repeat: repeat;
-    min-height: 100vh;
-    width: 100%;  */
+    --card: 180 10% 94%;
+    --card-foreground: 180 8% 5%;
 
+    --popover: 180 10% 94%;
+    --popover-foreground: 180 8% 5%;
+
+    --primary: 177 48% 52%;
+    --primary-foreground: 180 9% 2%;
+
+    --secondary: 170 12% 91%;
+    --secondary-foreground: 180 8% 5%;
+
+    --muted: 180 8% 91%;
+    --muted-foreground: 177 9% 45%;
+
+    --accent: 180 8% 91%;
+    --accent-foreground: 180 8% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 180 9% 87%;
+    --input: 180 9% 80%;
+    --ring: 178 36% 72%;
+
+    --radius: 0.5rem;
   }
-  a:hover {
-    color: #747bff;
+  
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 177 48% 52%;
+    --primary-foreground: 0 0% 2%;
+
+    --secondary: 0 0% 6%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 49%;
+
+    --accent: 0 0% 6%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 11%;
+    --input: 0 0% 16%;
+    --ring: 178 48% 40%;
   }
-  button {
-    background-color: #f9f9f9;
-    color: #000000;
-  }
+  /* Hide the scrollbar in the textarea */
+textarea::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.8em; 
-  }
-  button {
-    padding: 0.5em 1em;
-  }
+/* Prevent text overflow and allow auto-expansion */
+textarea {
+  overflow: hidden; /* Ensure no scrollbar appears */
 }
 
-
-@media (max-width: 480px) {
-  body {
-    flex-direction: column;
-  }
-  h1 {
-    font-size: 1.6em;
-    text-align: center;
-  }
-  button {
-    width: 100%; 
-    padding: 0.6em; 
-  }
 }
+

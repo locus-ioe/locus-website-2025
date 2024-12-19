@@ -4,13 +4,17 @@ export default function AboutSection() {
         <div className="w-full max-w-6xl mx-auto ">
           <div className="space-y-8 sm:space-y-12">
             {/* Video Section */}
-            <div className="rounded-lg h-[50svh]">
-              <iframe
-                src="https://www.youtube.com/embed/OUM6XmhViN4"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                className="h-full w-full mx-auto"
-              />
-            </div>
+<div className="rounded-lg h-[50svh]">
+  <video
+    className="h-full w-full mx-auto"
+    controls
+    poster="src/assets/Screenshot from 2024-12-07 18-49-39.png"  
+  >
+    <source src="src/assets/Locus Exhibition 2021 Promo Video - Pulchowk Campus.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
   
             {/* About Section */}
             <div className="space-y-6 max-h-h-[50svh] m-auto text-center sm:space-y-8">

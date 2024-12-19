@@ -68,5 +68,15 @@ html{
     --input: 0 0% 16%;
     --ring: 178 48% 40%;
   }
+  /* Hide the scrollbar in the textarea */
+textarea::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Prevent text overflow and allow auto-expansion */
+textarea {
+  overflow: hidden; /* Ensure no scrollbar appears */
+}
+
 }
 

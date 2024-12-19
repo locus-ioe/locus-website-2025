@@ -2,7 +2,9 @@ import React from 'react'
 
 function PastLocusPage() {
   return (
-    <div>PastLocusPage</div>
+<div className="flex items-center justify-center h-screen">
+  <div>PastLocusPage</div>
+</div>
   )
 }
 

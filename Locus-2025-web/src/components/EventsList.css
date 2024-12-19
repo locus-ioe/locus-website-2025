@@ -35,7 +35,7 @@
   background-color: #1c1c3c; /* Card background color */
   border-radius: 10px;
   overflow: hidden;
-  height: 400px; /* Fixed height for all cards */
+  height: 350px; /* Fixed height for all cards */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

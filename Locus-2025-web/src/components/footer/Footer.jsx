@@ -35,16 +35,20 @@ export function Footer() {
           <div className="text-center my-auto sm:text-right">
             <h3 className="text-lg font-semibold  sm:text-xl" style={{ fontFamily: "'Arial', sans-serif" }}>CONTACT US</h3>
             <p className="mt-1 text-xs  sm:text-sm" style={{ fontFamily: "'Helvetica', sans-serif" }}>locus@ioe.edu.np</p>
+            <p className="mt-1 text-xs  sm:text-sm" style={{ fontFamily: "'Helvetica', sans-serif" }}>+977 9860620870</p>
             <div className="mt-4">
               <h4 className="text-lg font-semibold sm:text-xl" style={{ fontFamily: "'Arial', sans-serif" }}>FOLLOW US</h4>
               <div className="mt-2 flex justify-center gap-4 sm:justify-end">
-                <Link to="#" className="">
+                <Link to="https://www.facebook.com/locus.ioe" target="_blank" 
+  rel="noopener noreferrer" className="">
                   <Instagram className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>
-                <Link to="#" className="">
+                <Link to="https://www.instagram.com/locus_ioe/"  target="_blank" 
+  rel="noopener noreferrer" className="">
                   <Facebook className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>
-                <Link to="#" className="">
+                <Link to="https://www.linkedin.com/company/locusioe/" target="_blank" 
+  rel="noopener noreferrer" className="">
                   <Linkedin className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>
               </div>

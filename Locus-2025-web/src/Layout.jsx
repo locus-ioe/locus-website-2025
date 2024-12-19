@@ -8,7 +8,7 @@ const Layout = () => {
     <div className="min-h-screen text-white flex flex-col">
       <Navbar />
       <BackgroundAnimation/>
-      <main className="flex-grow max-w-5xl mx-auto px-4">
+      <main className="flex-grow max-w-5xl w-full mx-auto px-4">
         <Outlet />
       </main>
       <Footer />

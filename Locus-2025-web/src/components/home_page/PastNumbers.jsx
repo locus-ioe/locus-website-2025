@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../navbar/Button";
 
   
@@ -29,9 +30,10 @@ const PastYearSection = () => {
           Becoming A Locus Community Member Is Your Exclusive Ticket To Becoming The Face And Voice Of Our Vibrant Academic Community.
           It&apos;s Not Just A Role, It&apos;s An Opportunity To Share The Dynamic Spirit Of Our Campus With The World!
         </p>
+        <Link to="https://discord.gg/qWwVPgJJdM">
         <Button className="mt-6 rounded-full bg-primary px-6 py-2 text-sm  hover:bg-primary/90 sm:px-8 sm:py-3 sm:text-base">
           Join Us On Discord
-        </Button>
+        </Button></Link>
       </div>
 
         </section>

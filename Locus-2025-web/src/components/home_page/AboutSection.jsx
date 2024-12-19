@@ -8,9 +8,9 @@ export default function AboutSection() {
   <video
     className="h-full w-full mx-auto"
     controls
-    poster="src/assets/Screenshot from 2024-12-07 18-49-39.png"  
+    poster="assets/video/Screenshot from 2024-12-07 18-49-39.png"  
   >
-    <source src="src/assets/Locus Exhibition 2021 Promo Video - Pulchowk Campus.mp4" type="video/mp4" />
+    <source src="assets/video/Locus Exhibition 2021 Promo Video - Pulchowk Campus.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 </div>

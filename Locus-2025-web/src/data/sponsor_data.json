@@ -1,0 +1,79 @@
+[
+    {
+        "sponsor_title": "Merchandise Partner",
+        "subtitle": "",
+        "sponsor_name": "EB Pearls",
+        "image": "assets/sponsors/ebpearls.png",
+        "sponsorlink": "link_to_eb_pearls"
+    },
+    {
+        "sponsor_title": "Gold Sponsor",
+        "subtitle": "",
+        "sponsor_name": "DolphinDive Technology",
+        "image": "assets/sponsors/dolphine.png",
+        "sponsorlink": "link_to_dolphindive"
+    },
+    {
+        "sponsor_title": "Gold Sponsor",
+        "subtitle": "",
+        "sponsor_name": "Jamboree",
+        "image": "assets/sponsors/Jamboree.jpeg",
+        "sponsorlink": "link_to_jamboree"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Software Fellowship Title Sponsor",
+        "sponsor_name": "TechAxis",
+        "image": "assets/sponsors/TechAxis.svg",
+        "sponsorlink": "link_to_techaxis"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Hardware Fellowship Title Sponsor",
+        "sponsor_name": "Yarsa Tech",
+        "image": "assets/sponsors/yarshatech.jpeg",
+        "sponsorlink": "link_to_yarsa_tech"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Hardware Fellowship Associate Sponsor",
+        "sponsor_name": "Techkey",
+        "image": "assets/sponsors/techkey.png",
+        "sponsorlink": "link_to_techkey"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Software Fellowship Placement Partner",
+        "sponsor_name": "JobAxle",
+        "image": "assets/sponsors/JobAxle.svg",
+        "sponsorlink": "link_to_jobaxle"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Girls Futsal Title Sponsor",
+        "sponsor_name": "Mirai Global",
+        "image": "image_url_8",
+        "sponsorlink": "link_to_mirai_global"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Nutrition Partner Locus Cup",
+        "sponsor_name": "Poshilo Foods",
+        "image": "image_url_9",
+        "sponsorlink": "link_to_poshilo_foods"
+    },
+    {
+        "sponsor_title": "IT Training Partner",
+        "subtitle": "",
+        "sponsor_name": "TechAxis",
+        "image": "assets/sponsors/TechAxis.svg",
+        "sponsorlink": "link_to_techaxis_training"
+    },
+    {
+        "sponsor_title": "Stall Sponsor",
+        "subtitle": "",
+        "sponsor_name": "Leapfrog",
+        "image": "assets/sponsors/leapfrog.png",
+        "sponsorlink": "link_to_leapfrog"
+    }
+]

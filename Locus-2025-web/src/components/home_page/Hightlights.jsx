@@ -1,14 +1,14 @@
 
 
 const highlightImages = [
-  { src: 'src/assets/highlight/cit1.jpg', alt: 'Locus Highlight 1' },
-  { src: 'src/assets/highlight/cit2.jpg', alt: 'Locus Highlight 2' },
-  { src: 'src/assets/highlight/cit3.jpg', alt: 'Locus Highlight 3' },
-  { src: 'src/assets/highlight/flashmob.jpg', alt: 'Locus Highlight 4' },
-  { src: 'src/assets/highlight/machine.jpg', alt: 'Locus Highlight 5' },
-  { src: 'src/assets/highlight/mainevent1.jpg', alt: 'Locus Highlight 6' },
-  { src: 'src/assets/highlight/rekhasharma.jpg', alt: 'Locus Highlight 7' },
-  { src: 'src/assets/highlight/robosoccor.jpg', alt: 'Locus Highlight 8' },
+  { src: 'assets/highlight/cit1.jpg', alt: 'Locus Highlight 1' },
+  { src: 'assets/highlight/cit2.jpg', alt: 'Locus Highlight 2' },
+  { src: 'assets/highlight/cit3.jpg', alt: 'Locus Highlight 3' },
+  { src: 'assets/highlight/flashmob.jpg', alt: 'Locus Highlight 4' },
+  { src: 'assets/highlight/machine.jpg', alt: 'Locus Highlight 5' },
+  { src: 'assets/highlight/mainevent1.jpg', alt: 'Locus Highlight 6' },
+  { src: 'assets/highlight/rekhasharma.jpg', alt: 'Locus Highlight 7' },
+  { src: 'assets/highlight/robosoccor.jpg', alt: 'Locus Highlight 8' },
 ]
 
 export default function LocusHighlights() {

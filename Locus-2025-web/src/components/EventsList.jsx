@@ -14,7 +14,7 @@ const EventsList = () => {
         {events.map((event) => (
           <Link
             key={event.id}
-            to={`/event/${event.id}`}
+            // to={`/event/${event.id}`}
             className="w-full mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
           >
             <div className="aspect-w-5 aspect-h-5 bg-gray-200">

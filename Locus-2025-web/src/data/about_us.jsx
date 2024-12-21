@@ -6,7 +6,7 @@ export const aboutUsHistory = [
     id: 1,
     image: aboutusphoto,
     description:
-      "LOCUS 2025, an annual tech show themed Progress and Purpose: Nepal Ahead with Innovation and Identity is organized by the dedicated students of Pulchowk Campus. This annual event attracts participants from across the nation, eager to compete for a prize pool of $50,000+. The heart of LOCUS 2025 is the highly anticipated exhibition, where hundreds of pioneering projects, ranging from software development and artificial intelligence to electronics and robotics, are displayed. It is a unique opportunity for aspiring technologists to gain recognition, learn from peers, and network with industry professionals.",
+      "LOCUS 2025, an annual tech show themed Progress and Purpose: Nepal Ahead with Innovation and Identity is organized by the dedicated students of Pulchowk Campus. This annual event attracts participants from across the nation, eager to compete for a prize pool of Rs 5,00,000+. The heart of LOCUS 2025 is the highly anticipated exhibition, where hundreds of pioneering projects, ranging from software development and artificial intelligence to electronics and robotics, are displayed. It is a unique opportunity for aspiring technologists to gain recognition, learn from peers, and network with industry professionals.",
   },
   {
     id: 2,

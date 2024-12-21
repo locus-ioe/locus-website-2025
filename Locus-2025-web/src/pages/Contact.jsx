@@ -34,7 +34,7 @@ export default function Contact() {
 
   // Handle mailto link generation and redirection
   const handleMailtoClick = () => {
-    const email = "karkidivya5@gmail.com";
+    const email = "locus@ioe.edu.np";
     const subject = `Contact Request: ${formData.purpose || "No Subject"}`;
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nPurpose: ${formData.purpose}\n\nMessage:\n${message}`;
 

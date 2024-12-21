@@ -14,7 +14,7 @@ function AboutUs() {
           </h1>
           <p className='text-lg text-white'>21st National Technology Fest</p>
           <p className='text-sm md:text-base text-white mt-2'>
-            21st National Technology Fest 7th - 10th July, IOE Pulchowk
+            21st National Technology Fest 24th - 126th January, IOE Pulchowk
             Engineering Campus, Nepal
           </p>
           <div className='mt-4 mb-4'>

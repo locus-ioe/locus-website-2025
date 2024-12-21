@@ -14,7 +14,7 @@ export function Footer() {
           {/* Left Section */}
           <div className="text-center my-auto sm:text-left">
             <Button variant="outline" className="rounded-full bg-primary text-black border-primary px-6 py-2 text-sm  hover:bg-primary hover:text-[#003329] sm:px-8 sm:py-3 sm:text-base" style={{ fontFamily: "'Arial', sans-serif" }}>
-              Brochure
+              Prospectus
             </Button>
             <div className="mt-4">
               <h3 className="text-lg font-semibold sm:text-xl" style={{ fontFamily: "'Arial', sans-serif" }}>IOE PULCHOWK</h3>
@@ -39,11 +39,11 @@ export function Footer() {
             <div className="mt-4">
               <h4 className="text-lg font-semibold sm:text-xl" style={{ fontFamily: "'Arial', sans-serif" }}>FOLLOW US</h4>
               <div className="mt-2 flex justify-center gap-4 sm:justify-end">
-                <Link to="https://www.facebook.com/locus.ioe" target="_blank" 
+                <Link to="https://www.instagram.com/locus_ioe/"  target="_blank" 
   rel="noopener noreferrer" className="">
                   <Instagram className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>
-                <Link to="https://www.instagram.com/locus_ioe/"  target="_blank" 
+                <Link to="https://www.facebook.com/locus.ioe" target="_blank" 
   rel="noopener noreferrer" className="">
                   <Facebook className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>

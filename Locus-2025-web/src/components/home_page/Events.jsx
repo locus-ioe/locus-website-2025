@@ -5,19 +5,22 @@ import { Link } from 'react-router-dom';
 const sf = '/assets/events/sf2025.jpg';
 const hf = '/assets/events/hf2025.jpg';
 const et = '/assets/events/electrotech.jpg';
-
+import hardwarefellowship from '/assets/events/hardwarefellowship.png';
+import SoftwareFellowship from '/assets/events/SoftwareFellowship.png';
+import electrotech from '/assets/events/electrotech.png';
+import CIT from '/assets/events/WIAxCIT.png';
 const events = [
   {
     id: '1',
-    image: sf,
+    image: CIT,
   },
   {
     id: '2',
-    image: hf,
+    image: SoftwareFellowship,
   },
   {
     id: '3',
-    image: et,
+    image: hardwarefellowship,
   },
 ];
 
@@ -25,7 +28,7 @@ export default function Events() {
   return (
     <div className="w-full max-w-5xl mx-auto px-4">
       <div className="text-center mt-12 md:mt-20">
-        <h1 className="text-[#00ffcc] text-5xl md:text-7xl mb-10 md:mb-16">Locus Events</h1>
+        <h1 className="text-[#00ffcc] text-5xl md:text-7xl mb-10 md:mb-16">LOCUS Events</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
           {events.map((event) => (
             <Link

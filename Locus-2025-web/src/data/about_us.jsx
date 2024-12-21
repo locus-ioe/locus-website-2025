@@ -1,15 +1,16 @@
-import aboutusphoto from "../assets/about/about_us_img.png"
+import aboutusphoto from "../assets/about/collage.png";
+import membersphoto from "../assets/about/group.jpg";
 
 export const aboutUsHistory = [
-    {
-        id: 1,
-        image: aboutusphoto,
-        description: "It was in 2017 that a team of youths realized the need of an intensive program dedicated to brewing up young entrepreneurs from across the globe since most of the events on entrepreneurship at that time were dedicated to existing entrepreneurs rather than creating new ones. Giving the realization a form of event, the team designed and organized the Global Entrepreneurship Bootcamp (GEB) from September 2nd to 4th, 2017."
-    },
-    {
-        id: 2,
-        image: aboutusphoto,
-        description: "It was in 2017 that a team of youths realized the need of an intensive program dedicated to brewing up young entrepreneurs from across the globe since most of the events on entrepreneurship at that time were dedicated to existing entrepreneurs rather than creating new ones. Giving the realization a form of event, the team designed and organized the Global Entrepreneurship Bootcamp (GEB) from September 2nd to 4th, 2017."
-    }
-
-]
+  {
+    id: 1,
+    image: aboutusphoto,
+    description:
+      "LOCUS 2025, an annual tech show themed Progress and Purpose: Nepal Ahead with Innovation and Identity is organized by the dedicated students of Pulchowk Campus. This annual event attracts participants from across the nation, eager to compete for a prize pool of $50,000+. The heart of LOCUS 2025 is the highly anticipated exhibition, where hundreds of pioneering projects, ranging from software development and artificial intelligence to electronics and robotics, are displayed. It is a unique opportunity for aspiring technologists to gain recognition, learn from peers, and network with industry professionals.",
+  },
+  {
+    id: 2,
+    image: membersphoto,
+    description:
+      "The dedicated LOCUS Committee, composed of passionate students from Computer, Electronics and Electrical engineering departments, has worked tirelessly to bring this event to life. Their enthusiasm and innovative spirit are clear in every aspect of LOCUS 2025, making it a truly remarkable experience for everyone involved. From organizing workshops and competitions to preparing for the exhibition, the committee members have demonstrated exceptional dedication. Their efforts have not only created a platform for innovation but also fostered a sense of community among young technologists."},
+];

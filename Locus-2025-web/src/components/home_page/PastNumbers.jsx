@@ -18,16 +18,16 @@ const PastYearSection = () => {
           <div className="max-w-5xl mx-auto px-4">
             <h2 className="text-5xl font-bold mb-12 text-center">What Out <span className="text-primary">Events</span> Bring?</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              <StatCard number="$50,000" label="In Prizes" />
-              <StatCard number="1500" label="Hackers" />
+              <StatCard number="Rs 5,00,000" label="In Prizes" />
+              <StatCard number="2000" label="Participants" />
               <StatCard number="300" label="Projects" />
-              <StatCard number="200" label="Shop" />
+              <StatCard number="50" label="Sponsors" />
             </div>
           </div>
           <div className="mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-12 pt-12 text-center">Join Our <span className="text-primary">Locus</span> Community</h2>
+          <h2 className="text-5xl font-bold mb-12 pt-12 text-center">Join Our <span className="text-primary">LOCUS</span> Community</h2>
         <p className="mb-4 text-gray-200 text-base sm:text-md lg:text-lg leading-relaxed">
-          Becoming A Locus Community Member Is Your Exclusive Ticket To Becoming The Face And Voice Of Our Vibrant Academic Community.
+          Becoming A LOCUS Community Member Is Your Exclusive Ticket To Becoming The Face And Voice Of Our Vibrant Academic Community.
           It&apos;s Not Just A Role, It&apos;s An Opportunity To Share The Dynamic Spirit Of Our Campus With The World!
         </p>
         <Link to="https://discord.gg/qWwVPgJJdM">

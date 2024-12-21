@@ -1,6 +1,6 @@
 import React from 'react';
 import eventimg from '/assets/sponsors/TechAxis.svg';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa6";
 import { eventsData } from '../data/eventDetails';
 
@@ -40,9 +40,9 @@ const EventDescription = () => {
               {event.title && <h1 className="text-[24px] font-bold text-justify">{event.title}</h1>}
               {event.event_type?.category !== "Workshop" ? (
                 <div className="bg-black/30 border-2 p-4 rounded-lg border-[#00ffcc] font-bold flex flex-row justify-around">
-                  {event.winner && <span>{event.winner}</span>}
-                  <span>|</span>
-                  {event.runnerup && <span>{event.runnerup}</span>}
+                  {event.prize && <span>{event.prize.prizePool}</span>}
+                  {/* <span>|</span>
+                  {event.runnerup && <span>{event.runnerup}</span>} */}
                 </div>
               ):<></>}
               {event.date_and_time && (
@@ -92,9 +92,10 @@ const EventDescription = () => {
         {/* Footer Section */}
         <div className="flex justify-between mr-8 ml-8 lg:mr-20 lg:ml-20">
           <div></div>
+          <Link to="/events">
           <button className="border-white flex items-center gap-2">
             Events<FaArrowRight />
-          </button>
+          </button></Link>
         </div>
 
         {/* Sponsors */}

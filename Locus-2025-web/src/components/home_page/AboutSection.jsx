@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { Button } from "../navbar/Button";
+
 export default function AboutSection() {
   return (
     <main className="min-h-screen flex flex-col my-auto px-4 sm:px-6 lg:px-8">
@@ -26,6 +29,11 @@ export default function AboutSection() {
               Exhibition. All its activities are guided by a single compass: fostering collaboration, promoting individual development and facilitating 
               innovation.
             </p>
+            <Link to="https://drive.google.com/file/d/14JG1j1sVv24EcKQjZsfW0lxD4v4G9QRf/view" target="_blank" rel="noopener noreferrer">
+        <Button className="mt-6 rounded-full bg-primary px-6 py-2 text-sm  hover:bg-primary/90 sm:px-8 sm:py-3 sm:text-base">
+          LOCUS 2025 Theme Draft
+        </Button></Link>
+
           </div>
         </div>
       </div>

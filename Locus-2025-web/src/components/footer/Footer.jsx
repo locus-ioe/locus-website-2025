@@ -13,9 +13,10 @@ export function Footer() {
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:mt-20 sm:grid-cols-3 ">
           {/* Left Section */}
           <div className="text-center my-auto sm:text-left">
-            <Button variant="outline" className="rounded-full bg-primary text-black border-primary px-6 py-2 text-sm  hover:bg-primary hover:text-[#003329] sm:px-8 sm:py-3 sm:text-base" style={{ fontFamily: "'Arial', sans-serif" }}>
+            <Link to="https://drive.google.com/file/d/14UPRPobB6AXR7YmS1570rtIHgWdVpyDY/view" target="_blank" rel="noopener noreferrer"><Button variant="outline" className="rounded-full bg-primary text-black border-primary px-6 py-2 text-sm  hover:bg-primary hover:text-[#003329] sm:px-8 sm:py-3 sm:text-base" style={{ fontFamily: "'Arial', sans-serif" }}>
               Prospectus
-            </Button>
+            </Button></Link>
+            
             <div className="mt-4">
               <h3 className="text-lg font-semibold sm:text-xl" style={{ fontFamily: "'Arial', sans-serif" }}>IOE PULCHOWK</h3>
               <p className="mt-1 text-xs  sm:text-sm" style={{ fontFamily: "'Helvetica', sans-serif" }}>Pulchowk, Lalitpur</p>

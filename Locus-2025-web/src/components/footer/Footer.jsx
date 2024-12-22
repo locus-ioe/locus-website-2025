@@ -13,9 +13,10 @@ export function Footer() {
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:mt-20 sm:grid-cols-3 ">
           {/* Left Section */}
           <div className="text-center my-auto sm:text-left">
-            <Button variant="outline" className="rounded-full bg-primary text-black border-primary px-6 py-2 text-sm  hover:bg-primary hover:text-[#003329] sm:px-8 sm:py-3 sm:text-base" style={{ fontFamily: "'Arial', sans-serif" }}>
-              Brochure
-            </Button>
+            <Link to="https://drive.google.com/file/d/14UPRPobB6AXR7YmS1570rtIHgWdVpyDY/view" target="_blank" rel="noopener noreferrer"><Button variant="outline" className="rounded-full bg-primary text-black border-primary px-6 py-2 text-sm  hover:bg-primary hover:text-[#003329] sm:px-8 sm:py-3 sm:text-base" style={{ fontFamily: "'Arial', sans-serif" }}>
+              Prospectus
+            </Button></Link>
+            
             <div className="mt-4">
               <h3 className="text-lg font-semibold sm:text-xl" style={{ fontFamily: "'Arial', sans-serif" }}>IOE PULCHOWK</h3>
               <p className="mt-1 text-xs  sm:text-sm" style={{ fontFamily: "'Helvetica', sans-serif" }}>Pulchowk, Lalitpur</p>
@@ -39,11 +40,11 @@ export function Footer() {
             <div className="mt-4">
               <h4 className="text-lg font-semibold sm:text-xl" style={{ fontFamily: "'Arial', sans-serif" }}>FOLLOW US</h4>
               <div className="mt-2 flex justify-center gap-4 sm:justify-end">
-                <Link to="https://www.facebook.com/locus.ioe" target="_blank" 
+                <Link to="https://www.instagram.com/locus_ioe/"  target="_blank" 
   rel="noopener noreferrer" className="">
                   <Instagram className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>
-                <Link to="https://www.instagram.com/locus_ioe/"  target="_blank" 
+                <Link to="https://www.facebook.com/locus.ioe" target="_blank" 
   rel="noopener noreferrer" className="">
                   <Facebook className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>

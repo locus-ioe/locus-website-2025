@@ -54,7 +54,7 @@ export const routes = [
         element: withSuspense(AboutUs),
       },
       {
-        path: "event/:id",
+        path: "event/:title",
         element: withSuspense(EventDescription),
       },
       {

@@ -8,55 +8,55 @@ const Sponsors = () => {
   //     sponsor_title: "Title Sponsor",
   //     subtitle: "Rs. 5,00,000",
   //     logo: "https://via.placeholder.com/150?text=TechAxis+Logo",
-  //     link: "https://techaxisnepal.com",
+  //     sponsorlink: "https://techaxisnepal.com",
   //   },
   //   {
   //     name: "Ncell",
   //     sponsor_title: "Gold Sponsor",
   //     logo: "https://via.placeholder.com/150?text=Ncell+Logo",
-  //     link: "https://ncell.axiata.com",
+  //     sponsorlink: "https://ncell.axiata.com",
   //   },
   //   {
   //     name: "Daraz",
   //     sponsor_title: "Gold Sponsor",
   //     logo: "https://via.placeholder.com/150?text=Daraz+Logo",
-  //     link: "https://daraz.com.np",
+  //     sponsorlink: "https://daraz.com.np",
   //   },
   //   {
   //     name: "eSewa",
   //     sponsor_title: "Gold Sponsor",
   //     logo: "https://via.placeholder.com/150?text=eSewa+Logo",
-  //     link: "https://esewa.com.np",
+  //     sponsorlink: "https://esewa.com.np",
   //   },
   //   {
   //     name: "Nepal Telecom",
   //     sponsor_title: "Silver Sponsor",
   //     logo: "https://via.placeholder.com/150?text=Nepal+Telecom+Logo",
-  //     link: "https://ntc.net.np",
+  //     sponsorlink: "https://ntc.net.np",
   //   },
   //   {
   //     name: "Himalayan Bank",
   //     sponsor_title: "Silver Sponsor",
   //     logo: "https://via.placeholder.com/150?text=Himalayan+Bank+Logo",
-  //     link: "https://himalayanbank.com",
+  //     sponsorlink: "https://himalayanbank.com",
   //   },
   //   {
   //     name: "Vianet",
   //     sponsor_title: "Silver Sponsor",
   //     logo: "https://via.placeholder.com/150?text=Vianet+Logo",
-  //     link: "https://vianet.com.np",
+  //     sponsorlink: "https://vianet.com.np",
   //   },
   //   {
   //     name: "Khalti",
   //     sponsor_title: "Bronze Sponsor",
   //     logo: "https://via.placeholder.com/150?text=Khalti+Logo",
-  //     link: "https://khalti.com",
+  //     sponsorlink: "https://khalti.com",
   //   },
   //   {
   //     name: "Foodmandu",
   //     sponsor_title: "Bronze Sponsor",
   //     logo: "https://via.placeholder.com/150?text=Foodmandu+Logo",
-  //     link: "https://foodmandu.com",
+  //     sponsorlink: "https://foodmandu.com",
   //   },
   // ];
 
@@ -97,7 +97,7 @@ const Sponsors = () => {
                 className="bg-gray-800 rounded-lg p-6 w-full shadow-lg hover:shadow-2xl transition-transform hover:scale-105 duration-300 flex flex-col sm:flex-row items-center"
               >
                 <a
-                  href={sponsor.link}
+                  href={sponsor.sponsorlink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-shrink-0"
@@ -116,7 +116,7 @@ const Sponsors = () => {
                     <p className="text-gray-400 text-sm">{sponsor.subtitle}</p>
                   )}
                   <a
-                    href={sponsor.link}
+                    href={sponsor.sponsorlink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-3 text-sm text-teal-300 hover:underline"

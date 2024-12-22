@@ -12,11 +12,11 @@ const LocusDirectors = () => {
           <h2 className="text-xl sm:text-6xl lg:text-7xl tracking-tight ">
             <span className="text-primary">LOCUS </span>
             <span className="text-white">2025 </span>
-            <span className="text-primary">Directors </span>
-            <span className="text-white">and </span>
-            <span className="text-white">Ambasadors </span>
-            <span className="text-white">are </span>
-            <span className="text-primary">all over </span>
+            <span className="text-primary">Marvels </span>
+            <span className="text-white">all </span>
+            <span className="text-white">across </span>
+            {/* <span className="text-white">the </span> */}
+            <span className="text-primary">the </span>
             <span className="text-white">country </span>
           </h2>
         </div>

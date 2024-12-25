@@ -7,6 +7,13 @@
         "sponsorlink": "https://ebpearls.com.au/"
     },
     {
+        "sponsor_title": "Internet Partner",
+        "subtitle": "",
+        "sponsor_name": "Worldlink",
+        "image": "assets/sponsors/Worldlink.jpg",
+        "sponsorlink": "https://worldlink.com.np/"
+    },
+    {
         "sponsor_title": "Gold Sponsor",
         "subtitle": "",
         "sponsor_name": "DolphinDive Technology",
@@ -17,7 +24,7 @@
         "sponsor_title": "Gold Sponsor",
         "subtitle": "",
         "sponsor_name": "Jamboree",
-        "image": "assets/sponsors/Jamboree.jpeg",
+        "image": "assets/sponsors/EDF-Jamboree.png",
         "sponsorlink": "https://www.jamboreeindia.com/centre/nepal"
     },
     {
@@ -51,7 +58,7 @@
     {
         "sponsor_title": "Event Sponsor",
         "subtitle": "Girls Futsal Title Sponsor",
-        "sponsor_name": "Mirai Global",
+        "sponsor_name": "Mirai Global Education and Visa Services Nepal",
         "image": "assets/sponsors/mirai.png",
         "sponsorlink": "https://miraiglobal.com.au/"
     },
@@ -72,7 +79,7 @@
     {
         "sponsor_title": "Stall Sponsor",
         "subtitle": "",
-        "sponsor_name": "Leapfrog",
+        "sponsor_name": "Leapfrog Technology",
         "image": "assets/sponsors/leapfrog.png",
         "sponsorlink": "https://www.lftechnology.com/"
     }

@@ -16,7 +16,7 @@ const PastYearSection = () => {
   return (
       <section id="previous-year" className="py-16">
           <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-5xl font-bold mb-12 text-center">What Out <span className="text-primary">Events</span> Bring?</h2>
+            <h2 className="text-5xl font-bold mb-12 text-center">What Our <span className="text-primary">Events</span> Bring?</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
               <StatCard number="Rs 5,00,000" label="In Prizes" />
               <StatCard number="2000" label="Participants" />

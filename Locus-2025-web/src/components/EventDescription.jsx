@@ -21,7 +21,7 @@ const EventDescription = () => {
         </h2>
         <hr />
 
-        <div className="mr-8 ml-8 lg:mr-20 lg:ml-20 gap-12 flex flex-col p-8 border-2 rounded-xl border-[#00ffcc] shadow-lg shadow-white/10">
+        <div className="mx-1 sm:mx-8 lg:mr-20 lg:ml-20 gap-12 flex flex-col p-4 sm:p-8 border-2 rounded-xl border-[#00ffcc] shadow-lg shadow-white/10">
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Event Poster */}
             <div className="flex-[0.35] event-poster flex flex-col items-center gap-4">
@@ -37,7 +37,7 @@ const EventDescription = () => {
 
             {/* Event Details */}
             <div className="flex-[0.65] flex flex-col gap-2">
-              {event.title && <h1 className="text-[24px] font-bold text-justify">{event.title}</h1>}
+              {event.title && <h1 className="text-[24px] font-bold text-left">{event.title}</h1>}
               {event.event_type?.category !== "Workshop" ? (
                 <div className="bg-black/30 border-2 p-4 rounded-lg border-[#00ffcc] font-bold flex flex-row justify-around">
                   {event.prize && <span>{event.prize.prizePool}</span>}
@@ -62,11 +62,18 @@ const EventDescription = () => {
                   </span>
                 )}
               </div>
-              {event.description && <h3 className="text-justify">{event.description}</h3>}
+              {event.description && <h3 className="text-left">{event.description}</h3>}
               {event.rules && (
                 <>
                   <h3 className="text-justify font-bold text-lg">Rules and Regulations:</h3>
-                  <h3 className="text-justify">{event.rules}</h3>
+                  <h3 className="text-left">
+  {event.rules.split("\n").map((rule, index) => (
+    <span key={index}>
+      {rule}
+      <br />
+    </span>
+  ))}
+</h3>
                 </>
               )}
             </div>

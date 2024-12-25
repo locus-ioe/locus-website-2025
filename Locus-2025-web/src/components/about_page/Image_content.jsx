@@ -10,7 +10,7 @@ function Image_content({ image, description, order }) {
         <img
           src={image}
           alt="content"
-          className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg"
+          className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-fit rounded-lg"
         />
       </div>
 

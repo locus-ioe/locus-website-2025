@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { Menu } from 'lucide-react'
 
 import { Button } from "./Button"
-import { Sheet, SheetContent, SheetTrigger } from "./Sheet"
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./Sheet"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -71,13 +71,14 @@ export function Navbar() {
                 ["Sponsors", "/sponsors"],
                 ["Contact Us", "/contact-us"],
               ].map(([label, to]) => ( 
+                <SheetClose asChild key={label}>
                 <Link
-                  key={label}
                   to={to}
                   className="text-lg font-medium text-primary transition-colors hover:text-[#4CD6C0]/80 whitespace-nowrap"
                 >
                   {label}
                 </Link>
+              </SheetClose>
               ))}
             </nav>
           </SheetContent>

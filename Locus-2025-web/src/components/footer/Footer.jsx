@@ -12,7 +12,7 @@ export function Footer() {
         {/* Footer Content */}
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:mt-20 sm:grid-cols-3 ">
           {/* Left Section */}
-          <div className="text-center my-auto sm:text-left">
+          <div className="text-center pt-5 sm:pt-0 my-auto sm:text-left">
             <Link to="https://drive.google.com/file/d/14UPRPobB6AXR7YmS1570rtIHgWdVpyDY/view" target="_blank" rel="noopener noreferrer"><Button variant="outline" className="rounded-full bg-primary text-black border-primary px-6 py-2 text-sm  hover:bg-primary hover:text-[#003329] sm:px-8 sm:py-3 sm:text-base" style={{ fontFamily: "'Arial', sans-serif" }}>
               Prospectus
             </Button></Link>

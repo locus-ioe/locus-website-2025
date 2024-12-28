@@ -6,13 +6,7 @@
         "image": "assets/sponsors/ebpearlswhite.png",
         "sponsorlink": "https://ebpearls.com.au/"
     },
-    {
-        "sponsor_title": "Internet Partner",
-        "subtitle": "",
-        "sponsor_name": "Worldlink",
-        "image": "assets/sponsors/Worldlink.jpg",
-        "sponsorlink": "https://worldlink.com.np/"
-    },
+    
     {
         "sponsor_title": "Gold Sponsor",
         "subtitle": "",
@@ -68,6 +62,13 @@
         "sponsor_name": "Poshilo Foods",
         "image": "assets/sponsors/poshilo.png",
         "sponsorlink": "https://poshilofood.com/"
+    },
+    {
+        "sponsor_title": "Internet Partner",
+        "subtitle": "",
+        "sponsor_name": "Worldlink",
+        "image": "assets/sponsors/Worldlink.jpg",
+        "sponsorlink": "https://worldlink.com.np/"
     },
     {
         "sponsor_title": "IT Training Partner",

@@ -2,63 +2,7 @@ import React from "react";
 import sponsor_data from '../data/sponsor_data.json'
 
 const Sponsors = () => {
-  // const sponsors = [
-  //   {
-  //     name: "TechAxis",
-  //     sponsor_title: "Title Sponsor",
-  //     subtitle: "Rs. 5,00,000",
-  //     logo: "https://via.placeholder.com/150?text=TechAxis+Logo",
-  //     sponsorlink: "https://techaxisnepal.com",
-  //   },
-  //   {
-  //     name: "Ncell",
-  //     sponsor_title: "Gold Sponsor",
-  //     logo: "https://via.placeholder.com/150?text=Ncell+Logo",
-  //     sponsorlink: "https://ncell.axiata.com",
-  //   },
-  //   {
-  //     name: "Daraz",
-  //     sponsor_title: "Gold Sponsor",
-  //     logo: "https://via.placeholder.com/150?text=Daraz+Logo",
-  //     sponsorlink: "https://daraz.com.np",
-  //   },
-  //   {
-  //     name: "eSewa",
-  //     sponsor_title: "Gold Sponsor",
-  //     logo: "https://via.placeholder.com/150?text=eSewa+Logo",
-  //     sponsorlink: "https://esewa.com.np",
-  //   },
-  //   {
-  //     name: "Nepal Telecom",
-  //     sponsor_title: "Silver Sponsor",
-  //     logo: "https://via.placeholder.com/150?text=Nepal+Telecom+Logo",
-  //     sponsorlink: "https://ntc.net.np",
-  //   },
-  //   {
-  //     name: "Himalayan Bank",
-  //     sponsor_title: "Silver Sponsor",
-  //     logo: "https://via.placeholder.com/150?text=Himalayan+Bank+Logo",
-  //     sponsorlink: "https://himalayanbank.com",
-  //   },
-  //   {
-  //     name: "Vianet",
-  //     sponsor_title: "Silver Sponsor",
-  //     logo: "https://via.placeholder.com/150?text=Vianet+Logo",
-  //     sponsorlink: "https://vianet.com.np",
-  //   },
-  //   {
-  //     name: "Khalti",
-  //     sponsor_title: "Bronze Sponsor",
-  //     logo: "https://via.placeholder.com/150?text=Khalti+Logo",
-  //     sponsorlink: "https://khalti.com",
-  //   },
-  //   {
-  //     name: "Foodmandu",
-  //     sponsor_title: "Bronze Sponsor",
-  //     logo: "https://via.placeholder.com/150?text=Foodmandu+Logo",
-  //     sponsorlink: "https://foodmandu.com",
-  //   },
-  // ];
+
 
   // Group sponsors by sponsor_title
   const groupedSponsors = sponsor_data.reduce((groups, sponsor) => {

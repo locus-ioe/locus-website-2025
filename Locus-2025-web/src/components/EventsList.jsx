@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const EventsList = () => {
   return (
     <div className="text-center mt-12 md:mt-20 px-4 ">
-      <h1 className="text-[#00ffcc] text-5xl md:text-7xl mb-3 md:mb-3"><span className="text-white">LOCUS</span> Events</h1>
+      <h1 className="text-[#00ffcc] text-3xl md:text-5xl mb-3 md:mb-3"><span className="text-white">LOCUS</span> Events</h1>
       <div className="h-0.5 bg-[#00ffcc] w-[80%] mx-auto mb-10 md:mb-16"></div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">

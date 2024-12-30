@@ -39,7 +39,7 @@ export function Navbar() {
             ["Home", "/"],
             ["About Us", "/about-us"],
             ["Events", "/events"],
-            // ["Past LOCUS", "/past-locus"],
+            ["Past LOCUS", "/past-locus"],
             ["Sponsors", "/sponsors"],
             ["Contact Us", "/contact-us"],
           ].map(([label, to]) => ( 

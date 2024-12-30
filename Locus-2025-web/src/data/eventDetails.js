@@ -29,7 +29,7 @@ export const eventsData = [
       button_text: "Register Free/-"
     },
     event_type: {
-      status: "Active",
+      status: "Closed",
       mode: "Online",
       category: "Event"
     },

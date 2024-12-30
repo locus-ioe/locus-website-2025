@@ -1,5 +1,19 @@
 [
     {
+        "sponsor_title": "Platinum Sponsor",
+        "subtitle": "",
+        "sponsor_name": "Itonics",
+        "image": "assets/sponsors/itonics-light.svg",
+        "sponsorlink": "https://www.itonics-innovation.com/"
+    },
+    {
+        "sponsor_title": "Platinum Sponsor",
+        "subtitle": "",
+        "sponsor_name": "Progressive Labs",
+        "image": "assets/sponsors/progressive-logo.png",
+        "sponsorlink": "https://progressivelabs.tech/"
+    },
+    {
         "sponsor_title": "Merchandise Partner",
         "subtitle": "",
         "sponsor_name": "EB Pearls",
@@ -16,10 +30,24 @@
     },
     {
         "sponsor_title": "Gold Sponsor",
-        "subtitle": "",
+        "subtitle": "Expedition Partner",
         "sponsor_name": "Jamboree",
         "image": "assets/sponsors/EDF-Jamboree.png",
         "sponsorlink": "https://www.jamboreeindia.com/centre/nepal"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Energy Hackathon 8.0 Title Sponsor",
+        "sponsor_name": "GIZ Nepal",
+        "image": "assets/sponsors/GIZ_logo.jpg",
+        "sponsorlink": "https://www.giz.de/en/worldwide/378.html"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "National FPGA Design Competition",
+        "sponsor_name": "Logictronix",
+        "image": "assets/sponsors/Logictronix-bgwhite.png",
+        "sponsorlink": "https://logictronix.com/"
     },
     {
         "sponsor_title": "Event Sponsor",
@@ -63,25 +91,41 @@
         "image": "assets/sponsors/poshilo.png",
         "sponsorlink": "https://poshilofood.com/"
     },
-    {
-        "sponsor_title": "Internet Partner",
-        "subtitle": "",
-        "sponsor_name": "Worldlink",
-        "image": "assets/sponsors/Worldlink.jpg",
-        "sponsorlink": "https://worldlink.com.np/"
-    },
-    {
-        "sponsor_title": "IT Training Partner",
-        "subtitle": "",
-        "sponsor_name": "TechAxis",
-        "image": "assets/sponsors/TechAxis.svg",
-        "sponsorlink": "https://techaxis.com.np/"
-    },
+    
+    
     {
         "sponsor_title": "Stall Sponsor",
         "subtitle": "",
         "sponsor_name": "Leapfrog Technology",
         "image": "assets/sponsors/leapfrog.png",
         "sponsorlink": "https://www.lftechnology.com/"
+    },
+    {
+        "sponsor_title": "LOCUS Partners",
+        "subtitle": "Research Partner",
+        "sponsor_name": "NAAMII",
+        "image": "assets/sponsors/logo-naamii.png",
+        "sponsorlink": "https://www.naamii.org.np/"
+    },
+    {
+        "sponsor_title": "LOCUS Partners",
+        "subtitle": "IT Training Partner",
+        "sponsor_name": "TechAxis",
+        "image": "assets/sponsors/TechAxis.svg",
+        "sponsorlink": "https://techaxis.com.np/"
+    },
+    {
+        "sponsor_title": "LOCUS Partners",
+        "subtitle": "Internet Partner",
+        "sponsor_name": "Worldlink",
+        "image": "assets/sponsors/Worldlink.jpg",
+        "sponsorlink": "https://worldlink.com.np/"
+    },
+    {
+        "sponsor_title": "LOCUS Partners",
+        "subtitle": "App Partner",
+        "sponsor_name": "Hamro Patro",
+        "image": "assets/sponsors/hamropatro.png",
+        "sponsorlink": "https://www.hamropatro.com/"
     }
 ]

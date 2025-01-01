@@ -2,6 +2,13 @@
     {
         "sponsor_title": "Platinum Sponsor",
         "subtitle": "",
+        "sponsor_name": "Careerlink",
+        "image": "assets/sponsors/careerlink.png",
+        "sponsorlink": "https://careerlink.ai/"
+    },
+    {
+        "sponsor_title": "Platinum Sponsor",
+        "subtitle": "",
         "sponsor_name": "Itonics",
         "image": "assets/sponsors/itonics-light.svg",
         "sponsorlink": "https://www.itonics-innovation.com/"

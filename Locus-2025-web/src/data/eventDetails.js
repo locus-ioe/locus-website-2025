@@ -342,7 +342,7 @@ export const eventsData = [
       category: "Hackathon",
     },
     prize: {
-      prizePool: "Rs : 1,00,000",
+      prizePool: "Prizepool : Rs 1,00,000",
       popularChoicePrize: "",
     },
     contacts: [

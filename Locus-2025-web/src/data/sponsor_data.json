@@ -28,19 +28,20 @@
         "sponsorlink": "https://ebpearls.com.au/"
     },
     
+    
     {
         "sponsor_title": "Gold Sponsor",
         "subtitle": "",
-        "sponsor_name": "DolphinDive Technology",
-        "image": "assets/sponsors/dolphine.png",
-        "sponsorlink": "https://dolphindivetech.com/"
-    },
-    {
-        "sponsor_title": "Gold Sponsor",
-        "subtitle": "Expedition Partner",
         "sponsor_name": "Jamboree",
         "image": "assets/sponsors/EDF-Jamboree.png",
         "sponsorlink": "https://www.jamboreeindia.com/centre/nepal"
+    },
+    {
+        "sponsor_title": "General Sponsor",
+        "subtitle": "Expedition Partner",
+        "sponsor_name": "DolphinDive Technology",
+        "image": "assets/sponsors/dolphine.png",
+        "sponsorlink": "https://dolphindivetech.com/"
     },
     {
         "sponsor_title": "Event Sponsor",

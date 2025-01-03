@@ -5,7 +5,7 @@ import yarshatech from "/assets/sponsors/yarshatech.jpeg";
 import techkey from "/assets/sponsors/techkey.png";
 import LogicTronic from "/assets/sponsors/Logictronix-trans.png";
 import miraiglobal from "/assets/sponsors/mirai.png";
-import GIZ from "/assets/sponsors/GIZ_logo.jpg";
+import gizLogo from "/assets/sponsors/GIZ_logo.jpg";
 import hardwarefellowship from "/assets/events/hardwarefellowship.png";
 import SoftwareFellowship from "/assets/events/SoftwareFellowship.png";
 import electrotech from "/assets/events/electrotech.png";
@@ -372,9 +372,64 @@ export const eventsData = [
       "3. Participants are encouraged to bring their own laptops and equipment.\n" +
       "4. Organizers reserve the right to disqualify teams for rule violations.",
     registration_link: "https://bit.ly/Hack-A-Week_LOCUS2025",
-    sponsoredby: [{
-      name: "Itonics",
-      image: Itonics,
-    },],
+    sponsoredby: [
+      {
+        name: "Itonics",
+        image: Itonics,
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: "Energy Hackathon",
+    date_and_time: {
+      start_date: "2081-09-22",
+      end_date: "2081-09-29",
+      time: "10 am onwards",
+    },
+    imgSrc: energy,
+    registration: {
+      fee: "Rs 1000",
+      button_text: "Register Now",
+    },
+    event_type: {
+      status: "Active",
+      mode: "Offline",
+      category: "event",
+    },
+    prize: {
+      prizePool: "Prizepool : Rs 80,000",
+      popularChoicePrize: "",
+    },
+    contacts: [
+      {
+        name: "Shashi Adhikari",
+        phone: "9864503030",
+      },
+      {
+        name: "Nitiz Khanal",
+        phone: "9844097563",
+      },
+    ],
+    description:
+      "The Energy Hackathon is a dynamic event focused on creating innovative energy solutions. Participants will engage in a 7-day intensive hackathon featuring mentoring sessions held at the Library Hall, Pulchowk Campus. Compete for the grand prize of Rs 80,000 and gain invaluable experience in collaboration and innovation.\n\n" +
+      "Event Highlights:\n" +
+      "• A week of guided project development and innovation\n" +
+      "• Networking opportunities with industry experts\n" +
+      "• Compete for a grand prize of Rs. 80,000\n\n" +
+      "Energy Hackathon provides a unique platform for enthusiasts to tackle real-world energy challenges, collaborate with peers, and showcase their expertise in a competitive setting.",
+    rules:
+      "1. Teams can consist of up to 4 members.\n" +
+      "2. Projects must align with the provided themes and adhere to deadlines.\n" +
+      "3. Participants must bring their own laptops and required equipment.\n" +
+      "4. Organizers may disqualify teams for non-compliance with the rules.",
+    registration_link:
+      "https://docs.google.com/forms/d/1Ec1v19OcbV5u9AW_ZVGcNshDWRRqc-RoX_Y1DQ0Irus/edit",
+    sponsoredby: [
+      {
+        name: "GIZ",
+        image: gizLogo,
+      },
+    ],
   },
 ];

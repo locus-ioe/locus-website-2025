@@ -65,7 +65,7 @@ const Sponsors = () => {
                     rel="noopener noreferrer"
                     className="inline-block mt-3 text-sm text-teal-300 hover:underline"
                   >
-                    Visit Sponsor
+                    {sponsor.sponsor_text}
                   </a>
                 </div>
               </div>

@@ -34,7 +34,7 @@ const Sponsors = () => {
           </div>
 
           {/* Responsive Sponsors Grid */}
-          <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
             {groupedSponsors[sponsor_title].map((sponsor, idx) => (
               <div
                 key={idx}

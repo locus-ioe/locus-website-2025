@@ -1,9 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-
-const WireframeSphere = () => {
-  const containerRef = useRef(null);
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'; 
+const WireframeSphere = () => { const containerRef = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -46,9 +44,11 @@ const WireframeSphere = () => {
       `,
     });
 
+    const scalingvector = new THREE.Vector3(2.0, 2.0,2.0);
     // Geometry: Sparse Wireframe Sphere
     const geometry = new THREE.IcosahedronGeometry(3, 1);
     const points = new THREE.Points(geometry, shaderMaterial);
+    points.scale.copy(scalingvector);
     scene.add(points);
 
     const wireframe = new THREE.WireframeGeometry(geometry);
@@ -56,16 +56,20 @@ const WireframeSphere = () => {
     const edges = new THREE.LineSegments(wireframe, lineMaterial);
 
 
-    const scalingvector = new THREE.Vector3(2.0, 2.0,2.0);
+    
     edges.scale.copy(scalingvector);
-    points.scale.copy(scalingvector);
+
     scene.add(edges);
 
     // Orbit Controls
     const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enablePan = false; 
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
-    controls.enableZoom = false;
+    controls.minDistance = 10; 
+    controls.maxDistance = 20;
+
+
 
     // Handle Resize
     const handleResize = () => {

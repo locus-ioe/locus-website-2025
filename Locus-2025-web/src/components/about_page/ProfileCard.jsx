@@ -1,6 +1,7 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+// import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {Facebook, Twitter, Instagram, Linkedin} from 'lucide-react';
 import locuslogo from "../../assets/about/logo.png";
-
+Facebook
 const ProfileCard = ({
   imageUrl,
   name,
@@ -27,7 +28,7 @@ const ProfileCard = ({
               rel='noopener noreferrer'
               className='text-white hover:text-blue-500 text-2xl'
             >
-              <FaFacebook />
+              <Facebook />
             </a>
           )}
           {twitter && (
@@ -37,7 +38,7 @@ const ProfileCard = ({
               rel='noopener noreferrer'
               className='text-white hover:text-blue-400 text-2xl'
             >
-              <FaTwitter />
+              <Twitter />
             </a>
           )}
           {instagram && (
@@ -47,7 +48,7 @@ const ProfileCard = ({
               rel='noopener noreferrer'
               className='text-white hover:text-pink-500 text-2xl'
             >
-              <FaInstagram />
+              <Instagram />
             </a>
           )}
           {linkedin && (
@@ -57,7 +58,7 @@ const ProfileCard = ({
               rel='noopener noreferrer'
               className='text-white hover:text-blue-700 text-2xl'
             >
-              <FaLinkedin />
+              <Linkedin />
             </a>
           )}
         </div>

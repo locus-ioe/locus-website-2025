@@ -1,9 +1,7 @@
 import React from "react";
-import eventimg from "/assets/sponsors/TechAxis.svg";
 import { Link, useParams } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa6";
+import { ArrowRight } from "lucide-react";
 import { eventsData } from "../data/eventDetails";
-
 const EventDescription = () => {
   const { title } = useParams();
   console.log(title);
@@ -126,7 +124,7 @@ const EventDescription = () => {
           <Link to="/events">
             <button className="border-white flex items-center gap-2">
               Events
-              <FaArrowRight />
+              <ArrowRight />
             </button>
           </Link>
         </div>

@@ -1,8 +1,13 @@
 import React from 'react';
+import VisitCounter from "../components/VisitCounter";
 
 function PastLocusPage() {
   return (
     <div className="flex flex-col items-center justify-center space-y-8 mt-8">
+      {/* <div>
+      <h1>About Page</h1>
+      <VisitCounter pageName="About" />
+    </div> */}
       {/* Title and iframe for Locus 2024 */}
       <div className="w-full max-w-4xl text-center">
         <h1 className="text-white text-[1.875rem] leading-[2.25rem] font-bold mb-4">

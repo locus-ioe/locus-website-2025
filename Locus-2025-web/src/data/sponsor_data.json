@@ -24,6 +24,14 @@
         "sponsor_text": "visit sponsor"
     },
     {
+        "sponsor_title": "Platinum Sponsor",
+        "subtitle": "",
+        "sponsor_name": "K&A Engineering Consulting",
+        "image": "assets/sponsors/k&a-white.png",
+        "sponsorlink": "https://www.kapower.us/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
         "sponsor_title": "Merchandise Partner",
         "subtitle": "",
         "sponsor_name": "EB Pearls",
@@ -61,6 +69,14 @@
         "sponsor_name": "GIZ Nepal",
         "image": "assets/sponsors/GIZ_logo.jpg",
         "sponsorlink": "https://www.giz.de/en/worldwide/378.html",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Energy Hackathon 8.0 Category Sponsor",
+        "sponsor_name": "NEA Engineering Consultancy",
+        "image": "assets/sponsors/Logo-NEAEC.png",
+        "sponsorlink": "https://neaec.com.np/en/home",
         "sponsor_text": "visit sponsor"
     },
     {
@@ -117,6 +133,14 @@
         "sponsor_name": "Poshilo Foods",
         "image": "assets/sponsors/poshilo.png",
         "sponsorlink": "https://poshilofood.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Locus Cubing Nepal Title Sponsor",
+        "sponsor_name": "Puzzlemandu",
+        "image": "assets/sponsors/puzzlemandu.png",
+        "sponsorlink": "https://puzzlemandu.com/",
         "sponsor_text": "visit sponsor"
     },
     {

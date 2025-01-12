@@ -50,7 +50,7 @@
     {
         "sponsor_title": "Gold Sponsor",
         "subtitle": "",
-        "sponsor_name": "Neek",
+        "sponsor_name": "NEEK",
         "image": "assets/sponsors/NEEK-logo.png",
         "sponsorlink": "https://neek-transformer.com/",
         "sponsor_text": "visit sponsor"
@@ -65,7 +65,24 @@
     },
     {
         "sponsor_title": "Event Sponsor",
-        "subtitle": "Hack-A-Week",
+        "subtitle": "Hack-A-Week Tech Partner",
+        "sponsor_name": "The Computer Club",
+        "image": "assets/sponsors/thecomputerclub.png",
+        "sponsorlink": "https://www.instagram.com/the_computerclub/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Hack-A-Week Associate Sponsor",
+        "sponsor_name": "Nest Nepal ",
+        "image": "assets/sponsors/nestnepal.png",
+        "sponsorlink": "https://nestnepal.com/",
+        "sponsor_text": "visit sponsor"
+    },
+  
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Hack-A-Week Title Sponsor",
         "sponsor_name": "Itonics",
         "image": "assets/sponsors/itonics-light.svg",
         "sponsorlink": "https://www.itonics-innovation.com/",
@@ -197,6 +214,14 @@
         "sponsor_name": "Hamro Patro",
         "image": "assets/sponsors/hamropatro.png",
         "sponsorlink": "https://www.hamropatro.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "LOCUS Partners",
+        "subtitle": "Hosting Partner",
+        "sponsor_name": "Nest Nepal",
+        "image": "assets/sponsors/nestnepal.png",
+        "sponsorlink": "https://nestnepal.com/",
         "sponsor_text": "visit sponsor"
     }
 ]

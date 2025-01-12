@@ -14,7 +14,11 @@ import energy from "/assets/events/Energy-Hackathon.png";
 import hackaweek from "/assets/events/Hack-A-Week.png";
 import fpga from "/assets/events/FPGA.png";
 import Itonics from "/assets/sponsors/itonics-light.svg";
-import CIT from "/assets/events/WIAxCIT.png";
+import neek from "/assets/sponsors/NEEK-logo.png";
+import rerl from "/assets/sponsors/undp_logo.png";
+import nea from "/assets/sponsors/Logo-NEAEC.png";
+import thecomputerclub from "/assets/sponsors/thecomputerclub.png";
+import nestnepal from "/assets/sponsors/nestnepal.png";
 
 export const eventsData = [
   {
@@ -377,6 +381,14 @@ export const eventsData = [
         name: "Itonics",
         image: Itonics,
       },
+      {
+        name: "thecomputerclub",
+        image: thecomputerclub,
+      },
+      {
+        name: "nestnepal",
+        image: nestnepal,
+      },
     ],
   },
   {
@@ -429,6 +441,18 @@ export const eventsData = [
       {
         name: "GIZ",
         image: gizLogo,
+      },
+      {
+        name: "NEEK",
+        image: neek,
+      },
+      {
+        name: "RERL",
+        image: rerl,
+      },
+      {
+        name: "NEA",
+        image: nea,
       },
     ],
   },

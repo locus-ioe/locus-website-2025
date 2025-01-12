@@ -48,6 +48,14 @@
         "sponsor_text": "visit sponsor"
     },
     {
+        "sponsor_title": "Gold Sponsor",
+        "subtitle": "",
+        "sponsor_name": "Neek",
+        "image": "assets/sponsors/NEEK-logo.png",
+        "sponsorlink": "https://neek-transformer.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
         "sponsor_title": "General Sponsor",
         "subtitle": "Expedition Partner",
         "sponsor_name": "DolphinDive Technology",
@@ -69,6 +77,14 @@
         "sponsor_name": "GIZ Nepal",
         "image": "assets/sponsors/GIZ_logo.jpg",
         "sponsorlink": "https://www.giz.de/en/worldwide/378.html",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Energy Hackathon 8.0 Category Sponsor",
+        "sponsor_name": "RERL",
+        "image": "assets/sponsors/undp_logo.png",
+        "sponsorlink": "https://www.aepc.gov.np/rerl/public/",
         "sponsor_text": "visit sponsor"
     },
     {

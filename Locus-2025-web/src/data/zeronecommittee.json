@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Shuvangi Adhikari",
+        "designation": "Editor-in-Chief",
+        "imageUrl": "assets/zerone/zeroneteam/shuvangi.JPG"
+    },
+    {
+        "name": "Rohan Maharjan",
+        "designation": "Editor-in-Chief",
+        "imageUrl": "assets/zerone/zeroneteam/rohan.JPG"
+    },
+    {
+        "name": "Kalpesh Manandhar",
+        "designation": "Managing Editor",
+        "imageUrl": "assets/zerone/zeroneteam/kalpesh.JPG"
+    },
+    {
+        "name": "Utsav Manandhar",
+        "designation": "Managing Editor",
+        "imageUrl": "assets/zerone/zeroneteam/utsav.JPG"
+    },
+    {
+        "name": "Bindu Paudel",
+        "designation": "Magazine Designer",
+        "imageUrl": "assets/zerone/zeroneteam/bindu.JPG"
+    },
+    {
+        "name": "Sudip Kaji Basnet",
+        "designation": "Design Chief",
+        "imageUrl": "assets/zerone/zeroneteam/sudip.JPG"
+    },
+    {
+        "name": "Yujal Shrestha",
+        "designation": "Design Chief",
+        "imageUrl": "assets/zerone/zeroneteam/yujal.JPG"
+    },
+    {
+        "name": "Prasansha Shrestha",
+        "designation": "Interview Head",
+        "imageUrl": "assets/zerone/zeroneteam/prasansha.JPG"
+    },
+    {
+        "name": "Subham Shrestha",
+        "designation": "Tech Lead",
+        "imageUrl": "assets/zerone/zeroneteam/subham.JPG"
+    },
+    {
+        "name": "Samrat Manandhar",
+        "designation": "Event Coverage Head",
+        "imageUrl": "assets/zerone/zeroneteam/samrat.JPG"
+    },
+    {
+        "name": "Sandhya Baral",
+        "designation": "Event Coverage Head",
+        "imageUrl": "assets/zerone/zeroneteam/sandhya.JPG"
+    },
+    {
+        "name": "Suparna Neupane",
+        "designation": "Fact Check Head",
+        "imageUrl": "assets/zerone/zeroneteam/suparna.JPG"
+    },
+    {
+        "name": "Shraddha Pokharel",
+        "designation": "Social Media and PR Head",
+        "imageUrl": "assets/zerone/zeroneteam/shraddha.JPG"
+    },
+    {
+        "name": "Yurisha Bajracharya",
+        "designation": "Editor",
+        "imageUrl": "assets/zerone/zeroneteam/yurisha.JPG"
+    },
+    {
+        "name": "Sheshadri S.Bandyopadhyay",
+        "designation": "Editor",
+        "imageUrl": "assets/zerone/zeroneteam/sheshadri.JPG"
+    }
+]

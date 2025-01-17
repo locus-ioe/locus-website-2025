@@ -5,33 +5,34 @@ import committee_data from "../data/zeronecommittee.json";
 import zeroneevent from "../../public/assets/events/zerone.jpg";
 import technicalevent from "../../public/assets/events/technicalwriting.jpg";
 import { Link } from "react-router-dom";
+
 const highlightImages = [
   {
-    src: "public/assets/zerone/Gallery/KUU00022.jpg",
+    src: "/assets/zerone/Gallery/KUU00022.jpg",
     alt: "Locus Highlight 1",
   },
   {
-    src: "public/assets/zerone/Gallery/KUU00060.jpg",
+    src: "/assets/zerone/Gallery/KUU00060.jpg",
     alt: "Locus Highlight 2",
   },
   {
-    src: "public/assets/zerone/Gallery/The Zerone 2025.JPG",
+    src: "/assets/zerone/Gallery/The Zerone 2025.JPG",
     alt: "Locus Highlight 3",
   },
   {
-    src: "public/assets/zerone/Gallery/zerone 2020.png",
+    src: "/assets/zerone/Gallery/zerone 2020.png",
     alt: "Locus Highlight 4",
   },
   {
-    src: "public/assets/zerone/Gallery/zerone 2023.png",
+    src: "/assets/zerone/Gallery/zerone 2023.png",
     alt: "Locus Highlight 5",
   },
   {
-    src: "public/assets/zerone/Gallery/zerone 2024.png",
+    src: "/assets/zerone/Gallery/zerone 2024.png",
     alt: "Locus Highlight 6",
   },
   {
-    src: "public/assets/zerone/Gallery/zerone stall 2024.png",
+    src: "/assets/zerone/Gallery/zerone stall 2024.png",
     alt: "Locus Highlight 7",
   },
   // { src: 'public/assets/zerone/Zeroneteam.png', alt: 'Locus Highlight 8' },

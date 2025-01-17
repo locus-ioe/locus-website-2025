@@ -9,6 +9,7 @@ const Home = lazy(() => import("./pages/Home"));
 const Sponsor = lazy(() => import("./pages/Sponsor"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Events = lazy(() => import("./pages/Event"));
+const Zerone = lazy(() => import("./pages/Zerone"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Wrap lazy-loaded components with Suspense and a loading spinner
@@ -48,6 +49,10 @@ export const routes = [
       {
         path: "events", // Relative path for the Sponsor page
         element: withSuspense(Events), // Sponsor page
+      },
+      {
+        path: "zerone", // Relative path for the Sponsor page
+        element: withSuspense(Zerone), // Sponsor page
       },
       {
         path: "about-us",

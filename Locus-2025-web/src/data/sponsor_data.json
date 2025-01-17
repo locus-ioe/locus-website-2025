@@ -65,6 +65,22 @@
     },
     {
         "sponsor_title": "Event Sponsor",
+        "subtitle": "Girls in tech Supporting Partner & Patternverse Title sponsor",
+        "sponsor_name": "Alternative Technology",
+        "image": "assets/sponsors/AT.png",
+        "sponsorlink": "https://alternative.com.np/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Girls in tech Supporting Partner ",
+        "sponsor_name": "Smart Cheli",
+        "image": "assets/sponsors/smartcheli.jpg",
+        "sponsorlink": "https://smartcheli.org.np/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Event Sponsor",
         "subtitle": "Hack-A-Week Tech Partner",
         "sponsor_name": "The Computer Club",
         "image": "assets/sponsors/thecomputerclub.png",
@@ -222,6 +238,31 @@
         "sponsor_name": "Nest Nepal",
         "image": "assets/sponsors/nestnepal.png",
         "sponsorlink": "https://nestnepal.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "LOCUS Partners",
+        "subtitle": "Media Partner",
+        "sponsor_name": "Urja Khabar",
+        "image": "assets/sponsors/urja.png",
+        "sponsorlink": "https://www.atherenergy.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    
+    {
+        "sponsor_title": "LOCUS Partners",
+        "subtitle": "2-Wheeler Partner",
+        "sponsor_name": "ATHER",
+        "image": "assets/sponsors/ather.jpg",
+        "sponsorlink": "https://www.atherenergy.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "LOCUS Partners",
+        "subtitle": "Education Partner",
+        "sponsor_name": "Broadway Infosys",
+        "image": "assets/sponsors/broadway.svg",
+        "sponsorlink": "https://broadwayinfosys.com/",
         "sponsor_text": "visit sponsor"
     }
 ]

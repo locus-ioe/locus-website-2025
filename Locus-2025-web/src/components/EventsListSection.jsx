@@ -3,27 +3,37 @@ import { eventsData } from '../data/eventDetails';
 import { Link } from 'react-router-dom';
 
 const EventsListSection = ({ numEventsToShow = eventsData.length }) => {
-  // Sort events by status first, then by start_date in descending order
-  const sortedEvents = [...eventsData]
-    .sort((a, b) => {
-      // First, prioritize 'Active' status
-      if (a.event_type.status === "Active" && b.event_type.status !== "Active") {
-        return -1; // 'a' comes first
-      }
-      if (a.event_type.status !== "Active" && b.event_type.status === "Active") {
-        return 1; // 'b' comes first
-      }
-
-      // If status is the same, sort by start_date in descending order
-      return new Date(b.date_and_time.start_date) - new Date(a.date_and_time.start_date);
-    });
-
+  const sortedEvents = [...eventsData].sort((a, b) => {
+    // Helper function to clean and parse dates
+    const parseDate = (dateString) => {
+      // Remove ordinal suffixes (st, nd, rd, th)
+      const cleanedDate = dateString.replace(/(\d+)(st|nd|rd|th)/, "$1");
+      // Parse cleaned date
+      return new Date(cleanedDate);
+    };
+  
+    // Prioritize 'Active' status
+    if (a.event_type.status === "Active" && b.event_type.status !== "Active") {
+      return -1; // 'a' comes first
+    }
+    if (a.event_type.status !== "Active" && b.event_type.status === "Active") {
+      return 1; // 'b' comes first
+    }
+  
+    // If status is the same, sort by start_date in descending order
+    const dateA = parseDate(a.date_and_time.start_date);
+    const dateB = parseDate(b.date_and_time.start_date);
+  
+    return dateB - dateA; // Descending order
+  });
+  
   // Slice the array to display only the number of events defined in numEventsToShow
   const eventsToDisplay = sortedEvents.slice(0, numEventsToShow);
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
       {eventsToDisplay.map((event) => (
+        
         <Link
           key={event.id}
           to={`/event/${event.title}`}
@@ -36,7 +46,7 @@ const EventsListSection = ({ numEventsToShow = eventsData.length }) => {
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
             />
           </div>
-
+        {console.log(event.date_and_time.start_date)}
           {/* Floating Buttons */}
           <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center z-10">
             <span

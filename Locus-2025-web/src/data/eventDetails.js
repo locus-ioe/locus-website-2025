@@ -341,7 +341,7 @@ export const eventsData = [
       button_text: "Register Now",
     },
     event_type: {
-      status: "Active",
+      status: "Closed",
       mode: "Offline",
       category: "Hackathon",
     },
@@ -405,7 +405,7 @@ export const eventsData = [
       button_text: "Register Now",
     },
     event_type: {
-      status: "Active",
+      status: "Closed",
       mode: "Offline",
       category: "event",
     },

@@ -6,7 +6,7 @@ export default function HeroSection() {
       <div className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl mx-auto h-full flex flex-col items-center justify-center text-center">
         <div className="mb-8 sm:mb-12">
           <h2 className="text-gray-200 mb-2  text-3xl tracking-widest">TIME TO GO...</h2>
-          <CountDown to={new Date('2025-01-26T00:00:00')} />
+          <CountDown to={new Date('2025-01-24T00:00:00')} />
         </div>
         <div className="flex flex-col items-center gap-4 sm:gap-6">
           <img

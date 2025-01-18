@@ -130,7 +130,8 @@ export default function CountDown({ to }) {
       dividerStyle={{color: '#3b3b3b', size: '1px'}}
       className='m-auto'
       duration={0.7}
+      hideOnComplete={false}
       {...sizeBasedStyling[screenSize]}
-    />
+    >Its here</FlipClockCountdown>
   );
 }

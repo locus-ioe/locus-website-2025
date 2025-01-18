@@ -64,14 +64,14 @@ export function Footer() {
               CONTACT US
             </h3>
             <p
-              className="mt-1 text-xs sm:text-sm flex items-center justify-end space-x-1"
+              className="mt-1 text-xs sm:text-sm flex items-center justify-center sm:justify-end space-x-1"
               style={{ fontFamily: "'Helvetica', sans-serif" }}
             >
               <Mail className="h-4 w-3 sm:h-4 sm:w-6"/>
               <span>locus@ioe.edu.np</span>
             </p>
             <p
-              className="mt-1 text-xs sm:text-sm flex items-center justify-end space-x-1"
+              className="mt-1 text-xs sm:text-sm flex items-center justify-center sm:justify-end space-x-1"
               style={{ fontFamily: "'Helvetica', sans-serif" }}
             >
               <Phone className="h-4 w-3 sm:h-4 sm:w-6"/>

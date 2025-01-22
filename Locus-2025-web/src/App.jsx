@@ -1,4 +1,8 @@
-import { createBrowserRouter, RouterProvider, useLocation } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useLocation,
+} from "react-router-dom";
 import { useEffect } from "react";
 import { routes } from "./routes";
 

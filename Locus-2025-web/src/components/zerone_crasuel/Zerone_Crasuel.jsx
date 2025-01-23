@@ -40,7 +40,7 @@ const HighlightCarousel = () => {
 
   return (
     <div
-      className='relative flex items-center justify-center w-full bg-gray-900 text-white'
+      className='relative flex items-center justify-center w-full  text-white'
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >

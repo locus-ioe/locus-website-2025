@@ -69,6 +69,7 @@ export function Navbar() {
                 ["About Us", "/about-us"],
                 ["Events", "/events"],
                 ["Past Locus", "/past-locus"],
+                ["Zerone", "/zerone"],
                 ["Sponsors", "/sponsors"],
                 ["Contact Us", "/contact-us"],
               ].map(([label, to]) => ( 

@@ -63,6 +63,32 @@
         "sponsorlink": "https://dolphindivetech.com/",
         "sponsor_text": "visit sponsor"
     },
+
+    {
+        "sponsor_title": "General Sponsor",
+        "subtitle": "CyberSecurity Partner",
+        "sponsor_name": "SecurityPal",
+        "image": "assets/sponsors/securitypal.png",
+        "sponsorlink": "https://www.securitypalhq.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "General Sponsor",
+        "subtitle": "",
+        "sponsor_name": "EKbana",
+        "image": "assets/sponsors/ekbana.svg",
+        "sponsorlink": "https://www.ekbana.com/",
+        "sponsor_text": "visit sponsor"
+    },
+   
+    {
+        "sponsor_title": "Event Sponsor",
+        "subtitle": "Robo Soccer",
+        "sponsor_name": "BotYards",
+        "image": "assets/sponsors/botyards.png",
+        "sponsorlink": "https://botyards.com/",
+        "sponsor_text": "visit sponsor"
+    },
     {
         "sponsor_title": "Event Sponsor",
         "subtitle": "Girls in tech Supporting Partner & Patternverse Title sponsor",
@@ -201,6 +227,38 @@
         "sponsor_text": "visit sponsor"
     },
     {
+        "sponsor_title": "Stall Sponsor",
+        "subtitle": "",
+        "sponsor_name": "Logictronix",
+        "image": "assets/sponsors/Logictronix-bgwhite.png",
+        "sponsorlink": "https://logictronix.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Stall Sponsor",
+        "subtitle": "",
+        "sponsor_name": "basiyo",
+        "image": "assets/sponsors/basiyo.svg",
+        "sponsorlink": "https://basiyo.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Supporting Partners",
+        "subtitle": "",
+        "sponsor_name": "Nepal Telecom",
+        "image": "assets/sponsors/NepalTelecome.jpg",
+        "sponsorlink": "https://www.ntc.net.np/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Supporting Partners",
+        "subtitle": "",
+        "sponsor_name": "Free Students Union",
+        "image": "assets/sponsors/fsu.png",
+        "sponsorlink": "https://www.facebook.com/p/Free-Students-Union-Pulchowk-Campus-2079-100092446142474/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
         "sponsor_title": "LOCUS Partners",
         "subtitle": "Research Partner",
         "sponsor_name": "NAAMII",
@@ -208,12 +266,21 @@
         "sponsorlink": "https://www.naamii.org.np/",
         "sponsor_text": "visit sponsor"
     },
+    
     {
         "sponsor_title": "LOCUS Partners",
         "subtitle": "IT Training Partner",
         "sponsor_name": "TechAxis",
         "image": "assets/sponsors/TechAxis.svg",
         "sponsorlink": "https://techaxis.com.np/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "LOCUS Partners",
+        "subtitle": "Engineering Outreach Partner",
+        "sponsor_name": "Engineer Vlogs",
+        "image": "assets/sponsors/engineersblog.png",
+        "sponsorlink": "https://engineersblog.net/",
         "sponsor_text": "visit sponsor"
     },
     {
@@ -240,14 +307,6 @@
         "sponsorlink": "https://nestnepal.com/",
         "sponsor_text": "visit sponsor"
     },
-    {
-        "sponsor_title": "LOCUS Partners",
-        "subtitle": "Media Partner",
-        "sponsor_name": "Urja Khabar",
-        "image": "assets/sponsors/urja.png",
-        "sponsorlink": "https://www.atherenergy.com/",
-        "sponsor_text": "visit sponsor"
-    },
     
     {
         "sponsor_title": "LOCUS Partners",
@@ -264,5 +323,62 @@
         "image": "assets/sponsors/broadway.svg",
         "sponsorlink": "https://broadwayinfosys.com/",
         "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Media Partner",
+        "subtitle": "",
+        "sponsor_name": "Urja Khabar",
+        "image": "assets/sponsors/urja.png",
+        "sponsorlink": "https://www.urjakhabar.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Media Partner",
+        "subtitle": "",
+        "sponsor_name": "ICT Samachar",
+        "image": "assets/sponsors/ictsamachar.png",
+        "sponsorlink": "https://ictsamachar.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Media Partner",
+        "subtitle": "",
+        "sponsor_name": "ICT Byte",
+        "image": "assets/sponsors/ictbyte.png",
+        "sponsorlink": "https://ictbyte.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Media Partner",
+        "subtitle": "",
+        "sponsor_name": "ICT Frame",
+        "image": "assets/sponsors/ictframe.png",
+        "sponsorlink": "https://ictframe.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Community Partner",
+        "subtitle": "",
+        "sponsor_name": "NepTech Byte",
+        "image": "assets/sponsors/Nepaltechbyte.png",
+        "sponsorlink": "https://techbytenepal.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Community Partner",
+        "subtitle": "",
+        "sponsor_name": "Rotaract Club",
+        "image": "assets/sponsors/rotaract.png",
+        "sponsorlink": "https://www.facebook.com/rotaractpds",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "Community Partner",
+        "subtitle": "",
+        "sponsor_name": "IOE Pulchowk Girls",
+        "image": "assets/sponsors/ioepulchowkgirls.png",
+        "sponsorlink": "https://www.facebook.com/pulchowk.girls/",
+        "sponsor_text": "visit sponsor"
     }
+    
 ]

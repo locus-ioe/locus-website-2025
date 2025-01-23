@@ -260,6 +260,14 @@
     },
     {
         "sponsor_title": "LOCUS Partners",
+        "subtitle": "CyberSecurity Partner",
+        "sponsor_name": "SecurityPal",
+        "image": "assets/sponsors/securitypal.png",
+        "sponsorlink": "https://www.securitypalhq.com/",
+        "sponsor_text": "visit sponsor"
+    },
+    {
+        "sponsor_title": "LOCUS Partners",
         "subtitle": "Research Partner",
         "sponsor_name": "NAAMII",
         "image": "assets/sponsors/logo-naamii.png",

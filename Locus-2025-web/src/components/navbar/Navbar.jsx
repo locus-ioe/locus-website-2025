@@ -28,21 +28,21 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className='w-full px-4 py-3 text-primary'>
+    <header className="w-full px-4 py-3 text-primary">
       <div
         className={`mx-auto flex max-w-7xl h-20 items-center justify-around rounded-full border border-zinc-800 bg-zinc-900/95 px-4 py-2 backdrop-blur-sm transition-all duration-300 ${
           isScrolled ? "shadow-lg" : ""
         }`}
       >
         {/* Logo */}
-        <Link to='/' className='flex items-center gap-3'>
-          <div className='h-[80%] w-auto pt-2'>
-            <img src='/assets/home/logo.png' alt='Locus 2025 Logo' />
+        <Link to="/" className="flex items-center gap-3">
+          <div className="h-[80%] w-auto pt-2">
+            <img src="/assets/home/logo.png" alt="Locus 2025 Logo" />
           </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className='hidden items-center gap-4 mr-4 md:flex'>
+        <nav className="hidden items-center gap-4 mr-4 md:flex">
           {[
             ["Home", "/"],
             ["About Us", "/about-us"],
@@ -54,7 +54,7 @@ export function Navbar() {
             <Link
               key={label}
               to={to}
-              className='text-md md:text-base lg:text-lg font-medium text-primary transition-colors hover:text-[#4CD6C0]/80 whitespace-nowrap'
+              className="text-md md:text-base lg:text-lg font-medium text-primary transition-colors hover:text-[#4CD6C0]/80 whitespace-nowrap"
             >
               {label}
             </Link>
@@ -78,7 +78,7 @@ export function Navbar() {
                   Past LOCUS
                 </Link>
                 <a
-                  href="https://cit.susheelthapa.com.np/"
+                  href="https://www.cit.locus.com.np/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block px-4 py-2 text-primary hover:bg-zinc-800"
@@ -94,13 +94,13 @@ export function Navbar() {
         {/* Mobile Navigation */}
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant='ghost' size='icon' className='md:hidden'>
+            <Button variant="ghost" size="icon" className="md:hidden">
               <FiMenu size={24} /> {/* Menu Icon for Mobile */}
-              <span className='sr-only'>Toggle navigation menu</span>
+              <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side='right' className='w-64 bg-zinc-900'>
-            <nav className='flex flex-col gap-4'>
+          <SheetContent side="right" className="w-64 bg-zinc-900">
+            <nav className="flex flex-col gap-4">
               {[
                 ["Home", "/"],
                 ["About Us", "/about-us"],
@@ -112,7 +112,7 @@ export function Navbar() {
                 <SheetClose asChild key={label}>
                   <Link
                     to={to}
-                    className='text-lg font-medium text-primary transition-colors hover:text-[#4CD6C0]/80 whitespace-nowrap'
+                    className="text-lg font-medium text-primary transition-colors hover:text-[#4CD6C0]/80 whitespace-nowrap"
                   >
                     {label}
                   </Link>
@@ -139,7 +139,7 @@ export function Navbar() {
                       </Link>
                     </SheetClose>
                     <a
-                      href="https://cit.susheelthapa.com.np/"
+                      href="https://www.cit.locus.com.np/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block px-4 py-2 text-primary hover:bg-zinc-800"

@@ -9,6 +9,14 @@ import Zerone_Carousel from "../components/zerone_crasuel/Zerone_Crasuel";
 
 const highlightImages = [
   {
+    src: "/assets/zerone/Gallery/cute.jpg",
+    alt: "Locus Highlight 8",
+  },
+  {
+    src: "/assets/zerone/Gallery/magazine.jpg",
+    alt: "Locus Highlight 9",
+  },
+  {
     src: "/assets/zerone/Gallery/KUU00022.jpg",
     alt: "Locus Highlight 1",
   },
@@ -91,27 +99,6 @@ function Zerone() {
           </div>
         </div>
 
-        <section className='min-h-screen text-white flex flex-col p-4 sm:p-6 lg:p-8'>
-          <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-center'>
-            <span className='text-white'>The Zerone </span>
-            <span className='text-[#2DD4BF]'>Gallery</span>
-          </h2>
-          <div className='flex-grow grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-fr'>
-            {highlightImages.map((image, index) => (
-              <div
-                key={index}
-                className='relative w-full h-0 pb-[75%] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105'
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className='absolute w-full h-full'
-                />
-              </div>
-            ))}
-          </div>
-        </section>
-
         <div className='text-center mt-12 md:mt-20 px-4'>
           <h1 className='text-[#00ffcc] text-3xl md:text-5xl mb-3 md:mb-3'>
             <span className='text-white'>Zerone</span> Highlights
@@ -187,9 +174,33 @@ function Zerone() {
             </div>
           </div>
         </div>
+
+        <section className='min-h-screen text-white flex flex-col p-4 sm:p-6 lg:p-8'>
+          <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-center'>
+            <span className='text-white'>The Zerone </span>
+            <span className='text-[#2DD4BF]'>Gallery</span>
+          </h2>
+          <div className='flex-grow grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-fr'>
+  {highlightImages.map((image, index) => (
+    <div
+      key={index}
+      className='relative w-full h-0 pb-[75%] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105'
+    >
+      <img
+        src={image.src}
+        alt={image.alt}
+        className='absolute w-full h-full object-cover'
+      />
+    </div>
+  ))}
+</div>
+
+        </section>
+
+
         <div className='text-center mt-12 md:mt-20 px-4'>
           <h1 className='text-[#00ffcc] text-3xl md:text-5xl mb-3 md:mb-3'>
-            <span className='text-white'>Previous </span> Edition
+            <span className='text-white'>Previous </span> Issues
           </h1>
           <Zerone_Carousel />
         </div>

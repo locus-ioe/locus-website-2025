@@ -13,7 +13,7 @@ const Layout = () => {
         <Outlet />
       </main>
       <Footer />
-      <LocusEventPopup />
+      {/* <LocusEventPopup /> */}
     </div>
   );
 };

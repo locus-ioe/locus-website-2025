@@ -91,15 +91,15 @@ export function Navbar() {
           </div>
         </nav>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation - Hidden on larger screens */}
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden">
+            <Button variant="ghost" size="icon" className="md:hidden lg:hidden">
               <FiMenu size={24} /> {/* Menu Icon for Mobile */}
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-64 bg-zinc-900">
+          <SheetContent side="right" className="w-64 bg-zinc-900 md:hidden lg:hidden">
             <nav className="flex flex-col gap-4">
               {[
                 ["Home", "/"],
@@ -120,36 +120,22 @@ export function Navbar() {
               ))}
 
               {/* Dropdown Links for Mobile */}
-              <div className="relative">
-                <button
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+              <SheetClose asChild>
+                <Link
+                  to="/past-locus"
                   className="text-lg font-medium text-primary transition-colors hover:text-[#4CD6C0]/80 whitespace-nowrap"
                 >
-                  Past LOCUS & More
-                </button>
-                {isMenuOpen && (
-                  <div className="mt-2 bg-zinc-900 rounded-md shadow-lg z-10">
-                    <SheetClose asChild>
-                      <Link
-                        to="/past-locus"
-                        className="block px-4 py-2 text-primary hover:bg-zinc-800"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Past LOCUS
-                      </Link>
-                    </SheetClose>
-                    <a
-                      href="https://www.cit.locus.com.np/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block px-4 py-2 text-primary hover:bg-zinc-800"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      CIT-MAP
-                    </a>
-                  </div>
-                )}
-              </div>
+                  Past LOCUS
+                </Link>
+              </SheetClose>
+              <a
+                href="https://www.cit.locus.com.np/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium text-primary transition-colors hover:text-[#4CD6C0]/80 whitespace-nowrap"
+              >
+                CIT-MAP
+              </a>
             </nav>
           </SheetContent>
         </Sheet>

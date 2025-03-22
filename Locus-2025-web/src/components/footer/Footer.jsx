@@ -70,7 +70,7 @@ export function Footer() {
               <Mail className="h-4 w-3 sm:h-4 sm:w-6"/>
               <span>locus@ioe.edu.np</span>
             </p>
-            <p
+            {/* <p
               className="mt-1 text-xs sm:text-sm flex items-center justify-center sm:justify-end space-x-1"
               style={{ fontFamily: "'Helvetica', sans-serif" }}
             >
@@ -83,7 +83,7 @@ export function Footer() {
               style={{ fontFamily: "'Helvetica', sans-serif" }}
             >
                 9840066727
-            </p>
+            </p> */}
             <div className="mt-4">
               <h4
                 className="text-lg font-semibold sm:text-xl"

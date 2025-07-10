@@ -4,7 +4,7 @@ import { Button } from "../navbar/Button";
   
 function StatCard({ number, label }) {
     return (
-        <div className="rounded-lg py-4 text-center bg-primary text-white">
+        <div className="rounded-lg py-4 text-center bg-[#40a3c4] text-white">
         <h3 className="text-2xl font-bold">{number}+</h3>
         <p className="text-lg">{label}</p>
         </div>

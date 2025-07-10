@@ -15,11 +15,11 @@ const EventDescription = () => {
     <div className="main-div">
       <div className="events-list flex flex-col gap-4">
         <h2>
-          <span className="highlight">Event</span> Detail
+          <span className="text-[#48d0ff]">Event</span> Detail
         </h2>
         <hr />
 
-        <div className="mx-1 sm:mx-8 lg:mr-20 lg:ml-20 gap-12 flex flex-col p-4 sm:p-8 border-2 rounded-xl border-[#00ffcc] shadow-lg shadow-white/10">
+        <div className="mx-1 sm:mx-8 lg:mr-20 lg:ml-20 gap-12 flex flex-col p-4 sm:p-8 border-2 rounded-xl border-[#0085b3] shadow-lg shadow-white/10">
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Event Poster */}
             <div className="flex-[0.35] event-poster flex flex-col items-center gap-4">
@@ -32,7 +32,7 @@ const EventDescription = () => {
               )}
 
               {event.registration?.button_text && (
-                <button className="text-[24px] border-2 w-full py-2 bg-[#00ffcc]/10 hover:bg-black/50 rounded-lg border-[#00ffcc] font-bold">
+                <button className="text-[24px] border-2 w-full py-2 bg-[#0085b3]/10 hover:bg-black/50 rounded-lg border-[#0085b3] font-bold">
                   <Link to={event.registration_link}>
                     <span>{event.registration.button_text}</span>
                   </Link>
@@ -48,7 +48,7 @@ const EventDescription = () => {
                 </h1>
               )}
               {event.event_type?.category !== "Workshop" ? (
-                <div className="bg-black/30 border-2 p-4 rounded-lg border-[#00ffcc] font-bold flex flex-row justify-around">
+                <div className="bg-black/30 border-2 p-4 rounded-lg border-[#0085b3] font-bold flex flex-row justify-around">
                   {event.prize && <span>{event.prize.prizePool}</span>}
                   {/* <span>|</span>
                   {event.runnerup && <span>{event.runnerup}</span>} */}
@@ -57,7 +57,7 @@ const EventDescription = () => {
                 <></>
               )}
               {event.date_and_time && (
-                <span className="bg-black/30 border-2 p-4 rounded-lg border-[#00ffcc] text-justify">
+                <span className="bg-black/30 border-2 p-4 rounded-lg border-[#0085b3] text-justify">
                   Date : {event.date_and_time.start_date} to{" "}
                   {event.date_and_time.end_date} | Time :{" "}
                   {event.date_and_time.time}
@@ -65,12 +65,12 @@ const EventDescription = () => {
               )}
               <div className="flex justify-between">
                 {event.event_type?.mode && (
-                  <span className="bg-black/30 border-2 p-4 rounded-lg border-[#00ffcc] text-justify">
+                  <span className="bg-black/30 border-2 p-4 rounded-lg border-[#0085b3] text-justify">
                     Mode : {event.event_type.mode}
                   </span>
                 )}
                 {event.event_type?.status && (
-                  <span className="bg-black/30 border-2 p-4 rounded-lg border-[#00ffcc] text-justify">
+                  <span className="bg-black/30 border-2 p-4 rounded-lg border-[#0085b3] text-justify">
                     Status : {event.event_type.status}
                   </span>
                 )}
@@ -133,7 +133,7 @@ const EventDescription = () => {
         {/* Sponsors */}
         <div className="flex flex-col items-center mr-8 ml-8 lg:mr-20 lg:ml-20">
           <h2>
-            <span className="highlight">Event</span> Sponsors
+            <span className="text-[#48d0ff]">Event</span> Sponsors
           </h2>
           {event.sponsoredby && (
             <div className="flex flex-wrap justify-center gap-4 mt-4">

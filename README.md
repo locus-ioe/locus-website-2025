@@ -1,6 +1,6 @@
-# LOCUS 2025 Website
+# LOCUS 2026 Website
 
-Welcome to the official repository of the **LOCUS 2025's Website**! We aim to openly develop the website for the LOCUS 2025 event. It is currently hosted [here](https://www.locus.com.np/).
+Welcome to the official repository of the **LOCUS 2026's Website**! We aim to openly develop the website for the LOCUS 2026 event. It is currently hosted [here](https://www.locus.com.np/).
 
 
 ## 🚀 **Tech Stack**
@@ -12,7 +12,7 @@ Welcome to the official repository of the **LOCUS 2025's Website**! We aim to op
 ## 📂 **Project Structure**
 
 ```plaintext
-└── Locus-2025-web                  # Root directory for the LOCUS 2025 website project
+└── Locus-2025-web                  # Root directory for the LOCUS 2026 website project
     ├── public                      # Publicly accessible static assets
     │   └── assets
     │       ├── committee25

@@ -18,7 +18,7 @@ const Sponsors = () => {
     <div className="text-center bg-black text-white py-10 px-6">
       <div>
         <h1 className="text-3xl md:text-5xl font-bold mb-6">
-          Locus <span className="text-teal-400">2025</span> Sponsors
+          Locus <span className="text-[#00abe6]">2025</span> Sponsors
         </h1>
       </div>
 
@@ -28,7 +28,7 @@ const Sponsors = () => {
           {/* sponsor_title Heading with Horizontal Bar */}
           <div className="relative flex items-center justify-center mb-6">
             <hr className="absolute w-full border-t-2 border-gray-600" />
-            <h2 className="relative bg-black px-4 text-2xl md:text-3xl font-semibold text-teal-400">
+            <h2 className="relative bg-black px-4 text-2xl md:text-3xl font-semibold text-[#00abe6]">
               {sponsor_title}
             </h2>
           </div>
@@ -53,7 +53,7 @@ const Sponsors = () => {
                   />
                 </a>
                 <div className="text-center sm:text-left">
-                  <h3 className="text-xl font-bold text-teal-400 mb-2">
+                  <h3 className="text-xl font-bold text-[#00abe6] mb-2">
                     {sponsor.sponsor_name}
                   </h3>
                   {sponsor.subtitle && (
@@ -63,7 +63,7 @@ const Sponsors = () => {
                     href={sponsor.sponsorlink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-3 text-sm text-teal-300 hover:underline"
+                    className="inline-block mt-3 text-sm text-[#4dd1ff] hover:underline"
                   >
                     {sponsor.sponsor_text}
                   </a>

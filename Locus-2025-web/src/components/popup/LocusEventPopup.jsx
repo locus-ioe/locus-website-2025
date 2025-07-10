@@ -34,7 +34,7 @@ const ExhibitionPopup = () => {
         {/* Text Section */}
         <div className='w-full md:w-1/2'>
           <h2 className='text-2xl sm:text-3xl font-extrabold text-green-400 mb-4 text-center md:text-left'>
-            🚀 LOCUS 2025 Grand Exhibition
+            🚀 LOCUS 2026 Grand Exhibition
           </h2>
           <p className='text-base sm:text-lg text-gray-300 mb-4'>
             <span className='font-bold text-yellow-400'>📅 Dates:</span> Magh
@@ -54,7 +54,7 @@ const ExhibitionPopup = () => {
             just curious, there’s something for everyone!
           </p>
           <p className='text-lg sm:text-xl font-bold text-green-400 mt-6'>
-            Let’s make LOCUS 2025 an unforgettable experience! 🎉
+            Let’s make LOCUS 2026 an unforgettable experience! 🎉
           </p>
         </div>
       </div>

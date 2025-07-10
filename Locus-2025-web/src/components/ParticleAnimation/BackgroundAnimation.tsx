@@ -28,10 +28,10 @@ interface ParticleAnimationProps {
 
 const defaultColors: Colors = {
   background: '#000000',
-  link: '#48BFBA',
-  text: '#48BFBA',
-  particle: '#48BFBA',
-  particleStroke: '#48BFBA'
+  link: '#48d0ff',
+  text: '#48d0ff',
+  particle: '#48d0ff',
+  particleStroke: '#48d0ff'
 };
 
 class Particle {

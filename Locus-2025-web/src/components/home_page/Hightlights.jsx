@@ -16,7 +16,7 @@ export default function LocusHighlights() {
     <section className="min-h-screen text-white flex flex-col p-4 sm:p-6 lg:p-8">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-center">
         <span className="text-white">LOCUS </span>
-        <span className="text-[#2DD4BF]">Highlights</span>
+        <span className="text-[#48d0ff]">Highlights</span>
       </h2>
       <div className="flex-grow grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-fr">
         {highlightImages.map((image, index) => (

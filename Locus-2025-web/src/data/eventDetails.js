@@ -184,8 +184,8 @@ export const eventsData = [
     id: 4,
     title: "ELECTRO-TECH-WEEK",
     date_and_time: {
-      start_date: "21st July,2024",
-      end_date: "27 July,2024",
+      start_date: "22nd July,2025",
+      end_date: "27 July,2025",
       time: "9:00 AM - 5:00 PM",
     },
     imgSrc: electrotech,
@@ -292,7 +292,7 @@ export const eventsData = [
       button_text: "Register Free",
     },
     event_type: {
-      status: "Active",
+      status: "Closed",
       mode: "Offline",
       category: "Competition",
     },

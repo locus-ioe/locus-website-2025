@@ -50,8 +50,8 @@ export function Footer() {
           {/* Center Section */}
 
           <img
-            src="/assets/home/footerlogo.png"
-            alt="Locus 2025 Logo"
+            src="/assets/home/footer_logo_2026.png"
+            alt="LOCUS 2026 Logo"
             className="h-25 w-auto mx-auto"
           />
 

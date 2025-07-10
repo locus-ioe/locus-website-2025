@@ -11,5 +11,5 @@ export const aboutUsHistory = [
   //   id: 2,
   //   image: 'public/assets/zerone/Zeroneteam.png',
   //   description:
-  //     "The dedicated Zerone Committee, composed of passionate students from Computer, Electronics and Electrical engineering departments, has worked tirelessly to bring this event to life. Their enthusiasm and innovative spirit are clear in every aspect of LOCUS 2025, making it a truly remarkable experience for everyone involved. From organizing workshops and competitions to preparing for the exhibition, the committee members have demonstrated exceptional dedication. Their efforts have not only created a platform for innovation but also fostered a sense of community among young technologists."},
+  //     "The dedicated Zerone Committee, composed of passionate students from Computer, Electronics and Electrical engineering departments, has worked tirelessly to bring this event to life. Their enthusiasm and innovative spirit are clear in every aspect of LOCUS 2026, making it a truly remarkable experience for everyone involved. From organizing workshops and competitions to preparing for the exhibition, the committee members have demonstrated exceptional dedication. Their efforts have not only created a platform for innovation but also fostered a sense of community among young technologists."},
 ];

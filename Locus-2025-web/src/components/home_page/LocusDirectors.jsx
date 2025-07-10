@@ -15,7 +15,7 @@ const LocusDirectors = () => {
         <div className="my-auto max-w-[50svw] space-y-4">
           <h2 className="text-xl sm:text-6xl lg:text-7xl tracking-tight ">
             <span className="text-primary">LOCUS </span>
-            <span className="text-white">2025 </span>
+            <span className="text-white">2026 </span>
             <span className="text-primary">Marvels </span>
             <span className="text-white">all </span>
             <span className="text-white">across </span>

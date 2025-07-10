@@ -52,7 +52,7 @@ export default function Contact() {
       <div className="border-white border-2 px-16 py-8 rounded-md shadow-md bg-black/10 backdrop-blur-sm">
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">
-            <span className="text-teal-400">Contact</span>{" "}
+            <span className="text-[#00abe6]">Contact</span>{" "}
             <span className="text-white">Us</span>
           </h1>
         </div>
@@ -148,7 +148,7 @@ export default function Contact() {
           <button
             type="button"
             onClick={handleMailtoClick}
-            className="w-32 mx-auto block px-4 py-2 bg-transparent hover:bg-teal-400/10 text-teal-400 border-2 border-teal-400 rounded-md shadow-[0_0_15px_rgba(79,209,197,0.2)] hover:shadow-[0_0_20px_rgba(79,209,197,0.4)] transition-all duration-300"
+            className="w-32 mx-auto block px-4 py-2 bg-transparent hover:bg-[#00abe6]/10 text-[#00abe6] border-2 border-[#00abe6] rounded-md shadow-[0_0_15px_rgba(79,209,197,0.2)] hover:shadow-[0_0_20px_rgba(79,209,197,0.4)] transition-all duration-300"
           >
             Submit
           </button>

@@ -25,7 +25,7 @@ const WireframeSphere = () => { const containerRef = useRef(null);
     const shaderMaterial = new THREE.ShaderMaterial({
       uniforms: {
         pointSize: { value: 10.0 },
-        color: { value: new THREE.Color(0x00ffff) },
+        color: { value: new THREE.Color(0x48d0ff) },
       },
       vertexShader: `
         uniform float pointSize;
@@ -52,7 +52,7 @@ const WireframeSphere = () => { const containerRef = useRef(null);
     scene.add(points);
 
     const wireframe = new THREE.WireframeGeometry(geometry);
-    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x00ffff });
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x48d0ff });
     const edges = new THREE.LineSegments(wireframe, lineMaterial);
 
 

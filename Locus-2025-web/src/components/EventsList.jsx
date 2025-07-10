@@ -23,9 +23,9 @@ const EventsList = () => {
   // const numEventsToShow = 6;  // Or leave it undefined to show all events
 
   return (
-    <div className="text-center mt-12 md:mt-20 px-4">
-      <h1 className="text-[#00ffcc] text-3xl md:text-5xl mb-3 md:mb-3"><span className="text-white">LOCUS</span> Events</h1>
-      <div className="h-0.5 bg-[#00ffcc] w-[80%] mx-auto mb-10 md:mb-16"></div>
+    <div className="text-center mt-12 md:mt-20 px-4"> 
+      <h1 className="text-[#48d0ff] text-3xl md:text-5xl mb-3 md:mb-3"><span className="text-white">LOCUS</span> Events</h1>
+      <div className="h-0.5 bg-[#48d0ff] w-[80%] mx-auto mb-10 md:mb-16"></div>
       {/* {showPopup && <Popup onClose={closePopup} />} */}
 
       <EventsListSection  />

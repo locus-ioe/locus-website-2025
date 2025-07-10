@@ -10,11 +10,11 @@ function AboutUs() {
         {/* About Section */}
         <div className='text-center mb-8'>
           <h1 className='text-2xl md:text-4xl font-bold mb-4'>
-            <span className='text-[#48BFBA]'>About</span> LOCUS 2025
+            <span className='text-[#48d0ff]'>About</span> LOCUS 2026
           </h1>
-          <p className='text-lg text-white'>21st National Technology Fest</p>
+          <p className='text-lg text-white'>22nd National Technology Fest</p>
           <p className='text-sm md:text-base text-white mt-2'>
-            21st National Technology Fest 24th - 26th January, IOE Pulchowk
+            22nd National Technology Fest in January 2026, IOE Pulchowk
             Engineering Campus, Nepal
           </p>
           <div className='mt-4 mb-4'>
@@ -38,7 +38,7 @@ function AboutUs() {
         <div className='mt-12'>
           <div className='text-center mb-8'>
             <h1 className='text-2xl md:text-4xl font-bold'>
-              <span className='text-[#48BFBA]'>LOCUS 2025 </span>Committee
+              <span className='text-[#48d0ff]'>LOCUS 2026 </span>Committee
             </h1>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6'>

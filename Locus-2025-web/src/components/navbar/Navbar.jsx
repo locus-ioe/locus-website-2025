@@ -37,7 +37,7 @@ export function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
           <div className="h-[80%] w-auto pt-2">
-            <img src="/assets/home/logo.png" alt="Locus 2025 Logo" />
+            <img src="/assets/home/locus2026_small.png" alt="Locus 2026 Logo" /> 
           </div>
         </Link>
 
@@ -54,7 +54,7 @@ export function Navbar() {
             <Link
               key={label}
               to={to}
-              className="text-md md:text-base lg:text-lg font-medium text-primary transition-colors hover:text-[#4CD6C0]/80 whitespace-nowrap"
+              className="text-md md:text-base lg:text-lg font-medium text-primary transition-colors hover:text-[#00abe6]/80 whitespace-nowrap"
             >
               {label}
             </Link>
@@ -64,7 +64,7 @@ export function Navbar() {
           <div className="relative" ref={menuRef}>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-md md:text-base lg:text-lg font-medium text-primary transition-colors hover:text-[#4CD6C0]/80 whitespace-nowrap"
+              className="text-md md:text-base lg:text-lg font-medium text-primary transition-colors hover:text-[#00abe6]/80 whitespace-nowrap"
             >
               <FiMenu size={24} /> {/* Menu Icon */}
             </button>
@@ -112,7 +112,7 @@ export function Navbar() {
                 <SheetClose asChild key={label}>
                   <Link
                     to={to}
-                    className="text-lg font-medium text-primary transition-colors hover:text-[#4CD6C0]/80 whitespace-nowrap"
+                    className="text-lg font-medium text-primary transition-colors hover:text-[#00abe6]/80 whitespace-nowrap"
                   >
                     {label}
                   </Link>
@@ -123,7 +123,7 @@ export function Navbar() {
               <SheetClose asChild>
                 <Link
                   to="/past-locus"
-                  className="text-lg font-medium text-primary transition-colors hover:text-[#4CD6C0]/80 whitespace-nowrap"
+                  className="text-lg font-medium text-primary transition-colors hover:text-[#00abe6]/80 whitespace-nowrap"
                 >
                   Past LOCUS
                 </Link>
@@ -132,7 +132,7 @@ export function Navbar() {
                 href="https://www.cit.locus.com.np/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg font-medium text-primary transition-colors hover:text-[#4CD6C0]/80 whitespace-nowrap"
+                className="text-lg font-medium text-primary transition-colors hover:text-[#00abe6]/80 whitespace-nowrap"
               >
                 CIT-MAP
               </a>

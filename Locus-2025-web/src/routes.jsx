@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import Layout from "./Layout.jsx"; 
+import Layout from "./Layout.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 import PastLocusPage from "./pages/PastLocusPage.jsx";
 import EventDescription from "./components/EventDescription.jsx";
@@ -10,6 +10,7 @@ const Sponsor = lazy(() => import("./pages/Sponsor"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Events = lazy(() => import("./pages/Event"));
 const Zerone = lazy(() => import("./pages/Zerone"));
+const Blogs = lazy(() => import("./pages/Blogs"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Wrap lazy-loaded components with Suspense and a loading spinner
@@ -20,7 +21,6 @@ const LoadingSpinner = () => {
     </div>
   );
 };
-
 
 const withSuspense = (Component) => {
   return (
@@ -65,6 +65,10 @@ export const routes = [
       {
         path: "past-locus",
         element: withSuspense(PastLocusPage),
+      },
+      {
+        path: "blogs",
+        element: withSuspense(Blogs),
       },
     ],
   },

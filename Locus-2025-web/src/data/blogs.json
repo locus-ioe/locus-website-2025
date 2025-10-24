@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "The Future of Technology in Nepal: A Student's Perspective",
+    "description": "Exploring how technology is shaping Nepal's future and the role of students in driving innovation forward.",
+    "mediumUrl": "https://medium.com/@locus2025/the-future-of-technology-in-nepal",
+    "author": "Locus Team",
+    "publishedDate": "2024-12-15",
+    "readTime": "5 min read"
+  },
+  {
+    "id": 2,
+    "title": "Building a Tech Community: Lessons from LOCUS 2025",
+    "description": "Insights on how LOCUS 2025 is fostering a stronger tech community in Nepal through events and collaboration.",
+    "mediumUrl": "https://medium.com/@locus2025/building-tech-community-locus-2025",
+    "author": "Locus Committee",
+    "publishedDate": "2024-12-10",
+    "readTime": "7 min read"
+  },
+  {
+    "id": 3,
+    "title": "Women in Tech: Breaking Barriers in Nepal",
+    "description": "Celebrating the achievements of women in Nepal's tech industry and discussing ways to encourage more participation.",
+    "mediumUrl": "https://medium.com/@locus2025/women-in-tech-nepal",
+    "author": "Locus WIA Team",
+    "publishedDate": "2024-12-05",
+    "readTime": "6 min read"
+  },
+  {
+    "id": 4,
+    "title": "From Hackathons to Innovation: Student Success Stories",
+    "description": "Showcasing amazing projects and innovations that emerged from LOCUS hackathons and competitions.",
+    "mediumUrl": "https://medium.com/@locus2025/hackathons-to-innovation",
+    "author": "Locus Events Team",
+    "publishedDate": "2024-11-28",
+    "readTime": "8 min read"
+  },
+  {
+    "id": 5,
+    "title": "The Impact of Open Source in Nepal's Tech Ecosystem",
+    "description": "How open source contributions are helping shape Nepal's technology landscape and opportunities for students.",
+    "mediumUrl": "https://medium.com/@locus2025/open-source-nepal-tech",
+    "author": "Locus Open Source Team",
+    "publishedDate": "2024-11-20",
+    "readTime": "6 min read"
+  },
+  {
+    "id": 6,
+    "title": "Preparing for Tech Careers: A Guide for Engineering Students",
+    "description": "Practical advice for engineering students on building skills and preparing for successful tech careers.",
+    "mediumUrl": "https://medium.com/@locus2025/tech-careers-guide-students",
+    "author": "Locus Career Team",
+    "publishedDate": "2024-11-15",
+    "readTime": "9 min read"
+  }
+]

@@ -37,7 +37,7 @@ export function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
           <div className="h-[80%] w-auto pt-2">
-            <img src="/assets/home/locus2026_small.png" alt="Locus 2026 Logo" /> 
+            <img src="/assets/home/locus2026_small.png" alt="Locus 2026 Logo" />
           </div>
         </Link>
 
@@ -48,6 +48,7 @@ export function Navbar() {
             ["About Us", "/about-us"],
             ["Events", "/events"],
             ["Zerone", "/zerone"],
+            ["Blogs", "/blogs"],
             ["Sponsors", "/sponsors"],
             ["Contact Us", "/contact-us"],
           ].map(([label, to]) => (
@@ -99,13 +100,17 @@ export function Navbar() {
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-64 bg-zinc-900 md:hidden lg:hidden">
+          <SheetContent
+            side="right"
+            className="w-64 bg-zinc-900 md:hidden lg:hidden"
+          >
             <nav className="flex flex-col gap-4">
               {[
                 ["Home", "/"],
                 ["About Us", "/about-us"],
                 ["Events", "/events"],
                 ["Zerone", "/zerone"],
+                ["Blogs", "/blogs"],
                 ["Sponsors", "/sponsors"],
                 ["Contact Us", "/contact-us"],
               ].map(([label, to]) => (

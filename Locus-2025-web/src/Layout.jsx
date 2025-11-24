@@ -9,7 +9,8 @@ const Layout = () => {
     <div className='min-h-screen text-white flex flex-col'>
       <Navbar />
       <BackgroundAnimation />
-      <main className='flex-grow max-w-5xl w-full mx-auto px-4'>
+      {/* Added padding-top to account for fixed navbar */}
+      <main className='flex-grow max-w-5xl w-full mx-auto px-4 pt-24 md:pt-28'>
         <Outlet />
       </main>
       <Footer />

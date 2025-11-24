@@ -12,6 +12,8 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Events = lazy(() => import("./pages/Event"));
 const Zerone = lazy(() => import("./pages/Zerone"));
 const EventCalendar = lazy(() => import("./pages/EventCalendar.jsx"));
+
+const SingleBlogPost = lazy(() => import("./pages/SingleBlog.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Wrap lazy-loaded components with Suspense and a loading spinner
@@ -58,6 +60,10 @@ export const routes = [
       {
         path: "blogs",
         element: withSuspense(Blogpage),
+      },
+      {
+        path: "blog/:slug", // Dynamic route for individual blog posts
+        element: withSuspense(SingleBlogPost),
       },
       {
         path: "zerone", // Relative path for the Sponsor page

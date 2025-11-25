@@ -52,8 +52,8 @@ export function Navbar() {
             ["Home", "/"],
             ["About", "/about-us"],
             ["Events", "/events"],
-            ["Calendar", "/calendar"],
             ["Zerone", "/zerone"],
+            ["Sponsors", "/sponsors"],
           ].map(([label, to]) => (
             <Link
               key={label}
@@ -75,13 +75,6 @@ export function Navbar() {
             </button>
             {isMenuOpen && (
               <div className='absolute right-0 mt-2 w-48 bg-zinc-900 border border-zinc-800 rounded-lg shadow-xl z-[120] overflow-hidden'>
-                <Link
-                  to='/sponsors'
-                  className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Sponsors
-                </Link>
                 <Link
                   to='/blogs'
                   className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'
@@ -143,8 +136,8 @@ export function Navbar() {
               {[
                 ["Home", "/"],
                 ["About Us", "/about-us"],
-                ["Events", "/events"],
-                ["Calendar", "/calendar"],
+                ["Events", "/events"], 
+                // ["Calendar", "/calendar"], Hidden for now , still under development
                 ["Zerone", "/zerone"],
                 ["Sponsors", "/sponsors"],
                 ["Blogs", "/blogs"],

@@ -1,87 +1,107 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { FiMenu } from "react-icons/fi"; // Import Menu Icon
-import { Button } from "./Button";
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./Sheet";
+import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 
 export function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu dropdown
-  const menuRef = useRef(null); // Ref for dropdown menu
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const menuRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsMenuOpen(false); // Close the menu if click is outside
+        setIsMenuOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileOpen]);
+
   return (
-    <header className="w-full px-4 py-3 text-primary">
-      <div
-        className={`mx-auto flex max-w-7xl h-20 items-center justify-around rounded-full border border-zinc-800 bg-zinc-900/95 px-4 py-2 backdrop-blur-sm transition-all duration-300 ${
-          isScrolled ? "shadow-lg" : ""
-        }`}
-      >
+    <header className='fixed top-0 left-0 right-0 w-full px-4 py-3 text-primary z-[100] bg-transparent'>
+      <div className='mx-auto flex max-w-7xl h-16 md:h-20 items-center justify-between rounded-full border border-zinc-800 bg-zinc-900/95 px-4 md:px-6 backdrop-blur-sm transition-all duration-300 shadow-lg'>
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-3">
-          <div className="h-[80%] w-auto pt-2">
-            <img src="/assets/home/locus2026_small.png" alt="Locus 2026 Logo" /> 
+        <Link
+          to='/'
+          className='flex items-center gap-2 z-[110]'
+        >
+          <div className='h-12 md:h-16 w-auto'>
+            <img
+              src='/assets/home/locus2026_small.png'
+              alt='Locus 2026 Logo'
+              className='h-full w-auto object-contain'
+            />
           </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-4 mr-4 md:flex">
+        <nav className='hidden lg:flex items-center gap-1 z-[110]'>
           {[
             ["Home", "/"],
-            ["About Us", "/about-us"],
+            ["About", "/about-us"],
             ["Events", "/events"],
             ["Zerone", "/zerone"],
             ["Sponsors", "/sponsors"],
-            ["Contact Us", "/contact-us"],
           ].map(([label, to]) => (
             <Link
               key={label}
               to={to}
-              className="text-md md:text-base lg:text-lg font-medium text-primary transition-colors hover:text-[#00abe6]/80 whitespace-nowrap"
+              className='px-3 py-2 text-sm font-medium text-primary transition-colors hover:text-[#00abe6] rounded-lg hover:bg-zinc-800/50'
             >
               {label}
             </Link>
           ))}
 
-          {/* Menu Icon with Dropdown */}
-          <div className="relative" ref={menuRef}>
+          {/* More Dropdown */}
+          <div className='relative' ref={menuRef}>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-md md:text-base lg:text-lg font-medium text-primary transition-colors hover:text-[#00abe6]/80 whitespace-nowrap"
+              className='flex items-center gap-1 px-3 py-2 text-sm font-medium text-primary transition-colors hover:text-[#00abe6] rounded-lg hover:bg-zinc-800/50'
             >
-              <FiMenu size={24} /> {/* Menu Icon */}
+              More
+              <FiChevronDown className={`transition-transform ${isMenuOpen ? 'rotate-180' : ''}`} />
             </button>
             {isMenuOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-zinc-900 rounded-md shadow-lg z-10">
+              <div className='absolute right-0 mt-2 w-48 bg-zinc-900 border border-zinc-800 rounded-lg shadow-xl z-[120] overflow-hidden'>
                 <Link
-                  to="/past-locus"
-                  className="block px-4 py-2 text-primary hover:bg-zinc-800"
+                  to='/blogs'
+                  className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Blogs
+                </Link>
+                <Link
+                  to='/contact-us'
+                  className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Contact Us
+                </Link>
+                <div className='h-px bg-zinc-800 my-1'></div>
+                <Link
+                  to='/past-locus'
+                  className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Past LOCUS
                 </Link>
                 <a
-                  href="https://www.cit.locus.com.np/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block px-4 py-2 text-primary hover:bg-zinc-800"
+                  href='https://www.cit.locus.com.np/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'
                   onClick={() => setIsMenuOpen(false)}
                 >
                   CIT-MAP
@@ -91,55 +111,71 @@ export function Navbar() {
           </div>
         </nav>
 
-        {/* Mobile Navigation - Hidden on larger screens */}
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden lg:hidden">
-              <FiMenu size={24} /> {/* Menu Icon for Mobile */}
-              <span className="sr-only">Toggle navigation menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="right" className="w-64 bg-zinc-900 md:hidden lg:hidden">
-            <nav className="flex flex-col gap-4">
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsMobileOpen(!isMobileOpen)}
+          className='lg:hidden z-[110] p-2 rounded-lg hover:bg-zinc-800 transition-colors'
+          aria-label='Toggle menu'
+        >
+          {isMobileOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Navigation Overlay */}
+      {isMobileOpen && (
+        <>
+          {/* Backdrop */}
+          <div
+            className='fixed inset-0 bg-black/70 backdrop-blur-sm z-[105] lg:hidden animate-fadeIn'
+            onClick={() => setIsMobileOpen(false)}
+          ></div>
+
+          {/* Mobile Menu */}
+          <div className='fixed top-[5.5rem] right-4 left-4 bg-zinc-900/98 border border-zinc-800 rounded-2xl shadow-2xl z-[106] lg:hidden max-h-[calc(100vh-7rem)] overflow-y-auto animate-slideDown backdrop-blur-xl'>
+            <nav className='flex flex-col p-4'>
               {[
                 ["Home", "/"],
                 ["About Us", "/about-us"],
-                ["Events", "/events"],
+                ["Events", "/events"], 
+                // ["Calendar", "/calendar"], Hidden for now , still under development
                 ["Zerone", "/zerone"],
                 ["Sponsors", "/sponsors"],
+                ["Blogs", "/blogs"],
                 ["Contact Us", "/contact-us"],
               ].map(([label, to]) => (
-                <SheetClose asChild key={label}>
-                  <Link
-                    to={to}
-                    className="text-lg font-medium text-primary transition-colors hover:text-[#00abe6]/80 whitespace-nowrap"
-                  >
-                    {label}
-                  </Link>
-                </SheetClose>
+                <Link
+                  key={label}
+                  to={to}
+                  className='px-4 py-3 text-base font-medium text-primary hover:text-[#00abe6] hover:bg-zinc-800/50 rounded-lg transition-all active:scale-95'
+                  onClick={() => setIsMobileOpen(false)}
+                >
+                  {label}
+                </Link>
               ))}
 
-              {/* Dropdown Links for Mobile */}
-              <SheetClose asChild>
-                <Link
-                  to="/past-locus"
-                  className="text-lg font-medium text-primary transition-colors hover:text-[#00abe6]/80 whitespace-nowrap"
-                >
-                  Past LOCUS
-                </Link>
-              </SheetClose>
+              <div className='h-px bg-zinc-800 my-2'></div>
+
+              <Link
+                to='/past-locus'
+                className='px-4 py-3 text-base font-medium text-primary hover:text-[#00abe6] hover:bg-zinc-800/50 rounded-lg transition-all active:scale-95'
+                onClick={() => setIsMobileOpen(false)}
+              >
+                Past LOCUS
+              </Link>
               <a
-                href="https://www.cit.locus.com.np/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-lg font-medium text-primary transition-colors hover:text-[#00abe6]/80 whitespace-nowrap"
+                href='https://www.cit.locus.com.np/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='px-4 py-3 text-base font-medium text-primary hover:text-[#00abe6] hover:bg-zinc-800/50 rounded-lg transition-all active:scale-95 flex items-center justify-between'
+                onClick={() => setIsMobileOpen(false)}
               >
                 CIT-MAP
+                <span className='text-[#00abe6]'>↗</span>
               </a>
             </nav>
-          </SheetContent>
-        </Sheet>
-      </div>
+          </div>
+        </>
+      )}
     </header>
   );
 }

@@ -3,13 +3,16 @@ import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/footer/Footer";
 import BackgroundAnimation from "./components/ParticleAnimation/BackgroundAnimation";
 import LocusEventPopup from "./components/popup/LocusEventPopup";
+import ScrollToTop from "./components/ScrollToTop";
 
 const Layout = () => {
   return (
     <div className='min-h-screen text-white flex flex-col'>
+      <ScrollToTop />
       <Navbar />
       <BackgroundAnimation />
-      <main className='flex-grow max-w-5xl w-full mx-auto px-4'>
+      {/* Added padding-top to account for fixed navbar */}
+      <main className='flex-grow max-w-5xl w-full mx-auto px-4 pt-24 md:pt-28'>
         <Outlet />
       </main>
       <Footer />

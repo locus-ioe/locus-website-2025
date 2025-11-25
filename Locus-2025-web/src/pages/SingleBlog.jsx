@@ -12,30 +12,30 @@ const SingleBlog = () => {
   useEffect(() => {
     // Fetch all articles
     fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@locus-ioe")
-      .then((res) => res.json())
+      .then((res) => res?.json())
       .then((data) => {
         console.log("Fetched articles:", data);
         
         // Find the blog post that matches the slug
         const createSlug = (title) => {
           return title
-            .toLowerCase()
+            ?.toLowerCase()
             .replace(/[^a-z0-9]+/g, '-')
-            .replace(/(^-|-$)/g, '');
+            .replace(/(^-|-$)/g, '') || '';
         };
 
-        const foundBlog = data.items.find(
-          (post) => createSlug(post.title) === slug
+        const foundBlog = data?.items?.find(
+          (post) => createSlug(post?.title) === slug
         );
 
         if (foundBlog) {
           setBlog(foundBlog);
           
           // Get related blogs (exclude current blog)
-          const related = data.items
-            .filter((post) => createSlug(post.title) !== slug)
+          const related = data?.items
+            ?.filter((post) => createSlug(post?.title) !== slug)
             .slice(0, 3);
-          setRelatedBlogs(related);
+          setRelatedBlogs(related || []);
         } else {
           // If blog not found, redirect to blogs page
           navigate('/blogs');
@@ -66,7 +66,7 @@ const SingleBlog = () => {
     return null;
   }
 
-  const formattedDate = new Date(blog.pubDate).toLocaleDateString('en-US', {
+  const formattedDate = new Date(blog?.pubDate)?.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -75,11 +75,16 @@ const SingleBlog = () => {
   // Extract first image from content
   const extractImageUrl = (content) => {
     const regex = /<img[^>]+src="([^">]+)"/;
-    const match = regex.exec(content);
+    const match = regex?.exec(content);
     return match ? match[1] : null;
   };
 
-  const featuredImage = blog.thumbnail || extractImageUrl(blog.content);
+  const featuredImage = blog?.thumbnail || extractImageUrl(blog?.content);
+
+  // Remove only the first image to avoid duplication of featured image
+  const removeFirstImage = (content) => {
+    return content?.replace(/<img[^>]*>/, '') || '';
+  };
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 mb-16">
@@ -96,13 +101,13 @@ const SingleBlog = () => {
       <article>
         <header className="mb-8">
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            {blog.title}
+            {blog?.title}
           </h1>
           
           {/* Categories */}
-          {blog.categories && blog.categories.length > 0 && (
+          {blog?.categories && blog?.categories?.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-6">
-              {blog.categories.map((category, index) => (
+              {blog?.categories?.map((category, index) => (
                 <span
                   key={index}
                   className="px-3 py-1 text-sm font-medium rounded-full bg-[#00abe6]/20 text-[#00abe6] border border-[#00abe6]/30"
@@ -117,14 +122,14 @@ const SingleBlog = () => {
           <div className="flex flex-wrap items-center gap-6 text-gray-400 pb-6 border-b border-zinc-800">
             <div className="flex items-center gap-2">
               <FiUser className="text-[#00abe6]" />
-              <span className="font-medium">{blog.author}</span>
+              <span className="font-medium">{blog?.author}</span>
             </div>
             <div className="flex items-center gap-2">
               <FiClock className="text-[#00abe6]" />
               <span>{formattedDate}</span>
             </div>
             <a
-              href={blog.link}
+              href={blog?.link}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-[#00abe6] hover:text-[#48d0ff] transition-colors ml-auto"
@@ -135,18 +140,21 @@ const SingleBlog = () => {
           </div>
         </header>
 
-        {/* Featured Image */}
+        {/* Featured Image - Only show thumbnail if available */}
         {featuredImage && (
           <div className="mb-8 rounded-xl overflow-hidden shadow-2xl">
             <img
               src={featuredImage}
-              alt={blog.title}
+              alt={blog?.title}
               className="w-full h-auto object-cover"
+              onError={(e) => {
+                e.target.style.display = 'none';
+              }}
             />
           </div>
         )}
 
-        {/* Content */}
+        {/* Content - Keep all images except the first one */}
         <div 
           className="prose prose-invert prose-lg max-w-none
             prose-headings:text-white prose-headings:font-bold prose-headings:mb-4 prose-headings:mt-8
@@ -166,29 +174,29 @@ const SingleBlog = () => {
             prose-table:text-gray-300 prose-table:border-zinc-800
             prose-th:bg-zinc-800 prose-th:border-zinc-700 prose-th:p-3
             prose-td:border-zinc-700 prose-td:p-3"
-          dangerouslySetInnerHTML={{ __html: blog.content }}
+          dangerouslySetInnerHTML={{ __html: removeFirstImage(blog?.content) || '' }}
         />
       </article>
 
       {/* Related Articles */}
-      {relatedBlogs.length > 0 && (
+      {relatedBlogs?.length > 0 && (
         <div className="mt-16 pt-8 border-t border-zinc-800">
           <h2 className="text-3xl font-bold text-white mb-8">Related Articles</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {relatedBlogs.map((post) => {
+            {relatedBlogs?.map((post) => {
               const createSlug = (title) => {
                 return title
-                  .toLowerCase()
+                  ?.toLowerCase()
                   .replace(/[^a-z0-9]+/g, '-')
-                  .replace(/(^-|-$)/g, '');
+                  .replace(/(^-|-$)/g, '') || '';
               };
               
-              const postSlug = createSlug(post.title);
-              const imageUrl = post.thumbnail || extractImageUrl(post.content);
+              const postSlug = createSlug(post?.title);
+              const imageUrl = post?.thumbnail || extractImageUrl(post?.content);
 
               return (
                 <Link
-                  key={post.guid}
+                  key={post?.guid}
                   to={`/blog/${postSlug}`}
                   className="group bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden hover:border-[#00abe6] transition-all hover:scale-105"
                 >
@@ -196,7 +204,7 @@ const SingleBlog = () => {
                     {imageUrl ? (
                       <img
                         src={imageUrl}
-                        alt={post.title}
+                        alt={post?.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       />
                     ) : (
@@ -207,7 +215,7 @@ const SingleBlog = () => {
                   </div>
                   <div className="p-4">
                     <h3 className="text-white font-semibold line-clamp-2 group-hover:text-[#00abe6] transition-colors">
-                      {post.title}
+                      {post?.title}
                     </h3>
                   </div>
                 </Link>

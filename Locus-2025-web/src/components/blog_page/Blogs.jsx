@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { FiClock, FiUser, FiArrowUpRight } from "react-icons/fi";
+import { FiClock, FiUser, FiArrowUpRight, FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import default_image from "../../../public/assets/blog/blog_default.png";
 
 // Utility function to extract the first image URL from HTML content
 const extractImageUrl = (content) => {
   const regex = /<img[^>]+src="([^">]+)"/;
-  const match = regex.exec(content);
+  const match = regex?.exec(content);
   return match ? match[1] : null;
 };
 
@@ -16,21 +16,21 @@ const isValidImageUrl = (url) => {
   
   // Check if URL ends with common image formats
   const imageFormats = /\.(jpg|jpeg|png|gif|webp|bmp|svg|ico)(\?.*)?$/i;
-  return imageFormats.test(url);
+  return imageFormats?.test(url);
 };
 
 // Utility function to strip HTML and get excerpt
 const getExcerpt = (content, maxLength = 150) => {
-  const text = content.replace(/<[^>]*>/g, "");
+  const text = content?.replace(/<[^>]*>/g, "") || "";
   return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
 };
 
 // Utility function to create URL-friendly slug from title
 const createSlug = (title) => {
   return title
-    .toLowerCase()
+    ?.toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
+    .replace(/(^-|-$)/g, "") || "";
 };
 
 // Blog Post Card Component
@@ -43,7 +43,7 @@ const BlogPost = ({
   categories,
   content,
 }) => {
-  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+  const formattedDate = new Date(date)?.toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",
     day: "numeric",
@@ -83,9 +83,9 @@ const BlogPost = ({
         </div>
 
         {/* Categories Badges */}
-        {categories && categories.length > 0 && (
+        {categories && categories?.length > 0 && (
           <div className='absolute top-4 left-4 flex flex-wrap gap-2'>
-            {categories.slice(0, 2).map((category, index) => (
+            {categories?.slice(0, 2)?.map((category, index) => (
               <span
                 key={index}
                 className='px-3 py-1 text-xs font-medium rounded-full bg-[#00abe6] text-white backdrop-blur-sm shadow-lg'
@@ -128,16 +128,19 @@ const BlogPost = ({
 
 const Blogs = () => {
   const [articles, setArticles] = useState([]);
+  const [filteredArticles, setFilteredArticles] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     fetch(
       "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@locus-ioe"
     )
-      .then((res) => res.json())
+      .then((res) => res?.json())
       .then((data) => {
         console.log("Fetched articles:", data);
-        setArticles(data.items);
+        setArticles(data?.items || []);
+        setFilteredArticles(data?.items || []);
         setLoading(false);
       })
       .catch((error) => {
@@ -145,6 +148,26 @@ const Blogs = () => {
         setLoading(false);
       });
   }, []);
+
+  // Handle search filtering
+  const handleSearch = (e) => {
+    const query = e?.target?.value || "";
+    setSearchQuery(query);
+
+    if (query.trim() === "") {
+      setFilteredArticles(articles);
+    } else {
+      const filtered = articles?.filter(
+        (article) =>
+          article?.title?.toLowerCase()?.includes(query?.toLowerCase()) ||
+          article?.author?.toLowerCase()?.includes(query?.toLowerCase()) ||
+          article?.categories?.some((cat) =>
+            cat?.toLowerCase()?.includes(query?.toLowerCase())
+          )
+      );
+      setFilteredArticles(filtered);
+    }
+  };
 
   if (loading) {
     return (
@@ -161,7 +184,7 @@ const Blogs = () => {
     );
   }
 
-  if (articles.length === 0) {
+  if (articles?.length === 0) {
     return (
       <div className='text-center mt-20 px-4'>
         <div className='text-8xl mb-6'>📭</div>
@@ -182,20 +205,19 @@ const Blogs = () => {
         <h1 className='text-[#48d0ff] text-4xl md:text-6xl mb-4 font-bold'>
           <span className='text-white'>LOCUS</span> Blogs
         </h1>
-        <div className='h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent w-[80%] mx-auto mb-6'></div>
+        <div className='h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent w-[80%] mx-auto mb-8'></div>
 
-        {/* Stats */}
-        <div className='flex justify-center gap-8 mb-4'>
-          <div className='text-center'>
-            <p className='text-3xl font-bold text-[#00abe6]'>
-              {articles.length}
-            </p>
-            <p className='text-gray-400 text-sm'>Articles</p>
-          </div>
-          <div className='w-px bg-zinc-700'></div>
-          <div className='text-center'>
-            <p className='text-3xl font-bold text-[#00abe6]'>Latest</p>
-            <p className='text-gray-400 text-sm'>Updates</p>
+        {/* Search Bar */}
+        <div className='max-w-2xl mx-auto mb-8'>
+          <div className='relative'>
+            <FiSearch className='absolute left-4 top-1/2 transform -translate-y-1/2 text-[#00abe6] text-xl' />
+            <input
+              type='text'
+              placeholder='Search articles by title, author, or category...'
+              value={searchQuery}
+              onChange={handleSearch}
+              className='w-full pl-12 pr-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#00abe6] transition-colors'
+            />
           </div>
         </div>
 
@@ -205,25 +227,41 @@ const Blogs = () => {
         </p>
       </div>
 
-      {/* Articles Grid */}
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto'>
-        {articles.map((post) => {
-          const imageUrl = post.thumbnail || extractImageUrl(post.content);
+      {/* Results Count */}
+      {searchQuery && (
+        <p className='text-gray-400 mb-8'>
+          Found <span className='text-[#00abe6] font-semibold'>{filteredArticles?.length}</span> article{filteredArticles?.length !== 1 ? 's' : ''}
+        </p>
+      )}
 
-          return (
-            <BlogPost
-              key={post.guid}
-              title={post.title}
-              date={post.pubDate}
-              guid={post.guid}
-              author={post.author}
-              imageUrl={imageUrl}
-              categories={post.categories}
-              content={post.content}
-            />
-          );
-        })}
-      </div>
+      {/* Articles Grid */}
+      {filteredArticles?.length > 0 ? (
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto'>
+          {filteredArticles?.map((post) => {
+            const imageUrl = post?.thumbnail || extractImageUrl(post?.content);
+
+            return (
+              <BlogPost
+                key={post?.guid}
+                title={post?.title}
+                date={post?.pubDate}
+                guid={post?.guid}
+                author={post?.author}
+                imageUrl={imageUrl}
+                categories={post?.categories}
+                content={post?.content}
+              />
+            );
+          })}
+        </div>
+      ) : (
+        <div className='text-center py-12'>
+          <div className='text-6xl mb-4'>🔍</div>
+          <p className='text-gray-400 text-lg'>
+            No articles found matching your search. Try different keywords.
+          </p>
+        </div>
+      )}
     </div>
   );
 };

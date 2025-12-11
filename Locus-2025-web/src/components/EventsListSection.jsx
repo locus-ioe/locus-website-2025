@@ -1,6 +1,6 @@
-import React from 'react';
-import { eventsData } from '../data/eventDetails';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { eventsData } from "../data/eventDetails";
+import { Link } from "react-router-dom";
 
 const EventsListSection = ({ numEventsToShow = eventsData.length }) => {
   const sortedEvents = [...eventsData].sort((a, b) => {
@@ -11,7 +11,7 @@ const EventsListSection = ({ numEventsToShow = eventsData.length }) => {
       // Parse cleaned date
       return new Date(cleanedDate);
     };
-  
+
     // Prioritize 'Active' status
     if (a.event_type.status === "Active" && b.event_type.status !== "Active") {
       return -1; // 'a' comes first
@@ -19,21 +19,20 @@ const EventsListSection = ({ numEventsToShow = eventsData.length }) => {
     if (a.event_type.status !== "Active" && b.event_type.status === "Active") {
       return 1; // 'b' comes first
     }
-  
+
     // If status is the same, sort by start_date in descending order
     const dateA = parseDate(a.date_and_time.start_date);
     const dateB = parseDate(b.date_and_time.start_date);
-  
+
     return dateB - dateA; // Descending order
   });
-  
+
   // Slice the array to display only the number of events defined in numEventsToShow
   const eventsToDisplay = sortedEvents.slice(0, numEventsToShow);
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
       {eventsToDisplay.map((event) => (
-        
         <Link
           key={event.id}
           to={`/event/${event.title}`}
@@ -46,10 +45,10 @@ const EventsListSection = ({ numEventsToShow = eventsData.length }) => {
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
             />
           </div>
-        {console.log(event.date_and_time.start_date)}
+          {console.log(event.date_and_time.start_date)}
           {/* Floating Buttons */}
           <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center z-10">
-            <span
+            {/* <span
               className={`px-2 py-0 rounded-full text-xs font-small ${
                 event.event_type.status === "Coming Soon"
                   ? "bg-yellow-100 text-yellow-600"
@@ -59,11 +58,14 @@ const EventsListSection = ({ numEventsToShow = eventsData.length }) => {
               }`}
             >
               {event.event_type.status}
+            </span> */}
+            <span
+              className={`px-2 py-0 rounded-full text-xs font-small bg-yellow-100 text-yellow-600`}
+            >
+              Coming Soon
             </span>
             <Link to={`/event/${event.title}`}>
-              <button
-                className="text-white px-4 py-1 rounded-lg text-sm hover:bg-blue-600 transition-colors"
-              >
+              <button className="text-white px-4 py-1 rounded-lg text-sm hover:bg-blue-600 transition-colors">
                 More
               </button>
             </Link>

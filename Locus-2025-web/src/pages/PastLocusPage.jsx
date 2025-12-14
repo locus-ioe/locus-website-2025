@@ -10,6 +10,24 @@ function PastLocusPage() {
     </div> */}
 
       {/* Title and iframe for Locus 2024 */}
+      {/* Title and iframe for Locus 2025 */}
+      <div className='w-full max-w-4xl text-center'>
+        <h1 className='text-white text-[1.875rem] leading-[2.25rem] font-bold mb-4'>
+          <a
+            href='https://preeminent-marzipan-031869.netlify.app/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hover:underline'
+          >
+            Locus 2025
+          </a>
+        </h1>
+        <iframe
+          src='https://preeminent-marzipan-031869.netlify.app/'
+          title='Locus 2025'
+          className='w-full h-[500px] border border-gray-300 rounded-md shadow-md'
+        ></iframe>
+      </div>
       <div className='w-full max-w-4xl text-center'>
         <h1 className='text-white text-[1.875rem] leading-[2.25rem] font-bold mb-4'>
           <a

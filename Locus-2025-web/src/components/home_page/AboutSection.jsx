@@ -29,7 +29,7 @@ export default function AboutSection() {
               Exhibition. All its activities are guided by a single compass: fostering collaboration, promoting individual development and facilitating 
               innovation.
             </p>
-            <Link to="https://drive.google.com/file/d/14JG1j1sVv24EcKQjZsfW0lxD4v4G9QRf/view" target="_blank" rel="noopener noreferrer">
+            <Link to="https://drive.google.com/file/d/1-5tC06zsKIzvZZ0RFTcCO95SkoawXnH5/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <Button className="mt-4 rounded-full bg-primary px-6 py-2 text-sm hover:bg-primary/90 sm:px-8 sm:py-3 sm:text-base">
                 LOCUS 2026 Theme Draft
               </Button>

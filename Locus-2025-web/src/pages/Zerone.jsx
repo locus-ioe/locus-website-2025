@@ -2,10 +2,12 @@ import Image_content from "../components/about_page/Image_content";
 import ProfileCard from "../components/about_page/ProfileCard";
 import { aboutUsHistory } from "../data/zerone";
 import committee_data from "../data/zeronecommittee.json";
-import zeroneevent from "../../public/assets/events/zerone.jpg";
-import technicalevent from "../../public/assets/events/technicalwriting.jpg";
 import { Link } from "react-router-dom";
 import Zerone_Carousel from "../components/zerone_crasuel/Zerone_Crasuel";
+
+// Using public folder paths as string constants
+const zeroneevent = "/assets/zerone/cover.png";
+const technicalevent = "/assets/zerone/cover.png";
 
 const highlightImages = [
   {

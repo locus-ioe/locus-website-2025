@@ -19,7 +19,7 @@ export const zerone_crausel_items = [
         id: 0,
         image: image2025,
         title: "2025",
-        link: "https://drive.google.com/file/d/1b-N6oSnhY_iKYp-CcCu_2aadfhGTs6-o/view?usp=drive_link",
+        link: "https://drive.google.com/file/u/2/d/1S99bX6EzDScZ2Is4MLLpNWGO4suq-fwj/view?usp=sharing",
     },
     {
         id: 0,

@@ -48,7 +48,7 @@ const EventsListSection = ({ numEventsToShow = eventsData.length }) => {
           {console.log(event.date_and_time.start_date)}
           {/* Floating Buttons */}
           <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center z-10">
-            {/* <span
+            <span
               className={`px-2 py-0 rounded-full text-xs font-small ${
                 event.event_type.status === "Coming Soon"
                   ? "bg-yellow-100 text-yellow-600"
@@ -58,12 +58,12 @@ const EventsListSection = ({ numEventsToShow = eventsData.length }) => {
               }`}
             >
               {event.event_type.status}
-            </span> */}
-            <span
+            </span>
+            {/* <span
               className={`px-2 py-0 rounded-full text-xs font-small bg-yellow-100 text-yellow-600`}
             >
               Coming Soon
-            </span>
+            </span> */}
             <Link to={`/event/${event.title}`}>
               <button className="text-white px-4 py-1 rounded-lg text-sm hover:bg-blue-600 transition-colors">
                 More

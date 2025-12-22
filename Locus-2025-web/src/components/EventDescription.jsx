@@ -141,7 +141,7 @@ const EventDescription = () => {
                 <div key={img.name} className="flex-shrink-0">
                   <img
                     src={img.image}
-                    className="w-28 h-auto"
+                    className="min-w-28 max-w-72 w-auto h-auto"
                     alt={`${img.name} Sponsor`}
                   />
                 </div>

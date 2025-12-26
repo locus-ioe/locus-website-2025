@@ -234,7 +234,7 @@ export const eventsData = [
       "2. Teams must adhere to the project submission deadline.\n" +
       "3. Participants are encouraged to bring their own laptops and equipment.\n" +
       "4. Organizers reserve the right to disqualify teams for rule violations.",
-    registration_link: "https://bit.ly/Hack-A-Week_LOCUS2025",
+    registration_link: "https://forms.gle/7t9y6HeTqPzUSQQMA",
     sponsoredby: [
        {
         name: "Niural AI",

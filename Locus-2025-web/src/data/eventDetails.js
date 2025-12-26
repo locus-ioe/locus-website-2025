@@ -35,14 +35,14 @@ export const eventsData = [
     id: 4,
     title: "HARDWARE-FELLOWSHIP",
     date_and_time: {
-      start_date: "Poush 2nd, 2082",
-      end_date: "Poush 8th, 2082",
-      time: "9:00 AM - 5:00 PM",
+      start_date: "Poush 20, 2082",
+      end_date: "Poush 22, 2082",
+      time: "7:30 AM – 9:15 AM | 4:00 PM – 5:45 PM",
     },
     imgSrc: hardwarefellowship,
     registration: {
-      fee: 800,
-      button_text: "Register 800/-",
+      fee: 850,
+      button_text: "Register 850/-",
     },
     event_type: {
       // status: "Closed",
@@ -59,8 +59,8 @@ export const eventsData = [
         phone: "9804875975",
       },
             {
-        name: "Nandani Sah",
-        phone: "9706389046",
+        name: "Ashim Sapkota",
+        phone: "9846567535",
       },
     ],
     description:
@@ -80,6 +80,7 @@ export const eventsData = [
       "4. Active participation in project work\n" +
       "5. Safety protocols must be followed in labs\n" +
       "6. Team collaboration is encouraged",
+    registration_link: "https://forms.gle/w7wFFwZEkEUEkQKN6",
     sponsoredby: [
     ],
   },
@@ -234,7 +235,7 @@ export const eventsData = [
       "2. Teams must adhere to the project submission deadline.\n" +
       "3. Participants are encouraged to bring their own laptops and equipment.\n" +
       "4. Organizers reserve the right to disqualify teams for rule violations.",
-    registration_link: "https://bit.ly/Hack-A-Week_LOCUS2025",
+    registration_link: "https://forms.gle/7t9y6HeTqPzUSQQMA",
     sponsoredby: [
        {
         name: "Niural AI",

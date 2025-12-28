@@ -41,8 +41,8 @@ export const eventsData = [
     },
     imgSrc: "https://drive.google.com/uc?export=view&id=1WR6D4l6MmXZj05h88YHxPgw-CDIzE_3h",
     registration: {
-      fee: 800,
-      button_text: "Register 800/-",
+      fee: 850,
+      button_text: "Register 850/-",
     },
     event_type: {
       // status: "Closed",
@@ -59,8 +59,8 @@ export const eventsData = [
         phone: "9804875975",
       },
             {
-        name: "Nandani Sah",
-        phone: "9706389046",
+        name: "Ashim Sapkota",
+        phone: "9846567535",
       },
     ],
     description:
@@ -80,6 +80,7 @@ export const eventsData = [
       "4. Active participation in project work\n" +
       "5. Safety protocols must be followed in labs\n" +
       "6. Team collaboration is encouraged",
+    registration_link: "https://forms.gle/w7wFFwZEkEUEkQKN6",
     sponsoredby: [
     ],
   },
@@ -237,7 +238,7 @@ export const eventsData = [
       "2. Teams must adhere to the project submission deadline.\n" +
       "3. Participants are encouraged to bring their own laptops and equipment.\n" +
       "4. Organizers reserve the right to disqualify teams for rule violations.",
-    registration_link: "https://bit.ly/Hack-A-Week_LOCUS2025",
+    registration_link: "https://forms.gle/7t9y6HeTqPzUSQQMA",
     sponsoredby: [
        {
         name: "Niural AI",

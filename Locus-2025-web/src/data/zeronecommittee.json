@@ -1,77 +1,77 @@
 [
-    {
-        "name": "Shuvangi Adhikari",
-        "designation": "Editor-in-Chief",
-        "imageUrl": "assets/zerone/zeroneteam/shuvangi.JPG"
-    },
-    {
-        "name": "Rohan Maharjan",
-        "designation": "Editor-in-Chief",
-        "imageUrl": "assets/zerone/zeroneteam/rohan.JPG"
-    },
-    {
-        "name": "Kalpesh Manandhar",
-        "designation": "Managing Editor",
-        "imageUrl": "assets/zerone/zeroneteam/kalpesh.JPG"
-    },
-    {
-        "name": "Utsav Manandhar",
-        "designation": "Managing Editor",
-        "imageUrl": "assets/zerone/zeroneteam/utsav.JPG"
-    },
-    {
-        "name": "Bindu Paudel",
-        "designation": "Magazine Designer",
-        "imageUrl": "assets/zerone/zeroneteam/bindu.JPG"
-    },
-    {
-        "name": "Sudip Kaji Basnet",
-        "designation": "Design Chief",
-        "imageUrl": "assets/zerone/zeroneteam/sudip.JPG"
-    },
-    {
-        "name": "Yujal Shrestha",
-        "designation": "Design Chief",
-        "imageUrl": "assets/zerone/zeroneteam/yujal.JPG"
-    },
-    {
-        "name": "Prasansha Shrestha",
-        "designation": "Interview Head",
-        "imageUrl": "assets/zerone/zeroneteam/prasansha.JPG"
-    },
-    {
-        "name": "Subham Shrestha",
-        "designation": "Tech Lead",
-        "imageUrl": "assets/zerone/zeroneteam/subham.JPG"
-    },
-    {
-        "name": "Samrat Manandhar",
-        "designation": "Event Coverage Head",
-        "imageUrl": "assets/zerone/zeroneteam/samrat.JPG"
-    },
-    {
-        "name": "Sandhya Baral",
-        "designation": "Event Coverage Head",
-        "imageUrl": "assets/zerone/zeroneteam/sandhya.JPG"
-    },
-    {
-        "name": "Suparna Neupane",
-        "designation": "Fact Check Head",
-        "imageUrl": "assets/zerone/zeroneteam/suparna.JPG"
-    },
-    {
-        "name": "Shraddha Pokharel",
-        "designation": "Social Media and PR Head",
-        "imageUrl": "assets/zerone/zeroneteam/shraddha.JPG"
-    },
-    {
-        "name": "Yurisha Bajracharya",
-        "designation": "Editor",
-        "imageUrl": "assets/zerone/zeroneteam/yurisha.JPG"
-    },
-    {
-        "name": "Sheshadri S.Bandyopadhyay",
-        "designation": "Editor",
-        "imageUrl": "assets/zerone/zeroneteam/sheshadri.JPG"
-    }
+  {
+    "name": "Rubika Bashyal",
+    "designation": "Editor-in-Chief",
+    "imageUrl": "assets/zerone/zeroneteam/Rubika_Bashyal.jpg"
+  },
+  {
+    "name": "Arun Chandra Bhusal",
+    "designation": "Managing Editor",
+    "imageUrl": "assets/zerone/zeroneteam/Arun_Chandra_Bhusal.png"
+  },
+  {
+    "name": "Raj Sujakhu",
+    "designation": "Managing Editor",
+    "imageUrl": "assets/zerone/zeroneteam/RajSujakhu.jpg"
+  },
+  {
+    "name": "Braj Neupane",
+    "designation": "Magazine Designer",
+    "imageUrl": "assets/zerone/zeroneteam/Braj_Neupane.jpg"
+  },
+  {
+    "name": "Nijiya Maharjan",
+    "designation": "Design Chief",
+    "imageUrl": "assets/zerone/zeroneteam/Nijiya_Maharjan.jpeg"
+  },
+  {
+    "name": "Bibek Dhungana",
+    "designation": "Associate Editor",
+    "imageUrl": "assets/zerone/zeroneteam/Bibek_Dhungana.jpeg"
+  },
+  {
+    "name": "Sheshadri S. Bandyopadhyay",
+    "designation": "Tech Lead",
+    "imageUrl": "assets/zerone/zeroneteam/sheshadri.JPG" 
+  },
+  {
+    "name": "Suparna Neupane",
+    "designation": "Editor",
+    "imageUrl": "assets/zerone/zeroneteam/Suparna_Neupane.jpeg"
+  },
+  {
+    "name": "Yojana Thapa",
+    "designation": "Editor",
+    "imageUrl": "assets/zerone/zeroneteam/Yojana_Thapa.png"
+  },
+  {
+    "name": "Prashansa Shrestha",
+    "designation": "Event Coverage",
+    "imageUrl": "assets/zerone/zeroneteam/prashansa_shrestha.jpg"
+  },
+  {
+    "name": "Sanskriti Adhikari",
+    "designation": "Social Media",
+    "imageUrl": "assets/zerone/zeroneteam/Sanskriti_Adhikari.jpg"
+  },
+  {
+    "name": "Aashraya Neupane",
+    "designation": "Digital Media Designer",
+    "imageUrl": "assets/zerone/zeroneteam/aashraya_neupane.jpg"
+  },
+  {
+    "name": "Hritesh Rai",
+    "designation": "Interview",
+    "imageUrl": "assets/zerone/zeroneteam/hitesh_rai.jpg"
+  },
+  {
+    "name": "Shraddha Pokharel",
+    "designation": "Interview",
+    "imageUrl": "assets/zerone/zeroneteam/shraddha_poharel.jpg"
+  },
+  {
+    "name": "Bimala Sapkota",
+    "designation": "Fact Check",
+    "imageUrl": "assets/zerone/zeroneteam/Bimala_Sapkota.jpeg"
+  }
 ]

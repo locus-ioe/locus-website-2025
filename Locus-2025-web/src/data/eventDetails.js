@@ -35,11 +35,11 @@ export const eventsData = [
     id: 4,
     title: "HARDWARE-FELLOWSHIP",
     date_and_time: {
-      start_date: "Poush 2nd, 2082",
-      end_date: "Poush 8th, 2082",
+      start_date: "Poush 20, 2082",
+      end_date: "Poush 26, 2082",
       time: "9:00 AM - 5:00 PM",
     },
-    imgSrc: hardwarefellowship,
+    imgSrc: "https://drive.google.com/uc?export=view&id=1WR6D4l6MmXZj05h88YHxPgw-CDIzE_3h",
     registration: {
       fee: 800,
       button_text: "Register 800/-",
@@ -88,14 +88,14 @@ export const eventsData = [
     id: 3,
     title: "CYBER SHIELD",
     date_and_time: {
-      start_date: "Poush 11, 2082",
-      end_date: "Poush 14, 2082",
-      time: "8:00 AM - 10:00 AM | 5:00 PM - 7:00 PM"
+      start_date: "Poush 24, 2082",
+      end_date: "Poush 28, 2082",
+      time: "8:00 AM - 10:00 AM | 3:00 PM - 5:00 PM"
     },
     imgSrc: cybershield,
     registration: {
       fee: 0,
-      button_text: "Register Free/-",
+      button_text: "Coming Soon/-",
     },
     event_type: {
       // status: "Closed",
@@ -103,10 +103,13 @@ export const eventsData = [
       category: "Event",
     },
     prize: {
-      prizePool: "Rs 30,000",
-      popularChoicePrize: "Rs 4,500",
+      prizePool: "Venu will be announced soon",
     },
     contacts: [
+      {
+        name: "Aashish Karki",
+        phone: "9862021531",
+      },
       {
         name: "Ashim Sapkota",
         phone: "9846567535",
@@ -129,10 +132,10 @@ export const eventsData = [
       "• Participate in a multi-round Capture-the-Flag (CTF) Challenge",
     rules:
       "1. Organizer: LOCUS 2026, Nepal's largest student-led national tech festival\n" +
-      "2. Duration: 4 days, from Poush 11 to Poush 14, 2082\n" +
-      "3. Venue: Pulchowk Campus\n" +
+      "2. Duration: 4 days, from Poush 24 to Poush 28, 2082\n" +
+      "3. Venue: To be announced\n" +
       "4. Eligibility: Open to students from engineering, CSIT, and applied science backgrounds\n" +
-      "5. Schedule: Sessions will be held in three shifts: Morning (8:00 AM to 10:00 AM) and Evening (5:00 PM to 7:00 PM)",
+      "5. Schedule: Sessions will be held in three shifts: Morning (8:00 AM to 10:00 AM) and Evening (3:00 PM to 5:00 PM)",
     sponsoredby: [],
   },
 

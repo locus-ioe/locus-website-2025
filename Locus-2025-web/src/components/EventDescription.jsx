@@ -3,6 +3,33 @@ import { Link, useParams } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { eventsData } from "../data/eventDetails";
 const EventDescription = () => {
+  // Helper function to convert Google Drive links to direct image URLs
+  const getImageUrl = (url) => {
+    if (!url) return url;
+    
+    // Extract file ID from various Google Drive URL formats
+    let fileId = null;
+    
+    // Format 1: /d/{FILE_ID}
+    const driveMatch1 = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
+    if (driveMatch1) {
+      fileId = driveMatch1[1];
+    }
+    
+    // Format 2: id={FILE_ID} or ?id={FILE_ID}
+    const driveMatch2 = url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+    if (driveMatch2) {
+      fileId = driveMatch2[1];
+    }
+    
+    // If we found a Google Drive file ID, use the thumbnail endpoint
+    if (fileId) {
+      return `https://drive.google.com/thumbnail?id=${fileId}&sz=w1000`;
+    }
+    
+    return url;
+  };
+
   const { title } = useParams();
   console.log(title);
 
@@ -25,7 +52,7 @@ const EventDescription = () => {
             <div className="flex-[0.35] event-poster flex flex-col items-center gap-4">
               {event.imgSrc && (
                 <img
-                  src={event.imgSrc}
+                  src={getImageUrl(event.imgSrc)}
                   className="w-80 h-auto border-2 rounded-lg"
                   alt={event.title}
                 />
@@ -140,7 +167,7 @@ const EventDescription = () => {
               {event.sponsoredby.map((img) => (
                 <div key={img.name} className="flex-shrink-0">
                   <img
-                    src={img.image}
+                    src={getImageUrl(img.image)}
                     className="min-w-28 max-w-72 w-auto h-auto"
                     alt={`${img.name} Sponsor`}
                   />

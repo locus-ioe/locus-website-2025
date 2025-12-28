@@ -3,6 +3,34 @@ import { eventsData } from "../data/eventDetails";
 import { Link } from "react-router-dom";
 
 const EventsListSection = ({ numEventsToShow = eventsData.length }) => {
+  // Helper function to convert Google Drive links to direct image URLs
+  const getImageUrl = (url) => {
+    if (!url) return url;
+    
+    // Extract file ID from various Google Drive URL formats
+    let fileId = null;
+    
+    // Format 1: /d/{FILE_ID}
+    const driveMatch1 = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
+    if (driveMatch1) {
+      fileId = driveMatch1[1];
+    }
+    
+    // Format 2: id={FILE_ID} or ?id={FILE_ID}
+    const driveMatch2 = url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+    if (driveMatch2) {
+      fileId = driveMatch2[1];
+    }
+    
+    // If we found a Google Drive file ID, use the thumbnail endpoint
+    if (fileId) {
+      return `https://drive.google.com/thumbnail?id=${fileId}&sz=w1000`;
+    }
+    
+    return url;
+  };
+
+  
   const sortedEvents = [...eventsData].sort((a, b) => {
     // Helper function to clean and parse dates
     const parseDate = (dateString) => {
@@ -40,7 +68,7 @@ const EventsListSection = ({ numEventsToShow = eventsData.length }) => {
         >
           <div className="aspect-w-5 aspect-h-5 bg-gray-200">
             <img
-              src={event.imgSrc}
+              src={getImageUrl(event.imgSrc)}
               alt={`Event ${event.title}`}
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
             />

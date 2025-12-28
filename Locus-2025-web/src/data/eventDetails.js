@@ -37,7 +37,7 @@ export const eventsData = [
     date_and_time: {
       start_date: "Poush 20, 2082",
       end_date: "Poush 26, 2082",
-      time: "9:00 AM - 5:00 PM",
+      time: "7:30 AM – 9:15 AM | 4:00 PM – 5:45 PM",
     },
     imgSrc: "https://drive.google.com/uc?export=view&id=1WR6D4l6MmXZj05h88YHxPgw-CDIzE_3h",
     registration: {

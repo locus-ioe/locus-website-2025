@@ -106,6 +106,13 @@ export function Navbar() {
                 >
                   CIT-MAP
                 </a>
+                <Link
+                  to='/teams'
+                  className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Teams
+                </Link>
               </div>
             )}
           </div>

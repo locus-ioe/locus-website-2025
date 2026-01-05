@@ -139,6 +139,16 @@ export const eventsData = [
       "4. Eligibility: Open to students from engineering, CSIT, and applied science backgrounds\n" +
       "5. Schedule: Sessions will be held in three shifts: Morning (8:00 AM to 10:00 AM) and Evening (3:00 PM to 5:00 PM)",
     registration_link: "https://forms.gle/cgAc7JVGWUufV7XFA",
+    furtherInfo: [
+      {
+        title: "Introduction to Cybersecurity",
+        url: "https://medium.com/@locus2026/cybersecurity-basics",
+      },
+      {
+        title: "Getting Started with Ethical Hacking",
+        url: "https://medium.com/@locus2026/ethical-hacking-guide",
+      },
+    ],
     sponsoredby: [
       {
         name: "LOGPOINT",

@@ -75,6 +75,43 @@ const EventDescription = () => {
                   <span>{event.registration.button_text}</span>
                 </a>
               )}
+
+              {/* Further Info Section */}
+              {event.furtherInfo && event.furtherInfo.length > 0 && (
+                <div className="w-full">
+                  <h3 className="text-[18px] font-bold text-[#00abe6] mb-3 text-center">
+                    Further Info
+                  </h3>
+                  <div className="flex flex-col gap-2">
+                    {event.furtherInfo.map((info, index) => (
+                      <a
+                        key={index}
+                        href={info.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-center justify-between px-4 py-3 bg-zinc-900/50 hover:bg-[#0085b3]/20 border border-zinc-700 hover:border-[#00abe6]/50 rounded-lg transition-all duration-300"
+                      >
+                        <span className="text-sm text-zinc-300 group-hover:text-[#00abe6] transition-colors">
+                          {info.title}
+                        </span>
+                        <svg
+                          className="w-4 h-4 text-zinc-500 group-hover:text-[#00abe6] transition-colors"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Event Details */}

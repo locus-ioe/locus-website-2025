@@ -78,12 +78,12 @@ const MainEventsListSection = ({ numEventsToShow = mainEventsData.length }) => {
           <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center z-10">
             {event.event_type.status && (
               <span
-                className={`px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm ${
+                className={`px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md border ${
                   event.event_type.status === "Coming Soon" || event.event_type.status === "Open"
-                    ? "bg-green-400/90 text-green-900"
+                    ? "bg-[#00abe6]/20 text-[#00abe6] border-[#00abe6]/40"
                     : event.event_type.status === "Active" || event.event_type.status === "Ongoing"
-                    ? "bg-blue-400/90 text-blue-900"
-                    : "bg-gray-500/90 text-white"
+                    ? "bg-cyan-500/20 text-cyan-300 border-cyan-500/40"
+                    : "bg-zinc-700/60 text-zinc-300 border-zinc-600/40"
                 }`}
               >
                 {event.event_type.status}

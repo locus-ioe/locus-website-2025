@@ -7,6 +7,9 @@ export function Navbar() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const menuRef = useRef(null);
 
+  // Hardcoded event count - update this manually as needed
+  const openEventsCount = 3;
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -58,9 +61,14 @@ export function Navbar() {
             <Link
               key={label}
               to={to}
-              className='px-3 py-2 text-sm font-medium text-primary transition-colors hover:text-[#00abe6] rounded-lg hover:bg-zinc-800/50'
+              className='px-3 py-2 text-sm font-medium text-primary transition-colors hover:text-[#00abe6] rounded-lg hover:bg-zinc-800/50 relative'
             >
               {label}
+              {label === "Events" && openEventsCount > 0 && (
+                <span className='absolute -top-1 -right-1 flex items-center justify-center min-w-[20px] h-5 px-1.5 text-xs font-bold text-white bg-[#00abe6] rounded-full shadow-lg animate-pulse'>
+                  {openEventsCount}
+                </span>
+              )}
             </Link>
           ))}
 
@@ -146,10 +154,15 @@ export function Navbar() {
                 <Link
                   key={label}
                   to={to}
-                  className='px-4 py-3 text-base font-medium text-primary hover:text-[#00abe6] hover:bg-zinc-800/50 rounded-lg transition-all active:scale-95'
+                  className='px-4 py-3 text-base font-medium text-primary hover:text-[#00abe6] hover:bg-zinc-800/50 rounded-lg transition-all active:scale-95 relative flex items-center justify-between'
                   onClick={() => setIsMobileOpen(false)}
                 >
-                  {label}
+                  <span>{label}</span>
+                  {label === "Events" && openEventsCount > 0 && (
+                    <span className='flex items-center justify-center min-w-[24px] h-6 px-2 text-sm font-bold text-white bg-[#00abe6] rounded-full shadow-lg'>
+                      {openEventsCount}
+                    </span>
+                  )}
                 </Link>
               ))}
 

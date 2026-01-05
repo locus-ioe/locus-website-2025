@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { eventsData } from "../data/eventDetails";
+import { eventsData, mainEventsData } from "../data/eventDetails";
 const EventDescription = () => {
   // Helper function to convert Google Drive links to direct image URLs
   const getImageUrl = (url) => {
@@ -33,7 +33,14 @@ const EventDescription = () => {
   const { title } = useParams();
   console.log(title);
 
-  const event = eventsData.find((eventsData) => eventsData.title === title);
+  // Check both eventsData and mainEventsData arrays
+  let event = eventsData.find((eventItem) => eventItem.title === title);
+  
+  // If not found in eventsData, check mainEventsData
+  if (!event) {
+    event = mainEventsData.find((eventItem) => eventItem.title === title);
+  }
+  
   if (!event) {
     return <div>Event not found</div>;
   }

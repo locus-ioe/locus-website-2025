@@ -532,13 +532,12 @@ export const eventsData = [
     id: 8,
     title: "Walkathon",
     date_and_time: {
-      start_date: "2082-10-01",
-      end_date: "2082-10-06",
+      start_date: "2082-10-10",
+      end_date: "2082-10-15",
       time: "10 am onwards",
     },
     imgSrc: "https://drive.google.com/uc?export=view&id=1khCYbGdIGBtx1IbYEAnHFoHU6r49otQz",
     registration: {
-      fee: "Rs 1000",
       button_text: "Register Now",
     },
     event_type: {
@@ -547,50 +546,25 @@ export const eventsData = [
       category: "event",
     },
     prize: {
-      prizePool: "Prizepool : Rs 80,000",
+      prizePool: "Starting Soon",
       popularChoicePrize: "",
     },
     contacts: [
       {
-        name: "Shashi Adhikari",
-        phone: "9864503030",
-      },
-      {
-        name: "Nitiz Khanal",
-        phone: "9844097563",
-      },
+        name: "Nishanta Subedi",
+        phone: "9824015856",
+      }
     ],
-    description:
-      "The Energy Hackathon is a dynamic event focused on creating innovative energy solutions. Participants will engage in a 7-day intensive hackathon featuring mentoring sessions held at the Library Hall, Pulchowk Campus. Compete for the grand prize of Rs 80,000 and gain invaluable experience in collaboration and innovation.\n\n" +
-      "Event Highlights:\n" +
-      "• A week of guided project development and innovation\n" +
-      "• Networking opportunities with industry experts\n" +
-      "• Compete for a grand prize of Rs. 80,000\n\n" +
-      "Energy Hackathon provides a unique platform for enthusiasts to tackle real-world energy challenges, collaborate with peers, and showcase their expertise in a competitive setting.",
-    rules:
-      "1. Teams can consist of up to 4 members.\n" +
-      "2. Projects must align with the provided themes and adhere to deadlines.\n" +
-      "3. Participants must bring their own laptops and required equipment.\n" +
-      "4. Organizers may disqualify teams for non-compliance with the rules.",
+  description:
+    "The LOCUS Walkathon is a one-day awareness event organized prior to the LOCUS Exhibition to promote innovation, technology, and student creativity. This peaceful rally brings together students and tech enthusiasts to spread awareness about the upcoming LOCUS 2026 Exhibition and its vision for Nepal’s technological future.\n\n" +
+    "Event Highlights:\n" +
+    "• Peaceful awareness walk led by students and technology enthusiasts\n" +
+    "• Promotion of the LOCUS 2026 Exhibition and its core theme\n" +
+    "• Public engagement across key areas of the city\n\n" +
+    "The Walkathon will be held on Magh 10 as part of the pre-exhibition activities of LOCUS 2026. The time schedule and route of the walkathon will be finalized and announced soon. This event reflects LOCUS’s commitment to public outreach, innovation awareness, and responsible student-led initiatives.",
     registration_link:
-      "https://docs.google.com/forms/d/1Ec1v19OcbV5u9AW_ZVGcNshDWRRqc-RoX_Y1DQ0Irus/edit",
+      "https://forms.gle/dimud2cgpX3CDcik9",
     sponsoredby: [
-      {
-        name: "GIZ",
-        image: gizLogo,
-      },
-      {
-        name: "NEEK",
-        image: neek,
-      },
-      {
-        name: "RERL",
-        image: rerl,
-      },
-      {
-        name: "NEA",
-        image: nea,
-      },
     ],
   },
 
@@ -613,54 +587,34 @@ export const eventsData = [
       category: "event",
     },
     prize: {
-      prizePool: "Prizepool : Rs 80,000",
+      prizePool: "Training in Progress",
       popularChoicePrize: "",
     },
     contacts: [
       {
-        name: "Shashi Adhikari",
-        phone: "9864503030",
-      },
-      {
-        name: "Nitiz Khanal",
-        phone: "9844097563",
+        name: "Sudip Kazi Basnet",
+        phone: "9841587481",
       },
     ],
     description:
-      "The Energy Hackathon is a dynamic event focused on creating innovative energy solutions. Participants will engage in a 7-day intensive hackathon featuring mentoring sessions held at the Library Hall, Pulchowk Campus. Compete for the grand prize of Rs 80,000 and gain invaluable experience in collaboration and innovation.\n\n" +
+      "The LOCUS Flashmob is a vibrant promotional event organized as part of the pre-exhibition outreach for LOCUS 2026. This energetic performance aims to engage the public, create excitement, and spread awareness about Nepal’s premier national-level technological festival.\n\n" +
       "Event Highlights:\n" +
-      "• A week of guided project development and innovation\n" +
-      "• Networking opportunities with industry experts\n" +
-      "• Compete for a grand prize of Rs. 80,000\n\n" +
-      "Energy Hackathon provides a unique platform for enthusiasts to tackle real-world energy challenges, collaborate with peers, and showcase their expertise in a competitive setting.",
-    rules:
-      "1. Teams can consist of up to 4 members.\n" +
-      "2. Projects must align with the provided themes and adhere to deadlines.\n" +
-      "3. Participants must bring their own laptops and required equipment.\n" +
-      "4. Organizers may disqualify teams for non-compliance with the rules.",
+      "• Energetic flashmob performances by student volunteers\n" +
+      "• Public engagement and promotion of the LOCUS 2026 Exhibition\n" +
+      "• Creative outreach at popular public venues\n\n" +
+      "The Flashmob is scheduled to be held on Magh 10 as a marketing and awareness activity for LOCUS 2026. The performance will involve approximately 50 students and will last for 15–20 minutes. The exact venue and time will be finalized and announced soon. This initiative reflects LOCUS’s commitment to creative promotion and meaningful public engagement.",
     registration_link:
-      "https://docs.google.com/forms/d/1Ec1v19OcbV5u9AW_ZVGcNshDWRRqc-RoX_Y1DQ0Irus/edit",
+      "https://forms.gle/ZesCQYtd76doskU96",
     sponsoredby: [
-      {
-        name: "GIZ",
-        image: gizLogo,
-      },
-      {
-        name: "NEEK",
-        image: neek,
-      },
-      {
-        name: "RERL",
-        image: rerl,
-      },
-      {
-        name: "NEA",
-        image: nea,
-      },
     ],
   },
 
-  {
+  
+];
+
+// Main Events Data - Events happening during main LOCUS festival
+export const mainEventsData = [
+{
     id: 8,
     title: "LOCUS Exhibition",
     date_and_time: {
@@ -684,45 +638,24 @@ export const eventsData = [
     },
     contacts: [
       {
-        name: "Shashi Adhikari",
-        phone: "9864503030",
+        name: "Bishal Lamichhane",
+        phone: "9864511097",
       },
       {
-        name: "Nitiz Khanal",
-        phone: "9844097563",
+        name: "Sudip Adhikari",
+        phone: "9867986412",
       },
     ],
-    description:
-      "The Energy Hackathon is a dynamic event focused on creating innovative energy solutions. Participants will engage in a 7-day intensive hackathon featuring mentoring sessions held at the Library Hall, Pulchowk Campus. Compete for the grand prize of Rs 80,000 and gain invaluable experience in collaboration and innovation.\n\n" +
-      "Event Highlights:\n" +
-      "• A week of guided project development and innovation\n" +
-      "• Networking opportunities with industry experts\n" +
-      "• Compete for a grand prize of Rs. 80,000\n\n" +
-      "Energy Hackathon provides a unique platform for enthusiasts to tackle real-world energy challenges, collaborate with peers, and showcase their expertise in a competitive setting.",
-    rules:
-      "1. Teams can consist of up to 4 members.\n" +
-      "2. Projects must align with the provided themes and adhere to deadlines.\n" +
-      "3. Participants must bring their own laptops and required equipment.\n" +
-      "4. Organizers may disqualify teams for non-compliance with the rules.",
+  description:
+    "The LOCUS Project Competition is an annual national-level event where innovators showcase their creative projects. Participants present their ideas in stalls during the three-day LOCUS 2026 exhibition at Pulchowk Campus, held on January 30, 31, and February 1 (Magh 16, 17, and 18). Awards are given to the best projects based on judging criteria, providing recognition for creativity and technical excellence.\n\n" +
+    "Event Highlights:\n" +
+    "• National-level exhibition showcasing innovative projects\n" +
+    "• Awards for the best projects across multiple categories\n" +
+    "• Opportunity to bring ideas to life under the theme: 'Transforming Today: Nepal’s Path to a Digital Future'\n\n" +
+    "LOCUS Project Competition offers a platform for students and innovators to present their ideas, gain recognition, and contribute to shaping Nepal's digital future.",
     registration_link:
       "https://docs.google.com/forms/d/1Ec1v19OcbV5u9AW_ZVGcNshDWRRqc-RoX_Y1DQ0Irus/edit",
     sponsoredby: [
-      {
-        name: "GIZ",
-        image: gizLogo,
-      },
-      {
-        name: "NEEK",
-        image: neek,
-      },
-      {
-        name: "RERL",
-        image: rerl,
-      },
-      {
-        name: "NEA",
-        image: nea,
-      },
     ],
   },
 ];

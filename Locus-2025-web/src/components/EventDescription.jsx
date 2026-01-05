@@ -66,11 +66,14 @@ const EventDescription = () => {
               )}
 
               {event.registration?.button_text && (
-                <button className="text-[24px] border-2 w-full py-2 bg-[#0085b3]/10 hover:bg-black/50 rounded-lg border-[#0085b3] font-bold">
-                  <Link to={event.registration_link}>
-                    <span>{event.registration.button_text}</span>
-                  </Link>
-                </button>
+                <a 
+                  href={event.registration_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[24px] border-2 w-full py-2 bg-[#0085b3]/10 hover:bg-black/50 rounded-lg border-[#0085b3] font-bold block text-center"
+                >
+                  <span>{event.registration.button_text}</span>
+                </a>
               )}
             </div>
 

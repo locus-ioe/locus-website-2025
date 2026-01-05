@@ -76,23 +76,25 @@ const MainEventsListSection = ({ numEventsToShow = mainEventsData.length }) => {
           {console.log(event.date_and_time.start_date)}
           {/* Floating Buttons */}
           <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center z-10">
-            <span
-              className={`px-2 py-0 rounded-full text-xs font-small ${
-                event.event_type.status === "Coming Soon"
-                  ? "bg-yellow-100 text-yellow-600"
-                  : event.event_type.status === "Active"
-                  ? "bg-green-100 text-green-600"
-                  : "bg-red-100 text-red-600"
-              }`}
-            >
-              {event.event_type.status}
-            </span>
+            {event.event_type.status && (
+              <span
+                className={`px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm ${
+                  event.event_type.status === "Coming Soon" || event.event_type.status === "Open"
+                    ? "bg-green-400/90 text-green-900"
+                    : event.event_type.status === "Active" || event.event_type.status === "Ongoing"
+                    ? "bg-blue-400/90 text-blue-900"
+                    : "bg-gray-500/90 text-white"
+                }`}
+              >
+                {event.event_type.status}
+              </span>
+            )}
             {/* <span
               className={`px-2 py-0 rounded-full text-xs font-small bg-yellow-100 text-yellow-600`}
             >
               Coming Soon
             </span> */}
-            <Link to={`/event/${event.title}`}>
+            <Link to={`/event/${event.title}`} className={!event.event_type.status ? "ml-auto" : ""}>
               <button className="text-white px-4 py-1 rounded-lg text-sm hover:bg-blue-600 transition-colors">
                 More
               </button>

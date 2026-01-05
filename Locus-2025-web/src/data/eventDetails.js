@@ -46,7 +46,7 @@ export const eventsData = [
       button_text: "Register 850/-",
     },
     event_type: {
-      // status: "Closed",
+      status: "Ongoing",
       mode: "Offline",
       category: "Workshop",
     },
@@ -100,7 +100,7 @@ export const eventsData = [
       button_text: "Register Now/-",
     },
     event_type: {
-      // status: "Closed",
+      status: "Open",
       mode: "Online",
       category: "Event",
     },
@@ -215,7 +215,7 @@ export const eventsData = [
       button_text: "Closed",
     },
     event_type: {
-      // status: "Closed",
+      status: "Closed",
       mode: "Offline",
       category: "Hackathon",
     },
@@ -541,7 +541,7 @@ export const eventsData = [
       button_text: "Register Now",
     },
     event_type: {
-      // status: "Closed",
+      status: "Open",
       mode: "Offline",
       category: "event",
     },
@@ -582,7 +582,7 @@ export const eventsData = [
       button_text: "Register Now",
     },
     event_type: {
-      // status: "Closed",
+      status: "Ongoing",
       mode: "Offline",
       category: "event",
     },
@@ -618,22 +618,21 @@ export const mainEventsData = [
     id: 8,
     title: "LOCUS Exhibition",
     date_and_time: {
-      start_date: "2082-10-01",
-      end_date: "2082-10-06",
+      start_date: "2082-10-16",
+      end_date: "2082-10-18",
       time: "10 am onwards",
     },
     imgSrc: "https://drive.google.com/uc?export=view&id=1PE-MqlBtaislWH6uU1JtiO7gjZeb322z",
     registration: {
-      fee: "Rs 1000",
       button_text: "Register Now",
     },
     event_type: {
-      // status: "Coming Soon",
+      status: "Open",
       mode: "Offline",
       category: "event",
     },
     prize: {
-      prizePool: "Prizepool : Rs 80,000",
+      prizePool: "Prizepool : Rs 80,000 + ",
       popularChoicePrize: "",
     },
     contacts: [
@@ -654,7 +653,7 @@ export const mainEventsData = [
     "• Opportunity to bring ideas to life under the theme: 'Transforming Today: Nepal’s Path to a Digital Future'\n\n" +
     "LOCUS Project Competition offers a platform for students and innovators to present their ideas, gain recognition, and contribute to shaping Nepal's digital future.",
     registration_link:
-      "https://docs.google.com/forms/d/1Ec1v19OcbV5u9AW_ZVGcNshDWRRqc-RoX_Y1DQ0Irus/edit",
+      " https://forms.gle/qEV76DSgrjbHSgCy9",
     sponsoredby: [
     ],
   },

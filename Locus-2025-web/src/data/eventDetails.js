@@ -18,6 +18,7 @@ import girlstocode from "/assets/events/girlstocode.png";
 import walkathon from "/assets/events/walkathon.png";
 import hardwarefellowship from "/assets/events/hardwarefellowship.png";
 import niural from "/assets/sponsors/niural.png";
+import logpoint from "/assets/sponsors/logpoint.png";
 // import SoftwareFellowship from "/assets/events/SoftwareFellowship.png";
 // import electrotech from "/assets/events/electrotech.png";
 // import girlsfutsal from "/assets/events/Girls-Futsal.png";
@@ -93,10 +94,10 @@ export const eventsData = [
       end_date: "Poush 28, 2082",
       time: "8:00 AM - 10:00 AM | 3:00 PM - 5:00 PM"
     },
-    imgSrc: cybershield,
+    imgSrc: "https://drive.google.com/uc?export=view&id=1fmpWn8W6eXPZZhgRTNf0iGLlpAU79vuA",
     registration: {
       fee: 0,
-      button_text: "Coming Soon/-",
+      button_text: "Register Now/-",
     },
     event_type: {
       // status: "Closed",
@@ -104,7 +105,7 @@ export const eventsData = [
       category: "Event",
     },
     prize: {
-      prizePool: "Venu will be announced soon",
+      prizePool: "Venue : Embark College",
     },
     contacts: [
       {
@@ -112,12 +113,12 @@ export const eventsData = [
         phone: "9862021531",
       },
       {
-        name: "Ashim Sapkota",
-        phone: "9846567535",
+        name: "Andis Paudel",
+        phone: "9862709753",
       },
     ],
     description:
-      "CyberShield is a pre-event of LOCUS-2026, the 22nd National Technological Festival. " +
+      "CyberShield, presented by LOGPOINT, is a pre-event of LOCUS-2026, the 22nd National Technological Festival. " +
       "It is a newly introduced, 4-day intensive workshop designed as a platform for students to step into the world of cybersecurity, ethical hacking, and digital defense.\n\n" +
       "The event aims to introduce university students to the dynamic world of cybersecurity through immersive learning. " +
       "Participants will learn to identify threats, protect systems, and strengthen their cyber resilience by covering topics like:\n" +
@@ -133,11 +134,17 @@ export const eventsData = [
       "• Participate in a multi-round Capture-the-Flag (CTF) Challenge",
     rules:
       "1. Organizer: LOCUS 2026, Nepal's largest student-led national tech festival\n" +
-      "2. Duration: 4 days, from Poush 24 to Poush 28, 2082\n" +
-      "3. Venue: To be announced\n" +
+      "2. Duration: 4 days, Poush 24, 25, 27, 28\n" +
+      "3. Venue: Embark College near IOE Pulchowk Campus\n" +
       "4. Eligibility: Open to students from engineering, CSIT, and applied science backgrounds\n" +
       "5. Schedule: Sessions will be held in three shifts: Morning (8:00 AM to 10:00 AM) and Evening (3:00 PM to 5:00 PM)",
-    sponsoredby: [],
+    registration_link: "https://forms.gle/cgAc7JVGWUufV7XFA",
+    sponsoredby: [
+      {
+        name: "LOGPOINT",
+        image: logpoint,
+      },
+    ],
   },
 
   {
@@ -148,7 +155,7 @@ export const eventsData = [
       end_date: "15th Poush, 2082",
       time: "Morning Shift: 7:30 AM - 9:30 AM, Evening Shift: 4:00 PM - 6:00 PM and 5:00 PM - 7:00 PM",
     },
-    imgSrc: girlslocuscup,
+    imgSrc: "https://drive.google.com/uc?export=view&id=1e8eeC5wwGA83293A5ya56myChtYNxLjE",
     registration: {
       fee: 0,
       button_text: "Register Free",
@@ -202,10 +209,10 @@ export const eventsData = [
       end_date: "Poush 23nd, 2082",
       time: "TBA",
     },
-    imgSrc: hackaweek,
+    imgSrc: "https://drive.google.com/uc?export=view&id=1uyqFw4qmeN1Y8DmCtAU67hYVXh5OZuvl",
     registration: {
       fee: "300 per person",
-      button_text: "Register Now",
+      button_text: "Closed",
     },
     event_type: {
       // status: "Closed",
@@ -251,11 +258,11 @@ export const eventsData = [
     id: 1,
     title: "CODE-JAM",
     date_and_time: {
-      start_date: "Poush 25, 2082",
+      start_date: "TBA",
       // end_date: "Poush 26, 2082",
-      // time: "9:00 AM - 5:00 PM"
+      time: "TBA"
     },
-    imgSrc: codejam,
+    imgSrc: "https://drive.google.com/uc?export=view&id=1wiOy1RJIv66U5GEU452mDk1a05i53CD6",
     registration: {
       fee: 0,
       button_text: "Register Free/-",
@@ -266,17 +273,21 @@ export const eventsData = [
       category: "Event",
     },
     prize: {
-      prizePool: "Rs 30,000",
+      prizePool: "Prizepool : Rs 50,000",
       popularChoicePrize: "Rs 4,500",
     },
     contacts: [
       {
-        name: "Rohan Maharjan",
-        phone: "8921767709",
+        name: "Nissan Subedi",
+        phone: "9824015856",
+      },
+      {
+        name: "Sudip Kazi Basnet",
+        phone: "9841587481",
       },
     ],
     description:
-      "CodeJam is a pre-event of LOCUS-2026, the 22nd National Technological Festival, designed to bring together developers and programmers for a competitive and innovative challenge. " +
+      "CodeJam, presented by LOGPOINT, is a pre-event of LOCUS-2026, the 22nd National Technological Festival, designed to bring together developers and programmers for a competitive and innovative challenge. " +
       "It is a platform where students dive into the art of problem-solving, algorithm design, and efficient coding.\n\n" +
       "The event involves a series of proceedings where technique and algorithm are used to evaluate the participant's expertise. Participants will tackle algorithmic challenges covering various domains such as:\n" +
       "• Graph theory\n" +
@@ -297,18 +308,23 @@ export const eventsData = [
       "5. Scoring: Participants are ranked based on the number of correct solutions and the time taken to submit them\n" +
       "6. Evaluation: VJudge will automatically evaluate submissions and check for correctness and plagiarism\n" +
       "7. Penalties: Negative marking will be applied for wrong submissions",
-    sponsoredby: [],
+    sponsoredby: [
+      {
+        name: "LOGPOINT",
+        image: logpoint,
+      },
+    ],
   },
 
   {
     id: 2,
     title: "GIRLS-TO-CODE",
     date_and_time: {
-      start_date: "Poush 28th, 2082",
-      end_date: "Poush 32th, 2082",
+      start_date: "Poush 26th, 2082",
+      end_date: "Poush 27th, 2082",
       time: "10:00 AM - 4:00 PM",
     },
-    imgSrc: girlstocode,
+    imgSrc: "https://drive.google.com/uc?export=view&id=1jM65kIDMN2RNEWA_hfbc58CK5Nqjbuum",
     registration: {
       fee: 0,
       button_text: "Apply Now",
@@ -424,7 +440,7 @@ export const eventsData = [
       end_date: "Magh 3rd, 2082",
       time: "10:00 AM - 3:00 PM",
     },
-    imgSrc: dataverse,
+    imgSrc: "https://drive.google.com/uc?export=view&id=14smF9JxoepU_kj2rb_rh6DDOFjqD2rL4",
     registration: {
       fee: 200,
       button_text: "Register 200/-",
@@ -476,7 +492,7 @@ export const eventsData = [
       end_date: "2082-09-08",
       time: "10 am onwards",
     },
-    imgSrc: energy,
+     imgSrc: "https://drive.google.com/uc?export=view&id=1PGmhLeKYhuhyOzPw1J7VaLny9Rq7_mvJ",
     registration: {
       fee: "Rs 1000",
       button_text: "Register Now",
@@ -520,7 +536,7 @@ export const eventsData = [
       end_date: "2082-10-06",
       time: "10 am onwards",
     },
-    imgSrc: walkathon,
+    imgSrc: "https://drive.google.com/uc?export=view&id=1khCYbGdIGBtx1IbYEAnHFoHU6r49otQz",
     registration: {
       fee: "Rs 1000",
       button_text: "Register Now",
@@ -586,7 +602,7 @@ export const eventsData = [
       end_date: "2082-10-06",
       time: "10 am onwards",
     },
-    imgSrc: flashmob,
+    imgSrc: "https://drive.google.com/uc?export=view&id=1Qp1Qi5NrYj1tAnU5JdGjtZduZr4BgeHD",
     registration: {
       fee: "Rs 1000",
       button_text: "Register Now",
@@ -652,7 +668,7 @@ export const eventsData = [
       end_date: "2082-10-06",
       time: "10 am onwards",
     },
-    imgSrc: exhibition,
+    imgSrc: "https://drive.google.com/uc?export=view&id=1PE-MqlBtaislWH6uU1JtiO7gjZeb322z",
     registration: {
       fee: "Rs 1000",
       button_text: "Register Now",

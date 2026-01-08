@@ -1,57 +1,96 @@
-[
-  {
-    "name": "Rishikesh Paudel",
-    "designation": "Vice President",
-    "imageUrl": "assets/teams/Rishikesh_paudel.png"
-  },
-  {
-    "name": "Jeevan Neupane",
-    "designation": "Lead",
-    "imageUrl": "assets/teams/Jeevan_neupane.jpg"
-  },
-  {
-    "name": "Darshan Paudyal",
-    "designation": "DevOps Lead",
-    "imageUrl": "assets/teams/Darshan_paudyal.jpg"
-  },
-  {
-    "name": "Gyaneshwar Sah",
-    "designation": "Frontend Lead",
-    "imageUrl": "assets/teams/Gyaneshwar_sah.jpg"
-  },
-  {
-    "name": "Prabin Adhikari",
-    "designation": "Backend Lead",
-    "imageUrl": "assets/teams/Prabin_adhikari.png"
-  },
-  {
-    "name": "Ashish Pandey",
-    "designation": "Data Science Lead",
-    "imageUrl": "assets/teams/Ashish_pandey.png"
-  },
-  {
-    "name": "Sadhana Panthi",
-    "designation": "Advisory",
-    "imageUrl": "assets/teams/Sadhana_panthi.png"
-  },
-  {
-    "name": "Bishal Lamichhane",
-    "designation": "Advisory",
-    "imageUrl": "assets/teams/Bishal_lamichhane.jpg"
-  },
-  {
-    "name": "Pratik Adhikari",
-    "designation": "Education and Content Lead",
-    "imageUrl": "assets/teams/Pratik_adhikari.jpg"
-  },
-  {
-    "name": "Saroj Poudel",
-    "designation": "App development Lead",
-    "imageUrl": "assets/teams/Saroj_poudel.jpg"
-  },
-  {
-    "name": "Bikash Chandra",
-    "designation": "Design Lead",
-    "imageUrl": "assets/teams/Bikash_chandra.jpg"
-  }
-]
+{
+  "locusTeam": [
+    {
+      "name": "Jeevan Neupane",
+      "designation": "Lead",
+      "imageUrl": "assets/teams/Jeevan_neupane.jpg"
+    },
+    {
+      "name": "Rishikesh Paudel",
+      "designation": "Vice Lead",
+      "imageUrl": "assets/teams/Rishikesh_paudel.png"
+    },
+    {
+      "name": "Gyaneshwar Sah",
+      "designation": "Frontend Lead",
+      "imageUrl": "assets/teams/Gyaneshwar_sah.jpg"
+    },
+    {
+      "name": "Prabin Adhikari",
+      "designation": "Backend Lead",
+      "imageUrl": "assets/teams/Prabin_adhikari.png"
+    },
+    {
+      "name": "Darshan Paudyal",
+      "designation": "DevOps Lead",
+      "imageUrl": "assets/teams/Darshan_paudyal.jpg"
+    },
+    {
+      "name": "Saroj Poudel",
+      "designation": "App development Lead",
+      "imageUrl": "assets/teams/Saroj_poudel.jpg"
+    },
+    {
+      "name": "Ashish Pandey",
+      "designation": "Data Science Lead",
+      "imageUrl": "assets/teams/Ashish_pandey.png"
+    },
+    {
+      "name": "Bikash Chandra",
+      "designation": "Design Lead",
+      "imageUrl": "assets/teams/Bikash_chandra.jpg"
+    },
+    {
+      "name": "Pratik Adhikari",
+      "designation": "Education and Content Lead",
+      "imageUrl": "assets/teams/Pratik_adhikari.jpg"
+    },
+    {
+      "name": "Sadhana Panthi",
+      "designation": "Advisory",
+      "imageUrl": "assets/teams/Sadhana_panthi.png"
+    },
+    {
+      "name": "Bishal Lamichhane",
+      "designation": "Advisory",
+      "imageUrl": "assets/teams/Bishal_lamichhane.jpg"
+    }
+  ],
+  "hackaWeekTeam": [
+    {
+      "name": "Bishal Lamichhane",
+      "designation": "Organizer",
+      "imageUrl": "https://i.postimg.cc/k4qyTLR1/Bishal-Lamichhane.jpg"
+    },
+    {
+      "name": "Sadhana Panthi",
+      "designation": "Organizer",
+      "imageUrl": "https://i.postimg.cc/brFHNJCB/Sadhana-Panthi.avif"
+    },
+    {
+      "name": "Sandip Katel",
+      "designation": "Organizer",
+      "imageUrl": "https://i.postimg.cc/3wgBC3NL/Sandip-Katel.jpg"
+    },
+    {
+      "name": "Saphal Rimal",
+      "designation": "Organizer",
+      "imageUrl": "https://i.postimg.cc/KYnNrmjs/Saphal-Rimal.png"
+    },
+    {
+      "name": "Pragalbha Acharya",
+      "designation": "Organizer",
+      "imageUrl": "https://i.postimg.cc/tgh5t9Jx/Pragalbha-Acharya.jpg"
+    },
+    {
+      "name": "Ashok Parsad Neupane",
+      "designation": "Organizer",
+      "imageUrl": "https://i.postimg.cc/3wgBC3N4/ashok.jpg"
+    },
+    {
+      "name":"Jeevan Neupane",
+      "designation":"Organizer",
+      "imageUrl":"https://res.cloudinary.com/chatappjeevanneupane/image/upload/v1730944042/vp9z8mt1oushfsszpdvg.jpg"
+    }
+  ]
+}

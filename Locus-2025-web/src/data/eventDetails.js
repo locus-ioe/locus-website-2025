@@ -124,14 +124,14 @@ export const eventsData = [
       "• Cybersecurity fundamentals, CIA Triad, threat vs vulnerability vs risk, and security domains\n" +
       "• Types of cyber attacks, malware, phishing, social engineering, and the MITRE ATT&CK framework\n" +
       "• Network scanning, reconnaissance, attack surface identification, and common network vulnerabilities\n" +
-      "• OWASP Top 10 web vulnerabilities, basic web exploitation, and secure coding principles\n\n" +
-      "Why join?\n" +
+      "• OWASP Top 10 web vulnerabilities, basic web exploitation, and secure coding principles.\n\n",
+    whyJoin:
       "• Gain hands-on experience with real-world cybersecurity tools and labs\n" +
       "• Learn how real cyber attacks and defenses work in organizations\n" +
       "• Develop practical understanding of ethical hacking and defensive security\n" +
       "• Explore cybersecurity career paths and industry expectations\n" +
       "• Interact with industry professionals and participate in practical challenges",
-    rules:
+    info:
       "1. Organizer: LOCUS 2026, Nepal's largest student-led national tech festival\n" +
       "2. Duration: 4 days, Poush 24, 25, 27, 28\n" +
       "3. Venue: Embark College near IOE Pulchowk Campus\n" +

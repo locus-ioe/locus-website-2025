@@ -152,6 +152,21 @@ const EventDescription = () => {
               {event.description && (
                 <h3 className="text-left">{event.description}</h3>
               )}
+              {event.whyJoin && (
+                <>
+                  <h3 className="text-justify font-bold text-lg">
+                    Why Join ?:
+                  </h3>
+                  <h3 className="text-left">
+                    {event.whyJoin.split("\n").map((rule, index) => (
+                      <span key={index}>
+                        {rule}
+                        <br />
+                      </span>
+                    ))}
+                  </h3>
+                </>
+              )}
               {event.rules && (
                 <>
                   <h3 className="text-justify font-bold text-lg">
@@ -159,6 +174,21 @@ const EventDescription = () => {
                   </h3>
                   <h3 className="text-left">
                     {event.rules.split("\n").map((rule, index) => (
+                      <span key={index}>
+                        {rule}
+                        <br />
+                      </span>
+                    ))}
+                  </h3>
+                </>
+              )}
+              {event.info && (
+                <>
+                  <h3 className="text-justify font-bold text-lg">
+                    Info:
+                  </h3>
+                  <h3 className="text-left">
+                    {event.info.split("\n").map((rule, index) => (
                       <span key={index}>
                         {rule}
                         <br />

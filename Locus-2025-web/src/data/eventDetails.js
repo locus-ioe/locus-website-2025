@@ -19,6 +19,7 @@ import walkathon from "/assets/events/walkathon.png";
 import hardwarefellowship from "/assets/events/hardwarefellowship.png";
 import niural from "/assets/sponsors/niural.png";
 import logpoint from "/assets/sponsors/logpoint.png";
+import nativesplug from "/assets/sponsors/nativeslogo.png";
 // import SoftwareFellowship from "/assets/events/SoftwareFellowship.png";
 // import electrotech from "/assets/events/electrotech.png";
 // import girlsfutsal from "/assets/events/Girls-Futsal.png";
@@ -432,6 +433,74 @@ export const eventsData = [
   // },
 
   {
+    id: 3,
+    title: "15 DAYS OF LEARNING",
+    date_and_time: {
+      start_date: "Poush 29, 2082",
+      end_date: "Magh 17, 2082",
+      time: "All"
+    },
+    imgSrc: "https://drive.google.com/uc?export=view&id=1Dp_mMom-Xdmwk6efezPXOavrSNdJiGIn",
+    registration: {
+      fee: 0,
+      button_text: "Register Now/-",
+    },
+    event_type: {
+      status: "Open",
+      mode: "Online",
+      category: "Event",
+    },
+    prize: {
+      prizePool: "Prizes: Stickers, T-shirts, and Vouchers",
+    },
+    contacts: [
+      {
+        name: "Ashim Sapkota",
+        phone: "9846567535",
+      },
+      {
+        name: "Tilak Thapa",
+        phone: "9849860159",
+      },
+    ],
+    description:
+      "NativesPlug 15 Day Learning Challenge is a structured online learning initiative designed to encourage consistent skill development through daily course completion." +
+      "The challenge motivates learners to build discipline, enhance knowledge, and showcase their learning journey through social media engagement." +
+      "• 15-day, 10-day, and 5-day continuous learning milestones\n" +
+      "• Daily course completion with individual certificates\n" +
+      "• Social media posting to reflect learning insights and experiences\n" +
+      "• Onsite prize distribution during LOCUS grand prize ceremony\n\n",
+    whyJoin:
+    "• Build a habit of continuous learning over 15 days\n" +
+      "• Earn NativesPlug vouchers and exclusive rewards\n" +
+      "• Receive digital certificates and course completion certificates\n" +
+      "• Get LinkedIn account endorsement for top performers\n" +
+      "• Win merchandise like T-shirts and stickers\n" +
+      "• Increase visibility by sharing learning insights on social media",
+    info:
+      "1. Event Name: NativesPlug 15 Day Learning Challenge\n" +
+      "2. Start Date: Jan 13 (Poush 29)\n" +
+      "3. End Date: Jan 31 (Magh 17)\n" +
+      "4. Registration Link: https://nativesplug.com/events\n" +
+      "5. Prizes:\n" +
+      "   - 15 Days Continuous Completion: Rs. 500 voucher, LinkedIn endorsement, digital certificate, course certificates, T-shirt, stickers\n" +
+      "   - 10 Days Continuous Completion: Rs. 150 voucher, course certificates, stickers\n" +
+      "   - 5 Days Continuous Completion: Course certificates, stickers\n" +
+      "6. Posting Rules:\n" +
+      "   - Must tag NativesPlug on Facebook or LinkedIn\n" +
+      "   - Avoid repetitive challenge-related phrases\n" +
+      "   - Use reflective and insight-based post formats\n" +
+      "7. Note: T-shirts and stickers must be collected onsite during LOCUS grand prize distribution",
+    registration_link: "https://nativesplug.com/events",
+    sponsoredby: [
+      {
+        name: "NATIVESPLUG",
+        image: nativesplug,
+      },
+    ],
+  },
+
+  {
     id: 5,
     title: "DATAVERSE",
     date_and_time: {
@@ -606,9 +675,7 @@ export const eventsData = [
       "https://forms.gle/ZesCQYtd76doskU96",
     sponsoredby: [
     ],
-  },
-
-  
+  },  
 ];
 
 // Main Events Data - Events happening during main LOCUS festival

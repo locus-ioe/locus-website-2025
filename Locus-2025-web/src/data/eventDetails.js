@@ -118,20 +118,19 @@ export const eventsData = [
       },
     ],
     description:
-      "CyberShield, presented by LOGPOINT, is a pre-event of LOCUS-2026, the 22nd National Technological Festival. " +
-      "It is a newly introduced, 4-day intensive workshop designed as a platform for students to step into the world of cybersecurity, ethical hacking, and digital defense.\n\n" +
-      "The event aims to introduce university students to the dynamic world of cybersecurity through immersive learning. " +
-      "Participants will learn to identify threats, protect systems, and strengthen their cyber resilience by covering topics like:\n" +
-      "• Cybersecurity Fundamentals and Threat Landscape\n" +
-      "• Network Scanning, Common Network Vulnerabilities, and Attack Surface Analysis\n" +
-      "• OWASP Top 10, Exploiting/Fixing Vulnerabilities, and Secure Coding\n" +
-      "• Digital Forensics, Incident Response, and Log Analysis\n\n" +
+      "CyberShield, presented by LOGPOINT, is a pre-event of LOCUS-2026, the 22nd National Technological Festival." +
+      "It is a newly introduced, 4-day intensive workshop designed as a platform for students to gain practical exposure to cybersecurity, ethical hacking, and defensive security practices." +
+      "The event aims to introduce university students to the real-world cybersecurity landscape through concept-driven and hands-on learning. Participants will understand how cyber attacks occur, how organizations defend against them, and how security teams operate in practice by covering topics like:" +
+      "• Cybersecurity fundamentals, CIA Triad, threat vs vulnerability vs risk, and security domains\n" +
+      "• Types of cyber attacks, malware, phishing, social engineering, and the MITRE ATT&CK framework\n" +
+      "• Network scanning, reconnaissance, attack surface identification, and common network vulnerabilities\n" +
+      "• OWASP Top 10 web vulnerabilities, basic web exploitation, and secure coding principles\n\n" +
       "Why join?\n" +
-      "• Gain hands-on experience with professional security tools\n" +
-      "• Collaborate on defense strategies\n" +
-      "• Explore real-world cybersecurity threats\n" +
-      "• Enhance technical understanding of cybersecurity\n" +
-      "• Participate in a multi-round Capture-the-Flag (CTF) Challenge",
+      "• Gain hands-on experience with real-world cybersecurity tools and labs\n" +
+      "• Learn how real cyber attacks and defenses work in organizations\n" +
+      "• Develop practical understanding of ethical hacking and defensive security\n" +
+      "• Explore cybersecurity career paths and industry expectations\n" +
+      "• Interact with industry professionals and participate in practical challenges",
     rules:
       "1. Organizer: LOCUS 2026, Nepal's largest student-led national tech festival\n" +
       "2. Duration: 4 days, Poush 24, 25, 27, 28\n" +
@@ -139,16 +138,6 @@ export const eventsData = [
       "4. Eligibility: Open to students from engineering, CSIT, and applied science backgrounds\n" +
       "5. Schedule: Sessions will be held in three shifts: Morning (8:00 AM to 10:00 AM) and Evening (3:00 PM to 5:00 PM)",
     registration_link: "https://forms.gle/cgAc7JVGWUufV7XFA",
-    furtherInfo: [
-      {
-        title: "Introduction to Cybersecurity",
-        url: "https://medium.com/@locus2026/cybersecurity-basics",
-      },
-      {
-        title: "Getting Started with Ethical Hacking",
-        url: "https://medium.com/@locus2026/ethical-hacking-guide",
-      },
-    ],
     sponsoredby: [
       {
         name: "LOGPOINT",

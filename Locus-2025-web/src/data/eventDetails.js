@@ -680,7 +680,7 @@ export const eventsData = [
 
 // Main Events Data - Events happening during main LOCUS festival
 export const mainEventsData = [
-{
+  {
     id: 8,
     title: "LOCUS Exhibition",
     date_and_time: {
@@ -688,7 +688,8 @@ export const mainEventsData = [
       end_date: "2082-10-18",
       time: "10 am onwards",
     },
-    imgSrc: "https://drive.google.com/uc?export=view&id=1PE-MqlBtaislWH6uU1JtiO7gjZeb322z",
+    imgSrc:
+      "https://drive.google.com/uc?export=view&id=1PE-MqlBtaislWH6uU1JtiO7gjZeb322z",
     registration: {
       button_text: "Register Now",
     },
@@ -711,16 +712,244 @@ export const mainEventsData = [
         phone: "9867986412",
       },
     ],
-  description:
-    "The LOCUS Project Competition is an annual national-level event where innovators showcase their creative projects. Participants present their ideas in stalls during the three-day LOCUS 2026 exhibition at Pulchowk Campus, held on January 30, 31, and February 1 (Magh 16, 17, and 18). Awards are given to the best projects based on judging criteria, providing recognition for creativity and technical excellence.\n\n" +
-    "Event Highlights:\n" +
-    "• National-level exhibition showcasing innovative projects\n" +
-    "• Awards for the best projects across multiple categories\n" +
-    "• Opportunity to bring ideas to life under the theme: 'Transforming Today: Nepal’s Path to a Digital Future'\n\n" +
-    "LOCUS Project Competition offers a platform for students and innovators to present their ideas, gain recognition, and contribute to shaping Nepal's digital future.",
-    registration_link:
-      " https://forms.gle/qEV76DSgrjbHSgCy9",
-    sponsoredby: [
-    ],
+    description:
+      "The LOCUS Project Competition is an annual national-level event where innovators showcase their creative projects. Participants present their ideas in stalls during the three-day LOCUS 2026 exhibition at Pulchowk Campus, held on January 30, 31, and February 1 (Magh 16, 17, and 18). Awards are given to the best projects based on judging criteria, providing recognition for creativity and technical excellence.\n\n" +
+      "Event Highlights:\n" +
+      "• National-level exhibition showcasing innovative projects\n" +
+      "• Awards for the best projects across multiple categories\n" +
+      "• Opportunity to bring ideas to life under the theme: 'Transforming Today: Nepal’s Path to a Digital Future'\n\n" +
+      "LOCUS Project Competition offers a platform for students and innovators to present their ideas, gain recognition, and contribute to shaping Nepal's digital future.",
+    registration_link: " https://forms.gle/qEV76DSgrjbHSgCy9",
+    sponsoredby: [],
   },
+  {
+    id: 9,
+    title: "Dronacharya 2026",
+    date_and_time: {
+      start_date: "2082-10-16",
+      end_date: "2082-10-18",
+      time: "10 am onwards",
+    },
+    imgSrc:
+      "https://drive.google.com/uc?export=view&id=1aWtP_E7u7MQOLwDHHAHcEu5UTqQKRkH3",
+    registration: {
+      fee: "Rs 1000",
+      button_text: "Register Now",
+    },
+    event_type: {
+      status: "Open",
+      mode: "offline",
+      category: "event",
+    },
+    prize: {
+      prizePool: "Prize Pool: Rs 30,000+",
+      popularChoicePrize: "",
+    },
+    contacts: [
+      {
+        name: "Aashutosh Pandey",
+        phone: "9804875975",
+      },
+      {
+        name: "Divyanshu Mishra",
+        phone: "9847755937",
+      },
+    ],
+    description:
+      "Dronacharya 2026 is a competitive drone racing and obstacle navigation contest conducted as part of LOCUS 2026. Teams of up to four members compete using a single drone that meets the specified technical requirements. The contest is designed to test precision flying, time management, and technical skill in a structured race-track environment.\n\n" +
+      "Contest Format:\n" +
+      "• Two rounds: Preliminary Round and Knock-out Round\n" +
+      "• Each round is 5 minutes long\n" +
+      "• Teams are ranked based on net time (completion time + penalties)\n\n" +
+      "The game field consists of multiple obstacle zones including tunnels, circular and rectangular frames, towers, and poles. Teams must navigate checkpoints in order while minimizing penalties. The winner is decided purely on time, with referee decisions used in case of ties.",
+    rules:
+      "1. Teams can have a maximum of 4 members and only one drone per team.\n" +
+      "2. The drone must fit within 600mm x 600mm dimensions and weigh no more than 2.5 kg.\n" +
+      "3. Maximum battery voltage allowed is 16V (4-cell LiPo).\n" +
+      "4. Preliminary round allows obstacle skipping with time penalties; knockout round does not allow skipping.\n" +
+      "5. Any act endangering people, equipment, or violating fair play may result in disqualification.\n" +
+      "6. Referee and organizer decisions are final for all unspecified situations.",
+    registration_link: "https://forms.gle/pZgSJnX9heftdAas8",
+  },
+  {
+    id: 10,
+    title: "RoboWarz 2026",
+    date_and_time: {
+      start_date: "2082-10-16",
+      end_date: "2082-10-18",
+      time: "10 am onwards",
+    },
+    imgSrc:
+      "https://drive.google.com/uc?export=view&id=1-3Bqhq-onVv0xSjlkT_jjrBh6RCw8lQl",
+    registration: {
+      fee: "Rs 3500",
+      button_text: "Register Now",
+    },
+    event_type: {
+      status: "Open",
+      mode: "Offline",
+      category: "event",
+    },
+    prize: {
+      prizePool: "Prizepool : Rs 60,000 + ",
+      popularChoicePrize: "",
+    },
+    contacts: [
+      {
+        name: "Divyanshu Mishra",
+        phone: "9847755937",
+      },
+    ],
+    description:
+      "RoboWarz 2026 is a competitive robot combat event organized under LOCUS 2026. Teams design and battle electrically powered robots in a purpose-built arena featuring pits, battlezones, and capture-the-flag mechanics. The competition emphasizes strategy, control, robustness, and safety.\n\n" +
+      "Event Highlights:\n" +
+      "• Intense robot battles in a 4.5m x 4.5m arena\n" +
+      "• Multiple scoring methods including pits, flips, and capture-the-flag\n" +
+      "• Group stage followed by knockout rounds\n\n" +
+      "Robots must meet strict weight, size, power, and weapon safety requirements. Matches are fast-paced and decided by points, tie-breakers, or opponent immobility, ensuring an exciting and skill-driven competition.",
+    rules:
+      "1. Teams must consist of 2 to 4 members with one designated team leader.\n" +
+      "2. Maximum robot weight is 15 kg including batteries; robots must fit within 50cm x 50cm x 50cm before the match.\n" +
+      "3. Robots must be electrically powered with battery voltage not exceeding 24V; IC engines are prohibited.\n" +
+      "4. Weapons may only push, flip, drag, or throw opponents; cutting, smashing, fire, water, and electromagnetic weapons are prohibited.\n" +
+      "5. Each match lasts 3 minutes, with points awarded for pits, flips, and capture-the-flag actions.\n" +
+      "6. Referee decisions are final, and violation of safety or gameplay rules may result in disqualification.",
+    registration_link: "https://forms.gle/pZgSJnX9heftdAas8",
+  },
+  {
+    id: 11,
+    title: "RoboSoccer 2026",
+    date_and_time: {
+      start_date: "2082-10-16",
+      end_date: "2082-10-18",
+      time: "10 am onwards",
+    },
+    imgSrc:
+      "https://drive.google.com/uc?export=view&id=1-3Bqhq-onVv0xSjlkT_jjrBh6RCw8lQl",
+    registration: {
+      fee: "Rs 2500",
+      button_text: "Register Now",
+    },
+    event_type: {
+      status: "Open",
+      mode: "Offline",
+      category: "event",
+    },
+    prize: {
+      prizePool: "Prizepool : Rs 40,000 + ",
+      popularChoicePrize: "",
+    },
+    contacts: [
+      {
+        name: "Ghanshyam Bhandari",
+        phone: "9864413534 ",
+      },
+    ],
+    description:
+      "RoboSoccer 2026 is a multi-robot competitive event organized under LOCUS 2026, where teams compete using manually controlled robots in a soccer-style arena. The event evaluates robot control, maneuverability, kicking, flipping, and strategic teamwork in a fast-paced match environment.\n\n" +
+      "Event Highlights:\n" +
+      "• 3 vs 3 robot soccer matches\n" +
+      "• Structured gameplay with regular time, extra time, and penalty shootouts\n" +
+      "• Emphasis on control, strategy, and fair play\n\n" +
+      "The competition is played on a carpeted field designed like a soccer pitch, using a standard-sized ball. Teams must design compact, lightweight robots that comply with strict electrical and mechanical safety standards.",
+    rules:
+      "1. A team can have a maximum of 4 members, and each team must deploy at least 3 robots.\n" +
+      "2. Maximum robot dimensions are 30cm x 30cm x 30cm, with a maximum weight of 4kg.\n" +
+      "3. Robots must be manually controlled, electrically powered, and use on-board power supplies not exceeding 12V DC.\n" +
+      "4. No weapons, wired power supplies, or ready-made toy cars are allowed.\n" +
+      "5. A goal is valid only when the ball completely crosses the goal line; pushing the opponent goalkeeper for scoring is a foul.\n" +
+      "6. Decisions of referees and organizers are final, and rule violations may result in disqualification.",
+    registration_link: "https://forms.gle/pZgSJnX9heftdAas8",
+  },
+  {
+    id: 12,
+    title: "RoboPop 2026",
+    date_and_time: {
+      start_date: "2082-10-16",
+      end_date: "2082-10-18",
+      time: "10 am onwards",
+    },
+    imgSrc:
+      "https://drive.google.com/uc?export=view&id=1dY5kJBkGDkIvLvqoXyyGcutirsHr6Y6Q",
+    registration: {
+      fee: "Rs 1000",
+      button_text: "Register Now",
+    },
+    event_type: {
+      status: "Open",
+      mode: "Offline",
+      category: "event",
+    },
+    prize: {
+      prizePool: "Prizepool : Rs 20,000 + ",
+      popularChoicePrize: "",
+    },
+    contacts: [
+      {
+        name: "Ghanshyam Bhandari",
+        phone: "9864413534",
+      },
+    ],
+    description:
+      "RoboPop 2026 is an interactive robotics competition organized under LOCUS 2026, where teams compete using robots designed to pop balloons while protecting their own. The event follows a fast-paced, strategic best-of-three format and challenges teams on precision control, robot design, and tactical decision-making.\n\n" +
+      "Event Highlights:\n" +
+      "• Balloon-popping combat-style robotics game\n" +
+      "• Best-of-three knockout matches with wildcard rounds\n" +
+      "• Unique scoring system based on balloon color and strategy\n\n" +
+      "Each match lasts up to 5 minutes per round, with points awarded or deducted based on balloons popped. Teams must first clear opponent-colored balloons before targeting the opponent’s Queen Balloons, making RoboPop a blend of speed, control, and strategic gameplay.",
+    rules:
+      "1. Teams must consist of 2–3 members and designate a captain for communication with referees.\n" +
+      "2. Robots must fit within 350mm x 350mm x 350mm dimensions and weigh no more than 7 kg.\n" +
+      "3. Maximum operating voltage is 24V; only approved battery types are allowed.\n" +
+      "4. Accessories are limited to balloon-popping mechanisms only; blades, fire, lasers, and damaging weapons are prohibited.\n" +
+      "5. Popping balloons during setup time or violating gameplay order results in disqualification.\n" +
+      "6. Organizer and referee decisions are final; safety inspections are mandatory before competition.",
+    registration_link: "https://forms.gle/pZgSJnX9heftdAas8",
+  },
+  {
+  id: 13,
+  title: "Robo Line Dash 2026",
+    date_and_time: {
+      start_date: "2082-10-16",
+      end_date: "2082-10-18",
+      time: "10 am onwards",
+    },
+    imgSrc:
+      "https://drive.google.com/uc?export=view&id=10e28LuDtTlA8snJ_9QK25ASWk97gVvqf",
+    registration: {
+      fee: "Rs 1000",
+      button_text: "Register Now",
+    },
+    event_type: {
+      status: "Open",
+      mode: "Offline",
+      category: "event",
+    },
+    prize: {
+      prizePool: "Prizepool : Rs 20,000 + ",
+      popularChoicePrize: "",
+    },
+  contacts: [
+    {
+      name: "Bishal Lamichhane",
+      phone: "9864511097",
+    },
+  ],
+  description:
+    "Robo Line Dash 2026 is an autonomous robotics competition under LOCUS 2026 where teams design a robot capable of following a black line through a maze and intelligently determining the shortest path. The challenge evaluates algorithm design, sensor integration, precision control, and optimization.\n\n" +
+    "Event Highlights:\n" +
+    "• Autonomous line-following and maze-solving challenge\n" +
+    "• Two-phase gameplay: Dry Run and Actual Run\n" +
+    "• Emphasis on shortest-path optimization and speed\n\n" +
+    "Robots first explore the maze during the Dry Run and store navigation data. In the Actual Run, they must traverse the maze using the optimal path in the shortest possible time while adhering strictly to safety and arena constraints.",
+  rules:
+    "1. Teams may consist of 1 to 4 members; only one member may handle the robot during gameplay.\n" +
+    "2. Robots must fit within 150mm x 150mm x 150mm dimensions and operate autonomously with on-board power not exceeding 16V.\n" +
+    "3. Robots must not damage, mark, or alter the maze; any such action results in immediate disqualification.\n" +
+    "4. The competition consists of a Dry Run (3 minutes) and an Actual Run (2 minutes 30 seconds); no restarts are allowed in the Actual Run.\n" +
+    "5. Laptops, wireless devices, and external communication are prohibited near the arena during runs.\n" +
+    "6. Judges’ and organizers’ decisions are final, and violations of rules may lead to penalties or disqualification.",
+    registration_link: "https://forms.gle/pZgSJnX9heftdAas8",
+}
+
 ];

@@ -1,0 +1,203 @@
+{
+  "contentWritingTeam": [
+    {
+      "name": "Anjal Adhikari",
+      "designation": "Content Writing Team",
+      "imageUrl": "assets/creative-teams/content-writing-team/Anjal_adhikari.jpg"
+    },
+    {
+      "name": "Anubhav Jha",
+      "designation": "Content Writing Team",
+      "imageUrl": "assets/creative-teams/content-writing-team/Anubhav_jha.jpg"
+    },
+    {
+      "name": "Niraj Karki",
+      "designation": "Content Writing Team",
+      "imageUrl": "assets/creative-teams/content-writing-team/Niraj_Karki.JPG"
+    },
+    {
+      "name": "Pratap Kunwar",
+      "designation": "Content Writing Team",
+      "imageUrl": "assets/creative-teams/content-writing-team/Pratap_Kunwar.jpg"
+    },
+    {
+      "name": "Raju Ubarkoti",
+      "designation": "Content Writing Team",
+      "imageUrl": "assets/creative-teams/content-writing-team/Raju_Ubarkoti.jpg"
+    },
+    {
+      "name": "Sachita Aryal",
+      "designation": "Content Writing Team",
+      "imageUrl": "assets/creative-teams/content-writing-team/Sachita_Aryal.JPG"
+    },
+    {
+      "name": "Shruti Maharjan",
+      "designation": "Content Writing Team",
+      "imageUrl": "assets/creative-teams/content-writing-team/Shruti_Maharjan.jpeg"
+    },
+    {
+      "name": "Suyash Adhikari",
+      "designation": "Content Writing Team",
+      "imageUrl": "assets/creative-teams/content-writing-team/Suyash_adhikari.jpg"
+    },
+    {
+      "name": "Yojana Thapa",
+      "designation": "Content Writing Team",
+      "imageUrl": "assets/creative-teams/content-writing-team/Yojana_Thapa.jpg"
+    }
+  ],
+  "designTeamAlpha": [
+    {
+      "name": "Bikalpa Bhattarai",
+      "designation": "Design Team Alpha",
+      "imageUrl": "assets/creative-teams/design-team-alpha/Bikalpa_Bhattarai.jpg"
+    },
+    {
+      "name": "Manish Adhikari",
+      "designation": "Design Team Alpha",
+      "imageUrl": "assets/creative-teams/design-team-alpha/Manish_Adhikari.jpg"
+    },
+    {
+      "name": "Nischal Neupane",
+      "designation": "Design Team Alpha",
+      "imageUrl": "assets/creative-teams/design-team-alpha/Nischal_Neupane.jpg"
+    },
+    {
+      "name": "Saraswati Gautam",
+      "designation": "Design Team Alpha",
+      "imageUrl": "assets/creative-teams/design-team-alpha/Saraswati_Gautam.jpg"
+    }
+  ],
+  "designTeamBeta": [
+    {
+      "name": "Aayush Rouniyar",
+      "designation": "Design Team Beta",
+      "imageUrl": "assets/creative-teams/design-team-beta/Aayush_Rouniyar.jpg"
+    },
+    {
+      "name": "Ayam Kattel",
+      "designation": "Design Team Beta",
+      "imageUrl": "assets/creative-teams/design-team-beta/Ayam_Kattel.jpg"
+    },
+    {
+      "name": "Nitesh",
+      "designation": "Design Team Beta",
+      "imageUrl": "assets/creative-teams/design-team-beta/Nitesh.JPG"
+    },
+    {
+      "name": "Saya",
+      "designation": "Design Team Beta",
+      "imageUrl": "assets/creative-teams/design-team-beta/Saya.jpg"
+    }
+  ],
+  "designTeamDelta": [
+    {
+      "name": "Anupa",
+      "designation": "Design Team Delta",
+      "imageUrl": "assets/creative-teams/design-team-delta/Anupa.png"
+    },
+    {
+      "name": "Arpan Bhattarai",
+      "designation": "Design Team Delta",
+      "imageUrl": "assets/creative-teams/design-team-delta/Arpan_Bhattarai.png"
+    },
+    {
+      "name": "Bigyan Adhikari",
+      "designation": "Design Team Delta",
+      "imageUrl": "assets/creative-teams/design-team-delta/Bigyan_Adhikari.jpg"
+    },
+    {
+      "name": "Nabina Thapa",
+      "designation": "Design Team Delta",
+      "imageUrl": "assets/creative-teams/design-team-delta/Nabina_Thapa.jpg"
+    }
+  ],
+  "designTeamGamma": [
+    {
+      "name": "Anuja Gyawali",
+      "designation": "Design Team Gamma",
+      "imageUrl": "assets/creative-teams/design-team-gamma/Anuja_Gyawali_.jpg"
+    },
+    {
+      "name": "Bikash Mishra",
+      "designation": "Design Team Gamma",
+      "imageUrl": "assets/creative-teams/design-team-gamma/Bikash_Mishra.jpg"
+    },
+    {
+      "name": "Lenin Devkota",
+      "designation": "Design Team Gamma",
+      "imageUrl": "assets/creative-teams/design-team-gamma/Lenin_Devkota%20.JPG"
+    },
+    {
+      "name": "Prakriti Basnyat",
+      "designation": "Design Team Gamma",
+      "imageUrl": "assets/creative-teams/design-team-gamma/Prakriti_Basnyat.jpg"
+    }
+  ],
+  "photographyTeam": [
+    {
+      "name": "Pratik",
+      "designation": "Photography Team",
+      "imageUrl": "assets/creative-teams/photography-team/pratik.jpg"
+    },
+    {
+      "name": "Pratyush Kattel",
+      "designation": "Photography Team",
+      "imageUrl": "assets/creative-teams/photography-team/Pratyush_kattel.jpeg"
+    },
+    {
+      "name": "Ritesh Jha",
+      "designation": "Photography Team",
+      "imageUrl": "assets/creative-teams/photography-team/Ritesh_Jha.jpg"
+    }
+  ],
+  "shortContentCreatorTeam": [
+    {
+      "name": "Prashila Bhattarai",
+      "designation": "Short Content Creator Team",
+      "imageUrl": "assets/creative-teams/short-content-creator-team/Prashila_Bhattarai_.jpg"
+    },
+    {
+      "name": "Rakhi Mahato",
+      "designation": "Short Content Creator Team",
+      "imageUrl": "assets/creative-teams/short-content-creator-team/Rakhi_Mahato.jpg"
+    },
+    {
+      "name": "Riya Jha",
+      "designation": "Short Content Creator Team",
+      "imageUrl": "assets/creative-teams/short-content-creator-team/Riya_Jha.webp"
+    },
+    {
+      "name": "Sangam Ghimire",
+      "designation": "Short Content Creator Team",
+      "imageUrl": "assets/creative-teams/short-content-creator-team/Sangam_Ghimire.jpg"
+    },
+    {
+      "name": "Saurab Gyawali",
+      "designation": "Short Content Creator Team",
+      "imageUrl": "assets/creative-teams/short-content-creator-team/Saurab_Gyawali.jpg"
+    },
+    {
+      "name": "Shristi Pokhrel",
+      "designation": "Short Content Creator Team",
+      "imageUrl": "assets/creative-teams/short-content-creator-team/Shristi_Pokhrel.jpg"
+    }
+  ],
+  "videoEditingTeam": [
+    {
+      "name": "Bibek Yadav",
+      "designation": "VideoEditing Team",
+      "imageUrl": "assets/creative-teams/video-editing-team/Bibek%20Yadav.jpg"
+    },
+    {
+      "name": "Ritesh Jha",
+      "designation": "VideoEditing Team",
+      "imageUrl": "assets/creative-teams/video-editing-team/Ritesh_Jha.jpg"
+    },
+    {
+      "name": "Thaneshwor Chaudhary",
+      "designation": "VideoEditing Team",
+      "imageUrl": "assets/creative-teams/video-editing-team/Thaneshworchaudhary.jpg"
+    }
+  ]
+}

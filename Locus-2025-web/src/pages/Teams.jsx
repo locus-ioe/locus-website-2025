@@ -45,7 +45,7 @@ function Teams() {
     },
     {
       id: "videoEditingTeam",
-      label: "VideoEditing Team",
+      label: "Video Editing Team",
       data: creativeTeams.videoEditingTeam,
     },
   ];
@@ -53,26 +53,28 @@ function Teams() {
   const currentTeam = creativeTeamsList.find((t) => t.id === selectedTeam);
 
   return (
-    <div className="w-full max-w-[1148px] mx-auto px-4 py-8">
+    <div className='w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12'>
       {/* Header Section */}
-      <div className="text-center mb-12 mt-12">
-        <h1 className="text-2xl md:text-5xl font-bold mb-4">
-          <span className="text-[#48d0ff]">Our</span> Teams
+      <div className='text-center mb-12 sm:mb-16 mt-8 sm:mt-12'>
+        <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4 sm:mb-6'>
+          <span className='text-white'>Our </span>
+          <span className='text-[#48d0ff]'>Teams</span>
         </h1>
-        <p className="text-gray-400 text-lg mt-4 max-w-2xl mx-auto">
+        <p className='text-gray-400 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto'>
           Meet the passionate individuals driving innovation and excellence
         </p>
-        <div className="mt-6 mb-4">
-          <hr className="border-gray-700" />
+        <div className='mt-6 sm:mt-8'>
+          <div className='h-0.5 bg-[#48d0ff] w-4/5 sm:w-3/4 mx-auto'></div>
         </div>
       </div>
 
       {/* LOCUS Team */}
-      <div className="mb-20">
-        <h2 className="text-2xl md:text-4xl font-bold text-center mb-12">
-          <span className="text-[#48d0ff]">LOCUS Open Source</span> Team
+      <div className='mb-16 sm:mb-24'>
+        <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-8 sm:mb-12'>
+          <span className='text-[#48d0ff]'>LOCUS Open Source</span>
+          <span className='text-white'> Team</span>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center'>
           {locusTeam.map((person, index) => (
             <ProfileCard
               key={index}
@@ -89,17 +91,17 @@ function Teams() {
       </div>
 
       {/* Divider */}
-      <div className="my-16">
-        <hr className="border-gray-700" />
+      <div className='my-12 sm:my-16'>
+        <div className='h-0.5 bg-[#48d0ff] w-4/5 sm:w-3/4 mx-auto'></div>
       </div>
 
       {/* Hack a Week Team */}
-      <div className="mb-20">
-        <h2 className="text-2xl md:text-4xl font-bold text-center mb-12">
-          <span className="text-[#48d0ff]">Neural AI Hack a Week</span>{" "}
-          Organizers
+      <div className='mb-16 sm:mb-24'>
+        <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-8 sm:mb-12'>
+          <span className='text-[#48d0ff]'>Neural AI Hack a Week</span>
+          <span className='text-white'> Organizers</span>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center'>
           {hackaWeekTeam.map((person, index) => (
             <ProfileCard
               key={index}
@@ -116,26 +118,27 @@ function Teams() {
       </div>
 
       {/* Divider */}
-      <div className="my-16">
-        <hr className="border-gray-700" />
+      <div className='my-12 sm:my-16'>
+        <div className='h-0.5 bg-[#48d0ff] w-4/5 sm:w-3/4 mx-auto'></div>
       </div>
 
       {/* Creative Teams Section */}
-      <div className="mb-20">
-        <h2 className="text-2xl md:text-4xl font-bold text-center mb-12">
-          <span className="text-[#48d0ff]">Creative</span> Teams
+      <div className='mb-16 sm:mb-24'>
+        <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-8 sm:mb-12'>
+          <span className='text-[#48d0ff]'>Creative</span>
+          <span className='text-white'> Teams</span>
         </h2>
 
         {/* Team Selection Buttons */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12 justify-items-center max-w-4xl mx-auto">
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 mb-10 sm:mb-12 max-w-5xl mx-auto'>
           {creativeTeamsList.map((team) => (
             <button
               key={team.id}
               onClick={() => setSelectedTeam(team.id)}
-              className={`px-6 py-3 rounded-lg font-semibold text-white transition-all duration-300 w-full max-w-xs ${
+              className={`px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white transition-all duration-300 transform hover:scale-105 ${
                 selectedTeam === team.id
-                  ? "bg-[#48d0ff] shadow-lg"
-                  : "bg-[#2a3f5f] hover:bg-[#354a6f]"
+                  ? "bg-[#48d0ff] shadow-lg shadow-[#48d0ff]/50"
+                  : "bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 border border-gray-700"
               }`}
             >
               {team.label}
@@ -145,11 +148,11 @@ function Teams() {
 
         {/* Selected Team Members */}
         {currentTeam && (
-          <>
-            <h3 className="text-2xl md:text-3xl font-bold text-center mb-12">
-              <span className="text-[#48d0ff]">{currentTeam.label}</span>
+          <div className='space-y-8 sm:space-y-10'>
+            <h3 className='text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-center'>
+              <span className='text-[#48d0ff]'>{currentTeam.label}</span>
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center'>
               {currentTeam.data.map((person, index) => (
                 <ProfileCard
                   key={index}
@@ -158,7 +161,7 @@ function Teams() {
                 />
               ))}
             </div>
-          </>
+          </div>
         )}
       </div>
     </div>

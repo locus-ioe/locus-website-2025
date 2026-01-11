@@ -24,10 +24,10 @@ export default function ProjectRegistrationBanner() {
   if (!isVisible) return null;
 
   return (
-    <div className='fixed bottom-0 left-0 right-0 z-50 py-3 px-4 sm:px-6 lg:px-8 pointer-events-none'>
+    <div className='fixed bottom-0 left-0 right-0 z-50 py-2 px-2 sm:py-3 sm:px-6 lg:px-8 pointer-events-none'>
       <div className='max-w-6xl mx-auto pointer-events-auto'>
         {/* Main banner container with enhanced effects */}
-        <div className='relative overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-[#48d0ff]/50 backdrop-blur-lg shadow-2xl shadow-[#48d0ff]/20'>
+        <div className='relative overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-3xl border border-[#48d0ff]/40 sm:border-2 sm:border-[#48d0ff]/50 backdrop-blur-lg shadow-xl sm:shadow-2xl shadow-[#48d0ff]/20'>
           {/* Animated gradient background */}
           <div className='absolute inset-0 bg-gradient-to-r from-black via-[#0a1525] to-black' />
 
@@ -38,9 +38,9 @@ export default function ProjectRegistrationBanner() {
             style={{ animationDelay: "0.5s" }}
           />
 
-          {/* Animated border glow */}
+          {/* Animated border glow - hidden on mobile for cleaner look */}
           <div
-            className='absolute inset-0 rounded-2xl sm:rounded-3xl'
+            className='hidden sm:block absolute inset-0 rounded-2xl lg:rounded-3xl'
             style={{
               background:
                 "linear-gradient(90deg, transparent, rgba(72,208,255,0.5), transparent)",
@@ -52,58 +52,120 @@ export default function ProjectRegistrationBanner() {
             }}
           />
 
-          {/* Top edge intense glow */}
-          <div className='absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent opacity-80' />
+          {/* Top edge glow */}
+          <div className='absolute top-0 left-0 right-0 h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent opacity-80' />
 
           {/* Content */}
-          <div className='relative z-10 py-3 sm:py-4 px-4 sm:px-6'>
+          <div className='relative z-10 py-2 sm:py-3 lg:py-4 px-3 sm:px-4 lg:px-6'>
             {/* Close button */}
             <button
               onClick={() => setIsVisible(false)}
-              className='absolute top-2 right-2 p-1.5 rounded-lg text-white/60 hover:text-white hover:bg-white/10 transition-all z-20'
+              className='absolute top-1 right-1 sm:top-2 sm:right-2 p-1 sm:p-1.5 rounded-lg text-white/60 hover:text-white hover:bg-white/10 transition-all z-20'
               aria-label='Close banner'
             >
-              <X className='w-4 h-4' />
+              <X className='w-3.5 h-3.5 sm:w-4 sm:h-4' />
             </button>
 
-            {/* ===== MOBILE LAYOUT ===== */}
-            <div className='flex flex-col items-center gap-3 sm:hidden pr-8'>
-              <p className='text-white text-sm font-semibold text-center drop-shadow-lg'>
-                Register Projects for{" "}
-                <span className='text-[#48d0ff] font-extrabold text-base animate-pulse'>
-                  LOCUS 2026
-                </span>{" "}
-                & Win Prizes!
-              </p>
-              <div className='flex items-center gap-2 w-full max-w-sm'>
+            {/* ===== MOBILE LAYOUT (Compact) ===== */}
+            <div className='flex items-center justify-between gap-2 sm:hidden pr-6'>
+              {/* Compact text with icon */}
+              <div className='flex items-center gap-2 flex-1 min-w-0'>
+                <div className='relative flex-shrink-0'>
+                  <div className='absolute inset-0 bg-[#48d0ff] blur-lg opacity-50 rounded-full animate-pulse' />
+                  <div className='relative bg-gradient-to-br from-[#48d0ff] to-[#0891b2] p-1.5 rounded-lg shadow-lg shadow-[#48d0ff]/30'>
+                    <Trophy className='w-3.5 h-3.5 text-black' />
+                  </div>
+                </div>
+                <p className='text-white text-xs font-semibold leading-tight'>
+                  <span className='text-[#48d0ff] font-bold'>LOCUS 2026</span>
+                  <br />
+                  <span className='text-[10px] text-gray-400'>
+                    Project Registration Open!
+                  </span>
+                </p>
+              </div>
+
+              {/* Compact buttons */}
+              <div className='flex items-center gap-1.5 flex-shrink-0'>
                 <button
                   onClick={handleDetailsClick}
-                  className='flex-1 px-4 py-2.5 rounded-xl text-sm font-semibold
-                           bg-white/10 text-white border-2 border-white/30 
+                  className='px-2.5 py-1.5 rounded-lg text-[10px] font-semibold
+                           bg-white/10 text-white border border-white/30 
                            hover:bg-white/20 hover:border-[#48d0ff]/50
                            active:scale-95 transition-all duration-200
-                           shadow-lg hover:shadow-[#48d0ff]/20'
+                           shadow-md'
                 >
-                  Details
+                  Info
                 </button>
                 <button
                   onClick={handleRegisterClick}
-                  className='flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-sm font-bold
+                  className='inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-[10px] font-bold
                            bg-gradient-to-r from-[#48d0ff] via-[#22b8cf] to-[#48d0ff] text-black
                            bg-size-200 animate-gradient
-                           shadow-lg shadow-[#48d0ff]/50
-                           hover:shadow-2xl hover:shadow-[#48d0ff]/60 
+                           shadow-md shadow-[#48d0ff]/50
                            active:scale-95 transition-all duration-200
-                           border-2 border-[#48d0ff]/50'
+                           border border-[#48d0ff]/50'
                 >
-                  Register Now
-                  <ExternalLink className='w-4 h-4' />
+                  Register
+                  <ExternalLink className='w-2.5 h-2.5' />
                 </button>
               </div>
             </div>
 
-            {/* ===== DESKTOP LAYOUT ===== */}
-            <div className='hidden sm:flex items-center justify-between gap-6 pr-8'>
+            {/* ===== TABLET LAYOUT (Medium) ===== */}
+            <div className='hidden sm:flex lg:hidden items-center justify-between gap-4 pr-8'>
+              <div className='flex items-center gap-3'>
+                <div className='relative flex-shrink-0'>
+                  <div className='absolute inset-0 bg-[#48d0ff] blur-xl opacity-60 rounded-full animate-pulse' />
+                  <div className='relative bg-gradient-to-br from-[#48d0ff] via-[#22b8cf] to-[#0891b2] p-2 rounded-lg shadow-lg shadow-[#48d0ff]/40'>
+                    <Trophy className='w-4 h-4 text-black' />
+                  </div>
+                </div>
+                <div>
+                  <h3 className='text-white font-bold text-sm leading-tight'>
+                    Register for{" "}
+                    <span className='text-[#48d0ff]'>LOCUS 2026</span>
+                  </h3>
+                  <p className='text-yellow-400 text-xs font-semibold flex items-center gap-1'>
+                    <Trophy className='w-3 h-3' />
+                    Win Cash Prizes!
+                  </p>
+                </div>
+              </div>
+
+              <div className='flex items-center gap-2'>
+                <button
+                  onClick={handleDetailsClick}
+                  className='inline-flex items-center gap-1 px-3 py-2 rounded-lg font-semibold text-xs
+                           bg-white/10 text-white border border-white/30 
+                           hover:bg-white/20 hover:border-[#48d0ff]/50 hover:text-[#48d0ff]
+                           transition-all duration-200
+                           shadow-lg hover:shadow-[#48d0ff]/30'
+                >
+                  <Info className='w-3.5 h-3.5' />
+                  Details
+                </button>
+
+                <button
+                  onClick={handleRegisterClick}
+                  className='inline-flex items-center gap-1.5 px-4 py-2 rounded-lg font-bold text-xs
+                           bg-gradient-to-r from-[#48d0ff] via-[#22b8cf] to-[#48d0ff] text-black
+                           bg-size-200 animate-gradient
+                           shadow-lg shadow-[#48d0ff]/50
+                           hover:shadow-xl hover:shadow-[#48d0ff]/60
+                           hover:scale-105 active:scale-100
+                           border border-[#48d0ff]/50
+                           relative overflow-hidden transition-all duration-200'
+                >
+                  <span>Register Now</span>
+                  <ExternalLink className='w-3.5 h-3.5' />
+                  <div className='absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-200%] hover:translate-x-[200%] transition-transform duration-700' />
+                </button>
+              </div>
+            </div>
+
+            {/* ===== DESKTOP LAYOUT (Full) ===== */}
+            <div className='hidden lg:flex items-center justify-between gap-6 pr-8'>
               {/* Left section - Icon and main text */}
               <div className='flex items-center gap-4'>
                 {/* Trophy icon with pulsing glow */}
@@ -170,8 +232,8 @@ export default function ProjectRegistrationBanner() {
             </div>
           </div>
 
-          {/* Bottom edge intense glow */}
-          <div className='absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#48d0ff]/80 to-transparent' />
+          {/* Bottom edge glow */}
+          <div className='absolute bottom-0 left-0 right-0 h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-[#48d0ff]/80 to-transparent' />
         </div>
       </div>
 

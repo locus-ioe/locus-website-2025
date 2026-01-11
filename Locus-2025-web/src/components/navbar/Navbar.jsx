@@ -113,7 +113,7 @@ export function Navbar() {
                   Past LOCUS
                 </Link>
                 <a
-                  href='https://www.cit.locus.com.np/'
+                  href='https://cit-worldlink.netlify.app/'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'

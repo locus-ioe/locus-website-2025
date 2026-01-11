@@ -23,12 +23,12 @@ export function Navbar() {
   // Lock body scroll when mobile menu is open
   useEffect(() => {
     if (isMobileOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [isMobileOpen]);
 
@@ -38,13 +38,13 @@ export function Navbar() {
         {/* Logo */}
         <Link
           to='/'
-          className='flex items-center gap-2 z-[110]'
+          className='flex items-center gap-2 z-[110] group'
         >
-          <div className='h-12 md:h-16 w-auto'>
+          <div className='h-14 md:h-20 w-auto relative'>
             <img
-              src='/assets/home/locus2026_small.png'
+              src='/assets/logodark.png'
               alt='Locus 2026 Logo'
-              className='h-full w-auto object-contain'
+              className='h-full w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-110 drop-shadow-[0_0_8px_rgba(72,208,255,0.3)] group-hover:drop-shadow-[0_0_12px_rgba(72,208,255,0.5)]'
             />
           </div>
         </Link>
@@ -73,13 +73,20 @@ export function Navbar() {
           ))}
 
           {/* More Dropdown */}
-          <div className='relative' ref={menuRef}>
+          <div
+            className='relative'
+            ref={menuRef}
+          >
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className='flex items-center gap-1 px-3 py-2 text-sm font-medium text-primary transition-colors hover:text-[#00abe6] rounded-lg hover:bg-zinc-800/50'
             >
               More
-              <FiChevronDown className={`transition-transform ${isMenuOpen ? 'rotate-180' : ''}`} />
+              <FiChevronDown
+                className={`transition-transform ${
+                  isMenuOpen ? "rotate-180" : ""
+                }`}
+              />
             </button>
             {isMenuOpen && (
               <div className='absolute right-0 mt-2 w-48 bg-zinc-900 border border-zinc-800 rounded-lg shadow-xl z-[120] overflow-hidden'>
@@ -150,8 +157,8 @@ export function Navbar() {
             <nav className='flex flex-col p-4'>
               {[
                 ["Home", "/"],
-                ["About Us", "/about-us"],
-                ["Events", "/events"], 
+                ["About", "/about-us"],
+                ["Events", "/events"],
                 // ["Calendar", "/calendar"], Hidden for now , still under development
                 ["Zerone", "/zerone"],
                 ["Sponsors", "/sponsors"],
@@ -176,6 +183,13 @@ export function Navbar() {
               <div className='h-px bg-zinc-800 my-2'></div>
 
               <Link
+                to='/teams'
+                className='px-4 py-3 text-base font-medium text-primary hover:text-[#00abe6] hover:bg-zinc-800/50 rounded-lg transition-all active:scale-95'
+                onClick={() => setIsMobileOpen(false)}
+              >
+                Teams
+              </Link>
+              <Link
                 to='/past-locus'
                 className='px-4 py-3 text-base font-medium text-primary hover:text-[#00abe6] hover:bg-zinc-800/50 rounded-lg transition-all active:scale-95'
                 onClick={() => setIsMobileOpen(false)}
@@ -183,7 +197,7 @@ export function Navbar() {
                 Past LOCUS
               </Link>
               <a
-                href='https://www.cit.locus.com.np/'
+                href='https://cit-worldlink.netlify.app/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='px-4 py-3 text-base font-medium text-primary hover:text-[#00abe6] hover:bg-zinc-800/50 rounded-lg transition-all active:scale-95 flex items-center justify-between'

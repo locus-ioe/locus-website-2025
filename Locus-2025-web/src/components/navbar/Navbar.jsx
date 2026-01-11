@@ -34,17 +34,17 @@ export function Navbar() {
 
   return (
     <header className='fixed top-0 left-0 right-0 w-full px-4 py-3 text-primary z-[100] bg-transparent'>
-      <div className='mx-auto flex max-w-7xl h-16 md:h-20 items-center justify-between rounded-full border border-zinc-800 bg-zinc-900/95 px-4 md:px-6 backdrop-blur-sm transition-all duration-300 shadow-lg'>
+      <div className='mx-auto flex max-w-7xl h-14 sm:h-16 md:h-18 lg:h-20 items-center justify-between rounded-full border border-zinc-800 bg-zinc-900/95 px-3 sm:px-4 md:px-6 backdrop-blur-sm transition-all duration-300 shadow-lg'>
         {/* Logo */}
         <Link
           to='/'
           className='flex items-center gap-2 z-[110] group'
         >
-          <div className='h-14 md:h-20 w-auto relative'>
+          <div className='h-10 sm:h-12 md:h-14 lg:h-16 w-auto relative'>
             <img
               src='/assets/logodark.png'
               alt='Locus 2026 Logo'
-              className='h-full w-auto object-contain transition-all duration-300 group-hover:scale-110 group-hover:brightness-110 drop-shadow-[0_0_8px_rgba(72,208,255,0.3)] group-hover:drop-shadow-[0_0_12px_rgba(72,208,255,0.5)]'
+              className='h-full w-auto object-contain transition-all duration-300 group-hover:scale-105 lg:group-hover:scale-110 group-hover:brightness-110 drop-shadow-[0_0_6px_rgba(72,208,255,0.2)] sm:drop-shadow-[0_0_8px_rgba(72,208,255,0.3)] group-hover:drop-shadow-[0_0_10px_rgba(72,208,255,0.4)] lg:group-hover:drop-shadow-[0_0_12px_rgba(72,208,255,0.5)]'
             />
           </div>
         </Link>
@@ -139,7 +139,7 @@ export function Navbar() {
           className='lg:hidden z-[110] p-2 rounded-lg hover:bg-zinc-800 transition-colors'
           aria-label='Toggle menu'
         >
-          {isMobileOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          {isMobileOpen ? <FiX size={20} className="sm:w-6 sm:h-6" /> : <FiMenu size={20} className="sm:w-6 sm:h-6" />}
         </button>
       </div>
 
@@ -153,7 +153,7 @@ export function Navbar() {
           ></div>
 
           {/* Mobile Menu */}
-          <div className='fixed top-[5.5rem] right-4 left-4 bg-zinc-900/98 border border-zinc-800 rounded-2xl shadow-2xl z-[106] lg:hidden max-h-[calc(100vh-7rem)] overflow-y-auto animate-slideDown backdrop-blur-xl'>
+          <div className='fixed top-[4.5rem] sm:top-[5.5rem] right-4 left-4 bg-zinc-900/98 border border-zinc-800 rounded-2xl shadow-2xl z-[106] lg:hidden max-h-[calc(100vh-6rem)] sm:max-h-[calc(100vh-7rem)] overflow-y-auto animate-slideDown backdrop-blur-xl'>
             <nav className='flex flex-col p-4'>
               {[
                 ["Home", "/"],

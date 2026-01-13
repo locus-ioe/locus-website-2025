@@ -18,7 +18,7 @@ const Sponsors = () => {
     <div className="text-center bg-black text-white py-10 px-6">
       <div>
         <h1 className="text-3xl md:text-5xl font-bold mb-6">
-          Locus <span className="text-[#00abe6]">2025</span> Sponsors
+          Locus <span className="text-[#00abe6]">2026</span> Sponsors
         </h1>
       </div>
 

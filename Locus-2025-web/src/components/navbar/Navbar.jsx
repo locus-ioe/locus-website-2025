@@ -34,109 +34,62 @@ export function Navbar() {
 
   return (
     <header className='fixed top-0 left-0 right-0 w-full px-4 py-3 text-primary z-[100] bg-transparent'>
-      <div className='mx-auto flex max-w-7xl h-14 sm:h-16 md:h-18 lg:h-20 items-center justify-between rounded-full border border-zinc-800 bg-zinc-900/95 px-3 sm:px-4 md:px-6 backdrop-blur-sm transition-all duration-300 shadow-lg'>
+      <div className='flex w-full h-14 sm:h-16 md:h-18 lg:h-20 items-center justify-between rounded-full border border-zinc-800/50 bg-zinc-900/90 px-4 sm:px-6 md:px-8 backdrop-blur-md transition-all duration-300 shadow-[0_8px_32px_0_rgba(0,0,0,0.4)]'>
         {/* Logo */}
         <Link
           to='/'
-          className='flex items-center gap-2 z-[110] group'
+          className='flex items-center gap-2 z-[110] flex-shrink-0'
         >
           <div className='h-10 sm:h-12 md:h-14 lg:h-16 w-auto relative'>
             <img
               src='/assets/logodark.png'
               alt='Locus 2026 Logo'
-              className='h-full w-auto object-contain transition-all duration-300 group-hover:scale-105 lg:group-hover:scale-110 group-hover:brightness-110 drop-shadow-[0_0_6px_rgba(72,208,255,0.2)] sm:drop-shadow-[0_0_8px_rgba(72,208,255,0.3)] group-hover:drop-shadow-[0_0_10px_rgba(72,208,255,0.4)] lg:group-hover:drop-shadow-[0_0_12px_rgba(72,208,255,0.5)]'
+              className='h-full w-auto object-contain drop-shadow-[0_0_8px_rgba(72,208,255,0.3)]'
             />
           </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className='hidden lg:flex items-center gap-1 z-[110]'>
+        <nav className='hidden lg:flex items-center gap-0.5 z-[110] flex-1 justify-end'>
           {[
             ["Home", "/"],
             ["About", "/about-us"],
             ["Events", "/events"],
             ["Zerone", "/zerone"],
             ["Sponsors", "/sponsors"],
+            ["Blogs", "/blogs"],
+            ["Contact", "/contact-us"],
+            ["Teams", "/teams"],
+            ["Past LOCUS", "/past-locus"],
           ].map(([label, to]) => (
             <Link
               key={label}
               to={to}
-              className='px-3 py-2 text-sm font-medium text-primary transition-colors hover:text-[#00abe6] rounded-lg hover:bg-zinc-800/50 relative'
+              className='px-2.5 py-2 text-xs xl:text-sm font-medium text-zinc-300 hover:text-[#00abe6] transition-all rounded-lg hover:bg-zinc-800/40 relative whitespace-nowrap'
             >
               {label}
               {label === "Events" && openEventsCount > 0 && (
-                <span className='absolute -top-1 -right-1 flex items-center justify-center min-w-[20px] h-5 px-1.5 text-xs font-bold text-white bg-[#00abe6] rounded-full shadow-lg animate-pulse'>
+                <span className='absolute -top-1 -right-1 flex items-center justify-center min-w-[18px] h-[18px] px-1 text-[10px] font-bold text-white bg-gradient-to-r from-[#00abe6] to-[#0088cc] rounded-full shadow-lg animate-pulse'>
                   {openEventsCount}
                 </span>
               )}
             </Link>
           ))}
-
-          {/* More Dropdown */}
-          <div
-            className='relative'
-            ref={menuRef}
+          <a
+            href='https://cit-worldlink.netlify.app/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='px-2.5 py-2 text-xs xl:text-sm font-medium text-zinc-300 hover:text-[#00abe6] transition-all rounded-lg hover:bg-zinc-800/40 whitespace-nowrap flex items-center gap-1'
           >
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className='flex items-center gap-1 px-3 py-2 text-sm font-medium text-primary transition-colors hover:text-[#00abe6] rounded-lg hover:bg-zinc-800/50'
-            >
-              More
-              <FiChevronDown
-                className={`transition-transform ${
-                  isMenuOpen ? "rotate-180" : ""
-                }`}
-              />
-            </button>
-            {isMenuOpen && (
-              <div className='absolute right-0 mt-2 w-48 bg-zinc-900 border border-zinc-800 rounded-lg shadow-xl z-[120] overflow-hidden'>
-                <Link
-                  to='/blogs'
-                  className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Blogs
-                </Link>
-                <Link
-                  to='/contact-us'
-                  className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Contact Us
-                </Link>
-                <div className='h-px bg-zinc-800 my-1'></div>
-                <Link
-                  to='/past-locus'
-                  className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Past LOCUS
-                </Link>
-                <a
-                  href='https://cit-worldlink.netlify.app/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  CIT-MAP
-                </a>
-                <Link
-                  to='/teams'
-                  className='block px-4 py-3 text-sm text-primary hover:bg-zinc-800 hover:text-[#00abe6] transition-colors'
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Teams
-                </Link>
-              </div>
-            )}
-          </div>
+            CIT-MAP
+            <span className='text-[10px]'>↗</span>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileOpen(!isMobileOpen)}
-          className='lg:hidden z-[110] p-2 rounded-lg hover:bg-zinc-800 transition-colors'
+          className='lg:hidden z-[110] p-2 rounded-lg transition-colors'
           aria-label='Toggle menu'
         >
           {isMobileOpen ? <FiX size={20} className="sm:w-6 sm:h-6" /> : <FiMenu size={20} className="sm:w-6 sm:h-6" />}
@@ -159,7 +112,6 @@ export function Navbar() {
                 ["Home", "/"],
                 ["About", "/about-us"],
                 ["Events", "/events"],
-                // ["Calendar", "/calendar"], Hidden for now , still under development
                 ["Zerone", "/zerone"],
                 ["Sponsors", "/sponsors"],
                 ["Blogs", "/blogs"],
@@ -168,7 +120,7 @@ export function Navbar() {
                 <Link
                   key={label}
                   to={to}
-                  className='px-4 py-3 text-base font-medium text-primary hover:text-[#00abe6] hover:bg-zinc-800/50 rounded-lg transition-all active:scale-95 relative flex items-center justify-between'
+                  className='px-4 py-3 text-base font-medium text-primary rounded-lg transition-all active:scale-95 relative flex items-center justify-between'
                   onClick={() => setIsMobileOpen(false)}
                 >
                   <span>{label}</span>
@@ -184,14 +136,14 @@ export function Navbar() {
 
               <Link
                 to='/teams'
-                className='px-4 py-3 text-base font-medium text-primary hover:text-[#00abe6] hover:bg-zinc-800/50 rounded-lg transition-all active:scale-95'
+                className='px-4 py-3 text-base font-medium text-primary rounded-lg transition-all active:scale-95'
                 onClick={() => setIsMobileOpen(false)}
               >
                 Teams
               </Link>
               <Link
                 to='/past-locus'
-                className='px-4 py-3 text-base font-medium text-primary hover:text-[#00abe6] hover:bg-zinc-800/50 rounded-lg transition-all active:scale-95'
+                className='px-4 py-3 text-base font-medium text-primary rounded-lg transition-all active:scale-95'
                 onClick={() => setIsMobileOpen(false)}
               >
                 Past LOCUS
@@ -200,7 +152,7 @@ export function Navbar() {
                 href='https://cit-worldlink.netlify.app/'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='px-4 py-3 text-base font-medium text-primary hover:text-[#00abe6] hover:bg-zinc-800/50 rounded-lg transition-all active:scale-95 flex items-center justify-between'
+                className='px-4 py-3 text-base font-medium text-primary rounded-lg transition-all active:scale-95 flex items-center justify-between'
                 onClick={() => setIsMobileOpen(false)}
               >
                 CIT-MAP

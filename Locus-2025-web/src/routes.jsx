@@ -6,6 +6,7 @@ import EventDescription from "./components/EventDescription.jsx";
 import Blogpage from "./pages/Blogpage.jsx";
 
 // Lazy load pages
+const Teams = lazy(() => import("./pages/Teams"));
 const Home = lazy(() => import("./pages/Home"));
 const Sponsor = lazy(() => import("./pages/Sponsor"));
 const Contact = lazy(() => import("./pages/Contact"));
@@ -80,6 +81,10 @@ export const routes = [
       {
         path: "past-locus",
         element: withSuspense(PastLocusPage),
+      },
+      {
+        path: "teams",
+        element: withSuspense(Teams),
       },
     ],
   },

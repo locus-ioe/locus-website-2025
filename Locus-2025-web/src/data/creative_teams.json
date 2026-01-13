@@ -1,0 +1,203 @@
+{
+  "contentWritingTeam": [
+    {
+      "name": "Anjal Adhikari",
+      "designation": "Content Writing Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135871/creative-committee/Content_Writing_Team/anjal_adhikari.jpg"
+    },
+    {
+      "name": "Anubhav Jha",
+      "designation": "Content Writing Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135828/creative-committee/Content_Writing_Team/Anubhav_Jha.jpg"
+    },
+    {
+      "name": "Niraj Karki",
+      "designation": "Content Writing Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135852/creative-committee/Content_Writing_Team/Niraj_Karki.jpg"
+    },
+    {
+      "name": "Pratap Kunwar",
+      "designation": "Content Writing Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135854/creative-committee/Content_Writing_Team/Pratap_Kunwar.jpg"
+    },
+    {
+      "name": "Raju Ubarkoti",
+      "designation": "Content Writing Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135857/creative-committee/Content_Writing_Team/Raju_Ubarkoti.jpg"
+    },
+    {
+      "name": "Sachita Aryal",
+      "designation": "Content Writing Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135867/creative-committee/Content_Writing_Team/Sachita_Aryal.jpg"
+    },
+    {
+      "name": "Shruti Maharjan",
+      "designation": "Content Writing Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135868/creative-committee/Content_Writing_Team/Shruti_Maharjan.jpg"
+    },
+    {
+      "name": "Suyash Adhikari",
+      "designation": "Content Writing Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135873/creative-committee/Content_Writing_Team/suyash_adhikari.jpg"
+    },
+    {
+      "name": "Yojana Thapa",
+      "designation": "Content Writing Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135869/creative-committee/Content_Writing_Team/Yojana_Thapa.jpg"
+    }
+  ],
+  "designTeamAlpha": [
+    {
+      "name": "Bikalpa Bhattarai",
+      "designation": "Design Team Alpha",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135875/creative-committee/Design_Team_Alpha/Bikalpa_Bhattarai.jpg"
+    },
+    {
+      "name": "Manish Adhikari",
+      "designation": "Design Team Alpha",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135877/creative-committee/Design_Team_Alpha/Manish_Adhikari.jpg"
+    },
+    {
+      "name": "Nischal Neupane",
+      "designation": "Design Team Alpha",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135881/creative-committee/Design_Team_Alpha/Nischal_Neupane.jpg"
+    },
+    {
+      "name": "Saraswati Gautam",
+      "designation": "Design Team Alpha",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135882/creative-committee/Design_Team_Alpha/Saraswati_Gautam.jpg"
+    }
+  ],
+  "designTeamBeta": [
+    {
+      "name": "Aayush Rouniyar",
+      "designation": "Design Team Beta",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135884/creative-committee/Design_Team_Beta/Aayush_Rouniyar.jpg"
+    },
+    {
+      "name": "Ayam Kattel",
+      "designation": "Design Team Beta",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768139975/creative-committee/Design_Team_Beta/Ayam_Kattel.png"
+    },
+    {
+      "name": "Nitesh",
+      "designation": "Design Team Beta",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135890/creative-committee/Design_Team_Beta/Nitesh.jpg"
+    },
+    {
+      "name": "Saya",
+      "designation": "Design Team Beta",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135892/creative-committee/Design_Team_Beta/Saya.jpg"
+    }
+  ],
+  "designTeamDelta": [
+    {
+      "name": "Anupa",
+      "designation": "Design Team Delta",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135894/creative-committee/Design_Team_Delta/Anupa.png"
+    },
+    {
+      "name": "Arpan Bhattarai",
+      "designation": "Design Team Delta",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135903/creative-committee/Design_Team_Delta/Arpan_Bhattarai.png"
+    },
+    {
+      "name": "Bigyan Adhikari",
+      "designation": "Design Team Delta",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135906/creative-committee/Design_Team_Delta/Bigyan_Adhikari.jpg"
+    },
+    {
+      "name": "Nabina Thapa",
+      "designation": "Design Team Delta",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135907/creative-committee/Design_Team_Delta/Nabina_Thapa.jpg"
+    }
+  ],
+  "designTeamGamma": [
+    {
+      "name": "Anuja Gyawali",
+      "designation": "Design Team Gamma",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135914/creative-committee/Design_Team_Gamma/Anuja_Gyawali.jpg"
+    },
+    {
+      "name": "Bikash Mishra",
+      "designation": "Design Team Gamma",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135915/creative-committee/Design_Team_Gamma/Bikash_Mishra.jpg"
+    },
+    {
+      "name": "Lenin Devkota",
+      "designation": "Design Team Gamma",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135922/creative-committee/Design_Team_Gamma/Lenin_Devkota.jpg"
+    },
+    {
+      "name": "Prakriti Basnyat",
+      "designation": "Design Team Gamma",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135924/creative-committee/Design_Team_Gamma/Prakriti_Basnyat.jpg"
+    }
+  ],
+  "photographyTeam": [
+    {
+      "name": "Pratik",
+      "designation": "Photography Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135929/creative-committee/Photography_Team/pratik.jpg"
+    },
+    {
+      "name": "Pratyush Kattel",
+      "designation": "Photography Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135925/creative-committee/Photography_Team/Pratyush_kattel.jpg"
+    },
+    {
+      "name": "Ritesh Jha",
+      "designation": "Photography Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135928/creative-committee/Photography_Team/Ritesh_Jha.jpg"
+    }
+  ],
+  "shortContentCreatorTeam": [
+    {
+      "name": "Prashila Bhattarai",
+      "designation": "Short Content Creator Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135930/creative-committee/Short_Content_Creator_Team/Prashila_Bhattarai.jpg"
+    },
+    {
+      "name": "Rakhi Mahato",
+      "designation": "Short Content Creator Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135931/creative-committee/Short_Content_Creator_Team/Rakhi_Mahato.jpg"
+    },
+    {
+      "name": "Riya Jha",
+      "designation": "Short Content Creator Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135933/creative-committee/Short_Content_Creator_Team/Riya_Jha.webp"
+    },
+    {
+      "name": "Sangam Ghimire",
+      "designation": "Short Content Creator Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768139980/creative-committee/Short_Content_Creator_Team/Sangam_Ghimire.png"
+    },
+    {
+      "name": "Saurab Gyawali",
+      "designation": "Short Content Creator Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135935/creative-committee/Short_Content_Creator_Team/Saurab_Gyawali.png"
+    },
+    {
+      "name": "Shristi Pokhrel",
+      "designation": "Short Content Creator Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135936/creative-committee/Short_Content_Creator_Team/Shristi_Pokhrel.jpg"
+    }
+  ],
+  "videoEditingTeam": [
+    {
+      "name": "Bibek Yadav",
+      "designation": "VideoEditing Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135937/creative-committee/VideoEditing_Team/Bibek_Yadav.jpg"
+    },
+    {
+      "name": "Ritesh Jha",
+      "designation": "VideoEditing Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135938/creative-committee/VideoEditing_Team/Ritesh_Jha.jpg"
+    },
+    {
+      "name": "Thaneshwor Chaudhary",
+      "designation": "VideoEditing Team",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135939/creative-committee/VideoEditing_Team/Thaneshworchaudhary.jpg"
+    }
+  ]
+}

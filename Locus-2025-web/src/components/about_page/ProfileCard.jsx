@@ -1,7 +1,7 @@
 // import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import {Facebook, Twitter, Instagram, Linkedin} from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import locuslogo from "../../assets/about/logo.png";
-Facebook
+
 const ProfileCard = ({
   imageUrl,
   name,
@@ -11,56 +11,57 @@ const ProfileCard = ({
   instagram,
   linkedin,
 }) => {
+  // Always show all icons, even if links aren't provided
   return (
     <div className='w-full max-w-xs mx-auto shadow-lg rounded-lg overflow-hidden flex flex-col transform transition-transform hover:scale-105'>
       {/* Image Section */}
-      <div className='relative h-72'>
+      <div className='relative h-72 group'>
         <img
           src={imageUrl}
           alt={name}
           className='w-full h-full object-cover object-center'
         />
-        <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center gap-4 opacity-0 hover:opacity-100 transition-opacity'>
-          {facebook && (
-            <a
-              href={facebook}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-white hover:text-blue-500 text-2xl'
-            >
-              <Facebook />
-            </a>
-          )}
-          {twitter && (
-            <a
-              href={twitter}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-white hover:text-blue-400 text-2xl'
-            >
-              <Twitter />
-            </a>
-          )}
-          {instagram && (
-            <a
-              href={instagram}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-white hover:text-pink-500 text-2xl'
-            >
-              <Instagram />
-            </a>
-          )}
-          {linkedin && (
-            <a
-              href={linkedin}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-white hover:text-blue-700 text-2xl'
-            >
-              <Linkedin />
-            </a>
-          )}
+        <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity'>
+          <a
+            href={facebook || "#"}
+            target='_blank'
+            rel='noopener noreferrer'
+            className={`text-white hover:text-blue-500 text-2xl transition-colors ${
+              !facebook && "pointer-events-none opacity-50"
+            }`}
+          >
+            <Facebook />
+          </a>
+          <a
+            href={twitter || "#"}
+            target='_blank'
+            rel='noopener noreferrer'
+            className={`text-white hover:text-blue-400 text-2xl transition-colors ${
+              !twitter && "pointer-events-none opacity-50"
+            }`}
+          >
+            <Twitter />
+          </a>
+          <a
+            href={instagram || "#"}
+            target='_blank'
+            rel='noopener noreferrer'
+            className={`text-white hover:text-pink-500 text-2xl transition-colors ${
+              !instagram && "pointer-events-none opacity-50"
+            }`}
+          >
+            <Instagram />
+          </a>
+          <a
+            href={linkedin || "#"}
+            target='_blank'
+            rel='noopener noreferrer'
+            className={`text-white hover:text-blue-700 text-2xl transition-colors ${
+              !linkedin && "pointer-events-none opacity-50"
+            }`}
+          >
+            <Linkedin />
+          </a>
         </div>
       </div>
 

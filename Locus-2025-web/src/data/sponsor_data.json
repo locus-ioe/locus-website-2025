@@ -1,392 +1,138 @@
 [
-    {
-        "sponsor_title": "Platinum Sponsor",
-        "subtitle": "",
-        "sponsor_name": "careerlink.ai",
-        "image": "assets/sponsors/careerlink-dark.png",
-        "sponsorlink": "https://careerlink.ai/",
-        "sponsor_text": "Place to Build Your Career"
-    },
-    {
-        "sponsor_title": "Platinum Sponsor",
-        "subtitle": "",
-        "sponsor_name": "Itonics",
-        "image": "assets/sponsors/itonics-light.svg",
-        "sponsorlink": "https://www.itonics-innovation.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Platinum Sponsor",
-        "subtitle": "",
-        "sponsor_name": "Progressive Labs",
-        "image": "assets/sponsors/progressive-logo.png",
-        "sponsorlink": "https://progressivelabs.tech/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Platinum Sponsor",
-        "subtitle": "",
-        "sponsor_name": "K&A Engineering Consulting",
-        "image": "assets/sponsors/k&a-white.png",
-        "sponsorlink": "https://www.kapower.us/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Merchandise Partner",
-        "subtitle": "",
-        "sponsor_name": "EB Pearls",
-        "image": "assets/sponsors/ebpearlswhite.png",
-        "sponsorlink": "https://ebpearls.com.au/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Gold Sponsor",
-        "subtitle": "",
-        "sponsor_name": "Jamboree",
-        "image": "assets/sponsors/EDF-Jamboree.png",
-        "sponsorlink": "https://www.jamboreeindia.com/centre/nepal",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Gold Sponsor",
-        "subtitle": "",
-        "sponsor_name": "ConnectIPS",
-        "image": "assets/sponsors/ConnectIPS.jpg",
-        "sponsorlink": "https://connectips.com/",
-        "sponsor_text": "Digital Payment Partner"
-    },
-    {
-        "sponsor_title": "General Sponsor",
-        "subtitle": "Expedition Partner",
-        "sponsor_name": "DolphinDive Technology",
-        "image": "assets/sponsors/dolphine.png",
-        "sponsorlink": "https://dolphindivetech.com/",
-        "sponsor_text": "visit sponsor"
-    },
-
-    {
-        "sponsor_title": "General Sponsor",
-        "subtitle": "CyberSecurity Partner",
-        "sponsor_name": "SecurityPal",
-        "image": "assets/sponsors/securitypal.png",
-        "sponsorlink": "https://www.securitypalhq.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "General Sponsor",
-        "subtitle": "",
-        "sponsor_name": "EKbana",
-        "image": "assets/sponsors/ekbana.svg",
-        "sponsorlink": "https://www.ekbana.com/",
-        "sponsor_text": "visit sponsor"
-    },
-   
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Robo Soccer",
-        "sponsor_name": "BotYards",
-        "image": "assets/sponsors/botyards.png",
-        "sponsorlink": "https://botyards.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Girls in tech Supporting Partner & Patternverse Title sponsor",
-        "sponsor_name": "Alternative Technology",
-        "image": "assets/sponsors/AT.png",
-        "sponsorlink": "https://alternative.com.np/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Girls to code Supporting Partner ",
-        "sponsor_name": "Smart Cheli",
-        "image": "assets/sponsors/smartcheli.jpg",
-        "sponsorlink": "https://smartcheli.org.np/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Hack-A-Week Tech Partner",
-        "sponsor_name": "The Computer Club",
-        "image": "assets/sponsors/thecomputerclub.png",
-        "sponsorlink": "https://www.instagram.com/the_computerclub/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Hack-A-Week Associate Sponsor",
-        "sponsor_name": "Nest Nepal ",
-        "image": "assets/sponsors/nestnepal.png",
-        "sponsorlink": "https://nestnepal.com/",
-        "sponsor_text": "visit sponsor"
-    },
-  
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Hack-A-Week Title Sponsor",
-        "sponsor_name": "Itonics",
-        "image": "assets/sponsors/itonics-light.svg",
-        "sponsorlink": "https://www.itonics-innovation.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Energy Hackathon 8.0 Title Sponsor",
-        "sponsor_name": "GIZ Nepal",
-        "image": "assets/sponsors/GIZ_logo.jpg",
-        "sponsorlink": "https://www.giz.de/en/worldwide/378.html",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Energy Hackathon 8.0 Category Sponsor",
-        "sponsor_name": "RERL",
-        "image": "assets/sponsors/undp_logo.png",
-        "sponsorlink": "https://www.aepc.gov.np/rerl/public/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Energy Hackathon 8.0 Category Sponsor",
-        "sponsor_name": "NEA Engineering Consultancy",
-        "image": "assets/sponsors/Logo-NEAEC.png",
-        "sponsorlink": "https://neaec.com.np/en/home",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "National FPGA Design Competition",
-        "sponsor_name": "Logictronix",
-        "image": "assets/sponsors/Logictronix-bgwhite.png",
-        "sponsorlink": "https://logictronix.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Software Fellowship Title Sponsor",
-        "sponsor_name": "TechAxis",
-        "image": "assets/sponsors/TechAxis.svg",
-        "sponsorlink": "https://techaxis.com.np/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Hardware Fellowship Title Sponsor",
-        "sponsor_name": "Yarsa Tech",
-        "image": "assets/sponsors/yarshatech.jpeg",
-        "sponsorlink": "https://yarsa.tech/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Hardware Fellowship Associate Sponsor",
-        "sponsor_name": "Techkey",
-        "image": "assets/sponsors/techkey.png",
-        "sponsorlink": "https://techkeynp.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Software Fellowship Placement Partner",
-        "sponsor_name": "JobAxle",
-        "image": "assets/sponsors/JobAxle.svg",
-        "sponsorlink": "https://jobaxle.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Girls Futsal Title Sponsor",
-        "sponsor_name": "Mirai Global Education and Visa Services Nepal",
-        "image": "assets/sponsors/mirai.png",
-        "sponsorlink": "https://miraiglobal.com.au/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Nutrition Partner Locus Cup",
-        "sponsor_name": "Poshilo Foods",
-        "image": "assets/sponsors/poshilo.png",
-        "sponsorlink": "https://poshilofood.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Event Sponsor",
-        "subtitle": "Locus Cubing Nepal Title Sponsor",
-        "sponsor_name": "Puzzlemandu",
-        "image": "assets/sponsors/puzzlemandu.png",
-        "sponsorlink": "https://puzzlemandu.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Stall Sponsor",
-        "subtitle": "",
-        "sponsor_name": "Leapfrog Technology",
-        "image": "assets/sponsors/leapfrog.png",
-        "sponsorlink": "https://www.lftechnology.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Stall Sponsor",
-        "subtitle": "",
-        "sponsor_name": "Logictronix",
-        "image": "assets/sponsors/Logictronix-bgwhite.png",
-        "sponsorlink": "https://logictronix.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Stall Sponsor",
-        "subtitle": "",
-        "sponsor_name": "basiyo",
-        "image": "assets/sponsors/basiyo.svg",
-        "sponsorlink": "https://basiyo.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Supporting Partners",
-        "subtitle": "",
-        "sponsor_name": "Nepal Telecom",
-        "image": "assets/sponsors/NepalTelecome.jpg",
-        "sponsorlink": "https://www.ntc.net.np/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Supporting Partners",
-        "subtitle": "",
-        "sponsor_name": "Free Students Union",
-        "image": "assets/sponsors/fsu.png",
-        "sponsorlink": "https://www.facebook.com/p/Free-Students-Union-Pulchowk-Campus-2079-100092446142474/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "LOCUS Partners",
-        "subtitle": "CyberSecurity Partner",
-        "sponsor_name": "SecurityPal",
-        "image": "assets/sponsors/securitypal.png",
-        "sponsorlink": "https://www.securitypalhq.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "LOCUS Partners",
-        "subtitle": "Research Partner",
-        "sponsor_name": "NAAMII",
-        "image": "assets/sponsors/logo-naamii.png",
-        "sponsorlink": "https://www.naamii.org.np/",
-        "sponsor_text": "visit sponsor"
-    },
-    
-    {
-        "sponsor_title": "LOCUS Partners",
-        "subtitle": "IT Training Partner",
-        "sponsor_name": "TechAxis",
-        "image": "assets/sponsors/TechAxis.svg",
-        "sponsorlink": "https://techaxis.com.np/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "LOCUS Partners",
-        "subtitle": "Engineering Outreach Partner",
-        "sponsor_name": "Engineer Vlogs",
-        "image": "assets/sponsors/engineersblog.png",
-        "sponsorlink": "https://engineersblog.net/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "LOCUS Partners",
-        "subtitle": "Internet Partner",
-        "sponsor_name": "Worldlink",
-        "image": "assets/sponsors/Worldlink.jpg",
-        "sponsorlink": "https://worldlink.com.np/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "LOCUS Partners",
-        "subtitle": "App Partner",
-        "sponsor_name": "Hamro Patro",
-        "image": "assets/sponsors/hamropatro.png",
-        "sponsorlink": "https://www.hamropatro.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "LOCUS Partners",
-        "subtitle": "Hosting Partner",
-        "sponsor_name": "Nest Nepal",
-        "image": "assets/sponsors/nestnepal.png",
-        "sponsorlink": "https://nestnepal.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    
-    {
-        "sponsor_title": "LOCUS Partners",
-        "subtitle": "2-Wheeler Partner",
-        "sponsor_name": "ATHER",
-        "image": "assets/sponsors/ather.jpg",
-        "sponsorlink": "https://www.atherenergy.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "LOCUS Partners",
-        "subtitle": "Education Partner",
-        "sponsor_name": "Broadway Infosys",
-        "image": "assets/sponsors/broadway.svg",
-        "sponsorlink": "https://broadwayinfosys.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Media Partner",
-        "subtitle": "",
-        "sponsor_name": "Urja Khabar",
-        "image": "assets/sponsors/urja.png",
-        "sponsorlink": "https://www.urjakhabar.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Media Partner",
-        "subtitle": "",
-        "sponsor_name": "ICT Samachar",
-        "image": "assets/sponsors/ictsamachar.png",
-        "sponsorlink": "https://ictsamachar.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Media Partner",
-        "subtitle": "",
-        "sponsor_name": "ICT Byte",
-        "image": "assets/sponsors/ictbyte.png",
-        "sponsorlink": "https://ictbyte.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Media Partner",
-        "subtitle": "",
-        "sponsor_name": "ICT Frame",
-        "image": "assets/sponsors/ictframe.png",
-        "sponsorlink": "https://ictframe.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Community Partner",
-        "subtitle": "",
-        "sponsor_name": "NepTech Byte",
-        "image": "assets/sponsors/Nepaltechbyte.png",
-        "sponsorlink": "https://techbytenepal.com/",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Community Partner",
-        "subtitle": "",
-        "sponsor_name": "Rotaract Club",
-        "image": "assets/sponsors/rotaract.png",
-        "sponsorlink": "https://www.facebook.com/rotaractpds",
-        "sponsor_text": "visit sponsor"
-    },
-    {
-        "sponsor_title": "Community Partner",
-        "subtitle": "",
-        "sponsor_name": "IOE Pulchowk Girls",
-        "image": "assets/sponsors/ioepulchowkgirls.png",
-        "sponsorlink": "https://www.facebook.com/pulchowk.girls/",
-        "sponsor_text": "visit sponsor"
-    }
-    
+  {
+    "sponsor_title": "Platinum Sponsor",
+    "subtitle": "Title-Codejam and Cybershield",
+    "sponsor_name": "LogPoint",
+    "image": "assets/sponsors/logpoint.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "Platinum Sponsor",
+    "subtitle": "",
+    "sponsor_name": "Itonics",
+    "image": "assets/sponsors/Itonics.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "Gold Sponsor",
+    "subtitle": "Energy Hackathon-Category",
+    "sponsor_name": "K&A",
+    "image": "assets/sponsors/KnA.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "Gold Sponsor",
+    "subtitle": "Energy Hackathon-Category",
+    "sponsor_name": "MV dugar",
+    "image": "assets/sponsors/MVDugar.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "Event Sponsor",
+    "subtitle": "Title-Hack a week",
+    "sponsor_name": "Niural",
+    "image": "assets/sponsors/niural.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "Event Sponsor",
+    "subtitle": "Energy Hackathon",
+    "sponsor_name": "Sanima hydro",
+    "image": "assets/sponsors/sanima.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "Event Sponsor",
+    "subtitle": "",
+    "sponsor_name": "Switzerland",
+    "image": "assets/sponsors/Switzerland.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "Event Sponsor",
+    "subtitle": "Energy Hackathon-Category",
+    "sponsor_name": "Green Ventures",
+    "image": "assets/sponsors/Green Ventures.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "Stall Sponsor",
+    "subtitle": "Training Partner",
+    "sponsor_name": "Deerwalk",
+    "image": "assets/sponsors/Deerwalk_Training_Center_Logo.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "Stall Sponsor",
+    "subtitle": "Education Partner",
+    "sponsor_name": "Broadway",
+    "image": "assets/sponsors/broadway.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "Merchandise Partner",
+    "subtitle": "",
+    "sponsor_name": "EB Pearls",
+    "image": "assets/sponsors/ebpearls.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "LOCUS Partners",
+    "subtitle": "Internet Partner",
+    "sponsor_name": "Worldlink",
+    "image": "assets/sponsors/worldlink.jpg",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "LOCUS Partners",
+    "subtitle": "Learning Partner",
+    "sponsor_name": "Natives Plug",
+    "image": "assets/sponsors/nativeslogo.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "General Sponsor",
+    "subtitle": "",
+    "sponsor_name": "Security Pal",
+    "image": "assets/sponsors/SecurityPal-Logo-White-3x.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "General Sponsor",
+    "subtitle": "Hardware Fellowship",
+    "sponsor_name": "Supreme Light",
+    "image": "",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "General Sponsor",
+    "subtitle": "",
+    "sponsor_name": "Github",
+    "image": "assets/sponsors/github.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "Supporting Partners",
+    "subtitle": "Student Partner",
+    "sponsor_name": "FSU",
+    "image": "assets/sponsors/fsu.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  }
 ]

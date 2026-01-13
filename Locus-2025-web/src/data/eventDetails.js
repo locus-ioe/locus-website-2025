@@ -801,7 +801,7 @@ export const mainEventsData = [
       time: "10 am onwards",
     },
     imgSrc:
-      "https://drive.google.com/uc?export=view&id=1-3Bqhq-onVv0xSjlkT_jjrBh6RCw8lQl",
+      "https://drive.google.com/uc?export=view&id=12Q3neAk83KE7Q9XYnIdNSwzTWOwC310x",
     registration: {
       fee: "Rs 2500",
       button_text: "Register Now",

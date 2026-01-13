@@ -1,36 +1,12 @@
-// import zerone from "/assets/events/zerone.jpg";
-import techaxis from "/assets/sponsors/TechAxis.svg";
-import jobaxle from "/assets/sponsors/JobAxle.svg";
-import yarshatech from "/assets/sponsors/yarshatech.jpeg";
-import techkey from "/assets/sponsors/techkey.png";
-import LogicTronic from "/assets/sponsors/Logictronix-trans.png";
-import miraiglobal from "/assets/sponsors/mirai.png";
-import gizLogo from "/assets/sponsors/GIZ_logo.jpg";
-import codejam from "/assets/events/codejam.png";
-import cybershield from "/assets/events/cybershield.png";
-import dataverse from "/assets/events/dataverse.png";
-import energy from "/assets/events/energyhackathon.png";
-import hackaweek from "/assets/events/hackaweek.png";
-import exhibition from "/assets/events/exhibition.png";
-import flashmob from "/assets/events/flashmob.png";
-import girlslocuscup from "/assets/events/girlslocuscup.png";
-import girlstocode from "/assets/events/girlstocode.png";
-import walkathon from "/assets/events/walkathon.png";
-import hardwarefellowship from "/assets/events/hardwarefellowship.png";
-import niural from "/assets/sponsors/niural.png";
-import logpoint from "/assets/sponsors/logpoint.png";
-import nativesplug from "/assets/sponsors/nativeslogo.png";
-// import SoftwareFellowship from "/assets/events/SoftwareFellowship.png";
-// import electrotech from "/assets/events/electrotech.png";
-// import girlsfutsal from "/assets/events/Girls-Futsal.png";
-// import fpga from "/assets/events/FPGA.png";
 
-import Itonics from "/assets/sponsors/itonics-light.svg";
-import neek from "/assets/sponsors/NEEK-logo.png";
-import rerl from "/assets/sponsors/undp_logo.png";
-import nea from "/assets/sponsors/Logo-NEAEC.png";
-import thecomputerclub from "/assets/sponsors/thecomputerclub.png";
-import nestnepal from "/assets/sponsors/nestnepal.png";
+import logpoint from "../../public/assets/sponsors/logpoint.png";
+
+import niural from "../../public/assets/sponsors/niural.png";
+
+import miraiglobal from "../../public/assets/sponsors/mirai.png";
+
+import nativesplug from "../../public/assets/sponsors/nativeslogo.png";
+
 
 export const eventsData = [
   {
@@ -60,7 +36,7 @@ export const eventsData = [
         name: "Aashutosh Pandey",
         phone: "9804875975",
       },
-            {
+      {
         name: "Ashim Sapkota",
         phone: "9846567535",
       },
@@ -247,7 +223,7 @@ export const eventsData = [
       "4. Organizers reserve the right to disqualify teams for rule violations.",
     registration_link: "https://forms.gle/7t9y6HeTqPzUSQQMA",
     sponsoredby: [
-       {
+      {
         name: "Niural AI",
         image: niural,
       },
@@ -471,7 +447,7 @@ export const eventsData = [
       "• Social media posting to reflect learning insights and experiences\n" +
       "• Onsite prize distribution during LOCUS grand prize ceremony\n\n",
     whyJoin:
-    "• Build a habit of continuous learning over 15 days\n" +
+      "• Build a habit of continuous learning over 15 days\n" +
       "• Earn NativesPlug vouchers and exclusive rewards\n" +
       "• Receive digital certificates and course completion certificates\n" +
       "• Get LinkedIn account endorsement for top performers\n" +
@@ -560,7 +536,7 @@ export const eventsData = [
       end_date: "2082-09-08",
       time: "10 am onwards",
     },
-     imgSrc: "https://drive.google.com/uc?export=view&id=1PGmhLeKYhuhyOzPw1J7VaLny9Rq7_mvJ",
+    imgSrc: "https://drive.google.com/uc?export=view&id=1PGmhLeKYhuhyOzPw1J7VaLny9Rq7_mvJ",
     registration: {
       fee: "Rs 1000",
       button_text: "Register Now",
@@ -623,13 +599,13 @@ export const eventsData = [
         phone: "9824015856",
       }
     ],
-  description:
-    "The LOCUS Walkathon is a one-day awareness event organized prior to the LOCUS Exhibition to promote innovation, technology, and student creativity. This peaceful rally brings together students and tech enthusiasts to spread awareness about the upcoming LOCUS 2026 Exhibition and its vision for Nepal’s technological future.\n\n" +
-    "Event Highlights:\n" +
-    "• Peaceful awareness walk led by students and technology enthusiasts\n" +
-    "• Promotion of the LOCUS 2026 Exhibition and its core theme\n" +
-    "• Public engagement across key areas of the city\n\n" +
-    "The Walkathon will be held on Magh 10 as part of the pre-exhibition activities of LOCUS 2026. The time schedule and route of the walkathon will be finalized and announced soon. This event reflects LOCUS’s commitment to public outreach, innovation awareness, and responsible student-led initiatives.",
+    description:
+      "The LOCUS Walkathon is a one-day awareness event organized prior to the LOCUS Exhibition to promote innovation, technology, and student creativity. This peaceful rally brings together students and tech enthusiasts to spread awareness about the upcoming LOCUS 2026 Exhibition and its vision for Nepal’s technological future.\n\n" +
+      "Event Highlights:\n" +
+      "• Peaceful awareness walk led by students and technology enthusiasts\n" +
+      "• Promotion of the LOCUS 2026 Exhibition and its core theme\n" +
+      "• Public engagement across key areas of the city\n\n" +
+      "The Walkathon will be held on Magh 10 as part of the pre-exhibition activities of LOCUS 2026. The time schedule and route of the walkathon will be finalized and announced soon. This event reflects LOCUS’s commitment to public outreach, innovation awareness, and responsible student-led initiatives.",
     registration_link:
       "https://forms.gle/dimud2cgpX3CDcik9",
     sponsoredby: [
@@ -675,7 +651,7 @@ export const eventsData = [
       "https://forms.gle/ZesCQYtd76doskU96",
     sponsoredby: [
     ],
-  },  
+  },
 ];
 
 // Main Events Data - Events happening during main LOCUS festival
@@ -907,8 +883,8 @@ export const mainEventsData = [
     registration_link: "https://forms.gle/pZgSJnX9heftdAas8",
   },
   {
-  id: 13,
-  title: "Robo Line Dash 2026",
+    id: 13,
+    title: "Robo Line Dash 2026",
     date_and_time: {
       start_date: "2082-10-16",
       end_date: "2082-10-18",
@@ -929,27 +905,27 @@ export const mainEventsData = [
       prizePool: "Prizepool : Rs 20,000 + ",
       popularChoicePrize: "",
     },
-  contacts: [
-    {
-      name: "Bishal Lamichhane",
-      phone: "9864511097",
-    },
-  ],
-  description:
-    "Robo Line Dash 2026 is an autonomous robotics competition under LOCUS 2026 where teams design a robot capable of following a black line through a maze and intelligently determining the shortest path. The challenge evaluates algorithm design, sensor integration, precision control, and optimization.\n\n" +
-    "Event Highlights:\n" +
-    "• Autonomous line-following and maze-solving challenge\n" +
-    "• Two-phase gameplay: Dry Run and Actual Run\n" +
-    "• Emphasis on shortest-path optimization and speed\n\n" +
-    "Robots first explore the maze during the Dry Run and store navigation data. In the Actual Run, they must traverse the maze using the optimal path in the shortest possible time while adhering strictly to safety and arena constraints.",
-  rules:
-    "1. Teams may consist of 1 to 4 members; only one member may handle the robot during gameplay.\n" +
-    "2. Robots must fit within 150mm x 150mm x 150mm dimensions and operate autonomously with on-board power not exceeding 16V.\n" +
-    "3. Robots must not damage, mark, or alter the maze; any such action results in immediate disqualification.\n" +
-    "4. The competition consists of a Dry Run (3 minutes) and an Actual Run (2 minutes 30 seconds); no restarts are allowed in the Actual Run.\n" +
-    "5. Laptops, wireless devices, and external communication are prohibited near the arena during runs.\n" +
-    "6. Judges’ and organizers’ decisions are final, and violations of rules may lead to penalties or disqualification.",
+    contacts: [
+      {
+        name: "Bishal Lamichhane",
+        phone: "9864511097",
+      },
+    ],
+    description:
+      "Robo Line Dash 2026 is an autonomous robotics competition under LOCUS 2026 where teams design a robot capable of following a black line through a maze and intelligently determining the shortest path. The challenge evaluates algorithm design, sensor integration, precision control, and optimization.\n\n" +
+      "Event Highlights:\n" +
+      "• Autonomous line-following and maze-solving challenge\n" +
+      "• Two-phase gameplay: Dry Run and Actual Run\n" +
+      "• Emphasis on shortest-path optimization and speed\n\n" +
+      "Robots first explore the maze during the Dry Run and store navigation data. In the Actual Run, they must traverse the maze using the optimal path in the shortest possible time while adhering strictly to safety and arena constraints.",
+    rules:
+      "1. Teams may consist of 1 to 4 members; only one member may handle the robot during gameplay.\n" +
+      "2. Robots must fit within 150mm x 150mm x 150mm dimensions and operate autonomously with on-board power not exceeding 16V.\n" +
+      "3. Robots must not damage, mark, or alter the maze; any such action results in immediate disqualification.\n" +
+      "4. The competition consists of a Dry Run (3 minutes) and an Actual Run (2 minutes 30 seconds); no restarts are allowed in the Actual Run.\n" +
+      "5. Laptops, wireless devices, and external communication are prohibited near the arena during runs.\n" +
+      "6. Judges’ and organizers’ decisions are final, and violations of rules may lead to penalties or disqualification.",
     registration_link: "https://forms.gle/pZgSJnX9heftdAas8",
-}
+  }
 
 ];

@@ -476,101 +476,101 @@ export const eventsData = [
     ],
   },
 
-  {
-    id: 5,
-    title: "DATAVERSE",
-    date_and_time: {
-      start_date: "Magh 1st, 2082",
-      end_date: "Magh 3rd, 2082",
-      time: "10:00 AM - 3:00 PM",
-    },
-    imgSrc: "https://drive.google.com/uc?export=view&id=14smF9JxoepU_kj2rb_rh6DDOFjqD2rL4",
-    registration: {
-      fee: 200,
-      button_text: "Register 200/-",
-    },
-    event_type: {
-      // status: "Open",
-      mode: "Offline",
-      category: "Competition",
-    },
-    prize: {
-      prizePool: "Rs. 12,000+",
-      popularChoicePrize: "Audience Choice Award",
-    },
-    contacts: [
-      {
-        name: "Niraj Shahi",
-        phone: "9801234567",
-      },
-      {
-        name: "Sarina Maharjan",
-        phone: "9845123488",
-      },
-    ],
-    description:
-      "DATAVERSE is a data-centric battle where participants dive into real-world datasets to extract insights, build predictive models, and tell compelling data stories. The competition focuses on:\n\n" +
-      "• Data cleaning and preprocessing\n" +
-      "• Exploratory data analysis\n" +
-      "• Machine learning model building\n" +
-      "• Evaluation metrics and optimization\n" +
-      "• Data visualization and storytelling\n\n" +
-      "Why participate?\n" +
-      "• Work with real datasets\n" +
-      "• Improve your ML & analytics skills\n" +
-      "• Showcase your data storytelling abilities\n" +
-      "• Win exciting prizes and recognition",
-    rules:
-      "1. Team size: 1–3 members\n" +
-      "2. Participants must bring their own laptops\n" +
-      "3. External datasets or pretrained models are not allowed\n" +
-      "4. Submissions must include code, report, and final predictions\n" +
-      "5. Plagiarism or copied notebooks will lead to disqualification",
-    sponsoredby: [],
-  },
-  {
-    id: 8,
-    title: "Energy Hackathon",
-    date_and_time: {
-      start_date: "2082-09-04",
-      end_date: "2082-09-08",
-      time: "10 am onwards",
-    },
-    imgSrc: "https://drive.google.com/uc?export=view&id=1PGmhLeKYhuhyOzPw1J7VaLny9Rq7_mvJ",
-    registration: {
-      fee: "Rs 1000",
-      button_text: "Register Now",
-    },
-    event_type: {
-      // status: "Closed",
-      mode: "Offline",
-      category: "event",
-    },
-    prize: {
-      prizePool: "Prizepool : Rs 80,000",
-      popularChoicePrize: "",
-    },
-    contacts: [
-      {
-        name: "Utsav Raj Karki",
-        phone: "9862083508",
-      },
-    ],
-    description:
-      "The Energy Hackathon is a dynamic event focused on creating innovative energy solutions. Participants will engage in a 7-day intensive hackathon featuring mentoring sessions held at the Library Hall, Pulchowk Campus. Compete for the grand prize of Rs 80,000 and gain invaluable experience in collaboration and innovation.\n\n" +
-      "Event Highlights:\n" +
-      "• A week of guided project development and innovation\n" +
-      "• Networking opportunities with industry experts\n" +
-      "• Compete for a grand prize of Rs. 80,000\n\n" +
-      "Energy Hackathon provides a unique platform for enthusiasts to tackle real-world energy challenges, collaborate with peers, and showcase their expertise in a competitive setting.",
-    rules:
-      "1. Teams can consist of up to 4 members.\n" +
-      "2. Projects must align with the provided themes and adhere to deadlines.\n" +
-      "3. Participants must bring their own laptops and required equipment.\n" +
-      "4. Organizers may disqualify teams for non-compliance with the rules.",
-    registration_link:
-      "https://docs.google.com/forms/d/1Ec1v19OcbV5u9AW_ZVGcNshDWRRqc-RoX_Y1DQ0Irus/edit",
-  },
+  // {
+  //   id: 5,
+  //   title: "DATAVERSE",
+  //   date_and_time: {
+  //     start_date: "Magh 1st, 2082",
+  //     end_date: "Magh 3rd, 2082",
+  //     time: "10:00 AM - 3:00 PM",
+  //   },
+  //   imgSrc: "https://drive.google.com/uc?export=view&id=14smF9JxoepU_kj2rb_rh6DDOFjqD2rL4",
+  //   registration: {
+  //     fee: 200,
+  //     button_text: "Register 200/-",
+  //   },
+  //   event_type: {
+  //     // status: "Open",
+  //     mode: "Offline",
+  //     category: "Competition",
+  //   },
+  //   prize: {
+  //     prizePool: "Rs. 12,000+",
+  //     popularChoicePrize: "Audience Choice Award",
+  //   },
+  //   contacts: [
+  //     {
+  //       name: "Niraj Shahi",
+  //       phone: "9801234567",
+  //     },
+  //     {
+  //       name: "Sarina Maharjan",
+  //       phone: "9845123488",
+  //     },
+  //   ],
+  //   description:
+  //     "DATAVERSE is a data-centric battle where participants dive into real-world datasets to extract insights, build predictive models, and tell compelling data stories. The competition focuses on:\n\n" +
+  //     "• Data cleaning and preprocessing\n" +
+  //     "• Exploratory data analysis\n" +
+  //     "• Machine learning model building\n" +
+  //     "• Evaluation metrics and optimization\n" +
+  //     "• Data visualization and storytelling\n\n" +
+  //     "Why participate?\n" +
+  //     "• Work with real datasets\n" +
+  //     "• Improve your ML & analytics skills\n" +
+  //     "• Showcase your data storytelling abilities\n" +
+  //     "• Win exciting prizes and recognition",
+  //   rules:
+  //     "1. Team size: 1–3 members\n" +
+  //     "2. Participants must bring their own laptops\n" +
+  //     "3. External datasets or pretrained models are not allowed\n" +
+  //     "4. Submissions must include code, report, and final predictions\n" +
+  //     "5. Plagiarism or copied notebooks will lead to disqualification",
+  //   sponsoredby: [],
+  // },
+  // {
+  //   id: 8,
+  //   title: "Energy Hackathon",
+  //   date_and_time: {
+  //     start_date: "2082-09-04",
+  //     end_date: "2082-09-08",
+  //     time: "10 am onwards",
+  //   },
+  //   imgSrc: "https://drive.google.com/uc?export=view&id=1PGmhLeKYhuhyOzPw1J7VaLny9Rq7_mvJ",
+  //   registration: {
+  //     fee: "Rs 1000",
+  //     button_text: "Register Now",
+  //   },
+  //   event_type: {
+  //     // status: "Closed",
+  //     mode: "Offline",
+  //     category: "event",
+  //   },
+  //   prize: {
+  //     prizePool: "Prizepool : Rs 80,000",
+  //     popularChoicePrize: "",
+  //   },
+  //   contacts: [
+  //     {
+  //       name: "Utsav Raj Karki",
+  //       phone: "9862083508",
+  //     },
+  //   ],
+  //   description:
+  //     "The Energy Hackathon is a dynamic event focused on creating innovative energy solutions. Participants will engage in a 7-day intensive hackathon featuring mentoring sessions held at the Library Hall, Pulchowk Campus. Compete for the grand prize of Rs 80,000 and gain invaluable experience in collaboration and innovation.\n\n" +
+  //     "Event Highlights:\n" +
+  //     "• A week of guided project development and innovation\n" +
+  //     "• Networking opportunities with industry experts\n" +
+  //     "• Compete for a grand prize of Rs. 80,000\n\n" +
+  //     "Energy Hackathon provides a unique platform for enthusiasts to tackle real-world energy challenges, collaborate with peers, and showcase their expertise in a competitive setting.",
+  //   rules:
+  //     "1. Teams can consist of up to 4 members.\n" +
+  //     "2. Projects must align with the provided themes and adhere to deadlines.\n" +
+  //     "3. Participants must bring their own laptops and required equipment.\n" +
+  //     "4. Organizers may disqualify teams for non-compliance with the rules.",
+  //   registration_link:
+  //     "https://docs.google.com/forms/d/1Ec1v19OcbV5u9AW_ZVGcNshDWRRqc-RoX_Y1DQ0Irus/edit",
+  // },
 
   {
     id: 8,

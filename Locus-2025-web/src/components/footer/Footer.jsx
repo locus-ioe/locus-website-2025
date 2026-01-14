@@ -1,136 +1,122 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 import { Button } from "../navbar/Button";
 
+const SOCIAL_LINKS = [
+  {
+    name: "Instagram",
+    icon: Instagram,
+    url: "https://www.instagram.com/locus_ioe/",
+  },
+  {
+    name: "Facebook",
+    icon: Facebook,
+    url: "https://www.facebook.com/locus.ioe",
+  },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    url: "https://www.linkedin.com/company/locusioe/",
+  },
+];
+
 export function Footer() {
-  let year = new Date().getFullYear();
+  const year = new Date().getFullYear();
+
   return (
-    <footer className='relative mt-20 text-primary bg-zinc-900'>
+    <footer className='relative mt-20 border-t border-white/5 bg-black/40 backdrop-blur-xl text-zinc-400 overflow-hidden'>
+      {/* Home page matching background effects */}
+      <div className='absolute inset-0 -z-10 pointer-events-none'>
+        <div className='absolute -top-24 -left-24 w-96 h-96 bg-[#48d0ff]/5 rounded-full blur-[100px] animate-pulse' />
+        <div className='absolute -bottom-24 -right-24 w-96 h-96 bg-[#2a9fd6]/5 rounded-full blur-[100px] animate-pulse' style={{ animationDelay: '1s' }} />
+      </div>
+
       {/* Content */}
-      <div className='relative bg-zinc/10 px-4 pb-8'>
+      <div className='relative px-4 py-16 sm:py-24'>
         {/* Footer Content */}
-        <div className='mx-auto grid max-w-7xl gap-8 px-4 sm:mt-20 sm:grid-cols-3 '>
-          {/* Left Section */}
-          <div className='text-center pt-5 sm:pt-0 my-auto sm:text-left'>
+        <div className='mx-auto grid max-w-7xl gap-12 px-4 sm:grid-cols-3 items-center'>
+          {/* Left Section - Prospectus & Location */}
+          <div className='flex flex-col items-center sm:items-start space-y-10'>
             <Link
               to='https://drive.google.com/file/d/14UPRPobB6AXR7YmS1570rtIHgWdVpyDY/view'
               target='_blank'
               rel='noopener noreferrer'
+              className="group"
             >
               <Button
                 variant='outline'
-                className='rounded-full bg-primary text-black border-primary px-6 py-2 text-sm  hover:bg-primary hover:text-[#003329] sm:px-8 sm:py-3 sm:text-base'
-                style={{ fontFamily: "'Arial', sans-serif" }}
+                className='rounded-full bg-[#48d0ff]/10 text-[#48d0ff] border-[#48d0ff]/20 px-10 py-5 text-sm font-bold uppercase tracking-widest transition-all duration-500 group-hover:bg-[#48d0ff] group-hover:text-black group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(72,208,255,0.3)] sm:text-base font-arial'
               >
                 Prospectus
               </Button>
             </Link>
 
-            <div className='mt-4'>
-              <h3
-                className='text-lg font-semibold sm:text-xl'
-                style={{ fontFamily: "'Arial', sans-serif" }}
-              >
+            <div className='text-center sm:text-left space-y-3'>
+              <h3 className='text-lg font-bold sm:text-xl font-arial tracking-[0.1em] text-white'>
                 IOE PULCHOWK
               </h3>
-              <p
-                className='mt-1 text-xs  sm:text-sm'
-                style={{ fontFamily: "'Helvetica', sans-serif" }}
-              >
-                Pulchowk, Lalitpur
-              </p>
-              <p
-                className='text-xs  sm:text-sm'
-                style={{ fontFamily: "'Helvetica', sans-serif" }}
-              >
-                Nepal
-              </p>
+              <div className="space-y-1 font-helvetica text-sm sm:text-base opacity-60">
+                <p>Pulchowk, Lalitpur</p>
+                <p>Nepal</p>
+              </div>
             </div>
           </div>
 
-          {/* Center Section */}
+          {/* Center Section - Logo */}
+          <div className='flex justify-center items-center group'>
+            <img
+              src='/assets/home/footer_logo_2026.png'
+              alt='LOCUS 2026 Logo'
+              className='h-36 w-auto object-contain transition-all duration-700 ease-in-out group-hover:scale-105 group-hover:brightness-110 drop-shadow-[0_0_15px_rgba(72,208,255,0.2)]'
+            />
+          </div>
 
-          <img
-            src='/assets/home/footer_logo_2026.png'
-            alt='LOCUS 2026 Logo'
-            className='h-25 w-auto mx-auto'
-          />
-
-          {/* Right Section */}
-          <div className='text-center my-auto sm:text-right'>
-            <h3
-              className='text-lg font-semibold  sm:text-xl'
-              style={{ fontFamily: "'Arial', sans-serif" }}
-            >
-              CONTACT US
-            </h3>
-            <p
-              className='mt-1 text-xs sm:text-sm flex items-center justify-center sm:justify-end space-x-1'
-              style={{ fontFamily: "'Helvetica', sans-serif" }}
-            >
-              <Mail className='h-4 w-3 sm:h-4 sm:w-6' />
-              <span>locus@ioe.edu.np</span>
-            </p>
-            {/* <p
-              className="mt-1 text-xs sm:text-sm flex items-center justify-center sm:justify-end space-x-1"
-              style={{ fontFamily: "'Helvetica', sans-serif" }}
-            >
-              <Phone className="h-4 w-3 sm:h-4 sm:w-6"/>
-              <span>9860620870, 9808234789,</span>
-            </p>
-
-            <p
-              className="mt-1 text-xs  sm:text-sm"
-              style={{ fontFamily: "'Helvetica', sans-serif" }}
-            >
-                9840066727
-            </p> */}
-            <div className='mt-4'>
-              <h4
-                className='text-lg font-semibold sm:text-xl'
-                style={{ fontFamily: "'Arial', sans-serif" }}
+          {/* Right Section - Contact & Follow Us */}
+          <div className='flex flex-col items-center sm:items-end space-y-12'>
+            <div className='text-center sm:text-right'>
+              <h3 className='text-lg font-bold sm:text-xl font-arial tracking-[0.1em] text-white'>
+                CONTACT US
+              </h3>
+              <a
+                href="mailto:locus@ioe.edu.np"
+                className='mt-3 text-sm sm:text-base flex items-center justify-center sm:justify-end gap-3 hover:text-[#48d0ff] transition-colors duration-500 font-helvetica'
               >
+                <Mail className='h-5 w-5' />
+                <span className="tracking-wide">locus@ioe.edu.np</span>
+              </a>
+            </div>
+
+            <div className='text-center sm:text-right'>
+              <h3 className='text-lg font-bold sm:text-xl font-arial tracking-[0.1em] text-[#48d0ff]'>
                 FOLLOW US
-              </h4>
-              <div className='mt-2 flex justify-center gap-4 sm:justify-end'>
-                <Link
-                  to='https://www.instagram.com/locus_ioe/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className=''
-                >
-                  <Instagram className='h-5 w-5 sm:h-6 sm:w-6' />
-                </Link>
-                <Link
-                  to='https://www.facebook.com/locus.ioe'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className=''
-                >
-                  <Facebook className='h-5 w-5 sm:h-6 sm:w-6' />
-                </Link>
-                <Link
-                  to='https://www.linkedin.com/company/locusioe/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className=''
-                >
-                  <Linkedin className='h-5 w-5 sm:h-6 sm:w-6' />
-                </Link>
+              </h3>
+              <div className='mt-5 flex justify-center gap-5 sm:justify-end'>
+                {SOCIAL_LINKS.map((social) => {
+                  const Icon = social.icon;
+                  return (
+                    <Link
+                      key={social.name}
+                      to={social.url}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='p-3.5 rounded-full bg-zinc-900/50 border border-white/5 text-zinc-400 transition-all duration-500 hover:text-[#48d0ff] hover:border-[#48d0ff]/40 hover:bg-[#48d0ff]/5 hover:-translate-y-1.5'
+                      title={social.name}
+                    >
+                      <Icon className='h-5 w-5' />
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </div>
         </div>
 
         {/* Copyright */}
-        <div
-          className='mx-auto mt-12 max-w-7xl text-primary text-center text-xs sm:mt-16 sm:text-sm'
-          style={{ fontFamily: "'Helvetica', sans-serif" }}
-        >
-          <p className='flex items-center text-bold justify-center gap-1 '>
-            MADE WITH <span className='text-red-500'>❤</span> BY LOST
+        <div className='mx-auto mt-24 max-w-7xl border-t border-white/5 pt-12 font-helvetica flex flex-col sm:flex-row justify-between items-center gap-4 px-4'>
+          <p className='flex items-center justify-center sm:justify-start gap-3 text-[10px] sm:text-xs font-medium tracking-[0.2em] uppercase text-zinc-500'>
+            MADE WITH <span className='text-red-500 animate-pulse text-base sm:text-lg'>❤</span> BY LOST
           </p>
-          <p className='mt-1 '>
+          <p className='text-[10px] sm:text-xs uppercase tracking-[0.3em] opacity-30 text-center sm:text-right'>
             ©COPYRIGHT {year}, PULCHOWK ENGINEERING CAMPUS
           </p>
         </div>

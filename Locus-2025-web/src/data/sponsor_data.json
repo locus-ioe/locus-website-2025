@@ -16,6 +16,14 @@
     "sponsor_text": "visit sponsor"
   },
   {
+        "sponsor_title": "Gold Sponsor",
+        "subtitle": "",
+        "sponsor_name": "ConnectIPS",
+        "image": "assets/sponsors/ConnectIPS.png",
+        "sponsorlink": "https://connectips.com/",
+        "sponsor_text": "Digital Payment Partner"
+  },
+  {
     "sponsor_title": "Gold Sponsor",
     "subtitle": "Energy Hackathon-Category",
     "sponsor_name": "K&A",

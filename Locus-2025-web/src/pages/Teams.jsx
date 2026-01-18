@@ -74,7 +74,7 @@ function Teams() {
           <span className='text-[#48d0ff]'>LOCUS Open Source</span>
           <span className='text-white'> Team</span>
         </h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
           {locusTeam.map((person, index) => (
             <ProfileCard
               key={index}
@@ -101,7 +101,7 @@ function Teams() {
           <span className='text-[#48d0ff]'>Neural AI Hack a Week</span>
           <span className='text-white'> Organizers</span>
         </h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
           {hackaWeekTeam.map((person, index) => (
             <ProfileCard
               key={index}
@@ -152,7 +152,7 @@ function Teams() {
             <h3 className='text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-center'>
               <span className='text-[#48d0ff]'>{currentTeam.label}</span>
             </h3>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
               {currentTeam.data.map((person, index) => (
                 <ProfileCard
                   key={index}

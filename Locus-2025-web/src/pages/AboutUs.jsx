@@ -5,25 +5,25 @@ import committee_data from "../data/committee.json";
 
 function AboutUs() {
   return (
-    <div>
-      <div className='w-full max-w-[1148px] mx-auto px-4 py-8'>
+    <div className='min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900'>
+      <div className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12'>
         {/* About Section */}
-        <div className='text-center mb-8'>
-          <h1 className='text-2xl md:text-4xl font-bold mb-4'>
-            <span className='text-[#48d0ff]'>About</span> LOCUS 2026
+        <div className='text-center mb-12 sm:mb-16 mt-8 sm:mt-12'>
+          <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 tracking-tight'>
+            <span className='text-[#48d0ff]'>About</span>
+            <span className='text-white'> LOCUS 2026</span>
           </h1>
-          <p className='text-lg text-white'>22nd National Technology Fest</p>
-          <p className='text-sm md:text-base text-white mt-2'>
-            22nd National Technology Fest in January 2026, IOE Pulchowk
-            Engineering Campus, Nepal
+          <p className='text-lg sm:text-xl lg:text-2xl text-white font-semibold mb-3'>22nd National Technology Fest</p>
+          <p className='text-sm sm:text-base lg:text-lg text-gray-400 mt-2 max-w-3xl mx-auto leading-relaxed'>
+            22nd National Technology Fest in January 2026, IOE Pulchowk Engineering Campus, Nepal
           </p>
-          <div className='mt-4 mb-4'>
-            <hr className='border-gray-300' />
+          <div className='mt-6 sm:mt-8 flex justify-center'>
+            <div className='h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent w-3/4 sm:w-1/2 rounded-full' />
           </div>
         </div>
 
         {/* About Us History Section */}
-        <div className='space-y-8 mt-20'>
+        <div className='space-y-12 sm:space-y-16 lg:space-y-20 mt-16 sm:mt-20'>
           {aboutUsHistory.map((history, index) => (
             <Image_content
               key={index}
@@ -35,13 +35,17 @@ function AboutUs() {
         </div>
 
         {/* Committee Section */}
-        <div className='mt-12'>
-          <div className='text-center mb-8'>
-            <h1 className='text-2xl md:text-4xl font-bold'>
-              <span className='text-[#48d0ff]'>LOCUS 2026 </span>Committee
+        <div className='mt-20 sm:mt-28'>
+          <div className='text-center mb-10 sm:mb-16'>
+            <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight'>
+              <span className='text-[#48d0ff]'>LOCUS 2026 </span>
+              <span className='text-white'>Committee</span>
             </h1>
+            <div className='mt-6 sm:mt-8 flex justify-center'>
+              <div className='h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent w-3/4 sm:w-1/2 rounded-full' />
+            </div>
           </div>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10'>
             {committee_data.map((person, index) => (
               <ProfileCard
                 key={index}

@@ -61,34 +61,32 @@ const BlogPost = ({
     <Link
       to={`/blog/${slug}`}
       state={{ title, date, author, imageUrl, categories, content, guid }}
-      className='group relative bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700/50 rounded-xl overflow-hidden hover:border-[#00abe6]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#00abe6]/10 block'
+      className='group relative bg-gradient-to-b from-gray-900/90 to-gray-800/90 border-2 border-gray-700/50 rounded-xl overflow-hidden hover:border-[#48d0ff] transition-all duration-500 hover:shadow-[0_0_30px_rgba(72,208,255,0.4)] hover:scale-105 block'
     >
       {/* Image Container */}
-      <div className='relative aspect-[16/9] bg-zinc-800 overflow-hidden'>
+      <div className='relative aspect-[16/9] bg-gray-800 overflow-hidden'>
         <img
           src={displayImage}
           alt={title}
           className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
           onError={(e) => {
-            // Fallback to default image if image fails to load
             e.target.src = default_image;
           }}
         />
-        {/* Dark Overlay */}
-        <div className='absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-zinc-900/20'></div>
+        <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500'></div>
 
         {/* Hover Overlay */}
-        <div className='absolute inset-0 bg-[#00abe6]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
-          <FiArrowUpRight className='text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300' />
+        <div className='absolute inset-0 bg-[#48d0ff]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
+          <FiArrowUpRight className='text-white text-3xl sm:text-4xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300' />
         </div>
 
         {/* Categories Badges */}
         {categories && categories?.length > 0 && (
-          <div className='absolute top-4 left-4 flex flex-wrap gap-2'>
+          <div className='absolute top-3 sm:top-4 left-3 sm:left-4 flex flex-wrap gap-2'>
             {categories?.slice(0, 2)?.map((category, index) => (
               <span
                 key={index}
-                className='px-3 py-1 text-xs font-medium rounded-full bg-[#00abe6] text-white backdrop-blur-sm shadow-lg'
+                className='px-2 sm:px-3 py-1 text-xs font-medium rounded-full bg-[#48d0ff] text-white backdrop-blur-sm shadow-lg'
               >
                 {category}
               </span>
@@ -98,30 +96,27 @@ const BlogPost = ({
       </div>
 
       {/* Content */}
-      <div className='p-6'>
-        {/* Title */}
-        <h3 className='text-xl font-bold text-white mb-3 line-clamp-2 group-hover:text-[#00abe6] transition-colors duration-300'>
+      <div className='p-5 sm:p-6'>
+        <h3 className='text-lg sm:text-xl font-bold text-white mb-3 line-clamp-2 group-hover:text-[#48d0ff] transition-colors duration-300'>
           {title}
         </h3>
-
-        {/* Excerpt */}
-        <p className='text-gray-400 text-sm mb-4 line-clamp-3'>{excerpt}</p>
+        <p className='text-sm text-gray-400 mb-4 line-clamp-3'>{excerpt}</p>
 
         {/* Meta Info */}
-        <div className='flex items-center justify-between pt-4 border-t border-zinc-700/50'>
-          <div className='flex items-center gap-2 text-sm text-gray-400'>
-            <FiUser className='text-[#00abe6]' />
-            <span className='font-medium'>{author}</span>
+        <div className='flex items-center justify-between pt-4 border-t border-gray-700/50'>
+          <div className='flex items-center gap-2 text-xs sm:text-sm text-gray-400'>
+            <FiUser className='text-[#48d0ff] flex-shrink-0' />
+            <span className='font-medium truncate'>{author}</span>
           </div>
-          <div className='flex items-center gap-2 text-sm text-gray-400'>
-            <FiClock className='text-[#00abe6]' />
+          <div className='flex items-center gap-2 text-xs sm:text-sm text-gray-400 flex-shrink-0'>
+            <FiClock className='text-[#48d0ff]' />
             <span>{formattedDate}</span>
           </div>
         </div>
       </div>
 
       {/* Decorative Corner */}
-      <div className='absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00abe6]/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
+      <div className='absolute top-0 right-0 w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#48d0ff]/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
     </Link>
   );
 };
@@ -199,69 +194,72 @@ const Blogs = () => {
   }
 
   return (
-    <div className='text-center mt-12 md:mt-20 px-4 mb-16'>
-      {/* Header */}
-      <div className='mb-12'>
-        <h1 className='text-[#48d0ff] text-4xl md:text-6xl mb-4 font-bold'>
-          <span className='text-white'>LOCUS</span> Blogs
-        </h1>
-        <div className='h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent w-[80%] mx-auto mb-8'></div>
-
-        {/* Search Bar */}
-        <div className='max-w-2xl mx-auto mb-8'>
-          <div className='relative'>
-            <FiSearch className='absolute left-4 top-1/2 transform -translate-y-1/2 text-[#00abe6] text-xl' />
-            <input
-              type='text'
-              placeholder='Search articles by title, author, or category...'
-              value={searchQuery}
-              onChange={handleSearch}
-              className='w-full pl-12 pr-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#00abe6] transition-colors'
-            />
+    <div className='min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 py-12 sm:py-16 lg:py-20'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        {/* Header */}
+        <div className='text-center mb-12 sm:mb-16'>
+          <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 tracking-tight'>
+            <span className='text-white'>LOCUS </span>
+            <span className='text-[#48d0ff]'>Blogs</span>
+          </h1>
+          <div className='flex justify-center mt-6 sm:mt-8 mb-8'>
+            <div className='h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent w-3/4 sm:w-1/2 rounded-full' />
           </div>
-        </div>
 
-        <p className='text-gray-400 max-w-2xl mx-auto'>
-          Explore our collection of insightful articles, tutorials, and updates
-          from the LOCUS community
-        </p>
-      </div>
-
-      {/* Results Count */}
-      {searchQuery && (
-        <p className='text-gray-400 mb-8'>
-          Found <span className='text-[#00abe6] font-semibold'>{filteredArticles?.length}</span> article{filteredArticles?.length !== 1 ? 's' : ''}
-        </p>
-      )}
-
-      {/* Articles Grid */}
-      {filteredArticles?.length > 0 ? (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto'>
-          {filteredArticles?.map((post) => {
-            const imageUrl = post?.thumbnail || extractImageUrl(post?.content);
-
-            return (
-              <BlogPost
-                key={post?.guid}
-                title={post?.title}
-                date={post?.pubDate}
-                guid={post?.guid}
-                author={post?.author}
-                imageUrl={imageUrl}
-                categories={post?.categories}
-                content={post?.content}
+          {/* Search Bar */}
+          <div className='max-w-2xl mx-auto mb-6 sm:mb-8'>
+            <div className='relative'>
+              <FiSearch className='absolute left-4 top-1/2 transform -translate-y-1/2 text-[#48d0ff] text-lg sm:text-xl' />
+              <input
+                type='text'
+                placeholder='Search articles by title, author, or category...'
+                value={searchQuery}
+                onChange={handleSearch}
+                className='w-full pl-12 pr-4 py-3 sm:py-4 bg-gray-900/80 border-2 border-gray-700/50 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#48d0ff] transition-all duration-300 text-sm sm:text-base'
               />
-            );
-          })}
-        </div>
-      ) : (
-        <div className='text-center py-12'>
-          <div className='text-6xl mb-4'>🔍</div>
-          <p className='text-gray-400 text-lg'>
-            No articles found matching your search. Try different keywords.
+            </div>
+          </div>
+
+          <p className='text-sm sm:text-base text-gray-400 max-w-2xl mx-auto leading-relaxed'>
+            Explore our collection of insightful articles, tutorials, and updates from the LOCUS community
           </p>
         </div>
-      )}
+
+        {/* Results Count */}
+        {searchQuery && (
+          <p className='text-center text-sm sm:text-base text-gray-400 mb-8'>
+            Found <span className='text-[#48d0ff] font-semibold'>{filteredArticles?.length}</span> article{filteredArticles?.length !== 1 ? 's' : ''}
+          </p>
+        )}
+
+        {/* Articles Grid */}
+        {filteredArticles?.length > 0 ? (
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8'>
+            {filteredArticles?.map((post) => {
+              const imageUrl = post?.thumbnail || extractImageUrl(post?.content);
+              return (
+                <BlogPost
+                  key={post?.guid}
+                  title={post?.title}
+                  date={post?.pubDate}
+                  guid={post?.guid}
+                  author={post?.author}
+                  imageUrl={imageUrl}
+                  categories={post?.categories}
+                  content={post?.content}
+                />
+              );
+            })}
+          </div>
+        ) : (
+          <div className='text-center py-16 sm:py-20'>
+            <div className='text-5xl sm:text-6xl mb-4'>🔍</div>
+            <p className='text-gray-400 text-base sm:text-lg'>
+              No articles found matching your search. Try different keywords.
+            </p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

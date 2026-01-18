@@ -4,71 +4,40 @@ import { aboutUsHistory } from "../data/zerone";
 import committee_data from "../data/zeronecommittee.json";
 import { Link } from "react-router-dom";
 import Zerone_Carousel from "../components/zerone_crasuel/Zerone_Crasuel";
+import { ArrowRight } from "lucide-react";
 
-// Using public folder paths as string constants
 const zeroneevent = "/assets/zerone/cover.png";
 const technicalevent = "/assets/zerone/cover.png";
 
 const highlightImages = [
-  {
-    src: "/assets/zerone/Gallery/cute.jpg",
-    alt: "Locus Highlight 8",
-  },
-  {
-    src: "/assets/zerone/Gallery/magazine.jpg",
-    alt: "Locus Highlight 9",
-  },
-  {
-    src: "/assets/zerone/Gallery/KUU00022.jpg",
-    alt: "Locus Highlight 1",
-  },
-  {
-    src: "/assets/zerone/Gallery/KUU00060.jpg",
-    alt: "Locus Highlight 2",
-  },
-  {
-    src: "/assets/zerone/Gallery/The Zerone 2025.JPG",
-    alt: "Locus Highlight 3",
-  },
-  {
-    src: "/assets/zerone/Gallery/zerone 2020.png",
-    alt: "Locus Highlight 4",
-  },
-  {
-    src: "/assets/zerone/Gallery/zerone 2023.png",
-    alt: "Locus Highlight 5",
-  },
-  {
-    src: "/assets/zerone/Gallery/zerone 2024.png",
-    alt: "Locus Highlight 6",
-  },
-  {
-    src: "/assets/zerone/Gallery/zerone stall 2024.png",
-    alt: "Locus Highlight 7",
-  },
-  // { src: 'public/assets/zerone/Zeroneteam.png', alt: 'Locus Highlight 8' },
+  { src: "/assets/zerone/Gallery/cute.jpg", alt: "Locus Highlight 8" },
+  { src: "/assets/zerone/Gallery/magazine.jpg", alt: "Locus Highlight 9" },
+  { src: "/assets/zerone/Gallery/KUU00022.jpg", alt: "Locus Highlight 1" },
+  { src: "/assets/zerone/Gallery/KUU00060.jpg", alt: "Locus Highlight 2" },
+  { src: "/assets/zerone/Gallery/The Zerone 2025.JPG", alt: "Locus Highlight 3" },
+  { src: "/assets/zerone/Gallery/zerone 2020.png", alt: "Locus Highlight 4" },
+  { src: "/assets/zerone/Gallery/zerone 2023.png", alt: "Locus Highlight 5" },
+  { src: "/assets/zerone/Gallery/zerone 2024.png", alt: "Locus Highlight 6" },
+  { src: "/assets/zerone/Gallery/zerone stall 2024.png", alt: "Locus Highlight 7" },
 ];
+
 function Zerone() {
   return (
-    <div>
-      <div className='w-full max-w-[1148px] mx-auto px-4 py-8'>
-        {/* About Section */}
-        <div className='text-center mb-8'>
-          <h1 className='text-2xl md:text-4xl font-bold mb-4'>
-            <span className='text-[#48d0ff]'>The</span> Zerone 2025
+    <div className='min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900'>
+      <div className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12'>
+        {/* Header Section */}
+        <div className='text-center mb-12 sm:mb-16 mt-8 sm:mt-12'>
+          <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 tracking-tight'>
+            <span className='text-[#48d0ff]'>The</span>
+            <span className='text-white'> Zerone 2025</span>
           </h1>
-          {/* <p className='text-lg text-white'>22nd National Technology Fest</p>
-          <p className='text-sm md:text-base text-white mt-2'>
-            22nd National Technology Fest 24th - 26th January, IOE Pulchowk
-            Engineering Campus, Nepal
-          </p> */}
-          <div className='mt-4 mb-4'>
-            <hr className='border-gray-300' />
+          <div className='mt-6 sm:mt-8 flex justify-center'>
+            <div className='h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent w-3/4 sm:w-1/2 rounded-full' />
           </div>
         </div>
 
-        {/* About Us History Section */}
-        <div className='space-y-8 mt-20'>
+        {/* About History Section */}
+        <div className='space-y-12 sm:space-y-16 lg:space-y-20 mt-16 sm:mt-20'>
           {aboutUsHistory.map((history, index) => (
             <Image_content
               key={index}
@@ -78,14 +47,19 @@ function Zerone() {
             />
           ))}
         </div>
+
         {/* Committee Section */}
-        <div className='mt-12'>
-          <div className='text-center mb-8'>
-            <h1 className='text-2xl md:text-4xl font-bold'>
-              <span className='text-[#48d0ff]'>The Zerone 2025 </span>Committee
+        <div className='mt-20 sm:mt-28'>
+          <div className='text-center mb-10 sm:mb-16'>
+            <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight'>
+              <span className='text-[#48d0ff]'>The Zerone 2025 </span>
+              <span className='text-white'>Committee</span>
             </h1>
+            <div className='mt-6 sm:mt-8 flex justify-center'>
+              <div className='h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent w-3/4 sm:w-1/2 rounded-full' />
+            </div>
           </div>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10'>
             {committee_data.map((person, index) => (
               <ProfileCard
                 key={index}
@@ -101,109 +75,92 @@ function Zerone() {
           </div>
         </div>
 
-        <div className='text-center mt-12 md:mt-20 px-4'>
-          <h1 className='text-[#48d0ff] text-3xl md:text-5xl mb-3 md:mb-3'>
-            <span className='text-white'>Zerone</span> Highlights
-          </h1>
-          <div className=''>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12'>
-              <Link
-                // key={event.id}
-                to='https://medium.com/zerone-magazine/tagged/blogging-competition'
-                className='relative w-full mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-lg'
-              >
-                <div className='aspect-w-5 aspect-h-5 bg-gray-200'>
-                  <img
-                    src={zeroneevent}
-                    alt=''
-                    className='w-full h-full object-cover transition-transform duration-300 hover:scale-110'
-                  />
-                </div>
-
-                {/* Floating Buttons */}
-                <div className='absolute bottom-4 left-4 right-4 flex justify-between items-center z-10'>
-                  <span
-                    className={`px-2 py-0 rounded-full text-xs font-small ${
-                      "Closed" === "Coming Soon"
-                        ? "bg-yellow-100 text-yellow-600"
-                        : "Closed" === "Active"
-                        ? "bg-green-100 text-green-600"
-                        : "bg-red-100 text-red-600"
-                    }`}
-                  >
-                    Closed
-                  </span>
-                  <Link to='https://medium.com/zerone-magazine/tagged/blogging-competition'>
-                    <button className='text-white px-4 py-1 rounded-lg text-sm hover:bg-blue-600 transition-colors'>
-                      More
-                    </button>
-                  </Link>
-                </div>
-              </Link>
-              <Link
-                // key={event.id}
-                to='https://medium.com/zerone-magazine/tagged/technical-competition'
-                className='relative w-full mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-lg'
-              >
-                <div className='aspect-w-5 aspect-h-5 bg-gray-200'>
-                  <img
-                    src={technicalevent}
-                    alt=''
-                    className='w-full h-full object-cover transition-transform duration-300 hover:scale-110'
-                  />
-                </div>
-
-                {/* Floating Buttons */}
-                <div className='absolute bottom-4 left-4 right-4 flex justify-between items-center z-10'>
-                  <span
-                    className={`px-2 py-0 rounded-full text-xs font-small ${
-                      "Closed" === "Coming Soon"
-                        ? "bg-yellow-100 text-yellow-600"
-                        : "Closed" === "Active"
-                        ? "bg-green-100 text-green-600"
-                        : "bg-red-100 text-red-600"
-                    }`}
-                  >
-                    Closed
-                  </span>
-                  <Link to='https://medium.com/zerone-magazine/tagged/technical-competition'>
-                    <button className='text-white px-4 py-1 rounded-lg text-sm hover:bg-blue-600 transition-colors'>
-                      More
-                    </button>
-                  </Link>
-                </div>
-              </Link>
+        {/* Zerone Highlights Section */}
+        <div className='mt-20 sm:mt-28'>
+          <div className='text-center mb-10 sm:mb-16'>
+            <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight'>
+              <span className='text-white'>Zerone </span>
+              <span className='text-[#48d0ff]'>Highlights</span>
+            </h1>
+            <div className='mt-6 sm:mt-8 flex justify-center'>
+              <div className='h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent w-3/4 sm:w-1/2 rounded-full' />
             </div>
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto'>
+            {[{url: 'https://medium.com/zerone-magazine/tagged/blogging-competition', img: zeroneevent, title: 'Blogging Competition'},
+              {url: 'https://medium.com/zerone-magazine/tagged/technical-competition', img: technicalevent, title: 'Technical Competition'}].map((item, idx) => (
+              <Link
+                key={idx}
+                to={item.url}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='group relative bg-gradient-to-b from-gray-900/90 to-gray-800/90 rounded-xl overflow-hidden border-2 border-gray-700/50 hover:border-[#48d0ff] transition-all duration-500 hover:shadow-[0_0_30px_rgba(72,208,255,0.4)] hover:scale-105'
+              >
+                <div className='relative h-64 sm:h-72 overflow-hidden'>
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
+                  />
+                  <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500' />
+                  <div className='absolute top-4 left-4'>
+                    <span className='px-3 py-1.5 rounded-full text-xs font-semibold backdrop-blur-md border-2 shadow-lg bg-red-500/20 text-red-300 border-red-500/60'>
+                      Closed
+                    </span>
+                  </div>
+                </div>
+                <div className='p-5 sm:p-6 space-y-3'>
+                  <h3 className='text-lg sm:text-xl font-bold text-white group-hover:text-[#48d0ff] transition-colors duration-300'>
+                    {item.title}
+                  </h3>
+                  <button className='inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#48d0ff]/10 border border-[#48d0ff]/40 text-[#48d0ff] text-sm font-semibold hover:bg-[#48d0ff] hover:text-white transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(72,208,255,0.5)]'>
+                    <span>Learn More</span>
+                    <ArrowRight size={16} className='group-hover:translate-x-1 transition-transform' />
+                  </button>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
 
-        <section className='min-h-screen text-white flex flex-col p-4 sm:p-6 lg:p-8'>
-          <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-center'>
-            <span className='text-white'>The Zerone </span>
-            <span className='text-[#48d0ff]'>Gallery</span>
-          </h2>
-          <div className='flex-grow grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-fr'>
-  {highlightImages.map((image, index) => (
-    <div
-      key={index}
-      className='relative w-full h-0 pb-[75%] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105'
-    >
-      <img
-        src={image.src}
-        alt={image.alt}
-        className='absolute w-full h-full object-cover'
-      />
-    </div>
-  ))}
-</div>
+        {/* Gallery Section */}
+        <div className='mt-20 sm:mt-28'>
+          <div className='text-center mb-10 sm:mb-16'>
+            <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight'>
+              <span className='text-white'>The Zerone </span>
+              <span className='text-[#48d0ff]'>Gallery</span>
+            </h1>
+            <div className='mt-6 sm:mt-8 flex justify-center'>
+              <div className='h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent w-3/4 sm:w-1/2 rounded-full' />
+            </div>
+          </div>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
+            {highlightImages.map((image, index) => (
+              <div
+                key={index}
+                className='group relative aspect-[4/3] overflow-hidden rounded-xl border-2 border-gray-700/50 hover:border-[#48d0ff] transition-all duration-500 hover:shadow-[0_0_30px_rgba(72,208,255,0.4)] hover:scale-105'
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
+                />
+              </div>
+            ))}
+          </div>
+        </div>
 
-        </section>
-
-
-        <div className='text-center mt-12 md:mt-20 px-4'>
-          <h1 className='text-[#48d0ff] text-3xl md:text-5xl mb-3 md:mb-3'>
-            <span className='text-white'>Previous </span> Issues
-          </h1>
+        {/* Previous Issues Section */}
+        <div className='mt-20 sm:mt-28'>
+          <div className='text-center mb-10 sm:mb-16'>
+            <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight'>
+              <span className='text-white'>Previous </span>
+              <span className='text-[#48d0ff]'>Issues</span>
+            </h1>
+            <div className='mt-6 sm:mt-8 flex justify-center'>
+              <div className='h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent w-3/4 sm:w-1/2 rounded-full' />
+            </div>
+          </div>
           <Zerone_Carousel />
         </div>
       </div>

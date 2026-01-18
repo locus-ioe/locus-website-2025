@@ -1,104 +1,99 @@
 import React from "react";
 import { eventsData } from "../data/eventDetails";
 import { Link } from "react-router-dom";
+import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 const EventsListSection = ({ numEventsToShow = eventsData.length }) => {
-  // Helper function to convert Google Drive links to direct image URLs
   const getImageUrl = (url) => {
     if (!url) return url;
-    
-    // Extract file ID from various Google Drive URL formats
     let fileId = null;
-    
-    // Format 1: /d/{FILE_ID}
     const driveMatch1 = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
-    if (driveMatch1) {
-      fileId = driveMatch1[1];
-    }
-    
-    // Format 2: id={FILE_ID} or ?id={FILE_ID}
+    if (driveMatch1) fileId = driveMatch1[1];
     const driveMatch2 = url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
-    if (driveMatch2) {
-      fileId = driveMatch2[1];
-    }
-    
-    // If we found a Google Drive file ID, use the thumbnail endpoint
-    if (fileId) {
-      return `https://drive.google.com/thumbnail?id=${fileId}&sz=w1000`;
-    }
-    
+    if (driveMatch2) fileId = driveMatch2[1];
+    if (fileId) return `https://drive.google.com/thumbnail?id=${fileId}&sz=w1000`;
     return url;
   };
 
-  
   const sortedEvents = [...eventsData].sort((a, b) => {
-    // Helper function to clean and parse dates
     const parseDate = (dateString) => {
-      // Remove ordinal suffixes (st, nd, rd, th)
       const cleanedDate = dateString.replace(/(\d+)(st|nd|rd|th)/, "$1");
-      // Parse cleaned date
       return new Date(cleanedDate);
     };
-
-    // Prioritize 'Active' status
-    if (a.event_type.status === "Active" && b.event_type.status !== "Active") {
-      return -1; // 'a' comes first
-    }
-    if (a.event_type.status !== "Active" && b.event_type.status === "Active") {
-      return 1; // 'b' comes first
-    }
-
-    // If status is the same, sort by start_date in descending order
+    if (a.event_type.status === "Active" && b.event_type.status !== "Active") return -1;
+    if (a.event_type.status !== "Active" && b.event_type.status === "Active") return 1;
     const dateA = parseDate(a.date_and_time.start_date);
     const dateB = parseDate(b.date_and_time.start_date);
-
-    return dateB - dateA; // Descending order
+    return dateB - dateA;
   });
 
-  // Slice the array to display only the number of events defined in numEventsToShow
   const eventsToDisplay = sortedEvents.slice(0, numEventsToShow);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-6 mb-12">
       {eventsToDisplay.map((event) => (
         <Link
           key={event.id}
           to={`/event/${event.title}`}
-          className="relative w-full mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+          className="group relative bg-gradient-to-b from-gray-900/90 to-gray-800/90 rounded-xl overflow-hidden border-2 border-gray-700/50 hover:border-[#48d0ff] transition-all duration-500 hover:shadow-[0_0_30px_rgba(72,208,255,0.4)] hover:scale-105"
         >
-          <div className="aspect-w-5 aspect-h-5 bg-gray-200">
+          {/* Image Container */}
+          <div className="relative h-56 sm:h-64 overflow-hidden">
             <img
               src={getImageUrl(event.imgSrc)}
-              alt={`Event ${event.title}`}
-              className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+              alt={event.title}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-          </div>
-          {console.log(event.date_and_time.start_date)}
-          {/* Floating Buttons */}
-          <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center z-10">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+            
+            {/* Status Badge */}
             {event.event_type.status && (
-              <span
-                className={`px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md border ${
-                  event.event_type.status === "Coming Soon" || event.event_type.status === "Open"
-                    ? "bg-[#00abe6]/20 text-[#00abe6] border-[#00abe6]/40"
-                    : event.event_type.status === "Active" || event.event_type.status === "Ongoing"
-                    ? "bg-cyan-500/20 text-cyan-300 border-cyan-500/40"
-                    : "bg-zinc-700/60 text-zinc-300 border-zinc-600/40"
-                }`}
-              >
-                {event.event_type.status}
-              </span>
+              <div className="absolute top-4 left-4">
+                <span
+                  className={`px-3 py-1.5 rounded-full text-xs font-semibold backdrop-blur-md border-2 shadow-lg transition-all duration-300 group-hover:scale-110 ${
+                    event.event_type.status === "Coming Soon" || event.event_type.status === "Open"
+                      ? "bg-[#48d0ff]/20 text-[#48d0ff] border-[#48d0ff]/60"
+                      : event.event_type.status === "Active" || event.event_type.status === "Ongoing"
+                      ? "bg-green-500/20 text-green-300 border-green-500/60"
+                      : "bg-gray-700/60 text-gray-300 border-gray-600/60"
+                  }`}
+                >
+                  {event.event_type.status}
+                </span>
+              </div>
             )}
-            {/* <span
-              className={`px-2 py-0 rounded-full text-xs font-small bg-yellow-100 text-yellow-600`}
-            >
-              Coming Soon
-            </span> */}
-            <Link to={`/event/${event.title}`} className={!event.event_type.status ? "ml-auto" : ""}>
-              <button className="text-white px-4 py-1 rounded-lg text-sm hover:bg-blue-600 transition-colors">
-                More
+          </div>
+
+          {/* Content Container */}
+          <div className="p-5 sm:p-6 space-y-4">
+            {/* Title */}
+            <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-[#48d0ff] transition-colors duration-300 line-clamp-2">
+              {event.title}
+            </h3>
+
+            {/* Date & Time Info */}
+            <div className="space-y-2 text-sm text-gray-400">
+              {event.date_and_time.start_date && (
+                <div className="flex items-center gap-2">
+                  <Calendar size={16} className="text-[#48d0ff]" />
+                  <span>{event.date_and_time.start_date}</span>
+                </div>
+              )}
+              {event.date_and_time.start_time && (
+                <div className="flex items-center gap-2">
+                  <Clock size={16} className="text-[#48d0ff]" />
+                  <span>{event.date_and_time.start_time}</span>
+                </div>
+              )}
+            </div>
+
+            {/* More Button */}
+            <div className="pt-2">
+              <button className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#48d0ff]/10 border border-[#48d0ff]/40 text-[#48d0ff] text-sm font-semibold hover:bg-[#48d0ff] hover:text-white transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(72,208,255,0.5)]">
+                <span>Learn More</span>
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </button>
-            </Link>
+            </div>
           </div>
         </Link>
       ))}

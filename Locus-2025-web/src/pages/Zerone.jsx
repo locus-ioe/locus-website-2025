@@ -55,7 +55,7 @@ function Zerone() {
         {/* About Section */}
         <div className='text-center mb-8'>
           <h1 className='text-2xl md:text-4xl font-bold mb-4'>
-            <span className='text-[#48d0ff]'>The</span> Zerone 2025
+            <span className='text-[#48d0ff]'>The</span> Zerone 2026
           </h1>
           {/* <p className='text-lg text-white'>22nd National Technology Fest</p>
           <p className='text-sm md:text-base text-white mt-2'>
@@ -82,7 +82,7 @@ function Zerone() {
         <div className='mt-12'>
           <div className='text-center mb-8'>
             <h1 className='text-2xl md:text-4xl font-bold'>
-              <span className='text-[#48d0ff]'>The Zerone 2025 </span>Committee
+              <span className='text-[#48d0ff]'>The Zerone 2026 </span>Committee
             </h1>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6'>

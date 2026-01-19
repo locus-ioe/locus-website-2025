@@ -66,7 +66,7 @@ export default function HeroSection() {
 
   useEffect(() => {
     const calculateDaysRemaining = () => {
-      const eventDate = new Date('2026-01-29');
+      const eventDate = new Date('2026-01-30');
       const today = new Date();
       today.setHours(0, 0, 0, 0);
       eventDate.setHours(0, 0, 0, 0);
@@ -81,9 +81,9 @@ export default function HeroSection() {
   }, []);
 
   const eventDates = [
-    { day: "16", nepaliMonth: "MAGH", englishDate: "Jan 29, 2026" },
-    { day: "17", nepaliMonth: "MAGH", englishDate: "Jan 30, 2026" },
-    { day: "18", nepaliMonth: "MAGH", englishDate: "Jan 31, 2026" },
+    { day: "16", nepaliMonth: "MAGH", englishDate: "Jan 30, 2026" },
+    { day: "17", nepaliMonth: "MAGH", englishDate: "Jan 31, 2026" },
+    { day: "18", nepaliMonth: "MAGH", englishDate: "Feb 1, 2026" },
   ];
 
   return (

@@ -35,20 +35,26 @@ export function Footer() {
       <div className='relative px-4 py-16 sm:py-24'>
         {/* Footer Content */}
         <div className='mx-auto grid max-w-7xl gap-12 px-4 sm:grid-cols-3 items-center'>
-          {/* Left Section - Prospectus & Location */}
-          <div className='flex flex-col items-center sm:items-start space-y-10'>
+          {/* Left Section - Prospectus, Discord & Location */}
+          <div className='flex flex-col items-center sm:items-start space-y-6'>
             <Link
               to='https://drive.google.com/file/d/14UPRPobB6AXR7YmS1570rtIHgWdVpyDY/view'
               target='_blank'
               rel='noopener noreferrer'
-              className="group"
             >
-              <Button
-                variant='outline'
-                className='rounded-full bg-[#48d0ff]/10 text-[#48d0ff] border-[#48d0ff]/20 px-10 py-5 text-sm font-bold uppercase tracking-widest transition-all duration-500 group-hover:bg-[#48d0ff] group-hover:text-black group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(72,208,255,0.3)] sm:text-base font-arial'
-              >
+              <button className='px-8 py-3 bg-[#48d0ff]/10 text-[#48d0ff] border border-[#48d0ff]/30 rounded-lg font-semibold text-sm uppercase tracking-wider transition-colors hover:bg-[#48d0ff]/20'>
                 Prospectus
-              </Button>
+              </button>
+            </Link>
+
+            <Link
+              to='https://discord.gg/locus'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <button className='px-8 py-3 bg-[#48d0ff]/10 text-[#48d0ff] border border-[#48d0ff]/30 rounded-lg font-semibold text-sm uppercase tracking-wider transition-colors hover:bg-[#48d0ff]/20'>
+                Join Discord
+              </button>
             </Link>
 
             <div className='text-center sm:text-left space-y-3'>

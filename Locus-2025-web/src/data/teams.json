@@ -44,29 +44,9 @@
       "name": "Pratik Adhikari",
       "designation": "Education and Content Lead",
       "imageUrl": "assets/teams/Pratik_adhikari.jpg"
-    },
-    {
-      "name": "Sadhana Panthi",
-      "designation": "Advisory",
-      "imageUrl": "assets/teams/Sadhana_panthi.png"
-    },
-    {
-      "name": "Bishal Lamichhane",
-      "designation": "Advisory",
-      "imageUrl": "assets/teams/Bishal_lamichhane.jpg"
     }
   ],
   "hackaWeekTeam": [
-    {
-      "name": "Bishal Lamichhane",
-      "designation": "Organizer",
-      "imageUrl": "https://i.postimg.cc/k4qyTLR1/Bishal-Lamichhane.jpg"
-    },
-    {
-      "name": "Sadhana Panthi",
-      "designation": "Organizer",
-      "imageUrl": "https://i.postimg.cc/brFHNJCB/Sadhana-Panthi.avif"
-    },
     {
       "name": "Sandip Katel",
       "designation": "Organizer",
@@ -88,9 +68,9 @@
       "imageUrl": "https://i.postimg.cc/3wgBC3N4/ashok.jpg"
     },
     {
-      "name":"Jeevan Neupane",
-      "designation":"Organizer",
-      "imageUrl":"https://res.cloudinary.com/chatappjeevanneupane/image/upload/v1730944042/vp9z8mt1oushfsszpdvg.jpg"
+      "name": "Jeevan Neupane",
+      "designation": "Organizer",
+      "imageUrl": "https://res.cloudinary.com/chatappjeevanneupane/image/upload/v1730944042/vp9z8mt1oushfsszpdvg.jpg"
     }
   ]
 }

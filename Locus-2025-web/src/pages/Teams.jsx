@@ -5,7 +5,8 @@ import { useState } from "react";
 
 function Teams() {
   const { locusTeam, hackaWeekTeam } = teams;
-  const [selectedTeam, setSelectedTeam] = useState("contentWritingTeam");
+  const [selectedMainTeam, setSelectedMainTeam] = useState("locus");
+  const [selectedCreativeTeam, setSelectedCreativeTeam] = useState("contentWritingTeam");
 
   const creativeTeamsList = [
     {
@@ -50,7 +51,7 @@ function Teams() {
     },
   ];
 
-  const currentTeam = creativeTeamsList.find((t) => t.id === selectedTeam);
+  const currentCreativeTeam = creativeTeamsList.find((t) => t.id === selectedCreativeTeam);
 
   return (
     <div className='w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12'>
@@ -68,102 +69,132 @@ function Teams() {
         </div>
       </div>
 
-      {/* LOCUS Team */}
-      <div className='mb-16 sm:mb-24'>
-        <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-8 sm:mb-12'>
-          <span className='text-[#48d0ff]'>LOCUS Open Source</span>
-          <span className='text-white'> Team</span>
-        </h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center'>
-          {locusTeam.map((person, index) => (
-            <ProfileCard
-              key={index}
-              imageUrl={person.imageUrl}
-              name={person.name}
-              designation={person.designation}
-              facebook={person.facebook}
-              twitter={person.twitter}
-              instagram={person.instagram}
-              linkedin={person.linkedin}
-            />
-          ))}
-        </div>
+      {/* Main Team Selection */}
+      <div className='flex justify-center gap-4 mb-12'>
+        <button
+          onClick={() => setSelectedMainTeam("locus")}
+          className={`px-6 py-3 rounded-lg font-semibold text-base transition-all duration-300 ${
+            selectedMainTeam === "locus"
+              ? "bg-[#48d0ff] text-black shadow-md shadow-[#48d0ff]/20"
+              : "bg-gray-800 text-white hover:bg-gray-700 border border-gray-700"
+          }`}
+        >
+          LOCUS Team
+        </button>
+        <button
+          onClick={() => setSelectedMainTeam("hackaweek")}
+          className={`px-6 py-3 rounded-lg font-semibold text-base transition-all duration-300 ${
+            selectedMainTeam === "hackaweek"
+              ? "bg-[#48d0ff] text-black shadow-md shadow-[#48d0ff]/20"
+              : "bg-gray-800 text-white hover:bg-gray-700 border border-gray-700"
+          }`}
+        >
+          Hack a Week Team
+        </button>
+        <button
+          onClick={() => setSelectedMainTeam("creative")}
+          className={`px-6 py-3 rounded-lg font-semibold text-base transition-all duration-300 ${
+            selectedMainTeam === "creative"
+              ? "bg-[#48d0ff] text-black shadow-md shadow-[#48d0ff]/20"
+              : "bg-gray-800 text-white hover:bg-gray-700 border border-gray-700"
+          }`}
+        >
+          Creative Teams
+        </button>
       </div>
 
-      {/* Divider */}
-      <div className='my-12 sm:my-16'>
-        <div className='h-0.5 bg-[#48d0ff] w-4/5 sm:w-3/4 mx-auto'></div>
-      </div>
+      {/* LOCUS Team */}
+      {selectedMainTeam === "locus" && (
+        <div className='mb-16 sm:mb-24'>
+          <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-8 sm:mb-12'>
+            <span className='text-[#48d0ff]'>LOCUS Open Source</span>
+            <span className='text-white'> Team</span>
+          </h2>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
+            {locusTeam.map((person, index) => (
+              <ProfileCard
+                key={index}
+                imageUrl={person.imageUrl}
+                name={person.name}
+                designation={person.designation}
+                facebook={person.facebook}
+                twitter={person.twitter}
+                instagram={person.instagram}
+                linkedin={person.linkedin}
+              />
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Hack a Week Team */}
-      <div className='mb-16 sm:mb-24'>
-        <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-8 sm:mb-12'>
-          <span className='text-[#48d0ff]'>Neural AI Hack a Week</span>
-          <span className='text-white'> Organizers</span>
-        </h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center'>
-          {hackaWeekTeam.map((person, index) => (
-            <ProfileCard
-              key={index}
-              imageUrl={person.imageUrl}
-              name={person.name}
-              designation={person.designation}
-              facebook={person.facebook}
-              twitter={person.twitter}
-              instagram={person.instagram}
-              linkedin={person.linkedin}
-            />
-          ))}
+      {selectedMainTeam === "hackaweek" && (
+        <div className='mb-16 sm:mb-24'>
+          <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-8 sm:mb-12'>
+            <span className='text-[#48d0ff]'>Neural AI Hack a Week</span>
+            <span className='text-white'> Organizers</span>
+          </h2>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
+            {hackaWeekTeam.map((person, index) => (
+              <ProfileCard
+                key={index}
+                imageUrl={person.imageUrl}
+                name={person.name}
+                designation={person.designation}
+                facebook={person.facebook}
+                twitter={person.twitter}
+                instagram={person.instagram}
+                linkedin={person.linkedin}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-
-      {/* Divider */}
-      <div className='my-12 sm:my-16'>
-        <div className='h-0.5 bg-[#48d0ff] w-4/5 sm:w-3/4 mx-auto'></div>
-      </div>
+      )}
 
       {/* Creative Teams Section */}
-      <div className='mb-16 sm:mb-24'>
-        <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-8 sm:mb-12'>
-          <span className='text-[#48d0ff]'>Creative</span>
-          <span className='text-white'> Teams</span>
-        </h2>
+      {selectedMainTeam === "creative" && (
+        <div className='mb-16 sm:mb-24'>
+          <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-8 sm:mb-12'>
+            <span className='text-[#48d0ff]'>Creative</span>
+            <span className='text-white'> Teams</span>
+          </h2>
 
-        {/* Team Selection Buttons */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 mb-10 sm:mb-12 max-w-5xl mx-auto'>
-          {creativeTeamsList.map((team) => (
-            <button
-              key={team.id}
-              onClick={() => setSelectedTeam(team.id)}
-              className={`px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white transition-all duration-300 transform hover:scale-105 ${
-                selectedTeam === team.id
-                  ? "bg-[#48d0ff] shadow-lg shadow-[#48d0ff]/50"
-                  : "bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 border border-gray-700"
-              }`}
-            >
-              {team.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Selected Team Members */}
-        {currentTeam && (
-          <div className='space-y-8 sm:space-y-10'>
-            <h3 className='text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-center'>
-              <span className='text-[#48d0ff]'>{currentTeam.label}</span>
-            </h3>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center'>
-              {currentTeam.data.map((person, index) => (
-                <ProfileCard
-                  key={index}
-                  imageUrl={person.imageUrl}
-                  name={person.name}
-                />
-              ))}
-            </div>
+          {/* Team Selection Buttons */}
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 mb-10 sm:mb-12 max-w-5xl mx-auto'>
+            {creativeTeamsList.map((team) => (
+              <button
+                key={team.id}
+                onClick={() => setSelectedCreativeTeam(team.id)}
+                className={`px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white transition-all duration-300 transform hover:scale-105 ${
+                  selectedCreativeTeam === team.id
+                    ? "bg-[#48d0ff] shadow-md shadow-[#48d0ff]/20"
+                    : "bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 border border-gray-700"
+                }`}
+              >
+                {team.label}
+              </button>
+            ))}
           </div>
-        )}
-      </div>
+
+          {/* Selected Team Members */}
+          {currentCreativeTeam && (
+            <div className='space-y-8 sm:space-y-10'>
+              <h3 className='text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-center'>
+                <span className='text-[#48d0ff]'>{currentCreativeTeam.label}</span>
+              </h3>
+              <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
+                {currentCreativeTeam.data.map((person, index) => (
+                  <ProfileCard
+                    key={index}
+                    imageUrl={person.imageUrl}
+                    name={person.name}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

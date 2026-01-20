@@ -6,7 +6,8 @@ import { useState } from "react";
 function Teams() {
   const { locusTeam, hackaWeekTeam } = teams;
   const [selectedMainTeam, setSelectedMainTeam] = useState("locus");
-  const [selectedCreativeTeam, setSelectedCreativeTeam] = useState("contentWritingTeam");
+  const [selectedCreativeTeam, setSelectedCreativeTeam] =
+    useState("contentWritingTeam");
 
   const creativeTeamsList = [
     {
@@ -51,7 +52,9 @@ function Teams() {
     },
   ];
 
-  const currentCreativeTeam = creativeTeamsList.find((t) => t.id === selectedCreativeTeam);
+  const currentCreativeTeam = creativeTeamsList.find(
+    (t) => t.id === selectedCreativeTeam,
+  );
 
   return (
     <div className='w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12'>
@@ -79,7 +82,7 @@ function Teams() {
               : "bg-gray-800 text-white hover:bg-gray-700 border border-gray-700"
           }`}
         >
-          LOCUS Team
+          LOST
         </button>
         <button
           onClick={() => setSelectedMainTeam("hackaweek")}
@@ -89,7 +92,7 @@ function Teams() {
               : "bg-gray-800 text-white hover:bg-gray-700 border border-gray-700"
           }`}
         >
-          Hack a Week Team
+          Hack a Week
         </button>
         <button
           onClick={() => setSelectedMainTeam("creative")}
@@ -180,7 +183,9 @@ function Teams() {
           {currentCreativeTeam && (
             <div className='space-y-8 sm:space-y-10'>
               <h3 className='text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-center'>
-                <span className='text-[#48d0ff]'>{currentCreativeTeam.label}</span>
+                <span className='text-[#48d0ff]'>
+                  {currentCreativeTeam.label}
+                </span>
               </h3>
               <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
                 {currentCreativeTeam.data.map((person, index) => (

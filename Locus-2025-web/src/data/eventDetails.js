@@ -23,7 +23,7 @@ export const eventsData = [
       button_text: "Register 850/-",
     },
     event_type: {
-      status: "Ongoing",
+      status: "Closed",
       mode: "Offline",
       category: "Workshop",
     },
@@ -77,7 +77,7 @@ export const eventsData = [
       button_text: "Register Now/-",
     },
     event_type: {
-      status: "Open",
+      status: "Closed",
       mode: "Online",
       category: "Event",
     },
@@ -137,7 +137,7 @@ export const eventsData = [
       button_text: "Register Free",
     },
     event_type: {
-      // status: "Closed",
+      status: "Closed",
       mode: "Offline",
       category: "Event",
     },
@@ -244,7 +244,7 @@ export const eventsData = [
       button_text: "Register Free/-",
     },
     event_type: {
-      // status: "Closed",
+      status: "Closed",
       mode: "Online",
       category: "Event",
     },
@@ -306,7 +306,7 @@ export const eventsData = [
       button_text: "Apply Now",
     },
     event_type: {
-      // status: "Open",
+      status: "Closed",
       mode: "Offline",
       category: "Training Program",
     },

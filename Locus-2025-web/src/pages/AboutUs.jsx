@@ -41,7 +41,7 @@ function AboutUs() {
               <span className='text-[#48d0ff]'>LOCUS 2026 </span>Committee
             </h1>
           </div>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6'>
             {committee_data.map((person, index) => (
               <ProfileCard
                 key={index}

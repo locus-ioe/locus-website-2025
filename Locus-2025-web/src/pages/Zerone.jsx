@@ -85,7 +85,7 @@ function Zerone() {
               <span className='text-[#48d0ff]'>The Zerone 2026 </span>Committee
             </h1>
           </div>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6'>
             {committee_data.map((person, index) => (
               <ProfileCard
                 key={index}
@@ -182,11 +182,11 @@ function Zerone() {
             <span className='text-white'>The Zerone </span>
             <span className='text-[#48d0ff]'>Gallery</span>
           </h2>
-          <div className='flex-grow grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-fr'>
+          <div className='flex-grow grid grid-cols-1 sm:grid-cols-2 gap-4 auto-rows-fr'>
   {highlightImages.map((image, index) => (
     <div
       key={index}
-      className='relative w-full h-0 pb-[75%] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105'
+      className='relative w-full h-0 pb-[60%] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105'
     >
       <img
         src={image.src}

@@ -39,6 +39,14 @@
     "sponsorlink": "",
     "sponsor_text": "visit sponsor"
   },
+    {
+    "sponsor_title": "Gold Sponsor",
+    "subtitle": "",
+    "sponsor_name": "Dolphin Dive",
+    "image": "assets/sponsors/dolphin_dive.png",
+    "sponsorlink": "https://dolphindivetech.com/",
+    "sponsor_text": "visit sponsor"
+  },
   {
     "sponsor_title": "Event Sponsor",
     "subtitle": "Title-Hack a week",
@@ -87,27 +95,19 @@
     "sponsorlink": "",
     "sponsor_text": "visit sponsor"
   },
+    {
+    "sponsor_title": "Stall Sponsor",
+    "subtitle": "",
+    "sponsor_name": "Saarathi Academy",
+    "image": "assets/sponsors/Saarathi-dark.png",
+    "sponsorlink": "https://www.saarathi.app/",
+    "sponsor_text": "visit sponsor"
+  },
   {
     "sponsor_title": "Merchandise Partner",
     "subtitle": "",
     "sponsor_name": "EB Pearls",
     "image": "assets/sponsors/ebpearls.png",
-    "sponsorlink": "",
-    "sponsor_text": "visit sponsor"
-  },
-  {
-    "sponsor_title": "LOCUS Partners",
-    "subtitle": "Internet Partner",
-    "sponsor_name": "Worldlink",
-    "image": "assets/sponsors/Worldlink.jpg",
-    "sponsorlink": "",
-    "sponsor_text": "visit sponsor"
-  },
-  {
-    "sponsor_title": "LOCUS Partners",
-    "subtitle": "Learning Partner",
-    "sponsor_name": "Natives Plug",
-    "image": "assets/sponsors/nativeslogo.png",
     "sponsorlink": "",
     "sponsor_text": "visit sponsor"
   },
@@ -128,11 +128,83 @@
     "sponsorlink": "",
     "sponsor_text": "visit sponsor"
   },
+    {
+    "sponsor_title": "LOCUS Partners",
+    "subtitle": "Internet Partner",
+    "sponsor_name": "Worldlink",
+    "image": "assets/sponsors/Worldlink.jpg",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+  {
+    "sponsor_title": "LOCUS Partners",
+    "subtitle": "Learning Partner",
+    "sponsor_name": "Natives Plug",
+    "image": "assets/sponsors/nativeslogo.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+    {
+    "sponsor_title": "LOCUS Partners",
+    "subtitle": "Refreshment Partner",
+    "sponsor_name": "Fruit Gems / Nimbu Pani",
+    "image": "assets/sponsors/refreshment.png",
+    "sponsorlink": "https://singaporebeverage.com/",
+    "sponsor_text": "visit sponsor"
+  },
+    {
+    "sponsor_title": "LOCUS Partners",
+    "subtitle": "Food and Beverage Partner",
+    "sponsor_name": "WaiWai / Campa",
+    "image": "assets/sponsors/campa.png",
+    "sponsorlink": "https://waiwai.com.np/",
+    "sponsor_text": "visit sponsor"
+  },
   {
     "sponsor_title": "Supporting Partners",
     "subtitle": "Student Partner",
     "sponsor_name": "FSU",
     "image": "assets/sponsors/fsu.png",
+    "sponsorlink": "",
+    "sponsor_text": "visit sponsor"
+  },
+    {
+    "sponsor_title": "Media Partners",
+    "subtitle": "",
+    "sponsor_name": "ICT Frame",
+    "image": "assets/sponsors/ICTframe.png",
+    "sponsorlink": "https://ictframe.com/",
+    "sponsor_text": "visit sponsor"
+  },
+    {
+    "sponsor_title": "Media Partners",
+    "subtitle": "",
+    "sponsor_name": "ICT Side",
+    "image": "assets/sponsors/ICTside.png",
+    "sponsorlink": "https://ictside.com",
+    "sponsor_text": "visit sponsor"
+  },
+      {
+    "sponsor_title": "Community Partners",
+    "subtitle": "",
+    "sponsor_name": "ICT Club",
+    "image": "assets/sponsors/ICTclub.png",
+    "sponsorlink": "https://www.facebook.com/ict.cosmoscollege.edu.np/",
+    "sponsor_text": "visit sponsor"
+  },
+        {
+    "sponsor_title": "Community Partners",
+    "subtitle": "",
+    "sponsor_name": "ACES",
+    "image": "assets/sponsors/aces.png",
+    "sponsorlink": "https://www.aceserc.org/",
+    "sponsor_text": "visit sponsor"
+  },
+        {
+    "sponsor_title": "Community Partners",
+    "subtitle": "",
+    "sponsor_name": "NSD5",
+    "image": "assets/sponsors/nsd5.png",
     "sponsorlink": "",
     "sponsor_text": "visit sponsor"
   }

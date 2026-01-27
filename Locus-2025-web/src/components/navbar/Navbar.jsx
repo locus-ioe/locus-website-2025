@@ -44,8 +44,8 @@ export function Navbar() {
             ["Home", "/"],
             ["About", "/about-us"],
             ["Events", "/events"],
-            ["Zerone", "/zerone"],
             ["Sponsors", "/sponsors"],
+            ["Contact", "/contact-us"],
           ].map(([label, to]) => (
             <Link key={label} to={to} className='px-3 py-2 text-sm font-medium text-primary transition-colors rounded-lg relative'>
               {label}
@@ -64,8 +64,8 @@ export function Navbar() {
             </button>
             {isMenuOpen && (
               <div className='absolute right-0 mt-2 w-48 bg-zinc-900 border border-zinc-800 rounded-lg shadow-xl z-[120] overflow-hidden'>
+                <Link to='/zerone' className='block px-4 py-3 text-sm text-primary transition-colors' onClick={() => setIsMenuOpen(false)}>Zerone</Link>
                 <Link to='/blogs' className='block px-4 py-3 text-sm text-primary transition-colors' onClick={() => setIsMenuOpen(false)}>Blogs</Link>
-                <Link to='/contact-us' className='block px-4 py-3 text-sm text-primary transition-colors' onClick={() => setIsMenuOpen(false)}>Contact</Link>
                 <div className='h-px bg-zinc-800 my-1'></div>
                 <Link to='/teams' className='block px-4 py-3 text-sm text-primary transition-colors' onClick={() => setIsMenuOpen(false)}>Teams</Link>
                 <Link to='/past-locus' className='block px-4 py-3 text-sm text-primary transition-colors' onClick={() => setIsMenuOpen(false)}>Past LOCUS</Link>
@@ -84,15 +84,13 @@ export function Navbar() {
         <>
           <div className='fixed inset-0 bg-black/70 backdrop-blur-sm z-[105] lg:hidden animate-fadeIn' onClick={() => setIsMobileOpen(false)}></div>
           <div className='fixed top-[4.5rem] sm:top-[5.5rem] right-4 left-4 bg-zinc-900/98 border border-zinc-800 rounded-2xl shadow-2xl z-[106] lg:hidden max-h-[calc(100vh-6rem)] sm:max-h-[calc(100vh-7rem)] overflow-y-auto animate-slideDown backdrop-blur-xl'>
-            <nav className='flex flex-col p-4'>
+            <nav className='flex flex-col p-2'>
               {[
                 ["Home", "/"],
                 ["About", "/about-us"],
                 ["Events", "/events"],
-                ["Zerone", "/zerone"],
                 ["Sponsors", "/sponsors"],
-                ["Blogs", "/blogs"],
-                ["Contact Us", "/contact-us"],
+                ["Contact", "/contact-us"],
               ].map(([label, to]) => (
                 <Link key={label} to={to} className='px-4 py-3 text-base font-medium text-primary rounded-lg transition-all active:scale-95 relative flex items-center justify-between' onClick={() => setIsMobileOpen(false)}>
                   <span>{label}</span>
@@ -103,7 +101,9 @@ export function Navbar() {
                   )}
                 </Link>
               ))}
-              <div className='h-px bg-zinc-800 my-2'></div>
+              <div className='h-px bg-zinc-800 my-1'></div>
+              <Link to='/zerone' className='px-4 py-3 text-base font-medium text-primary rounded-lg transition-all active:scale-95' onClick={() => setIsMobileOpen(false)}>Zerone</Link>
+              <Link to='/blogs' className='px-4 py-3 text-base font-medium text-primary rounded-lg transition-all active:scale-95' onClick={() => setIsMobileOpen(false)}>Blogs</Link>
               <Link to='/teams' className='px-4 py-3 text-base font-medium text-primary rounded-lg transition-all active:scale-95' onClick={() => setIsMobileOpen(false)}>Teams</Link>
               <Link to='/past-locus' className='px-4 py-3 text-base font-medium text-primary rounded-lg transition-all active:scale-95' onClick={() => setIsMobileOpen(false)}>Past LOCUS</Link>
               <a href='https://cit-worldlink.netlify.app/' target='_blank' rel='noopener noreferrer' className='px-4 py-3 text-base font-medium text-primary rounded-lg transition-all active:scale-95 flex items-center justify-between' onClick={() => setIsMobileOpen(false)}>

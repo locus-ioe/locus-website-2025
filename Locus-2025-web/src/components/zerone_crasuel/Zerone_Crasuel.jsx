@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { zerone_crausel_items } from "../../data/zerone_crausel";
 
 const HighlightCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [startX, setStartX] = useState(0);
-  const [isTouching, setIsTouching] = useState(false); // Track touch state
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -20,80 +19,90 @@ const HighlightCarousel = () => {
   };
 
   const handleTouchStart = (e) => {
-    const touchStart = e.touches[0].clientX;
-    setStartX(touchStart);
-    setIsTouching(true); // Start touch, hide arrows
+    setStartX(e.touches[0].clientX);
   };
 
   const handleTouchEnd = (e) => {
-    const touchEnd = e.changedTouches[0].clientX;
-    const distance = startX - touchEnd;
-
-    if (distance > 50) {
-      nextSlide(); // Swiped left, move to the next slide
-    } else if (distance < -50) {
-      prevSlide(); // Swiped right, move to the previous slide
-    }
-
-    setIsTouching(false); // End touch, show arrows again
+    const distance = startX - e.changedTouches[0].clientX;
+    if (distance > 50) nextSlide();
+    else if (distance < -50) prevSlide();
   };
 
   return (
     <div
-      className='relative flex items-center justify-center w-full  text-white'
+      className='relative flex items-center justify-center w-full py-12 text-white'
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Conditionally Render Arrows */}
-      {!isTouching && (
-        <>
-          <button
-            onClick={prevSlide}
-            className='absolute left-4 md:left-10 z-20 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700'
-          >
-            <FaArrowLeft className='w-6 h-6' />
-          </button>
-          <button
-            onClick={nextSlide}
-            className='absolute right-4 md:right-10 z-20 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700'
-          >
-            <FaArrowRight className='w-6 h-6' />
-          </button>
-        </>
-      )}
+      {/* Navigation Arrows */}
+      <button
+        onClick={prevSlide}
+        className='absolute left-4 md:left-10 z-30 p-3 bg-black/40 backdrop-blur-sm border border-[#48d0ff]/30 text-[#48d0ff] rounded-full transition-colors hover:bg-[#48d0ff]/20'
+      >
+        <ChevronLeft className='w-5 h-5' />
+      </button>
+      <button
+        onClick={nextSlide}
+        className='absolute right-4 md:right-10 z-30 p-3 bg-black/40 backdrop-blur-sm border border-[#48d0ff]/30 text-[#48d0ff] rounded-full transition-colors hover:bg-[#48d0ff]/20'
+      >
+        <ChevronRight className='w-5 h-5' />
+      </button>
 
       {/* Carousel Items */}
-      <div className='relative flex items-center justify-center w-full h-[80vh] overflow-hidden'>
+      <div className='relative flex items-center justify-center w-full h-[70vh] md:h-[80vh] overflow-hidden'>
         {zerone_crausel_items.map((item, index) => {
-          const position =
-            index === currentIndex
-              ? "scale-105 z-20 opacity-100"
-              : index === (currentIndex + 1) % zerone_crausel_items.length
-              ? "scale-90 z-10 opacity-50 translate-x-[30%]"
-              : "scale-90 z-10 opacity-50 -translate-x-[30%]";
+          const isCurrent = index === currentIndex;
+          const isNext = index === (currentIndex + 1) % zerone_crausel_items.length;
+          const isPrev = index === (currentIndex - 1 + zerone_crausel_items.length) % zerone_crausel_items.length;
+          
+          const position = isCurrent
+            ? "scale-100 z-20 opacity-100"
+            : isNext
+            ? "scale-75 z-10 opacity-40 translate-x-[40%] md:translate-x-[50%]"
+            : isPrev
+            ? "scale-75 z-10 opacity-40 -translate-x-[40%] md:-translate-x-[50%]"
+            : "scale-75 z-0 opacity-0";
+
           return (
             <div
               key={item.id}
-              className={`absolute transition-all duration-500 ease-in-out transform ${position}`}
+              className={`absolute transition-all duration-700 ease-out ${position}`}
             >
               <a
                 href={item.link}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='block w-[300px] sm:w-[300px] md:w-[300px] lg:w-[400px] h-[400px] sm:h-[400px] md:h-[500px] lg:h-[500px] rounded-lg overflow-hidden shadow-lg bg-gray-700 hover:scale-110 transition-all duration-300 ease-in-out'
+                className='block w-[280px] sm:w-[320px] md:w-[380px] lg:w-[450px] h-[380px] sm:h-[420px] md:h-[480px] lg:h-[550px] rounded-xl overflow-hidden border border-[#48d0ff]/20 bg-black/60 backdrop-blur-sm transition-transform hover:border-[#48d0ff]/40'
               >
                 <img
                   src={item.image}
                   alt={item.title}
                   className='w-full h-full object-cover'
                 />
-                <p className='absolute bottom-4 left-0 right-0 text-center text-lg font-semibold text-yellow-400 bg-black bg-opacity-50 p-2 rounded-b-lg'>
-                  {item.title}
-                </p>
+                <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-4'>
+                  <p className='text-center text-base md:text-lg font-semibold text-[#48d0ff]'>
+                    {item.title}
+                  </p>
+                </div>
               </a>
             </div>
           );
         })}
+      </div>
+
+      {/* Dots Indicator */}
+      <div className='absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-30'>
+        {zerone_crausel_items.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`w-2 h-2 rounded-full transition-all ${
+              index === currentIndex
+                ? 'bg-[#48d0ff] w-6'
+                : 'bg-white/30 hover:bg-white/50'
+            }`}
+          />
+        ))}
       </div>
     </div>
   );

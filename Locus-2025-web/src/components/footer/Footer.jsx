@@ -28,7 +28,10 @@ export function Footer() {
       {/* Home page matching background effects */}
       <div className='absolute inset-0 -z-10 pointer-events-none'>
         <div className='absolute -top-24 -left-24 w-96 h-96 bg-[#48d0ff]/5 rounded-full blur-[100px] animate-pulse' />
-        <div className='absolute -bottom-24 -right-24 w-96 h-96 bg-[#2a9fd6]/5 rounded-full blur-[100px] animate-pulse' style={{ animationDelay: '1s' }} />
+        <div
+          className='absolute -bottom-24 -right-24 w-96 h-96 bg-[#2a9fd6]/5 rounded-full blur-[100px] animate-pulse'
+          style={{ animationDelay: "1s" }}
+        />
       </div>
 
       {/* Content */}
@@ -38,7 +41,7 @@ export function Footer() {
           {/* Left Section - Prospectus, Discord & Location */}
           <div className='flex flex-col items-center sm:items-start space-y-6'>
             <Link
-              to='https://drive.google.com/file/d/14UPRPobB6AXR7YmS1570rtIHgWdVpyDY/view'
+              to='https://drive.google.com/file/d/1iuojrPjMg9csqBPB95S8DtCOksBIJjX4/view?usp=sharing'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -61,7 +64,7 @@ export function Footer() {
               <h3 className='text-lg font-bold sm:text-xl font-arial tracking-[0.1em] text-white'>
                 IOE PULCHOWK
               </h3>
-              <div className="space-y-1 font-helvetica text-sm sm:text-base opacity-60">
+              <div className='space-y-1 font-helvetica text-sm sm:text-base opacity-60'>
                 <p>Pulchowk, Lalitpur</p>
                 <p>Nepal</p>
               </div>
@@ -84,11 +87,11 @@ export function Footer() {
                 CONTACT US
               </h3>
               <a
-                href="mailto:locus@ioe.edu.np"
+                href='mailto:locus@ioe.edu.np'
                 className='mt-3 text-sm sm:text-base flex items-center justify-center sm:justify-end gap-3 hover:text-[#48d0ff] transition-colors duration-500 font-helvetica'
               >
                 <Mail className='h-5 w-5' />
-                <span className="tracking-wide">locus@ioe.edu.np</span>
+                <span className='tracking-wide'>locus@ioe.edu.np</span>
               </a>
             </div>
 
@@ -120,7 +123,11 @@ export function Footer() {
         {/* Copyright */}
         <div className='mx-auto mt-24 max-w-7xl border-t border-white/5 pt-12 font-helvetica flex flex-col sm:flex-row justify-between items-center gap-4 px-4'>
           <p className='flex items-center justify-center sm:justify-start gap-3 text-[10px] sm:text-xs font-medium tracking-[0.2em] uppercase text-zinc-500'>
-            MADE WITH <span className='text-red-500 animate-pulse text-base sm:text-lg'>❤</span> BY LOST
+            MADE WITH{" "}
+            <span className='text-red-500 animate-pulse text-base sm:text-lg'>
+              ❤
+            </span>{" "}
+            BY LOST
           </p>
           <p className='text-[10px] sm:text-xs uppercase tracking-[0.3em] opacity-30 text-center sm:text-right'>
             ©COPYRIGHT {year}, PULCHOWK ENGINEERING CAMPUS

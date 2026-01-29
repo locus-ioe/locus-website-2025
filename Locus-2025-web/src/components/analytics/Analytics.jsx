@@ -20,7 +20,7 @@ const Analytics = () => {
   const pieChartInstance = useRef(null);
   const barChartInstance = useRef(null);
   
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl = "https://google-analytics-backend.vercel.app";
 
 
   const handleLoginAttempt = (username, password) => {

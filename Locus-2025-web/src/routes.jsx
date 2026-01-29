@@ -4,6 +4,7 @@ import AboutUs from "./pages/AboutUs.jsx";
 import PastLocusPage from "./pages/PastLocusPage.jsx";
 import EventDescription from "./components/EventDescription.jsx";
 import Blogpage from "./pages/Blogpage.jsx";
+import AnalyticsPage from "./pages/Analytics.jsx";
 
 // Lazy load pages
 const Teams = lazy(() => import("./pages/Teams"));
@@ -86,6 +87,11 @@ export const routes = [
         path: "teams",
         element: withSuspense(Teams),
       },
+      {
+        path: "analytics",
+        element: withSuspense(AnalyticsPage),
+      },
+
     ],
   },
   {

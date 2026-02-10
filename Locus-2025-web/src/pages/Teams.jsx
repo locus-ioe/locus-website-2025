@@ -187,12 +187,24 @@ function Teams() {
                   {currentCreativeTeam.label}
                 </span>
               </h3>
+              {/* Display first member in single row for Design Team Beta */}
+              {selectedCreativeTeam === 'designTeamBeta' && (
+                <div className='flex justify-center mb-8'>
+                  <ProfileCard
+                    imageUrl={currentCreativeTeam.data[0].imageUrl}
+                    name={currentCreativeTeam.data[0].name}
+                    designation={currentCreativeTeam.data[0].designation}
+                  />
+                </div>
+              )}
+              {/* Display remaining team members */}
               <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
-                {currentCreativeTeam.data.map((person, index) => (
+                {currentCreativeTeam.data.slice(selectedCreativeTeam === 'designTeamBeta' ? 1 : 0).map((person, index) => (
                   <ProfileCard
                     key={index}
                     imageUrl={person.imageUrl}
                     name={person.name}
+                    designation={person.designation}
                   />
                 ))}
               </div>

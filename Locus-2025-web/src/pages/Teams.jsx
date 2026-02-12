@@ -187,15 +187,29 @@ function Teams() {
                   {currentCreativeTeam.label}
                 </span>
               </h3>
-              <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
-                {currentCreativeTeam.data.map((person, index) => (
-                  <ProfileCard
-                    key={index}
-                    imageUrl={person.imageUrl}
-                    name={person.name}
-                  />
-                ))}
-              </div>
+              {Array.isArray(currentCreativeTeam.data) ? (
+                <>
+                  {currentCreativeTeam.data.filter(person => person.single_row === "true").map((person, index) => (
+                    <div key={index} className="flex flex-row justify-center gap-6 mb-6">
+                      <ProfileCard
+                        imageUrl={person.imageUrl}
+                        name={person.name}
+                        designation={person.designation}
+                      />
+                    </div>
+                  ))}
+                  <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
+                    {currentCreativeTeam.data.filter(person => person.single_row !== "true").map((person, index) => (
+                      <ProfileCard
+                        key={index}
+                        imageUrl={person.imageUrl}
+                        name={person.name}
+                        designation={person.designation}
+                      />
+                    ))}
+                  </div>
+                </>
+              ) : null}
             </div>
           )}
         </div>

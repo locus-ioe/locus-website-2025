@@ -70,6 +70,12 @@
   ],
   "designTeamBeta": [
     {
+      "name": "Nitesh Baniya",
+      "designation": "Design Chief",
+      "single_row":"true",
+      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135890/creative-committee/Design_Team_Beta/Nitesh.jpg"
+    },
+    {
       "name": "Aayush Rouniyar",
       "designation": "Design Team Beta",
       "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135884/creative-committee/Design_Team_Beta/Aayush_Rouniyar.jpg"
@@ -78,11 +84,6 @@
       "name": "Ayam Kattel",
       "designation": "Design Team Beta",
       "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768139975/creative-committee/Design_Team_Beta/Ayam_Kattel.png"
-    },
-    {
-      "name": "Nitesh",
-      "designation": "Design Team Beta",
-      "imageUrl": "https://res.cloudinary.com/dcekblsuj/image/upload/v1768135890/creative-committee/Design_Team_Beta/Nitesh.jpg"
     },
     {
       "name": "Saya",

@@ -30,7 +30,7 @@
   }
   
   .contact-title span {
-    color: #00ffcc; /* Aqua color for "Us" */
+    color: #e879f9; /* Fuchsia accent for "Us" */
   }
 
   .line{
@@ -57,8 +57,8 @@
     align-items: center;
     gap: 15px;
     padding: 20px 30px;
-    background: linear-gradient(135deg, rgba(0, 171, 230, 0.1), rgba(0, 171, 230, 0.05)) !important;
-    border: 2px solid rgba(0, 171, 230, 0.3) !important;
+    background: linear-gradient(135deg, rgba(217, 70, 239, 0.1), rgba(217, 70, 239, 0.05)) !important;
+    border: 2px solid rgba(217, 70, 239, 0.3) !important;
     border-radius: 12px;
     transition: all 0.3s ease;
     text-decoration: none !important;
@@ -70,9 +70,9 @@
 
   .contact-info-card:hover {
     transform: translateY(-5px);
-    border-color: #00abe6;
-    box-shadow: 0 8px 20px rgba(0, 171, 230, 0.3);
-    background: linear-gradient(135deg, rgba(0, 171, 230, 0.15), rgba(0, 171, 230, 0.08));
+    border-color: #d946ef;
+    box-shadow: 0 8px 20px rgba(217, 70, 239, 0.3);
+    background: linear-gradient(135deg, rgba(217, 70, 239, 0.15), rgba(217, 70, 239, 0.08));
   }
 
   .contact-icon-wrapper {
@@ -81,14 +81,14 @@
     justify-content: center;
     width: 50px;
     height: 50px;
-    background: rgba(0, 171, 230, 0.2) !important;
+    background: rgba(217, 70, 239, 0.2) !important;
     border-radius: 10px;
     flex-shrink: 0;
   }
 
   .contact-icon {
     font-size: 24px !important;
-    color: #00abe6 !important;
+    color: #d946ef !important;
   }
 
   .contact-info-text {

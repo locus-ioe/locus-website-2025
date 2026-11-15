@@ -68,13 +68,13 @@
 
 .login-form input:focus {
   outline: none;
-  border-color: #00abe6;
+  border-color: #d946ef;
 }
 
 .login-submit-btn {
   margin-top: 8px;
   padding: 12px;
-  background-color: #00abe6;
+  background-color: #d946ef;
   color: #fafafa;
   border: none;
   border-radius: 8px;
@@ -85,7 +85,7 @@
 }
 
 .login-submit-btn:hover {
-  background-color: #008fbf;
+  background-color: #a21caf;
   transform: translateY(-1px);
 }
 

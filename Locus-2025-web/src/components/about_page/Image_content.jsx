@@ -10,6 +10,8 @@ function Image_content({ image, description, order }) {
         <img
           src={image}
           alt="content"
+          loading="lazy"
+          decoding="async"
           className="w-full h-auto max-h-[350px] object-cover rounded-lg"
         />
       </div>

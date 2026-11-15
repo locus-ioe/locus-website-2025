@@ -1,11 +1,8 @@
 
-import logpoint from "../../public/assets/sponsors/logpoint.png";
-
-import niural from "../../public/assets/sponsors/niural.png";
-
-import miraiglobal from "../../public/assets/sponsors/mirai.png";
-
-import nativesplug from "../../public/assets/sponsors/nativeslogo.png";
+const logpoint = "/assets/sponsors/logpoint.png";
+const niural = "/assets/sponsors/niural.png";
+const miraiglobal = "/assets/sponsors/mirai.png";
+const nativesplug = "/assets/sponsors/nativeslogo.png";
 
 
 export const eventsData = [
@@ -17,7 +14,7 @@ export const eventsData = [
       end_date: "Poush 26, 2082",
       time: "7:30 AM – 9:15 AM | 4:00 PM – 5:45 PM",
     },
-    imgSrc: "https://drive.google.com/uc?export=view&id=1WR6D4l6MmXZj05h88YHxPgw-CDIzE_3h",
+    imgSrc: "/assets/events/hardwarefellowship.png",
     registration: {
       fee: 850,
       button_text: "Register 850/-",
@@ -71,7 +68,7 @@ export const eventsData = [
       end_date: "Poush 28, 2082",
       time: "8:00 AM - 10:00 AM | 3:00 PM - 5:00 PM"
     },
-    imgSrc: "https://drive.google.com/uc?export=view&id=1fmpWn8W6eXPZZhgRTNf0iGLlpAU79vuA",
+    imgSrc: "/assets/events/cybershield.png",
     registration: {
       fee: 0,
       button_text: "Register Now/-",
@@ -131,7 +128,7 @@ export const eventsData = [
       end_date: "15th Poush, 2082",
       time: "Morning Shift: 7:30 AM - 9:30 AM, Evening Shift: 4:00 PM - 6:00 PM and 5:00 PM - 7:00 PM",
     },
-    imgSrc: "https://drive.google.com/uc?export=view&id=1e8eeC5wwGA83293A5ya56myChtYNxLjE",
+    imgSrc: "/assets/events/girlslocuscup.png",
     registration: {
       fee: 0,
       button_text: "Register Free",
@@ -185,7 +182,7 @@ export const eventsData = [
       end_date: "Poush 23nd, 2082",
       time: "TBA",
     },
-    imgSrc: "https://drive.google.com/uc?export=view&id=1uyqFw4qmeN1Y8DmCtAU67hYVXh5OZuvl",
+    imgSrc: "/assets/events/hackaweek.png",
     registration: {
       fee: "300 per person",
       button_text: "Closed",
@@ -238,7 +235,7 @@ export const eventsData = [
       // end_date: "Poush 26, 2082",
       time: "TBA"
     },
-    imgSrc: "https://drive.google.com/uc?export=view&id=1wiOy1RJIv66U5GEU452mDk1a05i53CD6",
+    imgSrc: "/assets/events/codejam.png",
     registration: {
       fee: 0,
       button_text: "Register Free/-",
@@ -300,7 +297,7 @@ export const eventsData = [
       end_date: "Poush 27th, 2082",
       time: "10:00 AM - 4:00 PM",
     },
-    imgSrc: "https://drive.google.com/uc?export=view&id=1jM65kIDMN2RNEWA_hfbc58CK5Nqjbuum",
+    imgSrc: "/assets/events/girlstocode.png",
     registration: {
       fee: 0,
       button_text: "Apply Now",
@@ -416,13 +413,13 @@ export const eventsData = [
       end_date: "Magh 17, 2082",
       time: "All"
     },
-    imgSrc: "https://drive.google.com/uc?export=view&id=1Dp_mMom-Xdmwk6efezPXOavrSNdJiGIn",
+    imgSrc: "/assets/events/15-days-of-learning.png",
     registration: {
       fee: 0,
       button_text: "Register Now/-",
     },
     event_type: {
-      status: "Open",
+      status: "Closed",
       mode: "Online",
       category: "Event",
     },
@@ -580,12 +577,12 @@ export const eventsData = [
       end_date: "2082-10-15",
       time: "10 am onwards",
     },
-    imgSrc: "https://drive.google.com/uc?export=view&id=1khCYbGdIGBtx1IbYEAnHFoHU6r49otQz",
+    imgSrc: "/assets/events/walkathon.png",
     registration: {
       button_text: "Register Now",
     },
     event_type: {
-      status: "Open",
+      status: "Closed",
       mode: "Offline",
       category: "event",
     },
@@ -620,13 +617,13 @@ export const eventsData = [
       end_date: "2082-10-06",
       time: "10 am onwards",
     },
-    imgSrc: "https://drive.google.com/uc?export=view&id=1Qp1Qi5NrYj1tAnU5JdGjtZduZr4BgeHD",
+    imgSrc: "/assets/events/flashmob.png",
     registration: {
       fee: "Rs 1000",
       button_text: "Register Now",
     },
     event_type: {
-      status: "Ongoing",
+      status: "Closed",
       mode: "Offline",
       category: "event",
     },
@@ -664,13 +661,12 @@ export const mainEventsData = [
       end_date: "2082-10-18",
       time: "10 am onwards",
     },
-    imgSrc:
-      "https://drive.google.com/uc?export=view&id=1PE-MqlBtaislWH6uU1JtiO7gjZeb322z",
+    imgSrc: "/assets/events/exhibition.png",
     registration: {
       button_text: "Register Now",
     },
     event_type: {
-      status: "Open",
+      status: "Closed",
       mode: "Offline",
       category: "event",
     },
@@ -706,14 +702,13 @@ export const mainEventsData = [
       end_date: "2082-10-18",
       time: "10 am onwards",
     },
-    imgSrc:
-      "https://drive.google.com/uc?export=view&id=1aWtP_E7u7MQOLwDHHAHcEu5UTqQKRkH3",
+    imgSrc: "/assets/events/dronacharya.png",
     registration: {
       fee: "Rs 1000",
       button_text: "Register Now",
     },
     event_type: {
-      status: "Open",
+      status: "Closed",
       mode: "offline",
       category: "event",
     },
@@ -755,14 +750,13 @@ export const mainEventsData = [
       end_date: "2082-10-18",
       time: "10 am onwards",
     },
-    imgSrc:
-      "https://drive.google.com/uc?export=view&id=1-3Bqhq-onVv0xSjlkT_jjrBh6RCw8lQl",
+    imgSrc: "/assets/events/robowarz.png",
     registration: {
       fee: "Rs 3500",
       button_text: "Register Now",
     },
     event_type: {
-      status: "Open",
+      status: "Closed",
       mode: "Offline",
       category: "event",
     },
@@ -800,14 +794,13 @@ export const mainEventsData = [
       end_date: "2082-10-18",
       time: "10 am onwards",
     },
-    imgSrc:
-      "https://drive.google.com/uc?export=view&id=12Q3neAk83KE7Q9XYnIdNSwzTWOwC310x",
+    imgSrc: "/assets/events/robosoccer.png",
     registration: {
       fee: "Rs 2500",
       button_text: "Register Now",
     },
     event_type: {
-      status: "Open",
+      status: "Closed",
       mode: "Offline",
       category: "event",
     },
@@ -845,14 +838,13 @@ export const mainEventsData = [
       end_date: "2082-10-18",
       time: "10 am onwards",
     },
-    imgSrc:
-      "https://drive.google.com/uc?export=view&id=1dY5kJBkGDkIvLvqoXyyGcutirsHr6Y6Q",
+    imgSrc: "/assets/events/robopop.png",
     registration: {
       fee: "Rs 1000",
       button_text: "Register Now",
     },
     event_type: {
-      status: "Open",
+      status: "Closed",
       mode: "Offline",
       category: "event",
     },
@@ -890,14 +882,13 @@ export const mainEventsData = [
       end_date: "2082-10-18",
       time: "10 am onwards",
     },
-    imgSrc:
-      "https://drive.google.com/uc?export=view&id=10e28LuDtTlA8snJ_9QK25ASWk97gVvqf",
+    imgSrc: "/assets/events/robolinedash.png",
     registration: {
       fee: "Rs 1000",
       button_text: "Register Now",
     },
     event_type: {
-      status: "Open",
+      status: "Closed",
       mode: "Offline",
       category: "event",
     },

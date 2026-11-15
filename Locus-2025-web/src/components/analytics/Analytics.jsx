@@ -100,8 +100,8 @@ const Analytics = () => {
             {
               label: 'Users',
               data: analyticsData.trafficOverTime.activeUsers,
-              borderColor: '#00abe6',
-              backgroundColor: 'rgba(0, 171, 230, 0.1)',
+              borderColor: '#d946ef',
+              backgroundColor: 'rgba(217, 70, 239, 0.1)',
               tension: 0.4,
               fill: true
             },
@@ -183,7 +183,7 @@ const Analytics = () => {
             {
               label: 'Users',
               data: analyticsData.trafficSources.users,
-              backgroundColor: '#00abe6',
+              backgroundColor: '#d946ef',
               borderRadius: 4
             },
           ]

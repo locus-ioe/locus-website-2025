@@ -1,28 +1,27 @@
 import { lazy, Suspense } from "react";
 import Layout from "./Layout.jsx";
-import AboutUs from "./pages/AboutUs.jsx";
-import PastLocusPage from "./pages/PastLocusPage.jsx";
-import EventDescription from "./components/EventDescription.jsx";
-import Blogpage from "./pages/Blogpage.jsx";
-import AnalyticsPage from "./pages/Analytics.jsx";
 
-// Lazy load pages
-const Teams = lazy(() => import("./pages/Teams"));
+// Lazy load ALL pages for optimal code splitting
 const Home = lazy(() => import("./pages/Home"));
 const Sponsor = lazy(() => import("./pages/Sponsor"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Events = lazy(() => import("./pages/Event"));
 const Zerone = lazy(() => import("./pages/Zerone"));
 const EventCalendar = lazy(() => import("./pages/EventCalendar.jsx"));
-
 const SingleBlogPost = lazy(() => import("./pages/SingleBlog.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const Teams = lazy(() => import("./pages/Teams"));
+const AboutUs = lazy(() => import("./pages/AboutUs.jsx"));
+const PastLocusPage = lazy(() => import("./pages/PastLocusPage.jsx"));
+const EventDescription = lazy(() => import("./components/EventDescription.jsx"));
+const Blogpage = lazy(() => import("./pages/Blogpage.jsx"));
+const AnalyticsPage = lazy(() => import("./pages/Analytics.jsx"));
 
 // Wrap lazy-loaded components with Suspense and a loading spinner
 const LoadingSpinner = () => {
   return (
     <div className='flex justify-center items-center h-screen'>
-      <div className='border-8 border-t-8 border-gray-200 border-t-blue-500 rounded-full w-32 h-32 animate-spin'></div>
+      <div className='border-8 border-t-8 border-gray-200 border-t-fuchsia-500 rounded-full w-32 h-32 animate-spin'></div>
     </div>
   );
 };
@@ -41,35 +40,35 @@ export const routes = [
     children: [
       {
         index: true,
-        element: withSuspense(Home), // Home page
+        element: withSuspense(Home),
       },
       {
-        path: "sponsors", // Relative path for the Sponsor page
-        element: withSuspense(Sponsor), // Sponsor page
+        path: "sponsors",
+        element: withSuspense(Sponsor),
       },
       {
-        path: "contact-us", // Relative path for the Sponsor page
-        element: withSuspense(Contact), // Sponsor page
+        path: "contact-us",
+        element: withSuspense(Contact),
       },
       {
-        path: "events", // Relative path for the Sponsor page
-        element: withSuspense(Events), // Sponsor page
+        path: "events",
+        element: withSuspense(Events),
       },
       {
-        path: "calendar", // Relative path for the Sponsor page
-        element: withSuspense(EventCalendar), // Sponsor page
+        path: "calendar",
+        element: withSuspense(EventCalendar),
       },
       {
         path: "blogs",
         element: withSuspense(Blogpage),
       },
       {
-        path: "blog/:slug", // Dynamic route for individual blog posts
+        path: "blog/:slug",
         element: withSuspense(SingleBlogPost),
       },
       {
-        path: "zerone", // Relative path for the Sponsor page
-        element: withSuspense(Zerone), // Sponsor page
+        path: "zerone",
+        element: withSuspense(Zerone),
       },
       {
         path: "about-us",

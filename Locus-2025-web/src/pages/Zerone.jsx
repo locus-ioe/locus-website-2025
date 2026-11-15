@@ -55,7 +55,7 @@ function Zerone() {
         {/* About Section */}
         <div className='text-center mb-8'>
           <h1 className='text-2xl md:text-4xl font-bold mb-4'>
-            <span className='text-[#48d0ff]'>The</span> Zerone 2026
+            <span className='text-fuchsia-400'>The</span> Zerone 2027
           </h1>
           {/* <p className='text-lg text-white'>22nd National Technology Fest</p>
           <p className='text-sm md:text-base text-white mt-2'>
@@ -82,7 +82,7 @@ function Zerone() {
         <div className='mt-12'>
           <div className='text-center mb-8'>
             <h1 className='text-2xl md:text-4xl font-bold'>
-              <span className='text-[#48d0ff]'>The Zerone 2026 </span>Committee
+              <span className='text-fuchsia-400'>The Zerone 2027 </span>Committee
             </h1>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6'>
@@ -102,7 +102,7 @@ function Zerone() {
         </div>
 
         <div className='text-center mt-12 md:mt-20 px-4'>
-          <h1 className='text-[#48d0ff] text-3xl md:text-5xl mb-3 md:mb-3'>
+          <h1 className='text-[#e879f9] text-3xl md:text-5xl mb-3 md:mb-3'>
             <span className='text-white'>Zerone</span> Highlights
           </h1>
           <div className=''>
@@ -116,6 +116,8 @@ function Zerone() {
                   <img
                     src={zeroneevent}
                     alt=''
+                    loading="lazy"
+                    decoding="async"
                     className='w-full h-full object-cover transition-transform duration-300 hover:scale-110'
                   />
                 </div>
@@ -134,7 +136,7 @@ function Zerone() {
                     Closed
                   </span>
                   <Link to='https://medium.com/zerone-magazine/tagged/blogging-competition'>
-                    <button className='text-white px-4 py-1 rounded-lg text-sm hover:bg-blue-600 transition-colors'>
+                    <button className='text-white px-4 py-1 rounded-lg text-sm hover:bg-fuchsia-600 transition-colors'>
                       More
                     </button>
                   </Link>
@@ -149,6 +151,8 @@ function Zerone() {
                   <img
                     src={technicalevent}
                     alt=''
+                    loading="lazy"
+                    decoding="async"
                     className='w-full h-full object-cover transition-transform duration-300 hover:scale-110'
                   />
                 </div>
@@ -167,7 +171,7 @@ function Zerone() {
                     Closed
                   </span>
                   <Link to='https://medium.com/zerone-magazine/tagged/technical-competition'>
-                    <button className='text-white px-4 py-1 rounded-lg text-sm hover:bg-blue-600 transition-colors'>
+                    <button className='text-white px-4 py-1 rounded-lg text-sm hover:bg-fuchsia-600 transition-colors'>
                       More
                     </button>
                   </Link>
@@ -180,7 +184,7 @@ function Zerone() {
         <section className='min-h-screen text-white flex flex-col p-4 sm:p-6 lg:p-8'>
           <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-center'>
             <span className='text-white'>The Zerone </span>
-            <span className='text-[#48d0ff]'>Gallery</span>
+            <span className='text-[#e879f9]'>Gallery</span>
           </h2>
           <div className='flex-grow grid grid-cols-1 sm:grid-cols-2 gap-4 auto-rows-fr'>
   {highlightImages.map((image, index) => (
@@ -191,6 +195,8 @@ function Zerone() {
       <img
         src={image.src}
         alt={image.alt}
+        loading="lazy"
+        decoding="async"
         className='absolute w-full h-full object-cover'
       />
     </div>
@@ -201,7 +207,7 @@ function Zerone() {
 
 
         <div className='text-center mt-12 md:mt-20 px-4'>
-          <h1 className='text-[#48d0ff] text-3xl md:text-5xl mb-3 md:mb-3'>
+          <h1 className='text-[#e879f9] text-3xl md:text-5xl mb-3 md:mb-3'>
             <span className='text-white'>Previous </span> Issues
           </h1>
           <Zerone_Carousel />

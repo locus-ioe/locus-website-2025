@@ -37,13 +37,13 @@ const HighlightCarousel = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className='absolute left-4 md:left-10 z-30 p-3 bg-black/40 backdrop-blur-sm border border-[#48d0ff]/30 text-[#48d0ff] rounded-full transition-colors hover:bg-[#48d0ff]/20'
+        className='absolute left-4 md:left-10 z-30 p-3 bg-black/40 backdrop-blur-sm border border-[#e879f9]/30 text-[#e879f9] rounded-full transition-colors hover:bg-[#e879f9]/20'
       >
         <ChevronLeft className='w-5 h-5' />
       </button>
       <button
         onClick={nextSlide}
-        className='absolute right-4 md:right-10 z-30 p-3 bg-black/40 backdrop-blur-sm border border-[#48d0ff]/30 text-[#48d0ff] rounded-full transition-colors hover:bg-[#48d0ff]/20'
+        className='absolute right-4 md:right-10 z-30 p-3 bg-black/40 backdrop-blur-sm border border-[#e879f9]/30 text-[#e879f9] rounded-full transition-colors hover:bg-[#e879f9]/20'
       >
         <ChevronRight className='w-5 h-5' />
       </button>
@@ -72,7 +72,7 @@ const HighlightCarousel = () => {
                 href={item.link}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='block w-[280px] sm:w-[320px] md:w-[380px] lg:w-[450px] h-[380px] sm:h-[420px] md:h-[480px] lg:h-[550px] rounded-xl overflow-hidden border border-[#48d0ff]/20 bg-black/60 backdrop-blur-sm transition-transform hover:border-[#48d0ff]/40'
+                className='block w-[280px] sm:w-[320px] md:w-[380px] lg:w-[450px] h-[380px] sm:h-[420px] md:h-[480px] lg:h-[550px] rounded-xl overflow-hidden border border-[#e879f9]/20 bg-black/60 backdrop-blur-sm transition-transform hover:border-[#e879f9]/40'
               >
                 <img
                   src={item.image}
@@ -80,7 +80,7 @@ const HighlightCarousel = () => {
                   className='w-full h-full object-cover'
                 />
                 <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-4'>
-                  <p className='text-center text-base md:text-lg font-semibold text-[#48d0ff]'>
+                  <p className='text-center text-base md:text-lg font-semibold text-[#e879f9]'>
                     {item.title}
                   </p>
                 </div>
@@ -98,7 +98,7 @@ const HighlightCarousel = () => {
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full transition-all ${
               index === currentIndex
-                ? 'bg-[#48d0ff] w-6'
+                ? 'bg-[#e879f9] w-6'
                 : 'bg-white/30 hover:bg-white/50'
             }`}
           />

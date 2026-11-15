@@ -19,19 +19,19 @@ export default function AboutSection() {
           <div className="space-y-4 sm:space-y-6 text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
               <span className="text-white">About </span>
-              <span className="text-[#48d0ff]">LOCUS</span>
+              <span className="text-pink-400">LOCUS</span>
             </h2>
             
             <p className="text-white text-base sm:text-md lg:text-lg leading-relaxed max-w-4xl mx-auto">
               LOCUS is a non-profit organization led by undergraduate students of Electrical, Electronics, and Computer Engineering departments 
               from IOE, Pulchowk Campus. Since its inception in 2003, LOCUS has been providing a platform for young innovators from schools and 
-              colleges all over Nepal to showcase their skills and knowledge. LOCUS 2026 marks the 22nd edition of the National Level Technological 
+              colleges all over Nepal to showcase their skills and knowledge. LOCUS 2027 marks the 23rd edition of the National Level Technological 
               Exhibition. All its activities are guided by a single compass: fostering collaboration, promoting individual development and facilitating 
               innovation.
             </p>
-            <Link to="https://drive.google.com/file/d/1-5tC06zsKIzvZZ0RFTcCO95SkoawXnH5/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <Link to="https://drive.google.com/file/d/14HAJV-RsCTbQ1YEJZzXagzUSsn8BNHOJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <Button className="mt-4 rounded-full bg-primary px-6 py-2 text-sm hover:bg-primary/90 sm:px-8 sm:py-3 sm:text-base">
-                LOCUS 2026 Theme Draft
+                LOCUS 2027 Theme Draft
               </Button>
             </Link>
           </div>

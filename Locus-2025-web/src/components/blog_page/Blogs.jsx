@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FiClock, FiUser, FiArrowUpRight, FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import default_image from "../../../public/assets/blog/blog_default.png";
+const default_image = "/assets/blog/blog_default.png";
 
 // Utility function to extract the first image URL from HTML content
 const extractImageUrl = (content) => {
@@ -61,7 +61,7 @@ const BlogPost = ({
     <Link
       to={`/blog/${slug}`}
       state={{ title, date, author, imageUrl, categories, content, guid }}
-      className='group relative bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700/50 rounded-xl overflow-hidden hover:border-[#00abe6]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#00abe6]/10 block'
+      className='group relative bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700/50 rounded-xl overflow-hidden hover:border-[#d946ef]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#d946ef]/10 block'
     >
       {/* Image Container */}
       <div className='relative aspect-[16/9] bg-zinc-800 overflow-hidden'>
@@ -78,7 +78,7 @@ const BlogPost = ({
         <div className='absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-zinc-900/20'></div>
 
         {/* Hover Overlay */}
-        <div className='absolute inset-0 bg-[#00abe6]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
+        <div className='absolute inset-0 bg-[#d946ef]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
           <FiArrowUpRight className='text-white text-4xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300' />
         </div>
 
@@ -88,7 +88,7 @@ const BlogPost = ({
             {categories?.slice(0, 2)?.map((category, index) => (
               <span
                 key={index}
-                className='px-3 py-1 text-xs font-medium rounded-full bg-[#00abe6] text-white backdrop-blur-sm shadow-lg'
+                className='px-3 py-1 text-xs font-medium rounded-full bg-[#d946ef] text-white backdrop-blur-sm shadow-lg'
               >
                 {category}
               </span>
@@ -100,7 +100,7 @@ const BlogPost = ({
       {/* Content */}
       <div className='p-6'>
         {/* Title */}
-        <h3 className='text-xl font-bold text-white mb-3 line-clamp-2 group-hover:text-[#00abe6] transition-colors duration-300'>
+        <h3 className='text-xl font-bold text-white mb-3 line-clamp-2 group-hover:text-[#d946ef] transition-colors duration-300'>
           {title}
         </h3>
 
@@ -110,18 +110,18 @@ const BlogPost = ({
         {/* Meta Info */}
         <div className='flex items-center justify-between pt-4 border-t border-zinc-700/50'>
           <div className='flex items-center gap-2 text-sm text-gray-400'>
-            <FiUser className='text-[#00abe6]' />
+            <FiUser className='text-[#d946ef]' />
             <span className='font-medium'>{author}</span>
           </div>
           <div className='flex items-center gap-2 text-sm text-gray-400'>
-            <FiClock className='text-[#00abe6]' />
+            <FiClock className='text-[#d946ef]' />
             <span>{formattedDate}</span>
           </div>
         </div>
       </div>
 
       {/* Decorative Corner */}
-      <div className='absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#00abe6]/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
+      <div className='absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#d946ef]/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
     </Link>
   );
 };
@@ -173,9 +173,9 @@ const Blogs = () => {
     return (
       <div className='flex flex-col justify-center items-center min-h-screen'>
         <div className='relative'>
-          <div className='border-8 border-zinc-700 border-t-[#00abe6] rounded-full w-20 h-20 animate-spin'></div>
+          <div className='border-8 border-zinc-700 border-t-[#d946ef] rounded-full w-20 h-20 animate-spin'></div>
           <div
-            className='absolute inset-0 border-8 border-transparent border-t-[#48d0ff] rounded-full w-20 h-20 animate-spin'
+            className='absolute inset-0 border-8 border-transparent border-t-[#e879f9] rounded-full w-20 h-20 animate-spin'
             style={{ animationDirection: "reverse", animationDuration: "1s" }}
           ></div>
         </div>
@@ -202,21 +202,21 @@ const Blogs = () => {
     <div className='text-center mt-12 md:mt-20 px-4 mb-16'>
       {/* Header */}
       <div className='mb-12'>
-        <h1 className='text-[#48d0ff] text-4xl md:text-6xl mb-4 font-bold'>
+        <h1 className='text-[#e879f9] text-4xl md:text-6xl mb-4 font-bold'>
           <span className='text-white'>LOCUS</span> Blogs
         </h1>
-        <div className='h-1 bg-gradient-to-r from-transparent via-[#48d0ff] to-transparent w-[80%] mx-auto mb-8'></div>
+        <div className='h-1 bg-gradient-to-r from-transparent via-[#e879f9] to-transparent w-[80%] mx-auto mb-8'></div>
 
         {/* Search Bar */}
         <div className='max-w-2xl mx-auto mb-8'>
           <div className='relative'>
-            <FiSearch className='absolute left-4 top-1/2 transform -translate-y-1/2 text-[#00abe6] text-xl' />
+            <FiSearch className='absolute left-4 top-1/2 transform -translate-y-1/2 text-[#d946ef] text-xl' />
             <input
               type='text'
               placeholder='Search articles by title, author, or category...'
               value={searchQuery}
               onChange={handleSearch}
-              className='w-full pl-12 pr-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#00abe6] transition-colors'
+              className='w-full pl-12 pr-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#d946ef] transition-colors'
             />
           </div>
         </div>
@@ -230,7 +230,7 @@ const Blogs = () => {
       {/* Results Count */}
       {searchQuery && (
         <p className='text-gray-400 mb-8'>
-          Found <span className='text-[#00abe6] font-semibold'>{filteredArticles?.length}</span> article{filteredArticles?.length !== 1 ? 's' : ''}
+          Found <span className='text-[#d946ef] font-semibold'>{filteredArticles?.length}</span> article{filteredArticles?.length !== 1 ? 's' : ''}
         </p>
       )}
 

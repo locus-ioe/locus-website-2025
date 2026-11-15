@@ -52,7 +52,7 @@ export default function Contact() {
     <div className='w-full px-4 sm:px-6'>
       <div className='text-center mb-10'>
         <h1 className='text-4xl sm:text-5xl font-bold'>
-          <span className='text-[#48d0ff]'>Contact</span>{" "}
+          <span className='text-[#e879f9]'>Contact</span>{" "}
           <span className='text-white'>Us</span>
         </h1>
       </div>
@@ -62,9 +62,9 @@ export default function Contact() {
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
           <a
             href='mailto:locus@ioe.edu.np'
-            className='flex items-center gap-3 px-5 py-4 bg-[#48d0ff]/10 border border-[#48d0ff]/30 rounded-lg hover:bg-[#48d0ff]/20 transition-all duration-300 hover:shadow-[0_0_20px_rgba(72,208,255,0.3)] text-white no-underline'
+            className='flex items-center gap-3 px-5 py-4 bg-[#e879f9]/10 border border-[#e879f9]/30 rounded-lg hover:bg-[#e879f9]/20 transition-all duration-300 hover:shadow-[0_0_20px_rgba(232,121,249,0.3)] text-white no-underline'
           >
-            <Mail className='text-[#48d0ff] w-5 h-5 flex-shrink-0' />
+            <Mail className='text-[#e879f9] w-5 h-5 flex-shrink-0' />
             <div className='text-left min-w-0'>
               <p className='text-xs text-gray-400'>Email Us</p>
               <p className='text-sm font-semibold truncate'>
@@ -75,9 +75,9 @@ export default function Contact() {
 
           <a
             href='tel:+9779805261687'
-            className='flex items-center gap-3 px-5 py-4 bg-[#48d0ff]/10 border border-[#48d0ff]/30 rounded-lg hover:bg-[#48d0ff]/20 transition-all duration-300 hover:shadow-[0_0_20px_rgba(72,208,255,0.3)] text-white no-underline'
+            className='flex items-center gap-3 px-5 py-4 bg-[#e879f9]/10 border border-[#e879f9]/30 rounded-lg hover:bg-[#e879f9]/20 transition-all duration-300 hover:shadow-[0_0_20px_rgba(232,121,249,0.3)] text-white no-underline'
           >
-            <Phone className='text-[#48d0ff] w-5 h-5 flex-shrink-0' />
+            <Phone className='text-[#e879f9] w-5 h-5 flex-shrink-0' />
             <div className='text-left'>
               <p className='text-xs text-gray-400'>Call Us</p>
               <p className='text-sm font-semibold'>+977 9805261687</p>
@@ -89,30 +89,30 @@ export default function Contact() {
       {/* Specific Inquiry Contacts */}
       <div className='max-w-3xl mx-auto mb-8'>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-          <div className='p-6 bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-2 border-[#48d0ff]/30 rounded-xl hover:border-[#48d0ff]/50 transition-all duration-300 hover:shadow-[0_0_25px_rgba(72,208,255,0.3)]'>
-            <h3 className='text-base font-bold text-[#48d0ff] mb-3'>
+          <div className='p-6 bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-2 border-[#e879f9]/30 rounded-xl hover:border-[#e879f9]/50 transition-all duration-300 hover:shadow-[0_0_25px_rgba(232,121,249,0.3)]'>
+            <h3 className='text-base font-bold text-[#e879f9] mb-3'>
               Project Demonstration Inquiry
             </h3>
             <div className='text-white space-y-1'>
               <p className='text-base font-medium'>Bishal Lamichhane</p>
               <a
                 href='tel:+9779864511097'
-                className='text-[#48d0ff] hover:text-[#48d0ff]/80 transition-colors inline-block'
+                className='text-[#e879f9] hover:text-[#e879f9]/80 transition-colors inline-block'
               >
                 9864511097
               </a>
             </div>
           </div>
 
-          <div className='p-6 bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-2 border-[#48d0ff]/30 rounded-xl hover:border-[#48d0ff]/50 transition-all duration-300 hover:shadow-[0_0_25px_rgba(72,208,255,0.3)]'>
-            <h3 className='text-base font-bold text-[#48d0ff] mb-3'>
+          <div className='p-6 bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-2 border-[#e879f9]/30 rounded-xl hover:border-[#e879f9]/50 transition-all duration-300 hover:shadow-[0_0_25px_rgba(232,121,249,0.3)]'>
+            <h3 className='text-base font-bold text-[#e879f9] mb-3'>
               Robo Events Inquiry
             </h3>
             <div className='text-white space-y-1'>
               <p className='text-base font-medium'>Ghanshyam Bhandari</p>
               <a
                 href='tel:+9779864413534'
-                className='text-[#48d0ff] hover:text-[#48d0ff]/80 transition-colors inline-block'
+                className='text-[#e879f9] hover:text-[#e879f9]/80 transition-colors inline-block'
               >
                 9864413534
               </a>
@@ -123,7 +123,7 @@ export default function Contact() {
 
       {/* Form */}
       <div className='max-w-3xl mx-auto mb-8'>
-        <div className='border border-[#48d0ff]/30 px-6 sm:px-10 py-10 rounded-xl bg-black/40 backdrop-blur-sm'>
+        <div className='border border-[#e879f9]/30 px-6 sm:px-10 py-10 rounded-xl bg-black/40 backdrop-blur-sm'>
           <form className='space-y-6'>
             <div>
               <label
@@ -138,7 +138,7 @@ export default function Contact() {
                 name='name'
                 value={formData.name}
                 onChange={handleInputChange}
-                className='w-full px-4 py-3 bg-black/30 border border-[#48d0ff]/30 focus:border-[#48d0ff] text-white rounded-lg outline-none transition-colors'
+                className='w-full px-4 py-3 bg-black/30 border border-[#e879f9]/30 focus:border-[#e879f9] text-white rounded-lg outline-none transition-colors'
               />
             </div>
 
@@ -156,7 +156,7 @@ export default function Contact() {
                   name='email'
                   value={formData.email}
                   onChange={handleInputChange}
-                  className='w-full px-4 py-3 bg-black/30 border border-[#48d0ff]/30 focus:border-[#48d0ff] text-white rounded-lg outline-none transition-colors'
+                  className='w-full px-4 py-3 bg-black/30 border border-[#e879f9]/30 focus:border-[#e879f9] text-white rounded-lg outline-none transition-colors'
                 />
               </div>
               <div>
@@ -172,7 +172,7 @@ export default function Contact() {
                   name='phone'
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className='w-full px-4 py-3 bg-black/30 border border-[#48d0ff]/30 focus:border-[#48d0ff] text-white rounded-lg outline-none transition-colors'
+                  className='w-full px-4 py-3 bg-black/30 border border-[#e879f9]/30 focus:border-[#e879f9] text-white rounded-lg outline-none transition-colors'
                 />
               </div>
             </div>
@@ -190,7 +190,7 @@ export default function Contact() {
                 name='purpose'
                 value={formData.purpose}
                 onChange={handleInputChange}
-                className='w-full px-4 py-3 bg-black/30 border border-[#48d0ff]/30 focus:border-[#48d0ff] text-white rounded-lg outline-none transition-colors'
+                className='w-full px-4 py-3 bg-black/30 border border-[#e879f9]/30 focus:border-[#e879f9] text-white rounded-lg outline-none transition-colors'
               />
             </div>
 
@@ -208,14 +208,14 @@ export default function Contact() {
                 onChange={handleMessageChange}
                 ref={textAreaRef}
                 rows='5'
-                className='w-full px-4 py-3 bg-black/30 border border-[#48d0ff]/30 focus:border-[#48d0ff] text-white rounded-lg outline-none transition-colors resize-none'
+                className='w-full px-4 py-3 bg-black/30 border border-[#e879f9]/30 focus:border-[#e879f9] text-white rounded-lg outline-none transition-colors resize-none'
               />
             </div>
 
             <button
               type='button'
               onClick={handleMailtoClick}
-              className='w-full px-8 py-3 bg-[#48d0ff]/10 text-[#48d0ff] border border-[#48d0ff]/30 rounded-lg font-semibold text-lg hover:bg-[#48d0ff]/20 transition-colors'
+              className='w-full px-8 py-3 bg-[#e879f9]/10 text-[#e879f9] border border-[#e879f9]/30 rounded-lg font-semibold text-lg hover:bg-[#e879f9]/20 transition-colors'
             >
               Submit
             </button>

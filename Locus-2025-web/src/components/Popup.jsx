@@ -16,7 +16,7 @@ const Popup = ({ onClose }) => {
           {activeEvents.length > 0 ? (
             activeEvents.map((event) => (
               <div key={event.id} className="mb-3">
-                <Link to={`/event/${event.title}`} className="text-blue-600 hover:underline">
+                <Link to={`/event/${event.title}`} className="text-fuchsia-600 hover:underline">
                   {event.title}
                 </Link>
                 <p className="text-sm text-gray-600">Starts: {event.date_and_time.start_date}</p>
@@ -27,7 +27,7 @@ const Popup = ({ onClose }) => {
           )}
         </div>
         <button
-          className="bg-blue-600 text-white px-4 py-2 rounded-lg"
+          className="bg-fuchsia-600 text-white px-4 py-2 rounded-lg"
           onClick={onClose}
         >
           Close

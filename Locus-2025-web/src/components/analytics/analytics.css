@@ -25,7 +25,7 @@
 }
 
 .analytics-header .highlight {
-  color: #00abe6;
+  color: #d946ef;
 }
 
 .analytics-header p {
@@ -54,9 +54,9 @@
 }
 
 .date-button.active {
-  background-color: #00abe6;
-  border-color: #00abe6;
-  box-shadow: 0 4px 12px rgba(0, 171, 230, 0.3);
+  background-color: #d946ef;
+  border-color: #d946ef;
+  box-shadow: 0 4px 12px rgba(217, 70, 239, 0.3);
 }
 
 .date-button:hover:not(.active) {
@@ -118,7 +118,7 @@
 .change-positive {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #00abe6;
+  color: #d946ef;
 }
 
 .change-negative {
@@ -135,13 +135,13 @@
 .stat-icon {
   padding: 12px;
   border-radius: 12px;
-  background-color: rgba(0, 171, 230, 0.1);
+  background-color: rgba(217, 70, 239, 0.1);
 }
 
 .stat-icon svg {
   width: 28px;
   height: 28px;
-  color: #00abe6;
+  color: #d946ef;
 }
 
 /* Charts */
@@ -223,7 +223,7 @@ tbody tr {
 }
 
 tbody tr:hover {
-  background-color: rgba(0, 171, 230, 0.05);
+  background-color: rgba(217, 70, 239, 0.05);
 }
 
 tbody td {
@@ -233,7 +233,7 @@ tbody td {
 .page-path {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #00abe6;
+  color: #d946ef;
 }
 
 .page-views {
@@ -264,7 +264,7 @@ tbody td {
 .spinner {
   width: 64px;
   height: 64px;
-  border: 4px solid #00abe6;
+  border: 4px solid #d946ef;
   border-top-color: transparent;
   border-radius: 50%;
   animation: spin 1s linear infinite;
@@ -331,7 +331,7 @@ tbody td {
 
 .error-content button {
   padding: 10px 24px;
-  background-color: #00abe6;
+  background-color: #d946ef;
   color: #fafafa;
   border: none;
   border-radius: 8px;

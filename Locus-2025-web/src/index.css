@@ -1,82 +1,198 @@
+/* Fonts are now loaded via <link preload> in index.html to avoid render-blocking */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html{
-  background-color: black;
+html { background: #09030e; scroll-behavior: smooth; }
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  color: #fcf8fd;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  /* Brand-aligned atmosphere: deep plum ink base with soft amethyst & orchid luminous pools */
+  background:
+    radial-gradient(ellipse 55% 45% at 8% 0%, rgba(141, 43, 143, 0.16), transparent 72%),
+    radial-gradient(ellipse 42% 35% at 94% 20%, rgba(162, 52, 165, 0.12), transparent 74%),
+    radial-gradient(ellipse 55% 45% at 50% 80%, rgba(80, 14, 93, 0.11), transparent 76%),
+    #09030e;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  opacity: 0.18;
+  background-image:
+    linear-gradient(rgba(240, 187, 243, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(240, 187, 243, 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, black, transparent 65%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Space Grotesk", "Outfit", sans-serif;
 }
 
 @layer base {
   :root {
-    --background: 180 8% 95%;
-    --foreground: 180 8% 5%;
-
-    --card: 180 10% 94%;
-    --card-foreground: 180 8% 5%;
-
-    --popover: 180 10% 94%;
-    --popover-foreground: 180 8% 5%;    
-    
-    --primary: 200 100% 64%;
-    --primary-foreground: 180 9% 2%;
-
-    --secondary: 170 12% 91%;
-    --secondary-foreground: 180 8% 5%;
-
-    --muted: 180 8% 91%;
-    --muted-foreground: 177 9% 45%;
-
-    --accent: 180 8% 91%;
-    --accent-foreground: 180 8% 5%;
-
+    --background: 295 55% 4%;
+    --foreground: 295 40% 98%;
+    --card: 295 48% 7%;
+    --card-foreground: 295 40% 98%;
+    --popover: 295 48% 7%;
+    --popover-foreground: 295 40% 98%;
+    --primary: 298 58% 56%;
+    --primary-foreground: 295 60% 5%;
+    --secondary: 295 30% 14%;
+    --secondary-foreground: 295 40% 98%;
+    --muted: 295 24% 14%;
+    --muted-foreground: 295 18% 70%;
+    --accent: 298 58% 56%;
+    --accent-foreground: 295 60% 5%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-
-    --border: 180 9% 87%;
-    --input: 180 9% 80%;
-    --ring: 178 36% 72%;
-
-    --radius: 0.5rem;
+    --border: 298 32% 24%;
+    --input: 298 28% 18%;
+    --ring: 298 58% 56%;
+    --radius: 0.9rem;
   }
-  
   .dark {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 98%;
-
-    --card: 0 0% 3%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 0 0% 3%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 200 100% 64%;
-    --primary-foreground: 0 0% 2%;
-
-    --secondary: 0 0% 6%;
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 0 0% 9%;
-    --muted-foreground: 0 0% 49%;
-
-    --accent: 0 0% 6%;
-    --accent-foreground: 0 0% 98%;
-
+    --background: 295 55% 4%;
+    --foreground: 295 40% 98%;
+    --card: 295 48% 7%;
+    --card-foreground: 295 40% 98%;
+    --popover: 295 48% 7%;
+    --popover-foreground: 295 40% 98%;
+    --primary: 298 58% 56%;
+    --primary-foreground: 295 60% 5%;
+    --secondary: 295 30% 14%;
+    --secondary-foreground: 295 40% 98%;
+    --muted: 295 24% 14%;
+    --muted-foreground: 295 18% 70%;
+    --accent: 298 58% 56%;
+    --accent-foreground: 295 60% 5%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 11%;
-    --input: 0 0% 16%;
-    --ring: 178 48% 40%;
+    --border: 298 32% 24%;
+    --input: 298 28% 18%;
+    --ring: 298 58% 56%;
   }
-  /* Hide the scrollbar in the textarea */
-textarea::-webkit-scrollbar {
-  display: none; /* Hide scrollbar */
+  textarea::-webkit-scrollbar { display: none; }
 }
 
-/* Prevent text overflow and allow auto-expansion */
-textarea {
-  overflow: hidden; /* Ensure no scrollbar appears */
+::selection { color: #0a020e; background: #df7fe6; }
+:focus-visible { outline: 2px solid #df7fe6; outline-offset: 3px; }
+
+/* LOCUS 2027 logo-aligned palette aliases for existing component utilities */
+.text-\[\#e879f9\] { color: #df7fe6; }
+.bg-\[\#e879f9\] { background-color: #8d2b8f; color: #ffffff !important; }
+.border-\[\#e879f9\] { border-color: #a83bb0; }
+.hover\:text-\[\#e879f9\]:hover { color: #f5c7fa; }
+.hover\:bg-\[\#e879f9\]:hover { background-color: #9d36a3; }
+.hover\:border-\[\#e879f9\]:hover { border-color: #df7fe6; }
+.bg-\[\#e879f9\]\/5 { background-color: rgb(141 43 143 / 0.05); }
+.bg-\[\#e879f9\]\/10 { background-color: rgb(141 43 143 / 0.1); }
+.bg-\[\#e879f9\]\/20 { background-color: rgb(141 43 143 / 0.2); }
+.border-\[\#e879f9\]\/30 { border-color: rgb(168 59 176 / 0.3); }
+.border-\[\#e879f9\]\/40 { border-color: rgb(168 59 176 / 0.4); }
+.border-\[\#e879f9\]\/50 { border-color: rgb(168 59 176 / 0.5); }
+.border-\[\#e879f9\]\/60 { border-color: rgb(168 59 176 / 0.6); }
+.hover\:bg-\[\#e879f9\]\/5:hover { background-color: rgb(141 43 143 / 0.05); }
+.hover\:bg-\[\#e879f9\]\/10:hover { background-color: rgb(141 43 143 / 0.1); }
+.hover\:bg-\[\#e879f9\]\/20:hover { background-color: rgb(141 43 143 / 0.2); }
+.hover\:border-\[\#e879f9\]\/40:hover { border-color: rgb(168 59 176 / 0.4); }
+
+.text-\[\#d946ef\] { color: #df7fe6; }
+.bg-\[\#d946ef\] { background-color: #8d2b8f; color: #ffffff !important; }
+.border-\[\#d946ef\] { border-color: #a83bb0; }
+.hover\:text-\[\#d946ef\]:hover { color: #f5c7fa; }
+.hover\:bg-\[\#d946ef\]:hover { background-color: #9d36a3; }
+.hover\:border-\[\#d946ef\]:hover { border-color: #df7fe6; }
+.bg-\[\#d946ef\]\/10 { background-color: rgb(141 43 143 / 0.1); }
+.bg-\[\#d946ef\]\/20 { background-color: rgb(141 43 143 / 0.2); }
+.border-\[\#d946ef\]\/30 { border-color: rgb(168 59 176 / 0.3); }
+.border-\[\#d946ef\]\/40 { border-color: rgb(168 59 176 / 0.4); }
+.border-\[\#d946ef\]\/50 { border-color: rgb(168 59 176 / 0.5); }
+.hover\:bg-\[\#d946ef\]\/10:hover { background-color: rgb(141 43 143 / 0.1); }
+.hover\:bg-\[\#d946ef\]\/20:hover { background-color: rgb(141 43 143 / 0.2); }
+.hover\:border-\[\#d946ef\]\/40:hover { border-color: rgb(168 59 176 / 0.4); }
+
+.bg-\[\#c026d3\] { background-color: #8d2b8f; }
+.hover\:bg-\[\#c026d3\]:hover { background-color: #9d36a3; }
+textarea { overflow: hidden; }
+
+/* UI polish: visual-only enhancements aligned with signature logo branding */
+a, button, input, textarea, select {
+  -webkit-tap-highlight-color: transparent;
 }
 
+button {
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
 }
 
+.text-fuchsia-300 { color: #df7fe6; }
+.text-fuchsia-200 { color: #f0bbf3; }
+.text-fuchsia-400 { color: #d86be0; }
+.text-pink-400 { color: #df7fe6; }
+
+header.fixed > div:first-child {
+  border-color: rgba(141, 43, 143, 0.32);
+  background: linear-gradient(110deg, rgba(13, 5, 21, 0.94), rgba(22, 8, 32, 0.88));
+  box-shadow:
+    0 14px 40px rgba(24, 1, 34, 0.48),
+    inset 0 1px 0 rgba(223, 127, 230, 0.12);
+}
+
+header.fixed nav a,
+header.fixed nav button {
+  letter-spacing: 0.01em;
+}
+
+header.fixed nav a:hover,
+header.fixed nav button:hover {
+  text-shadow: 0 0 18px rgba(223, 127, 230, 0.6);
+}
+
+main .relative.w-full.mx-auto.bg-white.rounded-lg {
+  border: 1px solid rgba(141, 43, 143, 0.28);
+  background: linear-gradient(155deg, rgba(22, 8, 32, 0.96), rgba(12, 4, 18, 0.97));
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+}
+
+main .relative.w-full.mx-auto.bg-white.rounded-lg:hover {
+  border-color: rgba(168, 59, 176, 0.7);
+  box-shadow: 0 22px 48px rgba(50, 10, 60, 0.4), 0 0 0 1px rgba(223, 127, 230, 0.1);
+}
+
+footer {
+  box-shadow: 0 -18px 60px rgba(24, 1, 34, 0.45);
+}
+
+footer h3 {
+  font-family: "Space Grotesk", "Outfit", sans-serif;
+}
+
+input, textarea, select {
+  border-radius: 0.75rem;
+  transition: border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: rgba(223, 127, 230, 0.75);
+  box-shadow: 0 0 0 4px rgba(141, 43, 143, 0.18);
+}
+
+@media (max-width: 640px) {
+  body::before { background-size: 48px 48px; }
+}
+
+/* HeroSection animations (moved from runtime style injection) */
+@keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-15px); } }
+@keyframes slideInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.float-animation { animation: float 3s ease-in-out infinite; }
+.slide-in { animation: slideInUp 0.6s ease-out; }

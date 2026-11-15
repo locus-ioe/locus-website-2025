@@ -55,8 +55,8 @@ const SingleBlog = () => {
     return (
       <div className="flex flex-col justify-center items-center min-h-screen">
         <div className="relative">
-          <div className="border-8 border-zinc-700 border-t-[#00abe6] rounded-full w-20 h-20 animate-spin"></div>
-          <div className="absolute inset-0 border-8 border-transparent border-t-[#48d0ff] rounded-full w-20 h-20 animate-spin" style={{ animationDirection: 'reverse', animationDuration: '1s' }}></div>
+          <div className="border-8 border-zinc-700 border-t-[#d946ef] rounded-full w-20 h-20 animate-spin"></div>
+          <div className="absolute inset-0 border-8 border-transparent border-t-[#e879f9] rounded-full w-20 h-20 animate-spin" style={{ animationDirection: 'reverse', animationDuration: '1s' }}></div>
         </div>
         <p className="mt-6 text-gray-400 animate-pulse">Loading article...</p>
       </div>
@@ -128,7 +128,7 @@ const SingleBlog = () => {
         {/* Back Button */}
         <Link
           to="/blogs"
-          className="inline-flex items-center gap-2 text-[#00abe6] hover:text-[#48d0ff] transition-colors mb-8 group"
+          className="inline-flex items-center gap-2 text-[#d946ef] hover:text-[#e879f9] transition-colors mb-8 group"
         >
           <FiArrowLeft className="group-hover:-translate-x-1 transition-transform" />
           Back to Blogs
@@ -147,7 +147,7 @@ const SingleBlog = () => {
                 {blog?.categories?.map((category, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 text-sm font-medium rounded-full bg-[#00abe6]/20 text-[#00abe6] border border-[#00abe6]/30"
+                    className="px-3 py-1 text-sm font-medium rounded-full bg-[#d946ef]/20 text-[#d946ef] border border-[#d946ef]/30"
                   >
                     {category}
                   </span>
@@ -158,18 +158,18 @@ const SingleBlog = () => {
             {/* Meta Info */}
             <div className="flex flex-wrap items-center gap-6 text-gray-400 pb-6 border-b border-zinc-800">
               <div className="flex items-center gap-2">
-                <FiUser className="text-[#00abe6]" />
+                <FiUser className="text-[#d946ef]" />
                 <span className="font-medium">{blog?.author}</span>
               </div>
               <div className="flex items-center gap-2">
-                <FiClock className="text-[#00abe6]" />
+                <FiClock className="text-[#d946ef]" />
                 <span>{formattedDate}</span>
               </div>
               <a
                 href={blog?.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-[#00abe6] hover:text-[#48d0ff] transition-colors ml-auto"
+                className="flex items-center gap-2 text-[#d946ef] hover:text-[#e879f9] transition-colors ml-auto"
               >
                 <span>View on Medium</span>
                 <FiExternalLink />
@@ -197,13 +197,13 @@ const SingleBlog = () => {
               prose-headings:text-white prose-headings:font-bold prose-headings:mb-4 prose-headings:mt-8
               prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl
               prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-6
-              prose-a:text-[#00abe6] prose-a:no-underline hover:prose-a:text-[#48d0ff] prose-a:transition-colors
+              prose-a:text-[#d946ef] prose-a:no-underline hover:prose-a:text-[#e879f9] prose-a:transition-colors
               prose-strong:text-white prose-strong:font-bold
               prose-em:text-gray-300 prose-em:italic
-              prose-code:text-[#00abe6] prose-code:bg-zinc-800 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
+              prose-code:text-[#d946ef] prose-code:bg-zinc-800 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
               prose-pre:bg-zinc-800 prose-pre:border prose-pre:border-zinc-700 prose-pre:rounded-lg prose-pre:p-4
               prose-img:rounded-lg prose-img:shadow-lg prose-img:my-8 prose-img:w-full
-              prose-blockquote:border-l-4 prose-blockquote:border-[#00abe6] prose-blockquote:pl-4 prose-blockquote:text-gray-400 prose-blockquote:italic
+              prose-blockquote:border-l-4 prose-blockquote:border-[#d946ef] prose-blockquote:pl-4 prose-blockquote:text-gray-400 prose-blockquote:italic
               prose-ul:text-gray-300 prose-ul:my-6
               prose-ol:text-gray-300 prose-ol:my-6
               prose-li:mb-2
@@ -235,7 +235,7 @@ const SingleBlog = () => {
                   <Link
                     key={post?.guid}
                     to={`/blog/${postSlug}`}
-                    className="group bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden hover:border-[#00abe6] transition-all hover:scale-105"
+                    className="group bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden hover:border-[#d946ef] transition-all hover:scale-105"
                   >
                     <div className="aspect-video bg-zinc-800 overflow-hidden">
                       {imageUrl ? (
@@ -251,7 +251,7 @@ const SingleBlog = () => {
                       )}
                     </div>
                     <div className="p-4">
-                      <h3 className="text-white font-semibold line-clamp-2 group-hover:text-[#00abe6] transition-colors">
+                      <h3 className="text-white font-semibold line-clamp-2 group-hover:text-[#d946ef] transition-colors">
                         {post?.title}
                       </h3>
                     </div>

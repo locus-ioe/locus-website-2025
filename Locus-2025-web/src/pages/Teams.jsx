@@ -62,13 +62,13 @@ function Teams() {
       <div className='text-center mb-12 sm:mb-16 mt-8 sm:mt-12'>
         <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4 sm:mb-6'>
           <span className='text-white'>Our </span>
-          <span className='text-[#48d0ff]'>Teams</span>
+          <span className='text-[#e879f9]'>Teams</span>
         </h1>
         <p className='text-gray-400 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto'>
           Meet the passionate individuals driving innovation and excellence
         </p>
         <div className='mt-6 sm:mt-8'>
-          <div className='h-0.5 bg-[#48d0ff] w-4/5 sm:w-3/4 mx-auto'></div>
+          <div className='h-0.5 bg-[#e879f9] w-4/5 sm:w-3/4 mx-auto'></div>
         </div>
       </div>
 
@@ -78,7 +78,7 @@ function Teams() {
           onClick={() => setSelectedMainTeam("locus")}
           className={`px-6 py-3 rounded-lg font-semibold text-base transition-all duration-300 ${
             selectedMainTeam === "locus"
-              ? "bg-[#48d0ff] text-black shadow-md shadow-[#48d0ff]/20"
+              ? "bg-[#e879f9] text-black shadow-md shadow-[#e879f9]/20"
               : "bg-gray-800 text-white hover:bg-gray-700 border border-gray-700"
           }`}
         >
@@ -88,7 +88,7 @@ function Teams() {
           onClick={() => setSelectedMainTeam("hackaweek")}
           className={`px-6 py-3 rounded-lg font-semibold text-base transition-all duration-300 ${
             selectedMainTeam === "hackaweek"
-              ? "bg-[#48d0ff] text-black shadow-md shadow-[#48d0ff]/20"
+              ? "bg-[#e879f9] text-black shadow-md shadow-[#e879f9]/20"
               : "bg-gray-800 text-white hover:bg-gray-700 border border-gray-700"
           }`}
         >
@@ -98,7 +98,7 @@ function Teams() {
           onClick={() => setSelectedMainTeam("creative")}
           className={`px-6 py-3 rounded-lg font-semibold text-base transition-all duration-300 ${
             selectedMainTeam === "creative"
-              ? "bg-[#48d0ff] text-black shadow-md shadow-[#48d0ff]/20"
+              ? "bg-[#e879f9] text-black shadow-md shadow-[#e879f9]/20"
               : "bg-gray-800 text-white hover:bg-gray-700 border border-gray-700"
           }`}
         >
@@ -110,7 +110,7 @@ function Teams() {
       {selectedMainTeam === "locus" && (
         <div className='mb-16 sm:mb-24'>
           <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-8 sm:mb-12'>
-            <span className='text-[#48d0ff]'>LOCUS Open Source</span>
+            <span className='text-[#e879f9]'>LOCUS Open Source</span>
             <span className='text-white'> Team</span>
           </h2>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
@@ -134,7 +134,7 @@ function Teams() {
       {selectedMainTeam === "hackaweek" && (
         <div className='mb-16 sm:mb-24'>
           <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-8 sm:mb-12'>
-            <span className='text-[#48d0ff]'>Neural AI Hack a Week</span>
+            <span className='text-[#e879f9]'>Neural AI Hack a Week</span>
             <span className='text-white'> Organizers</span>
           </h2>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
@@ -158,7 +158,7 @@ function Teams() {
       {selectedMainTeam === "creative" && (
         <div className='mb-16 sm:mb-24'>
           <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-center mb-8 sm:mb-12'>
-            <span className='text-[#48d0ff]'>Creative</span>
+            <span className='text-[#e879f9]'>Creative</span>
             <span className='text-white'> Teams</span>
           </h2>
 
@@ -170,7 +170,7 @@ function Teams() {
                 onClick={() => setSelectedCreativeTeam(team.id)}
                 className={`px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-sm sm:text-base text-white transition-all duration-300 transform hover:scale-105 ${
                   selectedCreativeTeam === team.id
-                    ? "bg-[#48d0ff] shadow-md shadow-[#48d0ff]/20"
+                    ? "bg-[#e879f9] shadow-md shadow-[#e879f9]/20"
                     : "bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 border border-gray-700"
                 }`}
               >
@@ -183,7 +183,7 @@ function Teams() {
           {currentCreativeTeam && (
             <div className='space-y-8 sm:space-y-10'>
               <h3 className='text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-center'>
-                <span className='text-[#48d0ff]'>
+                <span className='text-[#e879f9]'>
                   {currentCreativeTeam.label}
                 </span>
               </h3>

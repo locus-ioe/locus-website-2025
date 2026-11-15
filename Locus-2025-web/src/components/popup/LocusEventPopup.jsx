@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { AiOutlineClose } from "react-icons/ai";
 
-import locuslogo from "../../../public/assets/logo/locus_logo.png";
+const locuslogo = "/assets/logo/locus_logo.png";
 
 const ExhibitionPopup = () => {
   const [showPopup, setShowPopup] = useState(false);

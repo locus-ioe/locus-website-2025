@@ -1,13 +1,13 @@
 
-import image2019 from "../../public/assets/zerone/zerone_crausel/2019.png"
-import image2020 from "../../public/assets/zerone/zerone_crausel/2020.png"
-import image2024 from "../../public/assets/zerone/zerone_crausel/2024.png"
-import image2022 from "../../public/assets/zerone/zerone_crausel/2022.png"
-import image2023 from "../../public/assets/zerone/zerone_crausel/2023.png"
-import image2018 from "../../public/assets/zerone/zerone_crausel/2018.png"
-import image2017 from "../../public/assets/zerone/zerone_crausel/2017.png"
-import image2016 from "../../public/assets/zerone/zerone_crausel/2016.png"
-import image2025 from "../../public/assets/zerone/zerone_crausel/2025.png"
+const image2019 = "/assets/zerone/zerone_crausel/2019.png";
+const image2020 = "/assets/zerone/zerone_crausel/2020.png";
+const image2024 = "/assets/zerone/zerone_crausel/2024.png";
+const image2022 = "/assets/zerone/zerone_crausel/2022.png";
+const image2023 = "/assets/zerone/zerone_crausel/2023.png";
+const image2018 = "/assets/zerone/zerone_crausel/2018.png";
+const image2017 = "/assets/zerone/zerone_crausel/2017.png";
+const image2016 = "/assets/zerone/zerone_crausel/2016.png";
+const image2025 = "/assets/zerone/zerone_crausel/2025.png";
 
 
 

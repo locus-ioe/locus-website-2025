@@ -1,49 +1,54 @@
 {
   "locusTeam": [
     {
-      "name": "Jeevan Neupane",
-      "designation": "Lead",
-      "imageUrl": "assets/teams/Jeevan_neupane.jpg"
-    },
-    {
-      "name": "Rishikesh Paudel",
-      "designation": "Vice Lead",
-      "imageUrl": "assets/teams/Rishikesh_paudel.png"
-    },
-    {
-      "name": "Gyaneshwar Sah",
-      "designation": "Frontend Lead",
-      "imageUrl": "assets/teams/Gyaneshwar_sah.jpg"
-    },
-    {
-      "name": "Prabin Adhikari",
-      "designation": "Backend Lead",
-      "imageUrl": "assets/teams/Prabin_adhikari.png"
-    },
-    {
-      "name": "Darshan Paudyal",
-      "designation": "DevOps Lead",
-      "imageUrl": "assets/teams/Darshan_paudyal.jpg"
-    },
-    {
-      "name": "Saroj Poudel",
-      "designation": "App development Lead",
-      "imageUrl": "assets/teams/Saroj_poudel.jpg"
-    },
-    {
       "name": "Ashish Pandey",
-      "designation": "Data Science Lead",
-      "imageUrl": "assets/teams/Ashish_pandey.png"
+      "designation": "Lead",
+      "imageUrl": "assets/teams/ashish.jpg"
     },
     {
-      "name": "Bikash Chandra",
+      "name": "Milan Gyawali",
+      "designation": "Vice Lead",
+      "imageUrl": "assets/teams/milan.jpg"
+    },
+    {
+      "name": "Darpan Giri",
+      "designation": "Frontend Lead",
+      "imageUrl": "assets/teams/darpan.jpg"
+    },
+    {
+      "name": "Aman Partel",
+      "designation": "Backend Lead",
+      "imageUrl": "assets/teams/aman.jpeg"
+    },
+    {
+      "name": "Aayush Ojha",
+      "designation": "DevOps Lead",
+      "imageUrl": "assets/teams/aayush.jpeg"
+    },
+    {
+      "name": "Ankit Pokhrel",
+      "designation": "AI Lead",
+      "imageUrl": "assets/teams/ankit.jpg"
+    },
+    {
+      "name": "Anil B.K.",
+      "designation": "Advisor",
+      "imageUrl": "assets/committee27/anil.jpg"
+    },
+    {
+      "name": "Bali Kumar Wad",
       "designation": "Design Lead",
-      "imageUrl": "assets/teams/Bikash_chandra.jpg"
+      "imageUrl": "assets/teams/bali.jpg"
     },
     {
-      "name": "Pratik Adhikari",
-      "designation": "Education and Content Lead",
-      "imageUrl": "assets/teams/Pratik_adhikari.jpg"
+      "name": "Abhiyan Khanal",
+      "designation": "Content and Education Lead",
+      "imageUrl": "assets/teams/abhiyan.jpg"
+    },
+    {
+      "name": "Aeva Acharya",
+      "designation": "Advisor",
+      "imageUrl": "assets/committee27/aeva.jpg"
     }
   ],
   "hackaWeekTeam": [

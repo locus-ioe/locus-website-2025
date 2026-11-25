@@ -1,6 +1,6 @@
 // import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
-import locuslogo from "../../assets/about/logo.png";
+import locuslogo from "/assets/home/footer_logo_2027.png";
 
 const ProfileCard = ({
   imageUrl,

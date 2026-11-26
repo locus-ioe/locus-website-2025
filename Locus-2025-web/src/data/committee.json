@@ -1,135 +1,134 @@
 [
   {
-    "name": "Subash Kandel",
+    "name": "Shishir Dahal",
     "designation": "Coordinator",
-    "imageUrl": "assets/committee26/subash.jpg",
-    "facebook": "https://www.facebook.com/subash.kandel.524",
-    "twitter": "https://x.com/subash_cndl",
-    "instagram": "https://www.instagram.com/subashkandel_",
-    "linkedin": "https://www.linkedin.com/in/subashkandel/"
+    "imageUrl": "assets/committee27/shishir.jpg",
+    "facebook": "",
+    "twitter": "",
+    "instagram": "",
+    "linkedin": ""
   },
   {
-    "name": "Ashim Sapkota",
+    "name": "Bini Chand",
     "designation": "Chief Correspondent",
-    "imageUrl": "assets/committee26/ashim.jpg",
-    "facebook": "https://www.facebook.com/ashimsapkota22",
-    "twitter": "https://x.com/Ashimm_Sapkota",
-    "instagram": "https://www.instagram.com/ashim.sapkota/",
-    "linkedin": "https://www.linkedin.com/in/ashim-sapkota-a75873268/"
-  },
-  {
-    "name": "Pradipti Shrestha",
-    "designation": "Finance Coordinator",
-    "imageUrl": "assets/committee26/pradipti.jpg",
-    "facebook": "https://www.facebook.com/share/16v7XvQyDq/?mibextid=wwXIfr",
+    "imageUrl": "assets/committee27/bini.png",
+    "facebook": "",
     "twitter": "",
-    "instagram": "https://www.instagram.com/pradi__s/",
-    "linkedin": "http://linkedin.com/in/pradipti-shrestha-90384a261"
+    "instagram": "",
+    "linkedin": ""
   },
   {
-    "name": "Nishanta Subedi",
-    "designation": "Event Manager",
-    "imageUrl": "assets/committee26/nishanta.jpg",
-    "facebook": "https://www.facebook.com/nissan.subedi.23",
+    "name": "Aadarsha Karki",
+    "designation": "Finance Manager",
+    "imageUrl": "assets/committee27/aadarsha.jpg",
+    "facebook": "",
     "twitter": "",
-    "instagram": "https://www.instagram.com/niss_an23/",
-    "linkedin": "https://www.linkedin.com/in/nishanta-subedi-1b017927a/"
+    "instagram": "",
+    "linkedin": ""
   },
   {
-    "name": "Nandani Sah",
+    "name": "Rohan Poudel",
     "designation": "Marketing Director",
-    "imageUrl": "assets/committee26/nandani.jpg",
+    "imageUrl": "assets/committee27/rohan.jpg",
     "facebook": "",
     "twitter": "",
     "instagram": "",
     "linkedin": ""
   },
-
   {
-    "name": "Yujal Shrestha",
+    "name": "Abiral Panta",
+    "designation": "Event Manager",
+    "imageUrl": "assets/committee27/abiral.jpg",
+    "facebook": "",
+    "twitter": "",
+    "instagram": "",
+    "linkedin": ""
+  }, 
+  {
+    "name": "Manish Lal Karn",
+    "designation": "Operations Coordinator",
+    "imageUrl": "assets/committee27/manish.jpg",
+    "facebook": "",
+    "twitter": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Sachita Aryal",
     "designation": "Creative Director",
-    "imageUrl": "assets/committee26/yujal.jpg",
-    "facebook": "https://www.facebook.com/yujal.shrestha",
+    "imageUrl": "assets/committee27/sachita.JPG",
+    "facebook": "",
     "twitter": "",
-    "instagram": "https://www.instagram.com/yujal40/",
-    "linkedin": "https://www.linkedin.com/in/yujal-shrestha-88ba43261/"
+    "instagram": "",
+    "linkedin": ""
   },
   {
-    "name": "Bishal Lamichhane",
+    "name": "Anil B.K.",
     "designation": "Project Manager",
-    "imageUrl": "assets/committee26/bishal.jpg",
-    "facebook": "https://www.facebook.com/bishal.lamichhane.9809",
+    "imageUrl": "assets/committee27/anil.jpg",
+    "facebook": "",
     "twitter": "",
-    "instagram": "https://www.instagram.com/bishal_lamichhane__/",
-    "linkedin": "https://www.linkedin.com/in/bishal-lamichhane-60309122b/"
+    "instagram": "",
+    "linkedin": ""
   },
   {
-    "name": "Sudip Adhikari",
+    "name": "Biplav Neupane",
     "designation": "Electrical Coordinator",
-    "imageUrl": "assets/committee26/sudip.jpg",
+    "imageUrl": "assets/committee27/biplav.jpeg",
     "facebook": "",
     "twitter": "",
     "instagram": "",
     "linkedin": ""
   },
   {
-    "name": "Sadhana Panthi",
-    "designation": "Software Coordinator",
-    "imageUrl": "assets/committee26/sadhana.jpg",
-    "facebook": "https://www.facebook.com/sadhana.panthee",
-    "twitter": "",
-    "instagram": "https://www.instagram.com/_sadhanaaa__/",
-    "linkedin": "https://www.linkedin.com/in/sadhana-panthi-746561257/"
-  },
-  {
-    "name": "Aashutosh pandey",
+    "name": "Ram Kushwaha",
     "designation": "Hardware Coordinator",
-    "imageUrl": "assets/committee26/aashutosh.jpg",
-    "facebook": "https://www.facebook.com/iamaashhu",
-    "twitter": "",
-    "instagram": "https://www.instagram.com/why_aashu/",
-    "linkedin": ""
-  },
-  {
-    "name": "Anup Aryal",
-    "designation": "Research And Resource Manager",
-    "imageUrl": "assets/committee26/anup.jpg",
-    "facebook": "https://www.facebook.com/anup.aryal.675601/",
-    "twitter": "https://x.com/A_n_o_o_b",
-    "instagram": "https://www.instagram.com/a.n.o_o.b/",
-    "linkedin": "https://www.linkedin.com/in/anup-aryal-825374255/"
-  },
-  {
-    "name": "Aditi Subedi",
-    "designation": "Social Media and PR Manager",
-    "imageUrl": "assets/committee26/aditi.jpg",
+    "imageUrl": "assets/committee27/ram.JPG",
     "facebook": "",
-    "twitter": "",
-    "instagram": "https://www.instagram.com/_aditidiot_",
-    "linkedin": "www.linkedin.com/in/aditi-subedi-694ab72aa"
-  },
-  {
-    "name": "Gita Neupane",
-    "designation": "Logistics Coordinator",
-    "imageUrl": "assets/committee26/gita.jpg",
-    "facebook": "https://www.facebook.com/geetu.neupane.92",
-    "twitter": "",
-    "instagram": "https://www.instagram.com/geeta_neupane88/",
-    "linkedin": "https://www.linkedin.com/in/geeta-neupane-34081123a/"
-  },
-  {
-    "name": "Kshitiz Parajuli",
-    "designation": "Outreach Manager",
-    "imageUrl": "assets/committee26/kshitiz.jpg",
-    "facebook": "https://www.facebook.com/kshitiz.parajuli",
     "twitter": "",
     "instagram": "",
     "linkedin": ""
   },
   {
-    "name": "Divyanshu Misra",
-    "designation": "Research Executive",
-    "imageUrl": "assets/committee26/divyanshu.jpg",
+    "name": "Aeva Acharya",
+    "designation": "Software Coordinator",
+    "imageUrl": "assets/committee27/aeva.jpg",
+    "facebook": "",
+    "twitter": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Sangam Ghimire",
+    "designation": "Content Director",
+    "imageUrl": "assets/committee27/sangam.jpg",
+    "facebook": "",
+    "twitter": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Pragyan Ghimire",
+    "designation": "Research Coordinator",
+    "imageUrl": "assets/committee27/pragyan.jpg",
+    "facebook": "",
+    "twitter": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Biprash Pandey",
+    "designation": "Outreach Manager",
+    "imageUrl": "assets/committee27/biprash.png",
+    "facebook": "",
+    "twitter": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Pratyush Kattel",
+    "designation": "HR Manager",
+    "imageUrl": "assets/committee27/pratyush.jpg",
     "facebook": "",
     "twitter": "",
     "instagram": "",

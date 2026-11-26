@@ -38,7 +38,7 @@ function AboutUs() {
         <div className='mt-12'>
           <div className='text-center mb-8'>
             <h1 className='text-2xl md:text-4xl font-bold'>
-              <span className='text-fuchsia-400'>LOCUS 2026 </span>Committee
+              <span className='text-fuchsia-400'>LOCUS 2027 </span>Committee
             </h1>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6'>
